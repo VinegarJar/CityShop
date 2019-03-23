@@ -79,16 +79,16 @@ export default class ZeroHomeNavigator extends Component {
 
         switch (index) {
             case 0:{
-                AlertIOS.alert('调用点击扫码事件');
+               alert('调用点击扫码事件');
             }
             break;
 
             case 1:{
-                AlertIOS.alert('调用点击搜索事件');
+                alert('调用点击搜索事件');
             }
                 break;
             case 2:{
-                AlertIOS.alert('调用点击消息事件');
+               alert('调用点击消息事件');
             }
                 break;
             default:

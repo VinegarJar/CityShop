@@ -80,6 +80,7 @@ const didSelectedIndexPath = (event)=>{
     alert('点击'+event);
 }
 
+
 const styles = StyleSheet.create({
 
     cellViewStyle:{

@@ -19,7 +19,7 @@ import {
 
 //第一种引用iOS关键代码
 var { NativeModules } = require('react-native');
-var  RNBridgeModule = NativeModules.RNBridgeModule;
+// var  RNBridgeModule = NativeModules.RNBridgeModule;
 
 
 import  ZeroNavigationItem from '../../ZeroNavigationItem'
@@ -40,13 +40,13 @@ export default class ZeroMine extends Component {
                 <ZeroNavigationItem
                     icon={require('../../src/Mine/icon_navigationItem_set_white@2x.png')}
                     onPress={() => {
-                        AlertIOS.alert('调用设置事件');
+                       alert('调用设置事件');
                     }}
                 />
                 <ZeroNavigationItem
                     icon={require('../../src/Mine/icon_navigationItem_message_white@2x.png')}
                     onPress={() => {
-                        AlertIOS.alert('调用消息事件');
+                        alert('调用消息事件');
                     }}
                 />
             </View>
@@ -86,7 +86,7 @@ export default class ZeroMine extends Component {
 
     onTouchableOpacity(index) {
         //alert('弹出分享框'+index);
-        RNBridgeModule.RNOpenVC('弹出分享框');
+        //RNBridgeModule.RNOpenVC('弹出分享框');
         //RCTZeroShar.RNOpenVC('弹出分享框');
 
     }

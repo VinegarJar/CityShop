@@ -18,10 +18,6 @@ var ImageData = require('../../data.json');
 const {width} = Dimensions.get('window');
 export default class ZeroBanner extends Component {
 
-
-
-
-
     //声明变量
     constructor(props){
         super(props);
