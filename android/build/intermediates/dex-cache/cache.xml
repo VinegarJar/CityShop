@@ -3,237 +3,237 @@
 
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_e8d759587c51d5e44c1669bfbb4d31a0347412d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_e7065ded27f0496beb48e1345ad1dc892cf3ee0b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_a0872cd848774522dd0d9578181a423248a007fa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_b08ab359b75b3c1ff892c8e2a7bd3f48657f0a70.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_d6e2d9240da50ae6f51ef34f35363b4fc44c47ea.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_7383c6f25a0603e968a48d35e6cc4f8f2b81ee23.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_0fc2f7303076ddabb7a2c1a108046bf4925bdebe.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_86e5ef69ca786d49da4c20b59a9f1c274efb2a94.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_286a2d0b53a4525749ae7af69af5eef0c800bb23.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_3e114e5b3f75728b87c24d61f7b043a6e074addc.jar" />
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_f90ac4b8ad6c3cee3baa733cd66e236557435d3c.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_f1529af5737be434669fbefb4029df25239c5c8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_ec3137c05a2f678c95f686427ecb3df0822b5d4c.jar" />
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_fef3f5a5a1dbebe54b7672f61a356b2b4db70bb3.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/ZeroCityShop/react-native-splash-screen/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_497f7e33d6e0df8940c037dcd391ed5f6032b5c6.jar" />
+        sha1="81545e78a5aef654b2e0aac62b2be5ad8ad7b908">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/ZeroCityShop-react-native-splash-screen-unspecified_715dce98cf515b1bbf92d184a1e5d8cedd0e436f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.3/jars/libs/infer-annotations-1.5.jar"
+        jar="/Users/smellzero/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_98fa65921dd3dcfbca2361bb2a784f50567abe4d.jar" />
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_05bd31dd40d5c7e68f6ef5729e1ae3751b6088f1.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/ZeroCityShop/react-native-splash-screen/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8157618a5b248f10354e1dbfa44ddef9e617da42">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/ZeroCityShop-react-native-splash-screen-unspecified_b6dc9f1930d371ee7b094ea80dc7549371cd56a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_4eab3dba6d6b5009e607dfe45c84524e48f291e7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_6973cf1ac772c322815b6bbce683c55f1af9b895.jar" />
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_c3e9f2bca133c61dd1e430ada3bec830ec85e853.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_bb4b41517da53e8b08a25134a4d5297a4c49649e.jar" />
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_b86d03ce4e368d2f78fffb19bb02661e755d86d2.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.3/jars/classes.jar"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.3_6d9a42ecd6cdb05182b8c8ab1e78e3de3ba968e0.jar" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_7a45ebe2e617289dd348972445e8db7255455ecc.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_e9334940f05d54e8dfb39a26f6abb3198f5df93e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_d3b0f97a09be8f9a979edc664246be6e62e98ae0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jar="/Users/smellzero/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_f302694f41f4402cb1f33405a215d8615487fc92.jar" />
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_afef6261e1c91052bb71f0e058515ef336147631.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.3/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_d5bd09ca41a029f7c6f52ada55c1ddbe256d02cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_cdbccf75f33d6f3b620e44b238bde45edfd08447.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_99c9f51a66373f2624ed41a7fc57679d711b6e6e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.3_eb5c18a26aa8df64fda57671c98cd422b23e1a8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_c1134e66acf7841ba25fc2479cdc7ea5dcee28c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_1517d89263431899c4802c424537124f952232c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_132fbf70b15f3c417cbecada8c38f9dbc32141ab.jar" />
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_3150655f407be24b06f75f175433477776d62223.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/ZeroCityShop/react-native-webview-bridge/unspecified/jars/classes.jar"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="2d69c490ff52eb212499683621716d060ce7387e">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/ZeroCityShop-react-native-webview-bridge-unspecified_1f50c45b9775995930c81f3be7862c6121dde6f5.jar" />
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_728ada16d192ae1e77c72da987226ba0081c0973.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jar="/Users/smellzero/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_5e41e889656d1b38ebe3cd3b9c3439dc48b9211e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_ce8df9dfd6c6856ae67c274bd6a4a4f1f9dfcacd.jar" />
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6b980d75e999077fa4d31b52f4af05a32ba7cc25.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ryp-app01/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_cbe77f15a0bd31ca0be0e6aa1891e5c694efbf08.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ryp-app01/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jar="/Users/smellzero/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_01b8c8820e8a2a28f03c63293001f6956dfe213e.jar" />
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_bcb546f78f4fab8f25286af3e46c8f1a2741dc11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_7c2a6b8b5454c3a8360fdd6c65ca8d6a715026d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_a8b8c0ea5a2b5f4849db2926d07661e75389160d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_744b805190733bb0f6a01ad827b12ac6bb0457fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_eef2c98a465c10eb21fa6ee6fd2ff381a2dd114e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_26a68b2024496682424d80d064a32576d88e9acf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/exploded-aar/ZeroCityShop/react-native-webview-bridge/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72d8edae92cf7257598bd702330291168e6426ea">
+        <dex dex="/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/pre-dexed/debug/ZeroCityShop-react-native-webview-bridge-unspecified_5c9ad96b409ae47059b555ca369e200778657f2b.jar" />
     </item>
 
 </items>

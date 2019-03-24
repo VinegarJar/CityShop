@@ -1,4 +1,4 @@
-#Sat Mar 23 17:21:59 CST 2019
-base.0=/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Sun Mar 24 12:44:36 CST 2019
+base.0=/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=/Users/ryp-app01/Documents/ZeroCityShop/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=/Users/smellzero/Documents/ZeroCityShop/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
