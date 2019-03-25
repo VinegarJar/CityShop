@@ -208,7 +208,7 @@ let imgHeight = 345*0.5;
 let imgWidth = 345*0.5;
 const styles = StyleSheet.create({
     container:{
-      height:height-50,
+       flex:1,
     },
     listViewStyle:{
         flexDirection:'row', //设置横向布局
@@ -229,6 +229,7 @@ const styles = StyleSheet.create({
         height:imgHeight,
         // marginBottom:0,
         marginTop:0,
+        
     },
     describe:{
         fontSize:15,

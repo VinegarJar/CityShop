@@ -32,23 +32,18 @@ export default class ZeroBanner extends Component {
     }
 
 
-
-
-
-
-
     render() {
         const { items, } = this.props;
         return (
             <Swiper
                 style={{ backgroundColor: "#efeff4", }}
-                height={(218 / 375) * ZeroScreen.width}
+                height={230}
                 key={items.length}
                 autoplayTimeout={4} autoplay={true}
                 showsPagination={true} horizontal={true}
                 dot={<View style={styles.dotViewStyle}/>}
                 activeDot={<View style={styles.activeDotViewStyle}/>}
-                paginationStyle={{ bottom: 5 }}>{
+                paginationStyle={{ bottom: 20 }}>{
                     items.map((item, index) => {
                         return (
                             <View style={styles.imageView} key={index}>
@@ -79,7 +74,7 @@ const styles = StyleSheet.create({
     },
 
     imageStyle: {
-        height: (218 / 375) * ZeroScreen.width,
+        height: 210,
         width: ZeroScreen.width,
     },
 
