@@ -72,7 +72,8 @@ export default class ZeroHome extends Component {
             <View style={styles.container}>
 
                 <ZeroHomeNavigator/>
-                <ListView
+                <ZeroBanner onGridSelected={(url) => this.onGridSelected(url)}/>
+                {/* <ListView
                     dataSource={this.state.dataSource}
                     renderRow={this.renderRow}
                     //renderFooter={this.renderFooter}
@@ -81,7 +82,7 @@ export default class ZeroHome extends Component {
                     ref={(listView) => { _listView = listView }}
                     onScroll={() =>this.scrollViewDidScroll() }
                     removeClippedSubviews={false}
-                />
+                /> */}
 
 
                 <TouchableOpacity

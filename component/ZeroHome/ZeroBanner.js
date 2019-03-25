@@ -1,4 +1,4 @@
-//轮播图实现方式二
+
 
 import React, { Component } from 'react';
 import {
@@ -14,112 +14,78 @@ import {
 
 
 import Swiper from 'react-native-swiper';
-var ImageData = require('../../data.json');
-const {width} = Dimensions.get('window');
+import ZeroScreen from '../../tool/ZeroScreen';
+import PropTypes from 'prop-types';
+
+var ImageData  = require('../../data.json');
+
+
+
 export default class ZeroBanner extends Component {
 
-    //声明变量
-    constructor(props){
-        super(props);
-        this.state = {
-            items:[],
-            swiperShow:false,
-        }
+    static propTypes = {
+        items: PropTypes.array,//轮播数据源
+    }
 
+    static defaultProps = {
+        items:require('../../data.json').data,
     }
 
 
-    componentDidMount() {
-        setTimeout(()=>{
-            this.setState({
-                swiperShow:true
-            });
-        },0);
 
-        let items = ImageData.data.map(
-            (info)=>{
-                return {
-                    link: info.link,
-                    pic: info.pic,
-                }
-            }
-        )
-        //console.log('获取数据'+items);
-        this.setState({
-            items:items
-        })
-    }
+
+
+
 
     render() {
-        if(this.state.swiperShow){
-            return (
-            <View style={styles.container} >
-                <Swiper style={styles.wrapper}
-                        autoplayTimeout={5} //每隔4秒切换
-                        autoplay={true}   //自动轮播
-                        showsPagination={true}
-                        //滚动方向
-                        horizontal={true}
-
-                        dot={<View style={styles.dotViewStyle}/>}
-                        activeDot={<View style={styles.activeDotViewStyle}/>}
-                        paginationStyle={{bottom: 5}}
-                >
-
-                    {this.state.items.map((item, index) => {
-                        console.log(index);
+        const { items, } = this.props;
+        return (
+            <Swiper
+                style={{ backgroundColor: "#efeff4", }}
+                height={(218 / 375) * ZeroScreen.width}
+                key={items.length}
+                autoplayTimeout={4} autoplay={true}
+                showsPagination={true} horizontal={true}
+                dot={<View style={styles.dotViewStyle}/>}
+                activeDot={<View style={styles.activeDotViewStyle}/>}
+                paginationStyle={{ bottom: 5 }}>{
+                    items.map((item, index) => {
                         return (
-                            <TouchableOpacity
-                                  activeOpacity={1}
-                                  style={styles.container}
-                                  key = {index}
-                                  onPress = {() => this.props.onGridSelected(item.link)}
-                                  //()=>this.click(item.link)
-                            >
-                            <Image style={styles.image}
+                            <View style={styles.imageView} key={index}>
+                                {
+                                    <Image style={styles.imageStyle} key={index} source={{ uri: item ? item.pic : "error_url" }} />
+                                }
+                            </View>
+                        )
+                    })
+                }
+            </Swiper>
 
-                                   key = {index}
-                                   resizeMode='cover'
-                                   source={{uri:item.pic}}
-                            />
-                            </TouchableOpacity>)
-                    })}
+        )
 
-                </Swiper>
-            </View>
 
-        );
-        }else {
-            return (
-                <View style={{height:200}}>
-                    <Image source={ require('../../src/Home/banner.jpg')} style={styles.bannerImg} />
-                </View>
-            );
-        }
     }
 
 
 
 }
 
-let zoomHeight = (218/375)*width;
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#F5FCFF',
-        height:zoomHeight,
-        alignItems:'center',
+
+    imageView: {
+        width: ZeroScreen.width,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 
-    wrapper: {
-    },
-    image: {
-        width:width,
-        height:zoomHeight,
+    imageStyle: {
+        height: (218 / 375) * ZeroScreen.width,
+        width: ZeroScreen.width,
     },
 
     //原点黑色样式
-    dotViewStyle:{
-        backgroundColor:'rgba(0,0,0,.5)',
+    dotViewStyle: {
+        backgroundColor: 'rgba(0,0,0,.5)',
         width: 8,
         height: 8,
         borderRadius: 4,
@@ -129,8 +95,8 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
     //滚动选择其他颜色样式
-    activeDotViewStyle:{
-        backgroundColor:'white',
+    activeDotViewStyle: {
+        backgroundColor: 'white',
         width: 8,
         height: 8,
         borderRadius: 4,
@@ -139,10 +105,6 @@ const styles = StyleSheet.create({
         marginTop: 5,
         marginBottom: 5,
     },
-    bannerImg: {
-        width: '100%',
-        height: 200,
-        // flex: 1
-    }
+ 
 
 });
