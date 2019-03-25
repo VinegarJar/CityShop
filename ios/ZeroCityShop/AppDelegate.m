@@ -7,6 +7,11 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  *更新启动屏幕
  *打包命令 react-native bundle --entry-file index.ios.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
+ 
+ 1.Duplicate interface definition for class 'RCTView' 这个错误
+ 解决办法:#import "RCTView.h" 替换成 #import <React/RCTView.h>
+ #import "RCTBridge.h"
+ #import <React/RCTBridge.h>
  */
 
 #import "AppDelegate.h"
@@ -20,12 +25,10 @@
   
   NSURL *jsCodeLocation;
 
-#define SeverEnvironment 1
-  
-#if  SeverEnvironment==1  //开发测试网络
+#ifdef  DEBUG
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
-#elif SeverEnvironment==2  //正式发布网络
+#else
   
      jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
   
@@ -44,7 +47,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  [SplashScreen show];
+ // [SplashScreen show];
   return YES;
 }
 
