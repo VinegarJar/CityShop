@@ -28,7 +28,7 @@ import ZeroTabBarItem from './ZeroTabBarItem'
 import ZeroColor from './tool/ZeroColor'
 import  ZeroBanner from './component/ZeroHome/ZeroBanner'
 import ZeroWebScene from './component/ZeroTool/ZeroWebScene'
-import { StatusBar } from 'react-native';
+// import { StatusBar } from 'react-native';
 import SplashScreen from 'react-native-splash-screen'
 import source from './src'
 
@@ -49,10 +49,9 @@ function getCurrentRouteName(navigationState) {
 export default class ZeroTabBar extends Component {
 
 
-
     constructor(props){
         super(props);
-        StatusBar.setBarStyle('dark-content')
+        //  StatusBar.setBarStyle('light-content')
     }
 
     componentDidMount() {

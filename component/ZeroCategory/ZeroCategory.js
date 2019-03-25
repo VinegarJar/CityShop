@@ -16,7 +16,7 @@ export default class ZeroCategory extends Component {
 
     static navigationOptions = ({ navigation }) => ({
 
-        headerTitle:'点我搜索'
+        // headerTitle:'点我搜索'
 
         // headerTitle: (
         //     <Text>

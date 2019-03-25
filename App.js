@@ -9,17 +9,20 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    StatusBar,
 } from 'react-native';
 
 import ZeroTabBar from './ZeroTabBar'
-
-
 export default class App extends Component {
 
     render() {
-        return (
-            <ZeroTabBar/>
+        return ( 
+             
+            <View style={{flex:1}}>
+                <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#ff8e4a'} networkActivityIndicatorVisible={true}/>  
+                <ZeroTabBar/>  
+            </View>     
         );
     }
 }
