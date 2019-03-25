@@ -30,6 +30,7 @@ import  ZeroBanner from './component/ZeroHome/ZeroBanner'
 import ZeroWebScene from './component/ZeroTool/ZeroWebScene'
 import { StatusBar } from 'react-native';
 import SplashScreen from 'react-native-splash-screen'
+import source from './src'
 
 function getCurrentRouteName(navigationState) {
     if (!navigationState) {
@@ -92,7 +93,7 @@ export default class ZeroTabBar extends Component {
  gesturesEnabled：是否支持滑动返回手势，iOS默认支持，安卓默认关闭
  gestureResponseDistance：对象覆盖触摸从屏幕边缘开始的距离，以识别手势。 它需要以下属性：
  horizontal - number - 水平方向的距离 默认为25。
- vertical - number - 垂直方向的距离 默认为135。
+ vertical - number - 垂直方向的距离 默认为135。 
  */
 
 const Tab = TabNavigator(
@@ -107,8 +108,8 @@ const Tab = TabNavigator(
                      <ZeroTabBarItem
                          tintColor={tintColor}
                          focused={focused}
-                         normalImage={{uri:'home_Normal'}}
-                         selectedImage={{uri:'home_Selected'}}
+                         normalImage={source.tabBarItem.home_Normal()}
+                         selectedImage={source.tabBarItem.home_Selected()}
                      />
                  )
              }),
@@ -121,8 +122,8 @@ const Tab = TabNavigator(
                     <ZeroTabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={{uri:'category_Normal'}}
-                        selectedImage={{uri:'category_Selected'}}
+                        normalImage={source.tabBarItem.category_Normal()}
+                        selectedImage={source.tabBarItem.category_Selected()}
                     />
                 )
             }),
@@ -135,8 +136,8 @@ const Tab = TabNavigator(
                     <ZeroTabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={{uri:'saleSell_Normal'}}
-                        selectedImage={{uri:'saleSell_Selected'}}
+                        normalImage={source.tabBarItem.saleSell_Normal()}
+                        selectedImage={source.tabBarItem.saleSell_Selected()}
                     />
                 )
             }),
@@ -149,8 +150,8 @@ const Tab = TabNavigator(
                     <ZeroTabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={{uri:'car_Normal'}}
-                        selectedImage={{uri:'car_Selected'}}
+                        normalImage={source.tabBarItem.car_Normal()}
+                        selectedImage={source.tabBarItem.car_Selected()}
                     />
                 )
             }),
@@ -163,8 +164,8 @@ const Tab = TabNavigator(
                     <ZeroTabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={{uri:'me_Normal'}}
-                        selectedImage={{uri:'me_Selected'}}
+                        normalImage={source.tabBarItem.me_Normal()}
+                        selectedImage={source.tabBarItem.me_Selected()}
                     />
                 )
             }),
