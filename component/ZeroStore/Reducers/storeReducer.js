@@ -8,12 +8,12 @@
 import StoreTypes from "../Types";
 
 const initialState = {
-    recommendList: [],
-    all: []
+    
 };
 
 export default function (state = initialState, action){
-    console.log("reducers.brand", action);
+   
+    console.log("获取首页广告数据action=======：", action)
     const { type, ..._data } = action;
     switch (type) {
         case StoreTypes.GET_HOMEADVER:

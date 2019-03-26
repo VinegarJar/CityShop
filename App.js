@@ -13,20 +13,20 @@ import {
     StatusBar,
 } from 'react-native';
 
-import {Provider} from 'react-redux'
+// import {Provider} from 'react-redux'
 import ZeroTabBar from './ZeroTabBar'
-import configureStore from './component/ZeroStore'
-const store  = configureStore()
+// import configureStore from './component/ZeroStore'
+// const store  = configureStore()
 
 export default class App extends Component {
 
     render() {
         return ( 
              
-            <Provider store={store}>
+            <View style={{flex:1}} >
                 <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#ff8e4a'} networkActivityIndicatorVisible={true}/>  
                 <ZeroTabBar/>  
-            </Provider>     
+            </View>     
         );
     }
 }

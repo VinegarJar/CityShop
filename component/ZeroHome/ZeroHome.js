@@ -42,7 +42,7 @@ import {
     ScrollView,
 } from 'react-native';
 
-
+// import { connect } from "react-redux";
 
 const {width,height} = Dimensions.get('window');
 import ZeroBanner from './ZeroBanner'
@@ -50,6 +50,8 @@ import ZeroHomeNavigator from './ZeroHomeNavigator'
 import ZeroConfig from '../ZeroTool/ZeroConfig';
 import ZeroWebScene from '../ZeroTool/ZeroWebScene';
 import ZeroSpaceView from '../ZeroTool/ZeroSpaceView';
+
+// import { getHomeAdver } from '../ZeroStore/Actions';
 
 export default class ZeroHome extends Component {
 
@@ -89,10 +91,10 @@ export default class ZeroHome extends Component {
                     activeOpacity={1}
                     onPress = {()=>this.backToTop()}>
                 <View style={styles.backToTop}>
-                    {/*<Image*/}
-                        {/*source={require('../../src/Home/search@2x.png')}*/}
-                        {/*style={styles.backToImage}*/}
-                    {/*/>*/}
+                    {/* <Image*/}
+                        {/* source={require('../../src/Home/search@2x.png')}*/}
+                        {/*style={styles.backToImage} */}
+                    {/*/> */}
                 </View>
                 </TouchableOpacity>
                 <View style={styles.footerStyles}>
@@ -145,39 +147,47 @@ export default class ZeroHome extends Component {
 
     //发送网络请求
     componentDidMount(){
-        this.requestNetwork();
+        // this.requestNetwork();
+    //     this.props.getHomeAdver({}).then((res) => {
+    //     console.log("获取经营范围数据===============", res);
+          
+    //    }).catch((error) => {
+          
+    //    });
+
+
     }
 
-    requestNetwork(){
-        fetch(ZeroConfig.api.homeHotCommendGoods_URL)
-            .then((response)=>response.json())
-            .then((responseJson)=>{
-            let items = [];
-            let {lists} = responseJson.data;
-                lists.map(
-                    (info)=>{
-                            let productList = info.productList;
-                            productList.map(
-                                (object)=>{
-                                    // console.log(object);
-                                    items.push(object);
-                                }
-                            )
-                     }
-                  )
+    // requestNetwork(){
+    //     fetch(ZeroConfig.api.homeHotCommendGoods_URL)
+    //         .then((response)=>response.json())
+    //         .then((responseJson)=>{
+    //         let items = [];
+    //         let {lists} = responseJson.data;
+    //             lists.map(
+    //                 (info)=>{
+    //                         let productList = info.productList;
+    //                         productList.map(
+    //                             (object)=>{
+    //                                 // console.log(object);
+    //                                 items.push(object);
+    //                             }
+    //                         )
+    //                  }
+    //               )
 
-                    //刷新界面数据
-                this.setState({
-                        dataSource:this.state.dataSource.cloneWithRows(items)
-                    })
-             }
+    //                 //刷新界面数据
+    //             this.setState({
+    //                     dataSource:this.state.dataSource.cloneWithRows(items)
+    //                 })
+    //          }
 
-            ).catch(
-            (error)=>{
-                console.log('错误信息'+error);
-            }
-        )
-    }
+    //         ).catch(
+    //         (error)=>{
+    //             console.log('错误信息'+error);
+    //         }
+    //     )
+    // }
 
 
     onGridSelected(url:string) {
@@ -186,7 +196,8 @@ export default class ZeroHome extends Component {
 
     backToTop(){
         // alert('发布会');
-        {_listView.scrollTo({y: 0});}
+        console.log("this.props=======>",this.props.storeReducer)
+        //{_listView.scrollTo({y: 0});}
     }
 
     scrollViewDidScroll(){
@@ -251,7 +262,7 @@ const styles = StyleSheet.create({
     },
 
     backToTop:{
-        // backgroundColor:'red',
+        backgroundColor:'red',
         width:50,
         height:50,
         position:'absolute',
@@ -271,3 +282,14 @@ const styles = StyleSheet.create({
 });
 
 
+
+
+// const mapStatetoProps = (state, props) => ({
+//     storeReducer: state.storeReducer,
+// });
+
+// const mapDispatchToProps = dispatch => ({
+//     getHomeAdver: (params) => dispatch(getHomeAdver(params)),
+// });
+
+// export default connect(mapStatetoProps, mapDispatchToProps)(ZeroHome);

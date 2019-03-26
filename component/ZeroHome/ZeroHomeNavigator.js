@@ -14,7 +14,7 @@ import {
     Image,
     TouchableOpacity,
     AlertIOS,
-    PlatformOSType
+    Platform
 } from 'react-native';
 
 
@@ -102,13 +102,14 @@ export default class ZeroHomeNavigator extends Component {
 const styles = StyleSheet.create({
 
     NavViewStyle:{
-        height:PlatformOSType=="ios"?64:84,
+        height:Platform.OS === 'ios'?64:84,
         backgroundColor: '#ff8e4a',
         //左右剧中clearColor #ff8e4a
         justifyContent: 'center',
         alignItems: 'center',
         //横向显示
         flexDirection:"row",
+
     },
     NavSearch:{
         height:36,
