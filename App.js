@@ -13,11 +13,8 @@ import {
     StatusBar,
 } from 'react-native';
 
-// import {Provider} from 'react-redux'
-import ZeroTabBar from './ZeroTabBar'
-// import configureStore from './component/ZeroStore'
-// const store  = configureStore()
 
+import ZeroTabBar from './ZeroTabBar'
 export default class App extends Component {
 
     render() {

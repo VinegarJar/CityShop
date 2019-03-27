@@ -12,12 +12,13 @@ import {
   View
 } from 'react-native';
 
-import  App from './App'
+import  App from './App';
 
 export default class ZeroCityShop extends Component {
   render() {
     return (
-        <App/>
+           <App/>
+        
     );
   }
 }
