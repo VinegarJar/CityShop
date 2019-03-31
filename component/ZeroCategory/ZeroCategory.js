@@ -9,7 +9,8 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Platform
 } from 'react-native';
 
 export default class ZeroCategory extends Component {
@@ -44,7 +45,6 @@ export default class ZeroCategory extends Component {
         //         }}
         //     />
         // ),
-        //  headerStyle: { backgroundColor: 'white' },
     })
 
     render() {

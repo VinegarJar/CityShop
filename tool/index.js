@@ -6,7 +6,7 @@
  * @Desc:  屏幕适配工具
  */
 
-import { Dimensions, PixelRatio } from 'react-native'
+import { Dimensions, PixelRatio,Platform } from 'react-native'
 // import theme from "../../themes/base-theme";
 // export let screenW = theme.deviceWidth;
 // export let screenH = theme.deviceHeight;
@@ -24,9 +24,25 @@ const w2 = 750 / DEFAULT_DENSITY;
 //px转换成dp
 const h2 = 1334 / DEFAULT_DENSITY;
 
+
+
+
 // iPhoneX
 const X_WIDTH = 375;
 const X_HEIGHT = 812;
+
+/**
+ * 判断是否为iphoneX
+ * @returns {boolean}
+ */
+export function isIphoneX() {
+    return (
+        Platform.OS === 'ios' &&
+        ((screenH === X_HEIGHT && screenW === X_WIDTH) ||
+            (screenH === X_WIDTH && screenW === X_HEIGHT))
+    )
+}
+
 
 /**
  * 设置字体的size（单位px）

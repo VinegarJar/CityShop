@@ -10,11 +10,11 @@ import {
     StyleSheet,
     Text,
     View,
-    AlertIOS,
+    StatusBar,
     Dimensions,
     ListView,
     Image,
-
+    Platform
 } from 'react-native';
 
 //第一种引用iOS关键代码
@@ -34,7 +34,7 @@ export default class ZeroMine extends Component {
 
     static navigationOptions = ({ navigation }) => ({
         title: '我的账户',
-        headerStyle: { backgroundColor: 'white' },
+        //headerTitleStyle: {fontSize: 18, color: '#666666',justifyContent:"center"},
         headerRight: (
             <View style={{ flexDirection: 'row' }}>
                 <ZeroNavigationItem
@@ -66,6 +66,7 @@ export default class ZeroMine extends Component {
 
     render() {
         return (
+            <View style={{flex:1}}>    
             <ListView
                 dataSource={this.state.dataSource}
                 renderRow={this.renderRow}
@@ -75,6 +76,7 @@ export default class ZeroMine extends Component {
                 onScroll={() =>this.scrollViewDidScroll() }
                 removeClippedSubviews={false}
             />
+            </View>
         );
     }
 

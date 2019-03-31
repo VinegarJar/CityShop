@@ -9,7 +9,7 @@
  *打包命令 react-native bundle --entry-file index.ios.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
  
  1.Duplicate interface definition for class 'RCTView' 这个错误
- 解决办法:##import "RCTView.h" 替换成 #import <React/RCTView.h>
+ 解决办法:##import <React/RCTView.h> 替换成 #import <React/RCTView.h>
  
  */
 
@@ -46,7 +46,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
- // [SplashScreen show];
+  //[SplashScreen show];
   return YES;
 }
 

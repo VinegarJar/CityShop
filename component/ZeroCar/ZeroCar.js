@@ -9,14 +9,15 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Platform
 } from 'react-native';
 
 export default class ZeroCategory extends Component {
 
     static navigationOptions = ({ navigation }) => ({
 
-        headerTitle:'购物车'
+        headerTitle:'购物车',
 
         // headerTitle: (
         //     <Text>
@@ -44,7 +45,6 @@ export default class ZeroCategory extends Component {
         //         }}
         //     />
         // ),
-        //  headerStyle: { backgroundColor: 'white' },
     })
 
     render() {

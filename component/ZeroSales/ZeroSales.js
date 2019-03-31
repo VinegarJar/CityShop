@@ -45,7 +45,7 @@ import {
     ActivityIndicator,
     Image,
     TouchableOpacity,
-
+    Platform,
 
 } from 'react-native';
 
@@ -61,7 +61,6 @@ export default class ZeroSales extends Component {
 
     static navigationOptions = ({ navigation }) => ({
         title: '特卖专区',
-        headerStyle: { backgroundColor: 'white' },
     })
 
 

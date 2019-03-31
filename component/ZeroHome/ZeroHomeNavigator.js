@@ -19,7 +19,7 @@ import {
 import ZeroScreen from '../../tool/ZeroScreen';
 import source from '../../src'
 import PropTypes from 'prop-types';
-
+import {isIphoneX} from "../../tool/index"
 
 
 class BarItem extends Component {
@@ -49,7 +49,6 @@ export default class ZeroHomeNavigator extends Component {
     render() {
         return (
             <View style={styles.NavViewStyle}>
-
                 <BarItem source={source.homeItem.home_Scan()} onPress={() => this.searchClick(0)} />
                 <TouchableOpacity activeOpacity={1} onPress={() => this.searchClick(1)}>
                     <View style={styles.NavSearch}>
@@ -89,9 +88,9 @@ export default class ZeroHomeNavigator extends Component {
 }
 
 const styles = StyleSheet.create({
-
+//Platform.OS === 'ios' ? 64 : 84
     NavViewStyle: {
-        height: Platform.OS === 'ios' ? 64 : 84,
+        height: Platform.OS === 'ios'?(isIphoneX)?118:64 : 84,
         backgroundColor: '#ff8e4a',
         justifyContent: 'space-around',
         alignItems: 'center',
