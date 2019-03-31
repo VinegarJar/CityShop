@@ -13,87 +13,76 @@ import {
     Dimensions,
     Image,
     TouchableOpacity,
-    AlertIOS,
     Platform
 } from 'react-native';
 
+import ZeroScreen from '../../tool/ZeroScreen';
+import source from '../../src'
+import PropTypes from 'prop-types';
 
 
 
-const {width} = Dimensions.get('window');
+class BarItem extends Component {
+
+    static propTypes = {
+        onPress: PropTypes.func,
+        source: PropTypes.number,
+    }
+
+    static defaultProps = {
+        source: "",
+        onPress: () => { }
+    }
+
+    render() {
+
+        const { source, onPress } = this.props;
+        return (
+            <TouchableOpacity activeOpacity={1} onPress={onPress} >
+                <Image source={source} style={{ width: 30, height: 30 }} />
+            </TouchableOpacity>
+        );
+    }
+}
+
 export default class ZeroHomeNavigator extends Component {
     render() {
         return (
             <View style={styles.NavViewStyle}>
 
-                <TouchableOpacity
-                    activeOpacity={1}
-                    style={styles.NavScanItem}
-                    onPress = {()=>this.searchClick(0)}
-                >
-                    <View style={styles.NavScanItem}>
-                        <Image
-                            source={require('../../src/Home/scan_icon@2x.png')}
-                            style={styles.NavScanIcon}
-                        />
-                    </View>
-                </TouchableOpacity>
-
-
-                <TouchableOpacity
-                    activeOpacity={1}
-                    style={styles.NavSearch}
-                    onPress = {()=>this.searchClick(1)}
-                >
+                <BarItem source={source.homeItem.home_Scan()} onPress={() => this.searchClick(0)} />
+                <TouchableOpacity activeOpacity={1} onPress={() => this.searchClick(1)}>
                     <View style={styles.NavSearch}>
-
-                        <Image
-                            source={require('../../src/Home/search@2x.png')}
-                            style={styles.NavSearchIcon}
-                        />
-                        <Text style={styles.NavViewTitleStyle}
-                        >冬季新款抢购中</Text>
+                        <Image  source={source.homeItem.home_Search()}
+                                style={styles.NavSearchIcon}/>
+                        <Text style={styles.NavViewTitleStyle}>冬季新款抢购中</Text>
                     </View>
                 </TouchableOpacity>
-
-                <TouchableOpacity
-                    activeOpacity={1}
-                    style={styles.NavNewItem}
-                    onPress = {()=>this.searchClick(2)}
-                >
-                    <View style={styles.NavNewItem}>
-                        <Image
-                            source={require('../../src/Home/news@2x.png')}
-                            style={styles.NavScanIcon}
-                        />
-                    </View>
-                </TouchableOpacity>
-
-
+                <BarItem source={source.homeItem.home_News()} onPress={() => this.searchClick(2)} />
             </View>
 
         );
     }
 
     //调用点击事件
-    searchClick(index){
+    searchClick(index) {
 
         switch (index) {
-            case 0:{
-               alert('调用点击扫码事件');
+            case 0: {
+                alert('调用点击扫码事件');
             }
-            break;
+                break;
 
-            case 1:{
+            case 1: {
                 alert('调用点击搜索事件');
             }
                 break;
-            case 2:{
-               alert('调用点击消息事件');
+            case 2: {
+                alert('调用点击消息事件');
             }
                 break;
             default:
-            break;
+                break;
         }
 
     }
@@ -101,26 +90,22 @@ export default class ZeroHomeNavigator extends Component {
 
 const styles = StyleSheet.create({
 
-    NavViewStyle:{
-        height:Platform.OS === 'ios'?64:84,
+    NavViewStyle: {
+        height: Platform.OS === 'ios' ? 64 : 84,
         backgroundColor: '#ff8e4a',
-        //左右剧中clearColor #ff8e4a
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         alignItems: 'center',
-        //横向显示
-        flexDirection:"row",
-
+        flexDirection: "row",
     },
+
     NavSearch:{
         height:36,
         backgroundColor: 'white',
-        width:width*0.7,
+        width:ZeroScreen.width*0.7,
         borderRadius:18,
         borderWidth: 1,
         borderColor: 'transparent',
-        //横向显示
         flexDirection:"row",
-        //上下剧中
         alignItems: 'center',
     },
     NavViewTitleStyle:{
@@ -128,29 +113,12 @@ const styles = StyleSheet.create({
         textAlign:'center',
         marginLeft:25,
     },
-
     NavSearchIcon:{
         width: 20,
         height: 20,
         marginLeft:25,
     },
-
-    NavScanItem:{
-        height:30,
-        width:30,
-        left:-8
-    },
-    NavScanIcon:{
-        height:25,
-        width:25,
-    },
-    NavNewItem:{
-        height:30,
-        width:30,
-        // backgroundColor: 'red',
-        left:8
-    },
-
+    
 });
 
 

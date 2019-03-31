@@ -9,7 +9,8 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Platform
 } from 'react-native';
 
 import {
@@ -198,7 +199,7 @@ const Navigator = StackNavigator(
             headerBackTitle: null,
             headerTintColor: '#333333',
             showIcon: true,
-            headerStyle: { backgroundColor: ZeroColor.theme }
+            headerStyle: { backgroundColor: ZeroColor.theme,}
         },
     },
 

@@ -8,14 +8,14 @@
 
 
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, WebView, InteractionManager } from 'react-native';
+import { View, Platform, StyleSheet, WebView, InteractionManager } from 'react-native';
 
 
 
 export default class ZeroWebScene extends Component {
 
     static navigationOptions = ({ navigation }) => ({
-        headerStyle: { backgroundColor: 'white' },
+        headerStyle: { backgroundColor: '#ff8e4a', height: Platform.OS === 'ios' ? 64 : 84, },
         title: navigation.state.params.title,
     });
 
@@ -24,7 +24,7 @@ export default class ZeroWebScene extends Component {
         this.state = {
             source: {}
         }
-        this.props.navigation.setParams({title: '加载中'})
+        this.props.navigation.setParams({ title: '加载中..' })
     }
 
     render() {
@@ -42,19 +42,18 @@ export default class ZeroWebScene extends Component {
         );
     }
 
-    componentDidMount() {
+    componentWillMount() {
         InteractionManager.runAfterInteractions(() => {
-            this.setState({ source:
-            {uri:this.props.navigation.state.params.url }
-            })
+            this.setState({ source: { uri: this.props.navigation.state.params.url } })
         })
     }
 
-    onLoadEnd(e){
-        if (e.nativeEvent.title.length > 0) {
+    onLoadEnd(e) {
+        if (e.nativeEvent.title.length > 0&&e.nativeEvent.title!=="about:blank") {
             this.props.navigation.setParams({ title: e.nativeEvent.title })
         }
     }
+    
 }
 
 

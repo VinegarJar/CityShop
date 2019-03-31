@@ -17,23 +17,21 @@ import Swiper from 'react-native-swiper';
 import ZeroScreen from '../../tool/ZeroScreen';
 import PropTypes from 'prop-types';
 
-var ImageData  = require('../../data.json');
-
-
-
 export default class ZeroBanner extends Component {
 
     static propTypes = {
         items: PropTypes.array,//轮播数据源
+        onGridSelected:PropTypes.func,
     }
 
     static defaultProps = {
         items:require('../../data.json').data,
+        onGridSelected:()=>{}
     }
 
 
     render() {
-        const { items, } = this.props;
+        const { items,onGridSelected } = this.props;
         return (
             <Swiper
                 style={{ backgroundColor: "#efeff4", }}
@@ -47,9 +45,9 @@ export default class ZeroBanner extends Component {
                     items.map((item, index) => {
                         return (
                             <View style={styles.imageView} key={index}>
-                                {
+                                 <TouchableOpacity activeOpacity={1} onPress={() =>{onGridSelected(item.link)}}>
                                     <Image style={styles.imageStyle} key={index} source={{ uri: item ? item.pic : "error_url" }} />
-                                }
+                                 </TouchableOpacity>
                             </View>
                         )
                     })

@@ -14,4 +14,11 @@ export default {
     },
 
 
+    homeItem:{
+        home_Scan: () => { return require('./Home/scan_icon.png') },
+        home_Search: () => { return require('./Home/search.png') },
+        home_News: () => { return require('./Home/news.png') },
+    },
+
+
 }
