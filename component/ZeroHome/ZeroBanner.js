@@ -16,7 +16,7 @@ import {
 import Swiper from 'react-native-swiper';
 import ZeroScreen from '../../tool/ZeroScreen';
 import PropTypes from 'prop-types';
-
+import {CachedImage} from "react-native-img-cache";
 export default class ZeroBanner extends Component {
 
     static propTypes = {
@@ -46,7 +46,7 @@ export default class ZeroBanner extends Component {
                         return (
                             <View style={styles.imageView} key={index}>
                                  <TouchableOpacity activeOpacity={1} onPress={() =>{onGridSelected(item.link)}}>
-                                    <Image style={styles.imageStyle} key={index} source={{ uri: item ? item.pic : "error_url" }} />
+                                    <CachedImage style={styles.imageStyle} key={index} source={{ uri: item ? item.pic : "error_url" }} />
                                  </TouchableOpacity>
                             </View>
                         )
