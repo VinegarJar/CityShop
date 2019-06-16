@@ -35,7 +35,7 @@ export default class ZeroBanner extends Component {
         return (
             <Swiper
                 style={{ backgroundColor: "#efeff4", }}
-                height={230}
+                height={210}
                 key={items.length}
                 autoplayTimeout={4} autoplay={true}
                 showsPagination={true} horizontal={true}
