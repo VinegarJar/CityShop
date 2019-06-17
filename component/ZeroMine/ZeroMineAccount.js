@@ -24,7 +24,7 @@ export default class ZeroMineAccount extends Component {
                 onPress = {() => this.props.onTouchableOpacity(1)}
             >
                 <Image
-                    source={require('../../src/Mine/icon_user_avatar_anonymous@2x.png')}
+                    source={require('../../src/Mine/icon_user_avatar_anonymous.png')}
                     style={styles.mineImageStyle}
                     resizeMethod='auto'
                 />
@@ -44,7 +44,7 @@ export default class ZeroMineAccount extends Component {
                 <TouchableOpacity onPress = {() => this.props.onTouchableOpacity(3)}>
             <View style={styles.tagViewStyle}>
                     <Image
-                        source={require('../../src/Mine/shar@2x.png')}
+                        source={require('../../src/Mine/shar.png')}
                         style={styles.tagImageStyle}
                         resizeMethod='auto'
                     />

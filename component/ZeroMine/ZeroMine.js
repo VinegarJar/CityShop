@@ -38,13 +38,13 @@ export default class ZeroMine extends Component {
         headerRight: (
             <View style={{ flexDirection: 'row' }}>
                 <ZeroNavigationItem
-                    icon={require('../../src/Mine/icon_navigationItem_set_white@2x.png')}
+                    icon={require('../../src/Mine/icon_navigationItem_set_white.png')}
                     onPress={() => {
-                       alert('调用设置事件');
+                       alert('xxxx');
                     }}
                 />
                 <ZeroNavigationItem
-                    icon={require('../../src/Mine/icon_navigationItem_message_white@2x.png')}
+                    icon={require('../../src/Mine/icon_navigationItem_message_white.png')}
                     onPress={() => {
                         alert('调用消息事件');
                     }}

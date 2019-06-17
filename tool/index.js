@@ -1,16 +1,12 @@
 /*
- * @Creator: 朱子豪 
+ * @Creator: CHENMEIAN 
  * @Date: 2018-11-19 14:31:09 
- * @Last Modified by: 朱子豪
+ * @Last Modified by: CHENMEIAN 
  * @Last Modified time: 2019-02-20 15:36:54
  * @Desc:  屏幕适配工具
  */
 
 import { Dimensions, PixelRatio,Platform } from 'react-native'
-// import theme from "../../themes/base-theme";
-// export let screenW = theme.deviceWidth;
-// export let screenH = theme.deviceHeight;
-
 const screenW = Dimensions.get('window').width
 const screenH = Dimensions.get('window').height
 
@@ -112,99 +108,6 @@ export function checkUrl(url) {
 }
 
 
-/** 
-  * js截取字符串，中英文都能用 
-  * @param str：需要截取的字符串 
-  * @param len: 需要截取的长度 
-  */
-export function cutString(str, len) {
-    var str_length = 0;
-    var str_len = 0;
-    str_cut = new String();
-    str_len = str.length;
-    for (var i = 0; i < str_len; i++) {
-        a = str.charAt(i);
-        str_length++;
-        if (escape(a).length > 4) {
-            //中文字符的长度经编码之后大于4  
-            str_length++;
-        }
-        str_cut = str_cut.concat(a);
-        if (str_length >= len) {
-            str_cut = str_cut.concat("...");
-            return str_cut;
-        }
-    }
-    //如果给定字符串小于指定长度，则返回源字符串；  
-    if (str_length < len) {
-        return str;
-    }
-}
-
-export function checkArray(array) {
-    if (array === null || array === undefined || array.length == 0) {
-        return false;
-    } else {
-        return true;
-    }
-}
-
-
-export function checkBuyer(identity_id: string,buyer:string)  {
-    if(buyer&&buyer.indexOf(identity_id)!=-1){// !=-1含有 ==-1不含有
-      console.log("yes",identity_id,buyer);
-      return true;
-    }else{
-      console.log("no",identity_id,buyer);
-      return false;
-    }
-}
-
-export function checkBool(relation)  {
-    if (relation === null || relation === undefined || relation == 0) {
-        return false;
-    } else {
-        return true;
-    }
-}
-
-export function GoodsCategory(goods) {
-    switch (goods) {
-        case 0:
-            return "Original";
-            break;
-        case 1: return "Brands";
-            break;
-        case 2: return "OME";
-            break;
-        case 3: return "split";
-            break;
-        case 4: return "om";
-            break;
-        default:
-            break;
-    }
-}
-
-
-export function GoodsCategoryColor(goods) {
-    switch (goods) {
-        case 0:
-            return "#07BFA7";
-            break;
-        case 1: return "#3F50F3";
-            break;
-        case 2: return "#17CAD9";
-            break;
-        case 3: return "#FFC24C";
-            break;
-        case 4: //return "#09CAB1";
-            return "#4B4B4B";
-            break;
-        default:
-            break;
-    }
-}
 
 export function validate(phoneNumber: string) {
     //只能输入数字

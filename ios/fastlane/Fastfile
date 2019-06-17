@@ -1,0 +1,20 @@
+
+default_platform(:ios)
+platform :ios do
+  desc "测试ipa"
+ lane :test_name do # test_name 随便名称 
+  build_app(
+       scheme:"ZeroCityShop",#工程名称
+       export_method:"ad-hoc",#输出类型
+        output_dircttory:"./fastlane/package",#导出文件所在的文件夹路径
+        configuration:"Release",#配置（debug,release,ad-hoc） 
+ ) 
+  firim(firim_api_token:"ff0c0cf598bac421fac4d9089d126ef4")
+ end
+end
+
+
+
+
+
+

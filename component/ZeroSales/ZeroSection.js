@@ -24,13 +24,13 @@ export default class ZeroSection extends Component {
         return (
             <View style={styles.container}>
                 <Image
-                    source={require('../../src/Sales/adorn_icon@2x.png')}
+                    source={require('../../src/Sales/adorn_icon.png')}
                     style={styles.hotSalesImage}
                     resizeMethod='auto'
                 />
                 <Text style={styles.textStyle}>{title}</Text>
                 <Image
-                    source={require('../../src/Sales/adorn_icon@2x.png')}
+                    source={require('../../src/Sales/adorn_icon.png')}
                     style={styles.hotSalesImage}
                     resizeMethod='auto'
                 />

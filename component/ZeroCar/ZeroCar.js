@@ -30,7 +30,7 @@ export default class ZeroCategory extends Component {
         // ),
         // headerRight: (
         //     <NavigationItem
-        //         icon={require('../../img/Home/icon_navigationItem_message_white@2x.png')}
+        //         icon={require('../../img/Home/icon_navigationItem_message_white.png')}
         //         onPress={() => {
         //
         //         }}

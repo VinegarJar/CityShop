@@ -63,10 +63,10 @@ export default class ZeroShare extends Component {
     getDataList() {
         return(
             [
-                { title: '签到中心', image: require('../../src/Mine/shar@2x.png'),indexPath:0},
-                { title: '邀请好友', image: require('../../src/Mine/shar@2x.png'),indexPath:1},
-                { title: '帮助中心', image: require('../../src/Mine/shar@2x.png'),indexPath:2},
-                { title: '意见反馈', image: require('../../src/Mine/shar@2x.png'),indexPath:3}
+                { title: '签到中心', image: require('../../src/Mine/shar.png'),indexPath:0},
+                { title: '邀请好友', image: require('../../src/Mine/shar.png'),indexPath:1},
+                { title: '帮助中心', image: require('../../src/Mine/shar.png'),indexPath:2},
+                { title: '意见反馈', image: require('../../src/Mine/shar.png'),indexPath:3}
             ]
         );
     }

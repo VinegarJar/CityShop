@@ -18,12 +18,16 @@ import {
     ScrollView,
 } from 'react-native';
 
+import { connect } from "react-redux";
+import { getHomeAdver } from '../../reducers/postAction';
 
-import ZeroBanner from './ZeroBanner'
-import ZeroHomeNavigator from './ZeroHomeNavigator'
 
 
-export default class ZeroHome extends Component {
+import ZeroBanner from './ZeroBanner';
+import ZeroHomeNavigator from './ZeroHomeNavigator';
+
+
+class ZeroHome extends Component {
 
     constructor(props) {
         super(props);
@@ -31,7 +35,6 @@ export default class ZeroHome extends Component {
 
         }
     }
-
 
 
     render() {
@@ -63,7 +66,7 @@ export default class ZeroHome extends Component {
 
     //发送网络请求
     componentDidMount() {
-
+        this.props.getHomeAdver();
     }
 
 
@@ -84,3 +87,12 @@ const styles = StyleSheet.create({
 });
 
 
+const mapStatetoProps = (state, props) => ({
+  post: state.post,
+});
+
+const mapDispatchToProps = dispatch => ({
+   getHomeAdver: () => dispatch(getHomeAdver()),
+});
+
+export default connect(mapStatetoProps, mapDispatchToProps)(ZeroHome);

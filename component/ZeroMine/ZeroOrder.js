@@ -54,10 +54,10 @@ export default class ZeroOrder extends Component {
     getDataList() {
         return(
             [
-                { title: '待付款',  image: require('../../src/Mine/icon_MeMain_WaitPayment@2x.png') },
-                { title: '待收货', image: require('../../src/Mine/icon_MeMain_WaitReceiveGoods@2x.png') },
-                { title: '待评价',  image: require('../../src/Mine/icon_MeMain_WaitDeliverGoods@2x.png') },
-                { title: '退货/售后', image: require('../../src/Mine/icon_MeMain_RefundRepair@2x.png') }
+                { title: '待付款',  image: require('../../src/Mine/icon_MeMain_WaitPayment.png') },
+                { title: '待收货', image: require('../../src/Mine/icon_MeMain_WaitReceiveGoods.png') },
+                { title: '待评价',  image: require('../../src/Mine/icon_MeMain_WaitDeliverGoods.png') },
+                { title: '退货/售后', image: require('../../src/Mine/icon_MeMain_RefundRepair.png') }
             ]
         );
     }

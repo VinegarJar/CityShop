@@ -39,10 +39,10 @@ export default class ZeroHistory extends Component {
     getDataList() {
         return(
             [
-                { title: '我的收藏',  image: require('../../src/Mine/icon_mine_collection@2x.png') },
-                { title: '社区', image: require('../../src/Mine/icon_mine_aboutmeituan@2x.png') },
-                { title: '客户服务',  image: require('../../src/Mine/icon_mine_customerService@2x.png') },
-                { title: '我的卡包', image: require('../../src/Mine/icon_mine_member@2x.png') }
+                { title: '我的收藏',  image: require('../../src/Mine/icon_mine_collection.png') },
+                { title: '社区', image: require('../../src/Mine/icon_mine_aboutmeituan.png') },
+                { title: '客户服务',  image: require('../../src/Mine/icon_mine_customerService.png') },
+                { title: '我的卡包', image: require('../../src/Mine/icon_mine_member.png') }
             ]
         );
     }
