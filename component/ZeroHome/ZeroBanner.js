@@ -14,7 +14,7 @@ import {
 
 
 import Swiper from 'react-native-swiper';
-import ZeroScreen from '../../tool/ZeroScreen';
+import {screenWidth }  from '../../tool/ZeroScreen';
 import PropTypes from 'prop-types';
 import {CachedImage} from "react-native-img-cache";
 export default class ZeroBanner extends Component {
@@ -66,14 +66,14 @@ export default class ZeroBanner extends Component {
 const styles = StyleSheet.create({
 
     imageView: {
-        width: ZeroScreen.width,
+        width: screenWidth,
         alignItems: 'center',
         justifyContent: 'center',
     },
 
     imageStyle: {
         height: 210,
-        width: ZeroScreen.width,
+        width: screenWidth,
     },
 
     //原点黑色样式

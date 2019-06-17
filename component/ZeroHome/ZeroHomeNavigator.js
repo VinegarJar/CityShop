@@ -16,7 +16,7 @@ import {
     Platform
 } from 'react-native';
 
-import ZeroScreen from '../../tool/ZeroScreen';
+import { screenWidth }  from '../../tool/ZeroScreen';
 import source from '../../src'
 import PropTypes from 'prop-types';
 import {isIphoneX} from "../../tool/index"
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     NavSearch:{
         height:36,
         backgroundColor: 'white',
-        width:ZeroScreen.width*0.7,
+        width: screenWidth*0.7,
         borderRadius:18,
         borderWidth: 1,
         borderColor: 'transparent',
