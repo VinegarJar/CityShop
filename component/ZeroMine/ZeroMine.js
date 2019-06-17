@@ -23,13 +23,15 @@ var { NativeModules } = require('react-native');
 
 
 import  ZeroNavigationItem from '../../ZeroNavigationItem'
-import ZeroConfig from '../ZeroTool/ZeroConfig';
 import ZeroSpaceView from '../ZeroTool/ZeroSpaceView';
 import ZeroOrder from './ZeroOrder';
 import ZeroHistory from './ZeroHistory';
 import ZeroMineAccount from './ZeroMineAccount';
 import ZeroShare from './ZeroShare';
 const {width,height} = Dimensions.get('window');
+
+import {apiUrl} from '../../tool/url';
+
 export default class ZeroMine extends Component {
 
     static navigationOptions = ({ navigation }) => ({
@@ -142,7 +144,7 @@ export default class ZeroMine extends Component {
     }
 
     requestNetwork(){
-        fetch(ZeroConfig.api.homeHotCommendGoods_URL)
+        fetch(apiUrl.homeHotCommendGoods_URL)
             .then((response)=>response.json())
             .then((responseJson)=>{
                     let items = [];

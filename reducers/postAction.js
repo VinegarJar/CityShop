@@ -1,8 +1,17 @@
 
-
-
 import PostTypes from "./postType";
 const  {GET_HOMEADVER } = PostTypes;
+
+
+
+
+//定义一个请求方法
+export  const  getFetchRequest = (url,params)=> dispatch=>{
+    console.log("getHomeAdver");
+    
+
+
+}
 
 
 //定义一个请求方法

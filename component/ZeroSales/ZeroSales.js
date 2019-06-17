@@ -51,7 +51,7 @@ import {
 
 const {width,height}=Dimensions.get('window');
 
-import ZeroConfig from '../ZeroTool/ZeroConfig';
+import {apiUrl} from '../../tool/url';
 import ZeroSpaceView from '../ZeroTool/ZeroSpaceView';
 import ZeroSalesSection from './ZeroSection';
 import ZeroHotGoodsCell from './ZeroHotGoodsCell';
@@ -138,7 +138,7 @@ export default class ZeroSales extends Component {
 
 
     requestNetwork(){
-        fetch(ZeroConfig.api.saleHotStyle_URL)
+        fetch(apiUrl.saleHotStyle_URL)
             .then((response)=>response.json())
             .then((responseJson)=>{
                     let items = [];
@@ -163,7 +163,7 @@ export default class ZeroSales extends Component {
 
 
     requestBrandSale(){
-        fetch(ZeroConfig.api.brandHotGoods_URL)
+        fetch(apiUrl.brandHotGoods_URL)
             .then((response)=>response.json())
             .then((responseJson)=>{
 

@@ -199,7 +199,7 @@ const Navigator = StackNavigator(
             headerBackTitle: null,
             headerTintColor: '#333333',
             showIcon: true,
-            headerStyle: { backgroundColor: ZeroColor.theme,height: Platform.OS === 'ios' ? 44 : 64}
+            headerStyle: { backgroundColor: ZeroColor.theme,height: Platform.OS === 'ios' ? 44 :70}
         },
     },
 
