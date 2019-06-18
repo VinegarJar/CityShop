@@ -8,5 +8,6 @@
 export default PostTypes = {
 
     GET_HOMEADVER:"GET_HOMEADVER",//获取首页广告
+    GET_HOMEGOOSLIST:" GET_HOMEGOOSLIST",//获取首页列表数据
 
 }

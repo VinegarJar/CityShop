@@ -19,8 +19,8 @@ import {
 } from 'react-native';
 
 import { connect } from "react-redux";
-import { getHomeAdver } from '../../reducers/postAction';
-
+import { getHomeAdver,requestGet } from '../../reducers/postAction';
+import {apiUrl} from '../../tool/url';
 
 
 import ZeroBanner from './ZeroBanner';
@@ -65,13 +65,16 @@ class ZeroHome extends Component {
 
 
     //发送网络请求
+
+
     componentDidMount() {
-        this.props.getHomeAdver();
+        this.props.requestGet(apiUrl.homeGoodsList_URL,{"size":"50", "page":1});
     }
 
 
     onGridSelected(url: string) {
-        this.props.navigation.navigate('ZeroWebScene', { url: url })
+        //this.props.navigation.navigate('ZeroWebScene', { url: url })
+        console.log("=======>",this.props.post); 
     }
 
 
@@ -93,6 +96,7 @@ const mapStatetoProps = (state, props) => ({
 
 const mapDispatchToProps = dispatch => ({
    getHomeAdver: () => dispatch(getHomeAdver()),
+   requestGet: (url,params) => dispatch(requestGet(url,params)),
 });
 
 export default connect(mapStatetoProps, mapDispatchToProps)(ZeroHome);

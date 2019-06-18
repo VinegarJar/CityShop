@@ -27,9 +27,9 @@ const handleUrl = url => params => {
             dataArray.push(key+"="+encodeURIComponent(params[key]))
         })
         if (url.search(/\?/)){
-            return typeof  params === 'object' ? url += "?"+params.join("&") : url
+            return typeof  params === 'object' ? url += "?"+dataArray.join("&") : url
         }else {
-            url += "&"+params.join("&")
+            url += "&"+dataArray.join("&")
         }
         return url
     }else {
@@ -37,19 +37,19 @@ const handleUrl = url => params => {
     }
 }
 
+
 export default class HttpUtil extends Component{
-    static getRequest = (url,params={},headers)=>{
-        console.log("url=>"+url)
-        console.log(params)
-        console.log(headers)
+    static getRequest = (url,params)=>{
+        const headers = {'Content-Type': 'multipart/form-data'};
+        console.log("get网络请求数据url=\n,参数params=\n",url,params)
         return timeoutFetch(fetch(handleUrl(url)(params),{
             method:'GET',
             headers:headers,
         })).then((response)=>{
-            if(response.ok){
+            if(response.status==200){
                 return response.json();
             }else {
-                alert("网络繁忙，重新再试")
+                console.log("网络繁忙，重新再试")
             }
         }).then((response)=>{
             return response
@@ -58,9 +58,9 @@ export default class HttpUtil extends Component{
         })
     }
 
-    static postRequest = (url,params = {},headers) => {
-        console.log("url+postRequest=>"+url)
-        console.log(params)
+    static postRequest = (url,params = {},_headers) => {
+        console.log("url+postRequest=>"+url,params)
+        const headers = {'Content-Type': 'multipart/form-data', ..._headers};
         return timeoutFetch(fetch(url,{
             method:'POST',
             headers:headers,
@@ -69,12 +69,12 @@ export default class HttpUtil extends Component{
             if (result.ok){
                 return result.json();
             }else {
-                alert("网络繁忙，请稍后再试");
+                console.log("网络繁忙，请稍后再试");
             }
         }).then(response =>{
             return response
         }).catch((error)=>{
-            alert("出现错误了"+error)
+            console.log("出现错误了"+error)
         })
     }
 }

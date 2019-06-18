@@ -1,16 +1,20 @@
 
+import HttpRequest from '../tool/fetchRequest'
 import PostTypes from "./postType";
-const  {GET_HOMEADVER } = PostTypes;
+const  {GET_HOMEADVER, GET_HOMEGOOSLIST } = PostTypes;
 
 
 
 
 //定义一个请求方法
-export  const  getFetchRequest = (url,params)=> dispatch=>{
-    console.log("getHomeAdver");
-    
+export  const  requestGet = (url,params={})=> dispatch=>{
 
-
+    HttpRequest.getRequest(url,params).then((response) =>{
+        dispatch({
+             type: GET_HOMEGOOSLIST,
+             data: response
+        })
+    })
 }
 
 
