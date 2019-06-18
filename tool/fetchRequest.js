@@ -35,13 +35,16 @@ const handleUrl = url => params => {
     }else {
         return url
     }
+
+   
 }
 
 
 export default class HttpUtil extends Component{
     static getRequest = (url,params)=>{
         const headers = {'Content-Type': 'multipart/form-data'};
-        console.log("get网络请求数据url=\n,参数params=\n",url,params)
+
+        console.log("get网络请求数据url=",handleUrl(url)(params))
         return timeoutFetch(fetch(handleUrl(url)(params),{
             method:'GET',
             headers:headers,

@@ -8,6 +8,7 @@
 #import "AppDelegate.h"
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <React/RCTDevLoadingView.h>
 #import "SplashScreen.h"
 
 @implementation AppDelegate
@@ -15,20 +16,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   
-  NSURL *jsCodeLocation;
-
+  RCTRootView *rootView ;
 #ifdef DEBUG
- jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+  
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil]
+                                            moduleProvider:nil
+                                             launchOptions:launchOptions];
+  [bridge moduleForClass:[RCTDevLoadingView class]];
+  rootView = [[RCTRootView alloc] initWithBridge:bridge
+                                      moduleName:@"ZeroCityShop"
+                               initialProperties:nil];
+  
 #else
-  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+  rootView = [[RCTRootView alloc] initWithBundleURL:[[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"]
+                                         moduleName:@"ZeroCityShop"
+                                  initialProperties:nil
+                                      launchOptions:launchOptions];
 #endif
   
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"ZeroCityShop"
-                                               initialProperties:nil
-                                                   launchOptions:launchOptions];
-  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
 
+  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;

@@ -11,7 +11,7 @@ const  apiUrl = {
     //特卖场-爆款商品
     saleHotStyle_URL:'http://baseservice_cms.cjwsc.com/Sale/HotStyleSale',
     // 首页商品列表  NSDictionary *dic = @{@"size":@"50", @"page":page};
-    homeGoodsList_URL:'http://apiv2.yangkeduo.com/v2/goods?',
+    homeGoodsList_URL:'http://apiv2.yangkeduo.com/v2/goods',
 }
 
 export {apiUrl}
