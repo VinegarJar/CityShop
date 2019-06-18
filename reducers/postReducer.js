@@ -10,8 +10,7 @@ const initialState = {
 
 export default function (state = initialState, action){
    
-    console.log("postReducer===========>", action)
-    const { type,  } = action;
+    const { type } = action;
     switch (type) {
         case GET_HOMEADVER:
             return {
