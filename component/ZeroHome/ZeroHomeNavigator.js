@@ -88,7 +88,6 @@ export default class ZeroHomeNavigator extends Component {
 }
 
 const styles = StyleSheet.create({
-//Platform.OS === 'ios' ? 64 : 84
     NavViewStyle: {
         height: Platform.OS === 'ios'?64:80,
         backgroundColor: '#ff8e4a',
@@ -99,7 +98,7 @@ const styles = StyleSheet.create({
 
     NavSearch:{
         height:36,
-        backgroundColor: 'white',
+        backgroundColor: '#FFFFFF',
         width: screenWidth*0.7,
         borderRadius:18,
         borderWidth: 1,
