@@ -40,16 +40,19 @@ class ZeroHome extends Component {
 
 
     render() {
+
+        const { data:{ goods_list = []} } = this.props.post;
+
         return (
             <Container style={styles.container}>
                 <ZeroHomeNavigator />
-                <ScrollView style={{flex:1,backgroundColor:"#fff"}}>
+                {/* <ScrollView style={{flex:1,backgroundColor:"#fff"}}>
                     <ZeroBanner onGridSelected={(url) => this.onGridSelected(url)} />
                      <View>
                        <FontAwesome size={20} name={"wpforms"} ></FontAwesome>
                      </View>
-                </ScrollView>
-                {/* <FlatList
+                </ScrollView> */}
+                <FlatList
                     removeClippedSubviews={false}
                     style={styles.flatListStyle}
                     contentContainerStyle={styles.cellViewStyle}
@@ -57,6 +60,7 @@ class ZeroHome extends Component {
                     keyExtractor={(item, index) => index.toString()}
                     ItemSeparatorComponent={this.separator}
                     ListHeaderComponent={this.renderHeader}
+                    numColumns={2}
                     // refreshControl={
                     //     <RefreshControl
                     //         colors={["#4D78E7"]}
@@ -67,8 +71,8 @@ class ZeroHome extends Component {
                     // onScroll={this._onScroll}
                     // onEndReached={() => this.onLoadMore()}
                     // onEndReachedThreshold={0.1}
-                    data={dataSource}>
-                </FlatList> */}
+                    data={goods_list}>
+                </FlatList>
             </Container>
         );
     }
@@ -80,7 +84,7 @@ class ZeroHome extends Component {
        
         return (
             <View >
-             
+                <Text >{"hahahahaha"}</Text>
             </View>
         )
     }
@@ -113,7 +117,9 @@ class ZeroHome extends Component {
 
     onGridSelected(url: string) {
         //this.props.navigation.navigate('ZeroWebScene', { url: url })
-        console.log("=======>",this.props.post); 
+         const { data:{ goods_list = []} } = this.props.post;
+
+        console.log("=======>",goods_list); 
     }
 
 
