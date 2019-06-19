@@ -11,7 +11,7 @@ import {
     Text,
     View,
     AlertIOS,
-    ListView,
+    FlatList,
     Image,
     TouchableOpacity,
     Dimensions,
@@ -19,10 +19,11 @@ import {
 } from 'react-native';
 
 import { connect } from "react-redux";
-import { Container } from 'native-base';
+import { Container} from 'native-base';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {getGoodsList } from '../../reducers/postAction';
 import {apiUrl} from '../../tool/url';
-
+import { scaleSize } from '../../tool/index'
 
 import ZeroBanner from './ZeroBanner';
 import ZeroHomeNavigator from './ZeroHomeNavigator';
@@ -33,7 +34,7 @@ class ZeroHome extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+          
         }
     }
 
@@ -42,10 +43,32 @@ class ZeroHome extends Component {
         return (
             <Container style={styles.container}>
                 <ZeroHomeNavigator />
-                <ScrollView style={{flex:1,backgroundColor:"orange"}}>
+                <ScrollView style={{flex:1,backgroundColor:"#fff"}}>
                     <ZeroBanner onGridSelected={(url) => this.onGridSelected(url)} />
+                     <View>
+                       <FontAwesome size={20} name={"wpforms"} ></FontAwesome>
+                     </View>
                 </ScrollView>
-
+                {/* <FlatList
+                    removeClippedSubviews={false}
+                    style={styles.flatListStyle}
+                    contentContainerStyle={styles.cellViewStyle}
+                    renderItem={this.renderItem}
+                    keyExtractor={(item, index) => index.toString()}
+                    ItemSeparatorComponent={this.separator}
+                    ListHeaderComponent={this.renderHeader}
+                    // refreshControl={
+                    //     <RefreshControl
+                    //         colors={["#4D78E7"]}
+                    //         refreshing={this.state.isRefresh}
+                    //         onRefresh={() => this.onRefresh()}
+                    //     />
+                    // }
+                    // onScroll={this._onScroll}
+                    // onEndReached={() => this.onLoadMore()}
+                    // onEndReachedThreshold={0.1}
+                    data={dataSource}>
+                </FlatList> */}
             </Container>
         );
     }
@@ -53,7 +76,20 @@ class ZeroHome extends Component {
 
 
 
-    renderHeader() {
+    renderItem = (item) => {
+       
+        return (
+            <View >
+             
+            </View>
+        )
+    }
+
+    separator = () => {
+        return <View style={{height:2,backgroundColor:'yellow'}}/>;
+    }
+
+    renderHeader = () => {
         return (
             <View>
                 <ZeroBanner onGridSelected={(url) => this.onGridSelected(url)} />
@@ -89,7 +125,16 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-
+    cellViewStyle: {
+        flexDirection: 'row',
+        justifyContent: "space-between",
+        flexWrap: 'wrap',
+    },
+    flatListStyle: {
+        marginLeft: scaleSize(30),
+        marginRight: scaleSize(30),
+        backgroundColor:"#F5F5F9"
+    },
 });
 
 

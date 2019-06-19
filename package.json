@@ -16,6 +16,7 @@
 		"react-native-img-cache": "^1.6.0",
 		"react-native-splash-screen": "^3.0.6",
 		"react-native-swiper": "^1.5.14",
+		"react-native-vector-icons": "^6.5.0",
 		"react-native-webview-bridge": "^0.33.0",
 		"react-navigation": "^1.0.0-beta.22",
 		"react-redux": "^6.0.1",
