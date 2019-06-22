@@ -604,7 +604,8 @@ export default {
                     }
                 ],
                 "tabName":"更多推荐"
-            }
+            },
+            
         ]
     },
 

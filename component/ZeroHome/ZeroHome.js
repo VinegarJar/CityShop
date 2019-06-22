@@ -174,7 +174,6 @@ class ZeroHome extends Component {
     }
 
     onRefresh = () => {
-        this.getGoodsList();
         this.setState({ isRefresh: true, });
         let timer = setTimeout(() => {
             clearTimeout(timer)
@@ -206,7 +205,7 @@ class ZeroHome extends Component {
                             return (
                                 <View style={{ width: "25%", paddingVertical: scaleSize(15) }} key={index}>
                                     <TouchableOpacity onPress={() => { alert(item.name) }} activeOpacity={1} key={index} style={{ justifyContent: "center", alignItems: "center", }}>
-                                        <Image style={{ width: scaleSize(150), height: scaleSize(150), resizeMode: "center" }} source={item.pic} />
+                                        <Image style={{ width: scaleSize(100), height: scaleSize(100), resizeMode: "center" }} source={item.pic} />
                                         <Text style={styles.titleStyle}>{item.name}</Text>
                                     </TouchableOpacity>
                                 </View>
@@ -252,9 +251,7 @@ class ZeroHome extends Component {
 
     onGridPress(item: object) {
         //console.log("item=======>", item);
-        const { data_list = [] } = source.data;
-        // let data = source.data.data;
-        console.log("item=======>", data_list);
+        alert(item.short_name)
     }
 
 
@@ -285,7 +282,7 @@ const styles = StyleSheet.create({
     titleStyle: {
         fontSize: scaleSize(26),
         color: "#333333",
-        fontFamily: 'semiboldFontFamily',
+       // fontFamily: 'semiboldFontFamily',
     },
 
     textStyle: {
