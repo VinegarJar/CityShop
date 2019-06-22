@@ -10,7 +10,7 @@ import {
     StyleSheet,
     Text,
     View,
-    AlertIOS,
+    RefreshControl,
     FlatList,
     Image,
     TouchableOpacity,
@@ -19,14 +19,58 @@ import {
 } from 'react-native';
 
 import { connect } from "react-redux";
-import { Container} from 'native-base';
+import { Container } from 'native-base';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import {getGoodsList } from '../../reducers/postAction';
-import {apiUrl} from '../../tool/url';
-import { scaleSize } from '../../tool/index'
+import { CachedImage } from "react-native-img-cache";
+import PropTypes from 'prop-types';
 
+
+
+import { getGoodsList } from '../../reducers/postAction';
+import { apiUrl } from '../../tool/url';
+import { scaleSize } from '../../tool/index'
+import { screenWidth } from '../../tool/ZeroScreen';
 import ZeroBanner from './ZeroBanner';
 import ZeroHomeNavigator from './ZeroHomeNavigator';
+
+
+
+export class ZeroListItem extends Component {
+
+
+    static propTypes = {
+        item: PropTypes.object,//轮播数据源
+        onGridPress: PropTypes.func,
+    }
+
+    static defaultProps = {
+        item: {},
+        onGridPress: () => {}
+    }
+
+    render() {
+
+        const { item, onGridPress  } = this.props;
+        const { hd_thumb_url = null,goods_name = null ,group = null, sales_tip = null, short_name =null} = item;
+ 
+        return (
+            <View style={styles.cellItemStyle} >
+                <TouchableOpacity onPress={onGridPress} activeOpacity={1}>
+                    <CachedImage style={styles.imageStyle} resizeMode='stretch' source={{ uri: item ? hd_thumb_url : "error_url" }} />
+                    <View style={{ width: "100%", paddingHorizontal: scaleSize(10),marginVertical:scaleSize(5) }}>
+                         <Text style={styles.titleStyle}>{short_name}</Text>
+                    </View>
+                    <View style={{ width: "100%", paddingHorizontal: scaleSize(10),marginVertical:scaleSize(5), flexDirection: 'row',justifyContent: "space-between",}}>
+                         <Text style={styles.textStyle}>{"¥"+group.price.toFixed(2) }</Text>
+                         <Text style={styles.textStyle}>{sales_tip}</Text>
+                    </View>
+                </TouchableOpacity>
+            </View>
+        );
+    }
+}
+
+
 
 
 class ZeroHome extends Component {
@@ -34,24 +78,17 @@ class ZeroHome extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          
+            isRefresh: false, // 下拉刷新
         }
     }
 
 
     render() {
-
-        const { data:{ goods_list = []} } = this.props.post;
+        const { goods_list = [] } = this.props.post.data || {};
 
         return (
             <Container style={styles.container}>
                 <ZeroHomeNavigator />
-                {/* <ScrollView style={{flex:1,backgroundColor:"#fff"}}>
-                    <ZeroBanner onGridSelected={(url) => this.onGridSelected(url)} />
-                     <View>
-                       <FontAwesome size={20} name={"wpforms"} ></FontAwesome>
-                     </View>
-                </ScrollView> */}
                 <FlatList
                     removeClippedSubviews={false}
                     style={styles.flatListStyle}
@@ -61,18 +98,23 @@ class ZeroHome extends Component {
                     ItemSeparatorComponent={this.separator}
                     ListHeaderComponent={this.renderHeader}
                     numColumns={2}
-                    // refreshControl={
-                    //     <RefreshControl
-                    //         colors={["#4D78E7"]}
-                    //         refreshing={this.state.isRefresh}
-                    //         onRefresh={() => this.onRefresh()}
-                    //     />
-                    // }
-                    // onScroll={this._onScroll}
-                    // onEndReached={() => this.onLoadMore()}
-                    // onEndReachedThreshold={0.1}
+
+                    // getItemLayout={(data,index)=>(
+                    //     {length: 100, offset: (100+2) * index, index}
+                    // )}
+                    refreshControl={
+                        <RefreshControl
+                            colors={["#EB5148"]}
+                            refreshing={this.state.isRefresh}
+                            onRefresh={() => this.onRefresh()}
+                        />
+                    }
+                    onScroll={this._onScroll}
+                    onEndReachedThreshold={0.1}
                     data={goods_list}>
                 </FlatList>
+
+
             </Container>
         );
     }
@@ -81,22 +123,38 @@ class ZeroHome extends Component {
 
 
     renderItem = (item) => {
-       
         return (
-            <View >
-                <Text >{"hahahahaha"}</Text>
-            </View>
+            <ZeroListItem key={item.index} item={item.item} onGridPress={() => this.onGridPress(item.item)}> </ZeroListItem>
+
         )
     }
 
+    onRefresh = () => {
+        this.setState({ isRefresh: true, });
+        let timer = setTimeout(() => {
+            clearTimeout(timer)
+            this.setState({ isRefresh: false, });
+        }, 1500)
+    }
+
+    _onScroll = (evt) => {
+
+
+    }
+
+
+
+
     separator = () => {
-        return <View style={{height:2,backgroundColor:'yellow'}}/>;
+        return <View style={{ height: scaleSize(15), backgroundColor: '#F5F5F9' }} />;
     }
 
     renderHeader = () => {
         return (
-            <View>
+            <View style={{ height: scaleSize(1020), width: screenWidth, backgroundColor: "orange" }}>
                 <ZeroBanner onGridSelected={(url) => this.onGridSelected(url)} />
+                <View style={{ height: scaleSize(400), width: screenWidth, backgroundColor: "yellow" }}></View>
+                <View style={{ height: scaleSize(200), width: screenWidth, backgroundColor: "green" }}></View>
             </View>
         )
     }
@@ -108,20 +166,23 @@ class ZeroHome extends Component {
 
 
     componentDidMount() {
-        this.props.getGoodsList(apiUrl.homeGoodsList_URL,{"size":"50", "page":1});
+        this.props.getGoodsList(apiUrl.homeGoodsList_URL, { "size": "60", "page": 1 });
 
-      
+
 
     }
 
 
     onGridSelected(url: string) {
-        //this.props.navigation.navigate('ZeroWebScene', { url: url })
-         const { data:{ goods_list = []} } = this.props.post;
+        this.props.navigation.navigate('ZeroWebScene', { url: url })
+        // const { data: { goods_list = [] } } = this.props.post;
 
-        console.log("=======>",goods_list); 
+        // console.log("=======>", goods_list);
     }
 
+    onGridPress(item:object){
+        console.log("item=======>", item);
+    }
 
 
 }
@@ -136,20 +197,43 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         flexWrap: 'wrap',
     },
+
     flatListStyle: {
-        marginLeft: scaleSize(30),
-        marginRight: scaleSize(30),
-        backgroundColor:"#F5F5F9"
+        backgroundColor: "#F5F5F9"
+    },
+    cellItemStyle: {
+        backgroundColor: '#fff',
+        marginLeft: scaleSize(15),
+        width: "47.5%",
+    },
+    imageStyle: {
+        width: "100%",
+        height: scaleSize(445),
+    },
+    titleStyle:{
+        fontSize: scaleSize(28),
+        color:"#333333",
+        fontFamily: 'semiboldFontFamily',
+    },
+
+    textStyle: {
+        fontSize: scaleSize(28),
+        // fontWeight: ('bold', '700'),
+        //  fontFamily: 'Times',
+       
+        //文字加横线 'underline'(下划线)
+       // extDecorationLine:'line-through',
+        color:"#EB5148",
     },
 });
 
 
 const mapStatetoProps = (state, props) => ({
-  post: state.post,
+    post: state.post,
 });
 
 const mapDispatchToProps = dispatch => ({
-   getGoodsList: (url,params) => dispatch(getGoodsList(url,params)),
+    getGoodsList: (url, params) => dispatch(getGoodsList(url, params)),
 });
 
 export default connect(mapStatetoProps, mapDispatchToProps)(ZeroHome);

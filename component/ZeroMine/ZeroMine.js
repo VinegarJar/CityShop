@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
         marginTop:10,
         marginRight:5,
         marginLeft:5,
-        color:'#ff8e4a',
+        color:'#EB5148',
         // fontWeight:('normal'),
         fontWeight:('bold','900'),
         // 字符间距

@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
 
         fontSize: 17,
         // backgroundColor:'red',
-        color:'#ff8e4a',
+        color:'#EB5148',
         fontWeight:('bold','100'),
     },
     hotGoodsImage:{

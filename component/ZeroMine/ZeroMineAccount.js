@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     vipViewStyles:{
         // borderRadius:5,
         // borderWidth: 1,
-        // borderColor: '#ff8e4a',
+        // borderColor: '#EB5148',
         height:30,
         justifyContent: 'center',
         alignItems: 'center',

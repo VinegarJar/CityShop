@@ -78,6 +78,7 @@ export default class ZeroFlatList extends Component {
                         ref={(flatList)=>this._flatList = flatList}
                         ListHeaderComponent={this._header}
                         ListFooterComponent={this._footer}
+                        keyExtractor={(item, index) => index.toString()}
                         ItemSeparatorComponent={this._separator}
                         renderItem={this._renderItem}
                         onRefresh={this.refreshing}
@@ -92,9 +93,9 @@ export default class ZeroFlatList extends Component {
 
                         //horizontal={true}
 
-                        getItemLayout={(data,index)=>(
-                        {length: 100, offset: (100+2) * index, index}
-                        )}
+                        // getItemLayout={(data,index)=>(
+                        // {length: 100, offset: (100+2) * index, index}
+                        // )}
 
                         data={data}>
                     </FlatList>

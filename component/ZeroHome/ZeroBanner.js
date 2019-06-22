@@ -17,6 +17,7 @@ import Swiper from 'react-native-swiper';
 import {screenWidth }  from '../../tool/ZeroScreen';
 import PropTypes from 'prop-types';
 import {CachedImage} from "react-native-img-cache";
+import { scaleSize } from '../../tool/index'
 export default class ZeroBanner extends Component {
 
     static propTypes = {
@@ -35,7 +36,7 @@ export default class ZeroBanner extends Component {
         return (
             <Swiper
                 style={{ backgroundColor: "#efeff4", }}
-                height={210}
+                height={scaleSize(420)}
                 key={items.length}
                 autoplayTimeout={4} autoplay={true}
                 showsPagination={true} horizontal={true}

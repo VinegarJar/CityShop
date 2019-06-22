@@ -54,7 +54,7 @@ export default class ZeroHomeNavigator extends Component {
                     <View style={styles.NavSearch}>
                         <Image  source={source.homeItem.home_Search()}
                                 style={styles.NavSearchIcon}/>
-                        <Text style={styles.NavViewTitleStyle}>冬季新款抢购中</Text>
+                        <Text style={styles.NavViewTitleStyle}>清凉整夏购好货</Text>
                     </View>
                 </TouchableOpacity>
                 <BarItem source={source.homeItem.home_News()} onPress={() => this.searchClick(2)} />
@@ -90,7 +90,7 @@ export default class ZeroHomeNavigator extends Component {
 const styles = StyleSheet.create({
     NavViewStyle: {
         height: Platform.OS === 'ios'?64:80,
-        backgroundColor: '#ff8e4a',
+        backgroundColor: '#EB5148',
         justifyContent: 'space-around',
         alignItems: 'center',
         flexDirection: "row",

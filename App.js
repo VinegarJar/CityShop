@@ -21,7 +21,7 @@ export default class App extends Component {
         return ( 
              
             <View style={{flex:1}} >
-                <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#ff8e4a'} networkActivityIndicatorVisible={true}/>  
+                <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#EB5148'} networkActivityIndicatorVisible={true}/>  
                 <ZeroTabBar/>  
             </View>     
         );

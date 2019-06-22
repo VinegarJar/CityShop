@@ -15,7 +15,7 @@ import { View, Platform, StyleSheet, WebView, InteractionManager } from 'react-n
 export default class ZeroWebScene extends Component {
 
     static navigationOptions = ({ navigation }) => ({
-        headerStyle: { backgroundColor: '#ff8e4a', height: Platform.OS === 'ios' ? 64 : 84, },
+        headerStyle: { backgroundColor: '#EB5148', height: Platform.OS === 'ios' ? 64 : 84, },
         title: navigation.state.params.title,
     });
 
