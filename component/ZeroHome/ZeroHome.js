@@ -16,6 +16,7 @@ import {
     TouchableOpacity,
     Dimensions,
     ScrollView,
+    ImageBackground
 } from 'react-native';
 
 import { connect } from "react-redux";
@@ -34,6 +35,54 @@ import ZeroBanner from './ZeroBanner';
 import ZeroHomeNavigator from './ZeroHomeNavigator';
 import source from '../../src'
 import ZeroSalesSection from '../ZeroSales/ZeroSection';
+
+
+
+
+export class ZeroHotItem extends Component {
+
+
+    static propTypes = {
+        productList: PropTypes.array,
+        title: PropTypes.string,
+        onPressHotItem: PropTypes.func,
+    }
+
+    static defaultProps = {
+        productList: [],
+        title: "",
+        onPressHotItem: () => { }
+    }
+
+    render() {
+        const { productList, onPressHotItem, title } = this.props;
+        return (
+            <View style={{ flex:1, }} >
+                <View style={{ paddingVertical: scaleSize(15) }}>
+                    <ZeroSalesSection title={title} />
+                </View>
+                <View style={styles.hotItemStyle}>
+                    {
+                        productList.map((item, index) => {
+                            return (
+                                <TouchableOpacity key = {index} onPress={()=>{onPressHotItem(item)}} activeOpacity={1} >
+                                    < ImageBackground   style={{ width:screenWidth/productList.length-scaleSize(15),height:scaleSize(item.height),justifyContent:"flex-start",}} 
+                                                   resizeMode='cover' source={{ uri: item ? item.pic : "error_url" }}>
+                                                     <Text style={{ fontSize:13,fontWeight:('bold','500'),fontFamily: 'Times',}}>{item.title||""}</Text>
+                                    </ ImageBackground>     
+                                </TouchableOpacity>
+                            )
+                        })
+                    }
+                </View>
+               
+            </View>
+        );
+    }
+}
+
+
+
 
 export class ZeroListItem extends Component {
 
@@ -99,10 +148,6 @@ class ZeroHome extends Component {
                     ItemSeparatorComponent={this.separator}
                     ListHeaderComponent={this.renderHeader}
                     numColumns={2}
-
-                    // getItemLayout={(data,index)=>(
-                    //     {length: 100, offset: (100+2) * index, index}
-                    // )}
                     refreshControl={
                         <RefreshControl
                             colors={["#EB5148"]}
@@ -114,8 +159,6 @@ class ZeroHome extends Component {
                     onEndReachedThreshold={0.1}
                     data={goods_list}>
                 </FlatList>
-
-
             </Container>
         );
     }
@@ -153,6 +196,7 @@ class ZeroHome extends Component {
 
     renderHeader = () => {
         const { data_list = [] } = source.data;
+        const { lists = [] } = source.hot_list;
         return (
             <View style={{ width: "100%" }}>
                 <ZeroBanner onGridSelected={(url) => this.onGridSelected(url)} />
@@ -161,7 +205,7 @@ class ZeroHome extends Component {
                         data_list.map((item, index) => {
                             return (
                                 <View style={{ width: "25%", paddingVertical: scaleSize(15) }} key={index}>
-                                    <TouchableOpacity onPress={() => {alert(item.name)}} activeOpacity={1} key={index} style={{ justifyContent: "center", alignItems: "center", }}>
+                                    <TouchableOpacity onPress={() => { alert(item.name) }} activeOpacity={1} key={index} style={{ justifyContent: "center", alignItems: "center", }}>
                                         <Image style={{ width: scaleSize(150), height: scaleSize(150), resizeMode: "center" }} source={item.pic} />
                                         <Text style={styles.titleStyle}>{item.name}</Text>
                                     </TouchableOpacity>
@@ -170,9 +214,18 @@ class ZeroHome extends Component {
                         })
                     }
                 </View>
-
+                <View >
+                    {
+                        lists.map((item, index) => {
+                            const { productList = [], tabName = null } = item;
+                            return (
+                                <ZeroHotItem key={index} title={tabName} productList={productList} onPressHotItem = {(item) => { alert(item.name) }} />
+                            )
+                        })
+                    }
+                </View>
                 <View style={{ paddingVertical: scaleSize(15) }}>
-                    <ZeroSalesSection title='为你推荐' />
+                    <ZeroSalesSection title='发现好货' />
                 </View>
             </View>
         )
@@ -250,7 +303,11 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         flexWrap: 'wrap',
         alignItems: "center",
-
+    },
+    hotItemStyle:{
+        flexDirection: 'row',
+        alignItems:"flex-start",
+        justifyContent: "space-around",
     }
 });
 
