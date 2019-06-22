@@ -32,8 +32,8 @@ import { scaleSize } from '../../tool/index'
 import { screenWidth } from '../../tool/ZeroScreen';
 import ZeroBanner from './ZeroBanner';
 import ZeroHomeNavigator from './ZeroHomeNavigator';
-
-
+import source from '../../src'
+import ZeroSalesSection from '../ZeroSales/ZeroSection';
 
 export class ZeroListItem extends Component {
 
@@ -45,24 +45,26 @@ export class ZeroListItem extends Component {
 
     static defaultProps = {
         item: {},
-        onGridPress: () => {}
+        onGridPress: () => { }
     }
 
     render() {
 
-        const { item, onGridPress  } = this.props;
-        const { hd_thumb_url = null,goods_name = null ,group = null, sales_tip = null, short_name =null} = item;
- 
+        const { item, onGridPress } = this.props;
+        const { hd_thumb_url = null, goods_name = null, group = null, sales_tip = null, short_name = null } = item;
+
         return (
             <View style={styles.cellItemStyle} >
-                <TouchableOpacity onPress={onGridPress} activeOpacity={1}>
-                    <CachedImage style={styles.imageStyle} resizeMode='stretch' source={{ uri: item ? hd_thumb_url : "error_url" }} />
-                    <View style={{ width: "100%", paddingHorizontal: scaleSize(10),marginVertical:scaleSize(5) }}>
-                         <Text style={styles.titleStyle}>{short_name}</Text>
-                    </View>
-                    <View style={{ width: "100%", paddingHorizontal: scaleSize(10),marginVertical:scaleSize(5), flexDirection: 'row',justifyContent: "space-between",}}>
-                         <Text style={styles.textStyle}>{"¥"+group.price.toFixed(2) }</Text>
-                         <Text style={styles.textStyle}>{sales_tip}</Text>
+                <TouchableOpacity onPress={onGridPress} activeOpacity={1} style={{ paddingHorizontal: scaleSize(10) }}>
+                    <View style={{ backgroundColor: "#fff", borderRadius: scaleSize(5) }}>
+                        <CachedImage style={styles.imageStyle} resizeMode='stretch' source={{ uri: item ? hd_thumb_url : "error_url" }} />
+                        <View style={{ width: "100%", paddingHorizontal: scaleSize(10), paddingVertical: scaleSize(5) }}>
+                            <Text style={styles.titleStyle}>{short_name}</Text>
+                        </View>
+                        <View style={{ width: "100%", paddingHorizontal: scaleSize(10), paddingVertical: scaleSize(5), flexDirection: 'row', justifyContent: "space-between", }}>
+                            <Text style={styles.textStyle}>{"¥" + group.price.toFixed(2)}</Text>
+                            <Text style={styles.textStyle}>{sales_tip}</Text>
+                        </View>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -85,7 +87,6 @@ class ZeroHome extends Component {
 
     render() {
         const { goods_list = [] } = this.props.post.data || {};
-
         return (
             <Container style={styles.container}>
                 <ZeroHomeNavigator />
@@ -130,6 +131,7 @@ class ZeroHome extends Component {
     }
 
     onRefresh = () => {
+        this.getGoodsList();
         this.setState({ isRefresh: true, });
         let timer = setTimeout(() => {
             clearTimeout(timer)
@@ -150,11 +152,28 @@ class ZeroHome extends Component {
     }
 
     renderHeader = () => {
+        const { data_list = [] } = source.data;
         return (
-            <View style={{ height: scaleSize(1020), width: screenWidth, backgroundColor: "orange" }}>
+            <View style={{ width: "100%" }}>
                 <ZeroBanner onGridSelected={(url) => this.onGridSelected(url)} />
-                <View style={{ height: scaleSize(400), width: screenWidth, backgroundColor: "yellow" }}></View>
-                <View style={{ height: scaleSize(200), width: screenWidth, backgroundColor: "green" }}></View>
+                <View style={styles.itemViewStyle}>
+                    {
+                        data_list.map((item, index) => {
+                            return (
+                                <View style={{ width: "25%", paddingVertical: scaleSize(15) }} key={index}>
+                                    <TouchableOpacity onPress={() => {alert(item.name)}} activeOpacity={1} key={index} style={{ justifyContent: "center", alignItems: "center", }}>
+                                        <Image style={{ width: scaleSize(150), height: scaleSize(150), resizeMode: "center" }} source={item.pic} />
+                                        <Text style={styles.titleStyle}>{item.name}</Text>
+                                    </TouchableOpacity>
+                                </View>
+                            )
+                        })
+                    }
+                </View>
+
+                <View style={{ paddingVertical: scaleSize(15) }}>
+                    <ZeroSalesSection title='为你推荐' />
+                </View>
             </View>
         )
     }
@@ -166,22 +185,23 @@ class ZeroHome extends Component {
 
 
     componentDidMount() {
-        this.props.getGoodsList(apiUrl.homeGoodsList_URL, { "size": "60", "page": 1 });
 
-
-
+        this.getGoodsList();
     }
 
+    getGoodsList() {
+        this.props.getGoodsList(apiUrl.homeGoodsList_URL, { "size": "60", "page": 1 });
+    }
 
     onGridSelected(url: string) {
         this.props.navigation.navigate('ZeroWebScene', { url: url })
-        // const { data: { goods_list = [] } } = this.props.post;
-
-        // console.log("=======>", goods_list);
     }
 
-    onGridPress(item:object){
-        console.log("item=======>", item);
+    onGridPress(item: object) {
+        //console.log("item=======>", item);
+        const { data_list = [] } = source.data;
+        // let data = source.data.data;
+        console.log("item=======>", data_list);
     }
 
 
@@ -200,31 +220,38 @@ const styles = StyleSheet.create({
 
     flatListStyle: {
         backgroundColor: "#F5F5F9"
+
     },
     cellItemStyle: {
-        backgroundColor: '#fff',
-        marginLeft: scaleSize(15),
-        width: "47.5%",
+        width: "50%",
     },
     imageStyle: {
         width: "100%",
         height: scaleSize(445),
     },
-    titleStyle:{
-        fontSize: scaleSize(28),
-        color:"#333333",
+    titleStyle: {
+        fontSize: scaleSize(26),
+        color: "#333333",
         fontFamily: 'semiboldFontFamily',
     },
 
     textStyle: {
-        fontSize: scaleSize(28),
+        fontSize: scaleSize(22),
         // fontWeight: ('bold', '700'),
         //  fontFamily: 'Times',
-       
+
         //文字加横线 'underline'(下划线)
-       // extDecorationLine:'line-through',
-        color:"#EB5148",
+        // extDecorationLine:'line-through',
+        color: "#EB5148",
     },
+    itemViewStyle: {
+        backgroundColor: "#fff",
+        flexDirection: 'row',
+        justifyContent: "space-between",
+        flexWrap: 'wrap',
+        alignItems: "center",
+
+    }
 });
 
 

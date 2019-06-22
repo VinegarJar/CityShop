@@ -21,4 +21,43 @@ export default {
     },
 
 
+   data: {
+        "data_list":[
+          {
+            "name":"生活到家",
+            "pic":require("./Home/findhome_9.png"),
+          },
+          {
+            "name":"体育健身",
+            "pic":require("./Home/findhome_6.png"),
+          },
+          {
+            "name":"机票旅游",
+            "pic":require("./Home/findhome_3.png"),
+          },
+          {
+            "name":"酒店餐饮",
+            "pic":require("./Home/findhome_2.png"),
+          },
+          {
+            "name":"看病购药",
+            "pic":require("./Home/findhome_1.png"),
+          },
+          {
+            "name":"度假休闲",
+            "pic":require("./Home/findhome_7.png"),
+          },
+          {
+            "name":"社区酒吧",
+            "pic":require("./Home/findhome_0.png"),
+          },
+          {
+            "name":"娱乐唱k",
+            "pic":require("./Home/findhome_10.png"),
+          },
+          
+        ]
+      },
+
+
 }
