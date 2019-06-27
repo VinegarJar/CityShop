@@ -3,6 +3,8 @@
  * react-native bundle --entry-file index.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
+ *Mac 终端删除当前项目中所有.svn文件
+ 打开终端，进入项目所在的文件夹：使用命令find . -type d -name ".svn" |xargs rm -rvf就可将项目的.svn全部删除；
  */
 
 #import "AppDelegate.h"
