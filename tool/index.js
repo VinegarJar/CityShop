@@ -129,3 +129,31 @@ export function formatString(originString) {
     return keyStr
 }
 
+export default {
+    Color_D1D1D6:"#D1D1D6",
+    Color_E5E5E5:"#E5E5E5",
+    Color_C7C7CC:"#C7C7CC",
+    Color_F7F7FF:"#F7F7FF",
+    Color_F5F5F9:"#F5F5F9",
+    Color_FFFFFF:"#FFFFFF",
+    Color_8E8E93:"#8E8E93",
+    Color_000000:"#000000",
+    Color_FE4B3A:"#FE4B3A",
+    Color_333333:"#333333",
+    Color_999999:"#999999",
+    Color_666666:"#666666",
+    Color_F7F7F7:'#F7F7F7',
+    
+    /**以下服务商新增主题*/
+    /**
+     * app文字字体类型 颜色 大小整理归类 
+     */
+
+    mediumFontFamily: 'PingFangSC-Medium',
+    regularFontFamily: 'PingFangSC-Regular',
+    semiboldFontFamily: 'PingFangSC-Medium',
+    // semiboldFontFamily:'PingFangSC-Semibold',
+    DINCondensedFamily: 'DINCondensed-Bold',
+    microsoftYaHeiFamily: (platform === 'ios') ? 'PingFangSC-Medium' : 'MicrosoftYaHei',
+    PingFangFamily:"PingFang-SC-Regular",
+}
