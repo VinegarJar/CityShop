@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2015-present, Facebook, Inc.
- * react-native bundle --entry-file index.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
+ * react-native bundle --entry-file index.ios.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
   * fastlane uploadApp 
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -44,7 +44,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-   // [SplashScreen show];
+  [SplashScreen show];
   return YES;
 }
 
