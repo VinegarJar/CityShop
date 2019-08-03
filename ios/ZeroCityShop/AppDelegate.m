@@ -13,6 +13,8 @@
 #import <React/RCTDevLoadingView.h>
 #import "SplashScreen.h"
 
+#define AppSever  2
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -21,16 +23,23 @@
   RCTRootView *rootView ;
 #ifdef DEBUG
   
-
+#if  AppSever==1  //localhost
+  
   RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil]
                                             moduleProvider:nil
                                              launchOptions:launchOptions];
+  
+#elif AppSever==2  //localIP
+  
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://20.0.0.32:8081/index.ios.bundle?platform=ios&dev=true"]
+                                            moduleProvider:nil
+                                             launchOptions:launchOptions];
+#endif
 
   [bridge moduleForClass:[RCTDevLoadingView class]];
   rootView = [[RCTRootView alloc] initWithBridge:bridge
                                       moduleName:@"ZeroCityShop"
                                initialProperties:nil];
-  
   
 #else
 
