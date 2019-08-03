@@ -34,7 +34,7 @@ PODS:
     - GTMSessionFetcher (>= 1.1.7)
   - GoogleMobileVision/Detector (1.6.0):
     - GoogleToolboxForMac/Logger (~> 2.1)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.1)
   - GoogleMobileVision/TextDetector (1.6.0):
@@ -42,7 +42,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.2.1)
   - GoogleToolboxForMac/Logger (2.2.1):
     - GoogleToolboxForMac/Defines (= 2.2.1)
-  - GoogleToolboxForMac/NSData+zlib (2.2.1):
+  - "GoogleToolboxForMac/NSData+zlib (2.2.1)":
     - GoogleToolboxForMac/Defines (= 2.2.1)
   - GoogleUtilities/Environment (6.2.3)
   - GoogleUtilities/Logger (6.2.3):
@@ -61,6 +61,21 @@ DEPENDENCIES:
   - Firebase/MLVision
   - Firebase/MLVisionTextModel
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Firebase
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMLCommon
+    - FirebaseMLVision
+    - FirebaseMLVisionTextModel
+    - GoogleAPIClientForREST
+    - GoogleMobileVision
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - Protobuf
+
 SPEC CHECKSUMS:
   Firebase: 9445469655a98e9010737f4bc4720e5bda465873
   FirebaseCore: 7ea99e200f0024262650be56623fbe6a7bef1707
@@ -77,4 +92,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8dc048ff29fce6e14f6ab17a7f36efb027dd41ec
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.1

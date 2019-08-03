@@ -1,7 +1,6 @@
 /**
  * Copyright (c) 2015-present, Facebook, Inc.
  * react-native bundle --entry-file index.ios.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
-  * fastlane uploadApp 
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *Mac 终端删除当前项目中所有.svn文件
@@ -22,15 +21,19 @@
   RCTRootView *rootView ;
 #ifdef DEBUG
   
+
   RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil]
                                             moduleProvider:nil
                                              launchOptions:launchOptions];
+
   [bridge moduleForClass:[RCTDevLoadingView class]];
   rootView = [[RCTRootView alloc] initWithBridge:bridge
                                       moduleName:@"ZeroCityShop"
                                initialProperties:nil];
   
+  
 #else
+
   rootView = [[RCTRootView alloc] initWithBundleURL:[[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"]
                                          moduleName:@"ZeroCityShop"
                                   initialProperties:nil
@@ -44,7 +47,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  [SplashScreen show];
+  //[SplashScreen show];
   return YES;
 }
 

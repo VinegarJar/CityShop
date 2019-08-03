@@ -154,6 +154,6 @@ export default {
     semiboldFontFamily: 'PingFangSC-Medium',
     // semiboldFontFamily:'PingFangSC-Semibold',
     DINCondensedFamily: 'DINCondensed-Bold',
-    microsoftYaHeiFamily: (platform === 'ios') ? 'PingFangSC-Medium' : 'MicrosoftYaHei',
+    microsoftYaHeiFamily: (Platform === 'ios') ? 'PingFangSC-Medium' : 'MicrosoftYaHei',
     PingFangFamily:"PingFang-SC-Regular",
 }
