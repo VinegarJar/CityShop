@@ -2,6 +2,8 @@
 IOS打包命令
 react-native bundle --entry-file index..ios.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
 
+https://blog.csdn.net/hefeng6500/article/details/79869647
+
 React-Native开源电商项目
 一款使用react-native写的垮平台代码,rn新手上路多多指教
 
