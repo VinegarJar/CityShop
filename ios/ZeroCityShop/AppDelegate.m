@@ -5,6 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  *Mac 终端删除当前项目中所有.svn文件
  打开终端，进入项目所在的文件夹：使用命令find . -type d -name ".svn" |xargs rm -rvf就可将项目的.svn全部删除；
+ 
+ https://github.com/shaojiankui/SmartPush   推送测试工具
  */
 
 #import "AppDelegate.h"
@@ -13,7 +15,7 @@
 #import <React/RCTDevLoadingView.h>
 #import "SplashScreen.h"
 
-#define AppSever  2
+#define AppSever  1
 
 @implementation AppDelegate
 
@@ -56,7 +58,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  //[SplashScreen show];
+  [SplashScreen show];
   return YES;
 }
 
