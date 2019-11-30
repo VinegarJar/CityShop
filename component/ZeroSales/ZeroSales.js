@@ -142,7 +142,7 @@ export default class ZeroSales extends Component {
             .then((response)=>response.json())
             .then((responseJson)=>{
                     let items = [];
-                    let {list} = responseJson.msg;
+                    let {list} = responseJson.msg||[];
                   list.map(
                         (info)=>{
                            // console.log(info);
@@ -167,7 +167,7 @@ export default class ZeroSales extends Component {
             .then((response)=>response.json())
             .then((responseJson)=>{
 
-                let {list} = responseJson.msg;
+                let {list} = responseJson.msg||[];
                 let items = list.map(
                     (info)=>{
                         return {

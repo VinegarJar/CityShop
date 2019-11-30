@@ -7,6 +7,10 @@
  打开终端，进入项目所在的文件夹：使用命令find . -type d -name ".svn" |xargs rm -rvf就可将项目的.svn全部删除；
  
  https://github.com/shaojiankui/SmartPush   推送测试工具
+
+ RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil]
+ moduleProvider:nil
+ launchOptions:launchOptions];
  */
 
 #import "AppDelegate.h"
@@ -22,22 +26,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   
-  RCTRootView *rootView ;
+  RCTRootView *rootView;
 #ifdef DEBUG
   
-#if  AppSever==1  //localhost
-  
-  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil]
-                                            moduleProvider:nil
-                                             launchOptions:launchOptions];
-  
-#elif AppSever==2  //localIP
-  
-  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://20.0.0.32:8081/index.ios.bundle?platform=ios&dev=true"]
-                                            moduleProvider:nil
-                                             launchOptions:launchOptions];
-#endif
 
+
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.0.106:8081/index.ios.bundle?platform=ios&dev=true"]
+                                            moduleProvider:nil launchOptions:launchOptions];
   [bridge moduleForClass:[RCTDevLoadingView class]];
   rootView = [[RCTRootView alloc] initWithBridge:bridge
                                       moduleName:@"ZeroCityShop"
@@ -58,7 +53,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  [SplashScreen show];
+  //[SplashScreen show];
   return YES;
 }
 
