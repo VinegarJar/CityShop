@@ -52,30 +52,6 @@
 		8A6E990FD61A4E5683B6327D /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A2153AEF674CFE8A8955E0 /* libRNFetchBlob.a */; };
 		8D4DC4A510A84F48AD508508 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FF04C30EBAE4FFFAE8A478A /* FontAwesome.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		B7199A6522CB2F760053B706 /* ImageDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A4422CB2F750053B706 /* ImageDownButton.m */; };
-		B7199A6622CB2F760053B706 /* ImageDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A4622CB2F750053B706 /* ImageDownMenu.m */; };
-		B7199A6722CB2F760053B706 /* ImageNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7199A4722CB2F750053B706 /* ImageNavigationBar.xib */; };
-		B7199A6822CB2F760053B706 /* ImagePhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A4922CB2F750053B706 /* ImagePhotoManager.m */; };
-		B7199A6922CB2F760053B706 /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A4B22CB2F750053B706 /* ImagePickerController.m */; };
-		B7199A6A22CB2F760053B706 /* ImagePickerList.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A4D22CB2F750053B706 /* ImagePickerList.m */; };
-		B7199A6B22CB2F760053B706 /* ImagePickerPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A4F22CB2F750053B706 /* ImagePickerPhoto.m */; };
-		B7199A6C22CB2F760053B706 /* ImagePickerPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A5122CB2F750053B706 /* ImagePickerPhotoCell.m */; };
-		B7199A6D22CB2F760053B706 /* ImagePickerPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7199A5222CB2F750053B706 /* ImagePickerPhotoCell.xib */; };
-		B7199A6E22CB2F760053B706 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A5422CB2F750053B706 /* ImageViewController.m */; };
-		B7199A6F22CB2F760053B706 /* PhotoAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A5622CB2F750053B706 /* PhotoAlbumModel.m */; };
-		B7199A7022CB2F760053B706 /* PhotoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A5822CB2F750053B706 /* PhotoPageViewController.m */; };
-		B7199A7122CB2F760053B706 /* PhotoPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A5A22CB2F750053B706 /* PhotoPreview.m */; };
-		B7199A7222CB2F760053B706 /* banner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7199A5C22CB2F750053B706 /* banner@2x.png */; };
-		B7199A7322CB2F760053B706 /* cancle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7199A5D22CB2F750053B706 /* cancle@2x.png */; };
-		B7199A7422CB2F760053B706 /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7199A5E22CB2F750053B706 /* down@2x.png */; };
-		B7199A7522CB2F760053B706 /* goBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7199A5F22CB2F750053B706 /* goBack@2x.png */; };
-		B7199A7622CB2F760053B706 /* selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7199A6022CB2F750053B706 /* selected@2x.png */; };
-		B7199A7722CB2F760053B706 /* unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7199A6122CB2F750053B706 /* unselected@2x.png */; };
-		B7199A7822CB2F760053B706 /* up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7199A6222CB2F750053B706 /* up@2x.png */; };
-		B7199A7922CB2F760053B706 /* ZeroSDCSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A6422CB2F750053B706 /* ZeroSDCSafety.m */; };
-		B7199A7D22CB2F820053B706 /* NSString+IMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A7B22CB2F820053B706 /* NSString+IMAdditions.m */; };
-		B7199A8022CB2F9B0053B706 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A7F22CB2F9A0053B706 /* UIImage+fixOrientation.m */; };
-		B7199A8322CB2FF50053B706 /* ALAssetsGroup+attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B7199A8122CB2FF50053B706 /* ALAssetsGroup+attribute.m */; };
 		B79931FD22B88D4200982241 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = B79931D522B88D4200982241 /* assets */; };
 		B79931FF22B88D4E00982241 /* main.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = B79931FE22B88D4E00982241 /* main.jsbundle.meta */; };
 		B7D9E5C722BA12EB00144122 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7D9E5B822BA12EB00144122 /* AntDesign.ttf */; };
@@ -443,46 +419,6 @@
 		A2514E2547E541F78F9988C5 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B5F20CC78237485D98C90BE8 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		B7199A4322CB2F750053B706 /* ImageDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownButton.h; sourceTree = "<group>"; };
-		B7199A4422CB2F750053B706 /* ImageDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownButton.m; sourceTree = "<group>"; };
-		B7199A4522CB2F750053B706 /* ImageDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownMenu.h; sourceTree = "<group>"; };
-		B7199A4622CB2F750053B706 /* ImageDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownMenu.m; sourceTree = "<group>"; };
-		B7199A4722CB2F750053B706 /* ImageNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageNavigationBar.xib; sourceTree = "<group>"; };
-		B7199A4822CB2F750053B706 /* ImagePhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePhotoManager.h; sourceTree = "<group>"; };
-		B7199A4922CB2F750053B706 /* ImagePhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePhotoManager.m; sourceTree = "<group>"; };
-		B7199A4A22CB2F750053B706 /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
-		B7199A4B22CB2F750053B706 /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerController.m; sourceTree = "<group>"; };
-		B7199A4C22CB2F750053B706 /* ImagePickerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerList.h; sourceTree = "<group>"; };
-		B7199A4D22CB2F750053B706 /* ImagePickerList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerList.m; sourceTree = "<group>"; };
-		B7199A4E22CB2F750053B706 /* ImagePickerPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerPhoto.h; sourceTree = "<group>"; };
-		B7199A4F22CB2F750053B706 /* ImagePickerPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerPhoto.m; sourceTree = "<group>"; };
-		B7199A5022CB2F750053B706 /* ImagePickerPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerPhotoCell.h; sourceTree = "<group>"; };
-		B7199A5122CB2F750053B706 /* ImagePickerPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerPhotoCell.m; sourceTree = "<group>"; };
-		B7199A5222CB2F750053B706 /* ImagePickerPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePickerPhotoCell.xib; sourceTree = "<group>"; };
-		B7199A5322CB2F750053B706 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		B7199A5422CB2F750053B706 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
-		B7199A5522CB2F750053B706 /* PhotoAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumModel.h; sourceTree = "<group>"; };
-		B7199A5622CB2F750053B706 /* PhotoAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumModel.m; sourceTree = "<group>"; };
-		B7199A5722CB2F750053B706 /* PhotoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPageViewController.h; sourceTree = "<group>"; };
-		B7199A5822CB2F750053B706 /* PhotoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPageViewController.m; sourceTree = "<group>"; };
-		B7199A5922CB2F750053B706 /* PhotoPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPreview.h; sourceTree = "<group>"; };
-		B7199A5A22CB2F750053B706 /* PhotoPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPreview.m; sourceTree = "<group>"; };
-		B7199A5C22CB2F750053B706 /* banner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner@2x.png"; sourceTree = "<group>"; };
-		B7199A5D22CB2F750053B706 /* cancle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancle@2x.png"; sourceTree = "<group>"; };
-		B7199A5E22CB2F750053B706 /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
-		B7199A5F22CB2F750053B706 /* goBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goBack@2x.png"; sourceTree = "<group>"; };
-		B7199A6022CB2F750053B706 /* selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selected@2x.png"; sourceTree = "<group>"; };
-		B7199A6122CB2F750053B706 /* unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unselected@2x.png"; sourceTree = "<group>"; };
-		B7199A6222CB2F750053B706 /* up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up@2x.png"; sourceTree = "<group>"; };
-		B7199A6322CB2F750053B706 /* ZeroSDCSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroSDCSafety.h; sourceTree = "<group>"; };
-		B7199A6422CB2F750053B706 /* ZeroSDCSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroSDCSafety.m; sourceTree = "<group>"; };
-		B7199A7A22CB2F810053B706 /* NSString+IMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IMAdditions.h"; sourceTree = "<group>"; };
-		B7199A7B22CB2F820053B706 /* NSString+IMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IMAdditions.m"; sourceTree = "<group>"; };
-		B7199A7C22CB2F820053B706 /* GlobalMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalMacros.h; sourceTree = "<group>"; };
-		B7199A7E22CB2F9A0053B706 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
-		B7199A7F22CB2F9A0053B706 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
-		B7199A8122CB2FF50053B706 /* ALAssetsGroup+attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsGroup+attribute.m"; sourceTree = "<group>"; };
-		B7199A8222CB2FF50053B706 /* ALAssetsGroup+attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsGroup+attribute.h"; sourceTree = "<group>"; };
 		B79931D522B88D4200982241 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		B79931FE22B88D4E00982241 /* main.jsbundle.meta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle.meta; sourceTree = "<group>"; };
 		B7D9E5B822BA12EB00144122 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
@@ -668,7 +604,6 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				B79931D522B88D4200982241 /* assets */,
 				B7D9E5B722BA12EB00144122 /* Fonts */,
-				B7199A4222CB2F750053B706 /* ImageLibraries */,
 			);
 			name = ZeroCityShop;
 			sourceTree = "<group>";
@@ -811,61 +746,6 @@
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B7199A4222CB2F750053B706 /* ImageLibraries */ = {
-			isa = PBXGroup;
-			children = (
-				B7199A7E22CB2F9A0053B706 /* UIImage+fixOrientation.h */,
-				B7199A7F22CB2F9A0053B706 /* UIImage+fixOrientation.m */,
-				B7199A7C22CB2F820053B706 /* GlobalMacros.h */,
-				B7199A7A22CB2F810053B706 /* NSString+IMAdditions.h */,
-				B7199A7B22CB2F820053B706 /* NSString+IMAdditions.m */,
-				B7199A4322CB2F750053B706 /* ImageDownButton.h */,
-				B7199A4422CB2F750053B706 /* ImageDownButton.m */,
-				B7199A4522CB2F750053B706 /* ImageDownMenu.h */,
-				B7199A4622CB2F750053B706 /* ImageDownMenu.m */,
-				B7199A4722CB2F750053B706 /* ImageNavigationBar.xib */,
-				B7199A4822CB2F750053B706 /* ImagePhotoManager.h */,
-				B7199A4922CB2F750053B706 /* ImagePhotoManager.m */,
-				B7199A4A22CB2F750053B706 /* ImagePickerController.h */,
-				B7199A4B22CB2F750053B706 /* ImagePickerController.m */,
-				B7199A4C22CB2F750053B706 /* ImagePickerList.h */,
-				B7199A4D22CB2F750053B706 /* ImagePickerList.m */,
-				B7199A4E22CB2F750053B706 /* ImagePickerPhoto.h */,
-				B7199A4F22CB2F750053B706 /* ImagePickerPhoto.m */,
-				B7199A5022CB2F750053B706 /* ImagePickerPhotoCell.h */,
-				B7199A5122CB2F750053B706 /* ImagePickerPhotoCell.m */,
-				B7199A5222CB2F750053B706 /* ImagePickerPhotoCell.xib */,
-				B7199A5322CB2F750053B706 /* ImageViewController.h */,
-				B7199A5422CB2F750053B706 /* ImageViewController.m */,
-				B7199A5522CB2F750053B706 /* PhotoAlbumModel.h */,
-				B7199A5622CB2F750053B706 /* PhotoAlbumModel.m */,
-				B7199A5722CB2F750053B706 /* PhotoPageViewController.h */,
-				B7199A5822CB2F750053B706 /* PhotoPageViewController.m */,
-				B7199A5922CB2F750053B706 /* PhotoPreview.h */,
-				B7199A5A22CB2F750053B706 /* PhotoPreview.m */,
-				B7199A8222CB2FF50053B706 /* ALAssetsGroup+attribute.h */,
-				B7199A8122CB2FF50053B706 /* ALAssetsGroup+attribute.m */,
-				B7199A6322CB2F750053B706 /* ZeroSDCSafety.h */,
-				B7199A6422CB2F750053B706 /* ZeroSDCSafety.m */,
-				B7199A5B22CB2F750053B706 /* souce */,
-			);
-			path = ImageLibraries;
-			sourceTree = "<group>";
-		};
-		B7199A5B22CB2F750053B706 /* souce */ = {
-			isa = PBXGroup;
-			children = (
-				B7199A5C22CB2F750053B706 /* banner@2x.png */,
-				B7199A5D22CB2F750053B706 /* cancle@2x.png */,
-				B7199A5E22CB2F750053B706 /* down@2x.png */,
-				B7199A5F22CB2F750053B706 /* goBack@2x.png */,
-				B7199A6022CB2F750053B706 /* selected@2x.png */,
-				B7199A6122CB2F750053B706 /* unselected@2x.png */,
-				B7199A6222CB2F750053B706 /* up@2x.png */,
-			);
-			path = souce;
 			sourceTree = "<group>";
 		};
 		B7CEEA5C22B773000035B64F /* Recovered References */ = {
@@ -1049,6 +929,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1429,7 +1310,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7199A7822CB2F760053B706 /* up@2x.png in Resources */,
 				B79931FD22B88D4200982241 /* assets in Resources */,
 				B7D9E5CF22BA12EB00144122 /* Foundation.ttf in Resources */,
 				B7D9E5C922BA12EB00144122 /* EvilIcons.ttf in Resources */,
@@ -1439,14 +1319,12 @@
 				B7D9E5CC22BA12EB00144122 /* FontAwesome5_Brands.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				B7199A7222CB2F760053B706 /* banner@2x.png in Resources */,
 				FCF726D483B24431850AB6A2 /* AntDesign.ttf in Resources */,
 				B7D9E5D322BA12EB00144122 /* Octicons.ttf in Resources */,
 				29DF528CF2674DBBA8B503B8 /* Entypo.ttf in Resources */,
 				BD8B0238CB5041A182180F9D /* EvilIcons.ttf in Resources */,
 				067A2B4C95B04FA785752783 /* Feather.ttf in Resources */,
 				8D4DC4A510A84F48AD508508 /* FontAwesome.ttf in Resources */,
-				B7199A7322CB2F760053B706 /* cancle@2x.png in Resources */,
 				B7D9E5CB22BA12EB00144122 /* FontAwesome.ttf in Resources */,
 				4F02F846F31A4D289D2B8832 /* FontAwesome5_Brands.ttf in Resources */,
 				B7D9E5D122BA12EB00144122 /* MaterialCommunityIcons.ttf in Resources */,
@@ -1454,23 +1332,17 @@
 				324BC246C88941A1B2C85D5B /* FontAwesome5_Regular.ttf in Resources */,
 				32A140DA7C3847578F7E16AD /* FontAwesome5_Solid.ttf in Resources */,
 				B7D9E5D022BA12EB00144122 /* Ionicons.ttf in Resources */,
-				B7199A7622CB2F760053B706 /* selected@2x.png in Resources */,
 				721D3BAEED3541A6B9115837 /* Foundation.ttf in Resources */,
 				B7D9E5CA22BA12EB00144122 /* Feather.ttf in Resources */,
-				B7199A6D22CB2F760053B706 /* ImagePickerPhotoCell.xib in Resources */,
 				809F628863C1495796BBB039 /* Ionicons.ttf in Resources */,
 				B7D9E5C722BA12EB00144122 /* AntDesign.ttf in Resources */,
 				B7D9E5D422BA12EB00144122 /* SimpleLineIcons.ttf in Resources */,
-				B7199A6722CB2F760053B706 /* ImageNavigationBar.xib in Resources */,
 				B7D9E5D222BA12EB00144122 /* MaterialIcons.ttf in Resources */,
 				C876CF46BBEA44F6BE39DA10 /* MaterialCommunityIcons.ttf in Resources */,
-				B7199A7522CB2F760053B706 /* goBack@2x.png in Resources */,
 				6F0388D45544453BB91FF286 /* MaterialIcons.ttf in Resources */,
 				327121E59FC54E7B9D7C6657 /* Octicons.ttf in Resources */,
-				B7199A7422CB2F760053B706 /* down@2x.png in Resources */,
 				C6D1B86167AA4B95944156B1 /* SimpleLineIcons.ttf in Resources */,
 				B7D9E5D522BA12EB00144122 /* Zocial.ttf in Resources */,
-				B7199A7722CB2F760053B706 /* unselected@2x.png in Resources */,
 				DB748367CA9D435984045BF7 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1584,23 +1456,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7199A7122CB2F760053B706 /* PhotoPreview.m in Sources */,
-				B7199A6E22CB2F760053B706 /* ImageViewController.m in Sources */,
-				B7199A8022CB2F9B0053B706 /* UIImage+fixOrientation.m in Sources */,
-				B7199A6B22CB2F760053B706 /* ImagePickerPhoto.m in Sources */,
-				B7199A6C22CB2F760053B706 /* ImagePickerPhotoCell.m in Sources */,
-				B7199A6822CB2F760053B706 /* ImagePhotoManager.m in Sources */,
-				B7199A6A22CB2F760053B706 /* ImagePickerList.m in Sources */,
-				B7199A6522CB2F760053B706 /* ImageDownButton.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				B7199A6922CB2F760053B706 /* ImagePickerController.m in Sources */,
-				B7199A6F22CB2F760053B706 /* PhotoAlbumModel.m in Sources */,
-				B7199A8322CB2FF50053B706 /* ALAssetsGroup+attribute.m in Sources */,
-				B7199A6622CB2F760053B706 /* ImageDownMenu.m in Sources */,
-				B7199A7022CB2F760053B706 /* PhotoPageViewController.m in Sources */,
-				B7199A7922CB2F760053B706 /* ZeroSDCSafety.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				B7199A7D22CB2F820053B706 /* NSString+IMAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

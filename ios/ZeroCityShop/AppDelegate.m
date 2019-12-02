@@ -19,7 +19,7 @@
 #import <React/RCTDevLoadingView.h>
 #import "SplashScreen.h"
 
-#define AppSever  1
+
 
 @implementation AppDelegate
 
@@ -29,8 +29,6 @@
   RCTRootView *rootView;
 #ifdef DEBUG
   
-
-
   RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.0.106:8081/index.ios.bundle?platform=ios&dev=true"]
                                             moduleProvider:nil launchOptions:launchOptions];
   [bridge moduleForClass:[RCTDevLoadingView class]];
