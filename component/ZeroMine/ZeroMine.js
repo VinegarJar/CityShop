@@ -89,10 +89,7 @@ export default class ZeroMine extends Component {
 
 
     onTouchableOpacity(index) {
-        //alert('弹出分享框'+index);
-        //RNBridgeModule.RNOpenVC('弹出分享框');
-        //RCTZeroShar.RNOpenVC('弹出分享框');
-
+   
     }
 
     renderHeader() {
@@ -151,7 +148,10 @@ export default class ZeroMine extends Component {
                     let {lists} = responseJson.data;
                     lists.map(
                         (info)=>{
-                            let productList = info.productList;
+
+                            console.log("info===========>",info)
+
+                            let productList = info.productList||[];
                             productList.map(
                                 (object)=>{
                                     // console.log(object);

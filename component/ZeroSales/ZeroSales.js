@@ -67,8 +67,12 @@ export default class ZeroSales extends Component {
     constructor(props) {
         super(props);
         this.state = {
-             dataSource:[],
-             discounts: []
+             dataSource:[
+
+             ],
+             discounts: [
+                 
+             ]
         }
     }
 

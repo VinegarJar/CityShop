@@ -8,9 +8,6 @@
  
  https://github.com/shaojiankui/SmartPush   推送测试工具
 
- RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil]
- moduleProvider:nil
- launchOptions:launchOptions];
  */
 
 #import "AppDelegate.h"
@@ -20,22 +17,19 @@
 #import "SplashScreen.h"
 
 
-
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
   
   RCTRootView *rootView;
 #ifdef DEBUG
   
-  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.0.106:8081/index.ios.bundle?platform=ios&dev=true"]
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.0.107:8081/index.ios.bundle?platform=ios&dev=true"]
                                             moduleProvider:nil launchOptions:launchOptions];
   [bridge moduleForClass:[RCTDevLoadingView class]];
   rootView = [[RCTRootView alloc] initWithBridge:bridge
                                       moduleName:@"ZeroCityShop"
                                initialProperties:nil];
-  
 #else
 
   rootView = [[RCTRootView alloc] initWithBundleURL:[[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"]
@@ -44,7 +38,7 @@
                                       launchOptions:launchOptions];
 #endif
   
-
+  
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
@@ -54,5 +48,7 @@
   //[SplashScreen show];
   return YES;
 }
+
+
 
 @end
