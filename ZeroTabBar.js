@@ -102,8 +102,7 @@ const Tab = TabNavigator(
              screen:ZeroHome,
              navigationOptions: ({ navigation }) => ({
                  tabBarLabel: '首页',
-                 //隐藏导航栏属性
-                 header:null,
+                 //隐藏导航栏属性  header:null,
                  tabBarIcon: ({ focused, tintColor }) => (
                      <ZeroTabBarItem
                          tintColor={tintColor}
@@ -181,6 +180,8 @@ const Tab = TabNavigator(
             activeTintColor: ZeroColor.theme,
             inactiveTintColor: '#414141',
             style: {backgroundColor: '#ffffff' },
+
+         
         },
 
     }

@@ -11,6 +11,7 @@ import {
     Text,
     View,
     StatusBar,
+    SafeAreaView
 } from 'react-native';
 
 
@@ -18,12 +19,12 @@ import ZeroTabBar from './ZeroTabBar'
 export default class App extends Component {
 
     render() {
-        return ( 
-             
-            <View style={{flex:1}} >
-                <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#EB5148'} networkActivityIndicatorVisible={true}/>  
-                <ZeroTabBar/>  
-            </View>     
+        return (
+
+            <View style={{ backgroundColor: 'transparent', flex: 1, }} >
+                <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#EB5148'} networkActivityIndicatorVisible={true} />
+                <ZeroTabBar />
+            </View>
         );
     }
 }

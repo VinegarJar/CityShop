@@ -37,6 +37,7 @@ import source from '../../src'
 import ZeroSalesSection from '../ZeroSales/ZeroSection';
 
 
+import ZeroNavigationItem from '../../ZeroNavigationItem'
 
 
 export class ZeroHotItem extends Component {
@@ -57,7 +58,7 @@ export class ZeroHotItem extends Component {
     render() {
         const { productList, onPressHotItem, title } = this.props;
         return (
-            <View style={{ flex:1, }} >
+            <View style={{ flex: 1, }} >
                 <View style={{ paddingVertical: scaleSize(15) }}>
                     <ZeroSalesSection title={title} />
                 </View>
@@ -65,17 +66,17 @@ export class ZeroHotItem extends Component {
                     {
                         productList.map((item, index) => {
                             return (
-                                <TouchableOpacity key = {index} onPress={()=>{onPressHotItem(item)}} activeOpacity={1} >
-                                    < ImageBackground   style={{ width:screenWidth/productList.length-scaleSize(15),height:scaleSize(item.height),justifyContent:"flex-start",}} 
-                                                   resizeMode='cover' source={{ uri: item ? item.pic : "error_url" }}>
-                                                     <Text style={{ fontSize:13,fontWeight:('bold','500'),fontFamily: 'Times',}}>{item.title||""}</Text>
-                                    </ ImageBackground>     
+                                <TouchableOpacity key={index} onPress={() => { onPressHotItem(item) }} activeOpacity={1} >
+                                    < ImageBackground style={{ width: screenWidth / productList.length - scaleSize(15), height: scaleSize(item.height), justifyContent: "flex-start", }}
+                                        resizeMode='cover' source={{ uri: item ? item.pic : "error_url" }}>
+                                        <Text style={{ fontSize: 13, fontWeight: ('bold', '500'), fontFamily: 'Times', }}>{item.title || ""}</Text>
+                                    </ ImageBackground>
                                 </TouchableOpacity>
                             )
                         })
                     }
                 </View>
-               
+
             </View>
         );
     }
@@ -126,6 +127,14 @@ export class ZeroListItem extends Component {
 
 class ZeroHome extends Component {
 
+
+    static navigationOptions = ({ navigation }) => ({
+        header : (
+            <ZeroHomeNavigator />
+        ),
+    })
+
+
     constructor(props) {
         super(props);
         this.state = {
@@ -138,7 +147,6 @@ class ZeroHome extends Component {
         const { goods_list = [] } = this.props.post.data || {};
         return (
             <Container style={styles.container}>
-                <ZeroHomeNavigator />
                 <FlatList
                     removeClippedSubviews={false}
                     style={styles.flatListStyle}
@@ -218,7 +226,7 @@ class ZeroHome extends Component {
                         lists.map((item, index) => {
                             const { productList = [], tabName = null } = item;
                             return (
-                                <ZeroHotItem key={index} title={tabName} productList={productList} onPressHotItem = {(item) => { alert(item.name) }} />
+                                <ZeroHotItem key={index} title={tabName} productList={productList} onPressHotItem={(item) => { alert(item.name) }} />
                             )
                         })
                     }
@@ -282,7 +290,7 @@ const styles = StyleSheet.create({
     titleStyle: {
         fontSize: scaleSize(26),
         color: "#333333",
-       // fontFamily: 'semiboldFontFamily',
+        // fontFamily: 'semiboldFontFamily',
     },
 
     textStyle: {
@@ -301,9 +309,9 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         alignItems: "center",
     },
-    hotItemStyle:{
+    hotItemStyle: {
         flexDirection: 'row',
-        alignItems:"flex-start",
+        alignItems: "flex-start",
         justifyContent: "space-around",
     }
 });
@@ -320,8 +328,8 @@ const mapDispatchToProps = dispatch => ({
 export default connect(mapStatetoProps, mapDispatchToProps)(ZeroHome);
 
 
-/**       
- * 
+/**
+ *
 class SalesOrder extends Component {
 
     constructor(props) {
@@ -426,7 +434,7 @@ class SalesOrder extends Component {
             <OrderCell data={item}
                 commodity={() => {
 
-                    // this.props.navigation.navigate("Freight", {pname:"POWEREN",id:item.id}); 
+                    // this.props.navigation.navigate("Freight", {pname:"POWEREN",id:item.id});
                     console.log("点击事件发货", item.id);
                     this.setState({ models: true, id: item.id });
                 }}
@@ -437,10 +445,10 @@ class SalesOrder extends Component {
                     this.props.navigation.navigate("SalesOrderDetails", {
                         item: item, id: item.id, pname: "POWEREN", callback: (data) => {
                             console.log('SalesOrderDetails------callback',data);
-                            
+
                             if(data.type == "updateOrderStatus"){
                                 this._setCount()
-                                this.onChangeTab(2);   
+                                this.onChangeTab(2);
                             }
                         }
                     });
