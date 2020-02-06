@@ -59,3 +59,7 @@ buck-out/
 Pods/
 
 #https://github.com/firebase 谷歌项目框架
+#https://github.com/firebase 谷歌项目框架
+# ModuleNotFoundError: No module named 'chardet' 未安装 
+# pip3 list 是否安装
+# sudo pip3 install chardet 安装
