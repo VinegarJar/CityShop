@@ -26,7 +26,7 @@
   RCTRootView *rootView;
 #ifdef DEBUG
   
-  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.0.105:8081/index.ios.bundle?platform=ios&dev=true"]
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://172.16.132.156:8081/index.ios.bundle?platform=ios&dev=true"]
                                             moduleProvider:nil launchOptions:launchOptions];
   [bridge moduleForClass:[RCTDevLoadingView class]];
   rootView = [[RCTRootView alloc] initWithBridge:bridge
