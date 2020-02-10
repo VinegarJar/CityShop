@@ -72,7 +72,7 @@
             } else {
                 soundName = YaSoundFart03Name;
             }
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:soundName];
+            [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:soundName];
             if (_isReomve) {
                 return;
             }
@@ -132,7 +132,7 @@
         } else {
             soundName = YaSoundFart03Name;
         }
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:soundName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:soundName];
         if (result) {
             _clickCount++;
             if (index == 0) {

@@ -6,11 +6,11 @@
 @implementation PolluteStomachFurtherView
 - (void)stumbleInLiterature:(NSInteger)index {
     if (index == 1) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundManDownName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundManDownName];
         self.upIV.hidden = YES;
         self.downIV.hidden = NO;
     } else {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundManUpName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundManUpName];
         self.upIV.hidden = NO;
         self.downIV.hidden = YES;
     }

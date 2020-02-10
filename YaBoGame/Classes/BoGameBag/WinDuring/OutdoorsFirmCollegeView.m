@@ -70,11 +70,11 @@ typedef NS_ENUM(NSInteger, WNXStage15PeoplePositonType) {
         [self jumpToIndex:index fail:NO animationFinish:^{
             self.buttonActivate();
             [_tmpNextRow breedManagement];
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundJumpMixName];
+            [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundJumpMixName];
             [self showNextRow];
         }];
     } else {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundDropWaterName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundDropWaterName];
         [self jumpToIndex:index fail:YES animationFinish:^{
             self.peopleIV.hidden = NO;
             self.buttonActivate();

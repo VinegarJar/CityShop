@@ -48,7 +48,7 @@
 - (void)buildStageImageView {
     __weak typeof(self) weakSelf = self;
     self.imageView = [[CrushViolentLavatoryView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 96 - 300, ScreenWidth, 300)];
-    [self.view insertSubview:self.imageView belowSubview:self.playAgainButton];
+    [self.view insertSubview:self.imageView belowSubview:self.playNose];
     self.imageView.bgIV = self.backgroundIV;
     self.imageView.stopTime = ^(int count) {
         [((NearbyVaseView *)weakSelf.cplendour) accountOnLevelTragedy:^(int second, int ms) {

@@ -49,7 +49,7 @@
     [UIView animateWithDuration:kClickAnimationDuration * 0.5 animations:^{
         self.handImageView.transform = CGAffineTransformMakeTranslation(0, 20);
     } completion:^(BOOL finished) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundClick];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundClick];
         self.buttonImageView.image = [UIImage imageNamed:@"play_01-iphone4"];
         [UIView animateWithDuration:kClickAnimationDuration * 0.5 animations:^{
             self.handImageView.transform = CGAffineTransformIdentity;
@@ -68,13 +68,13 @@
     self.bottomBombImageView.hidden = NO;
     self.topBombImageView2.hidden = NO;
     self.topBombImageView1.hidden = NO;
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundBoum];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundBoum];
     [UIView animateWithDuration:0.2 animations:^{
         self.bottomBombImageView.transform = CGAffineTransformMakeScale(4.0, 4.0);
         self.topBombImageView1.transform = CGAffineTransformMakeScale(4.0, 4.0);
         self.topBombImageView2.transform = CGAffineTransformMakeScale(4.0, 4.0);
     } completion:^(BOOL finished) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundBoum2];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundBoum2];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.buttonImageView removeFromSuperview];
             self.normalIconImageView.hidden = YES;

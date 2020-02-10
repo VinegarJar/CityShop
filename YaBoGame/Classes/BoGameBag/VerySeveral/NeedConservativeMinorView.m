@@ -51,7 +51,7 @@
     if (self.eggIV.transform.ty > ScreenHeight - 190) {
         [self.timer invalidate];
         self.timer = nil;
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundEggHitName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundEggHitName];
         if (self.failBlock) {
             self.failBlock(self.tag);
         }
@@ -70,7 +70,7 @@
 - (NSInteger)showHandAndResult {
     NSInteger scroe;
     WNXResultStateType stateType;
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundEggYearName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundEggYearName];
     self.handIV.frame = CGRectMake(0, self.eggIV.transform.ty - 44, 80, 88);
     self.handIV.hidden = NO;
     CGFloat toBottomMargin = ScreenHeight - 190 - self.eggIV.transform.ty;

@@ -33,7 +33,7 @@
     imageView.tag = tag;
     imageView.image = [UIImage imageNamed:kNormalImageNames[tag - 100]];
     imageView.highlightedImage = [UIImage imageNamed:kHighImageNames[tag - 100]];
-    [self.view insertSubview:imageView belowSubview:self.playAgainButton];
+    [self.view insertSubview:imageView belowSubview:self.playNose];
 }
 - (void)setButton:(UIButton *)btn tag:(int)tag {
     CGFloat btnW = ScreenWidth / 3;

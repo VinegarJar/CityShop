@@ -41,7 +41,7 @@
     [self.view insertSubview:self.guessView aboveSubview:self.winImageView];
     __weak typeof(self) weakSelf = self;
     self.guessView.animationFinish = ^(int winIndex){
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundAppearSoundName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundAppearSoundName];
         weakSelf.winIndex = winIndex;
         [weakSelf repentLover:YES];
         [((NearbyVaseView *)weakSelf.cplendour) keepUponRib:^{
@@ -140,7 +140,7 @@
     self.resultLabel.hidden = NO;
     self.resultImageView.hidden = NO;
     if (right) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundRightSoundName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundRightSoundName];
         if (second == 0) {
             if (ms < 20) {
                 self.resultImageView.image = [UIImage imageNamed:@"09_fraction01-iphone4"];
@@ -161,7 +161,7 @@
             _scroe += 1;
         }
     } else {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundWrongSoundName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundWrongSoundName];
         self.resultImageView.image = [UIImage imageNamed:@"09_fraction04-iphone4"];
         self.resultLabel.text = @"-3";
         _scroe -= 3;

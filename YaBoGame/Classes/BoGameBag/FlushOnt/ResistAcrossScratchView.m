@@ -69,20 +69,20 @@
     [UIView animateWithDuration:0.1 animations:^{
         self.countDownLabel.alpha = 0;
     } completion:^(BOOL finished) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSountAlertName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:kSountAlertName];
         [UIView animateWithDuration:0.1 animations:^{
             self.countDownLabel.alpha = 1;
         } completion:^(BOOL finished) {
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSountAlertName];
+            [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:kSountAlertName];
             [UIView animateWithDuration:0.1 animations:^{
                 self.countDownLabel.alpha = 0;
             } completion:^(BOOL finished) {
-                [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSountAlertName];
+                [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:kSountAlertName];
                 [UIView animateWithDuration:0.1 animations:^{
                     self.countDownLabel.alpha = 1;
                 } completion:^(BOOL finished) {
                     self.hidden = YES;
-                    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSountAlertName];
+                    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:kSountAlertName];
                 }];
             }];
         }];

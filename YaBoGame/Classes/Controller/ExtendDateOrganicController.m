@@ -15,8 +15,8 @@
     [self setButtonsTitle];
 }
 - (void)setButtonsTitle {
-    [self.bgMusicButton setTitle:[NSString stringWithFormat:@"MUSIC %@", [self buttonTitleWihtSoundPlayType:[[WNXSoundToolManager sharedSoundToolManager] bgMusicType]]] forState:UIControlStateNormal];
-    [self.soundButton setTitle:[NSString stringWithFormat:@"SOUND %@", [self buttonTitleWihtSoundPlayType:[[WNXSoundToolManager sharedSoundToolManager] soundType]]] forState:UIControlStateNormal];
+    [self.bgMusicButton setTitle:[NSString stringWithFormat:@"MUSIC %@", [self buttonTitleWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] bgMusicType]]] forState:UIControlStateNormal];
+    [self.soundButton setTitle:[NSString stringWithFormat:@"SOUND %@", [self buttonTitleWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] soundType]]] forState:UIControlStateNormal];
 }
 - (void)startSetTopMargin {
     if (iPhone5) {
@@ -28,15 +28,15 @@
 }
 - (IBAction)buttonClick:(UIButton *)sender {
     if (sender.tag == 10) {
-        NSString *subTitle = [self nextButtonTitleWihtSoundPlayType:[[WNXSoundToolManager sharedSoundToolManager] bgMusicType]];
+        NSString *subTitle = [self nextButtonTitleWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] bgMusicType]];
         [sender setTitle:[NSString stringWithFormat:@"MUSIC %@", subTitle] forState:UIControlStateNormal];
-        [[WNXSoundToolManager sharedSoundToolManager] setBgMusicType:[self typeWihtSoundPlayType:[[WNXSoundToolManager sharedSoundToolManager] bgMusicType]]];
+        [[YaBoOrgyTool sharedSoundToolManager] setBgMusicType:[self typeWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] bgMusicType]]];
     } else if (sender.tag == 11) {
-        NSString *subTitle = [self nextButtonTitleWihtSoundPlayType:[[WNXSoundToolManager sharedSoundToolManager] soundType]];
+        NSString *subTitle = [self nextButtonTitleWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] soundType]];
         [sender setTitle:[NSString stringWithFormat:@"SOUND %@", subTitle] forState:UIControlStateNormal];
-        [[WNXSoundToolManager sharedSoundToolManager] setSoundType:[self typeWihtSoundPlayType:[[WNXSoundToolManager sharedSoundToolManager] soundType]]];
+        [[YaBoOrgyTool sharedSoundToolManager] setSoundType:[self typeWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] soundType]]];
     }
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
 }
 - (NSString *)nextButtonTitleWihtSoundPlayType:(SoundPlayType)type {
     if (type == 0) {

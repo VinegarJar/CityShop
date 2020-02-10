@@ -19,7 +19,7 @@
     [self flareHeatingHorizontal:self action:@selector(stopBtnClick:) forControlEvents:UIControlEventTouchDown];
     __weak typeof(self) weakSelf = self;
     self.bobmView = [[RaiseFlashSelflessView alloc] initWithFrame:CGRectMake(0, 0, 16, ScreenHeight - 16 - self.redButton.frame.size.height)];
-    [self.view insertSubview:self.bobmView belowSubview:self.playAgainButton];
+    [self.view insertSubview:self.bobmView belowSubview:self.playNose];
     self.bobmView.nextBlock = ^{
         weakSelf.redImageView.highlighted = NO;
         weakSelf.yellowImageView.highlighted = NO;

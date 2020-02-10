@@ -1,22 +1,22 @@
-#import "WNXSoundToolManager.h"
+#import "YaBoOrgyTool.h"
 #import <AVFoundation/AVFoundation.h>
 #define kMusicType @"kMusicType"
 #define YaSoundType @"YaSoundType"
-@interface WNXSoundToolManager()
+@interface YaBoOrgyTool()
 {
     BOOL _loadData;
 }
 @property (nonatomic, strong) AVAudioPlayer *bgPlayer;
 @property (nonatomic, strong) NSMutableDictionary *soundIDs;
 @end
-@implementation WNXSoundToolManager
+@implementation YaBoOrgyTool
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-static WNXSoundToolManager *instance = nil;
+static YaBoOrgyTool *instance = nil;
 + (instancetype)sharedSoundToolManager {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[WNXSoundToolManager alloc] init];
+        instance = [[YaBoOrgyTool alloc] init];
     });
     return instance;
 }
@@ -135,9 +135,9 @@ void audioVolumeChange(void *inUserData, AudioSessionPropertyID inPropertyID,
 {
     Float32 value = *(Float32 *)inPropertyValue;
     if (value > 0) {
-        [[WNXSoundToolManager sharedSoundToolManager] lookApproximateHand:YES];
+        [[YaBoOrgyTool sharedSoundToolManager] lookApproximateHand:YES];
     } else {
-        [[WNXSoundToolManager sharedSoundToolManager] recentlyEasternFishing];
+        [[YaBoOrgyTool sharedSoundToolManager] recentlyEasternFishing];
     }
 }
 - (void)loadSounds {

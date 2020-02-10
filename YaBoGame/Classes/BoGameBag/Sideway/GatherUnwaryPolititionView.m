@@ -114,7 +114,7 @@
 }
 #pragma mark - Private Method
 - (void)startSprayAnimation {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundReelinName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundReelinName];
     [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         self.sprayIV.transform = CGAffineTransformMakeScale(0, 1);
     } completion:^(BOOL finished) {

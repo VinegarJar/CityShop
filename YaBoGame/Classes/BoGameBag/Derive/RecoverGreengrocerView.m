@@ -24,7 +24,7 @@
         self.passState();
         return;
     }
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundWriteName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundWriteName];
     if (_isFrist ) {
         [self.subjectView crushNuclearGoodness:^(int index1, int index2, int index3, int result) {
             nums(index1, index2, index3);

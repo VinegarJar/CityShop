@@ -54,7 +54,7 @@
     }
 }
 - (IBAction)btnClick:(UIButton *)sender {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
     if (sender.tag == 20) {
         for (UIViewController *vc in self.navigationController.viewControllers) {
             if ([vc isKindOfClass:[SorryEnvelopeController class]]) {
@@ -102,7 +102,7 @@
 #pragma mark WNXResultScoreViewDelegate
 - (void)resultScoreViewChangeWithRank:(NSString *)rank {
     self.scroeImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"score_%@", rank]];
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:[NSString stringWithFormat:@"scoreGrade_%@.mp4", rank]];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:[NSString stringWithFormat:@"scoreGrade_%@.mp4", rank]];
 }
 - (void)resultScoreViewDidRemove {
     [self showBottomView];
@@ -135,8 +135,8 @@
         recordIV.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished) {
         [self shakeAnimation];
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundNewRecordName1];
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundNewRecordName2];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundNewRecordName1];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundNewRecordName2];
         self.blurBackIV.hidden = NO;
         recordBlurIV.hidden = NO;
         self.animationIV.hidden = NO;
@@ -169,12 +169,12 @@
     self.failShadowView.hidden = NO;
     self.userScroeLabel.text = [NSString stringWithFormat:@"你的分数: %@ %@", userScroe, _stage.unit];
     self.passLabel.text = [NSString stringWithFormat:@"闯关分数: %@ %@", passScroe, _stage.unit];
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundFailDropName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundFailDropName];
     [UIView animateWithDuration:0.2 delay:0.1 options:UIViewAnimationOptionCurveLinear animations:^{
         self.fialViewTopConstraint.constant = ScreenHeight - 90 - 150 - self.scroeImageView.frame.size.height + 10;
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundFailScreamName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundFailScreamName];
         [self pressScroeImageView];
     }];
 }
@@ -195,7 +195,7 @@
                 self.cageImageView.transform = CGAffineTransformIdentity;
             } completion:^(BOOL finished) {
                 self.failBackgrounView.hidden = NO;
-                [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundcageDropName];
+                [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundcageDropName];
             }];
         });
     }];

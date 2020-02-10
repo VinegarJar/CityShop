@@ -19,7 +19,7 @@
     __weak typeof(self) weakSelf = self;
     UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 20)];
     bgImageView.image = [UIImage imageNamed:@"04_background-iphone4"];
-    [self.view insertSubview:bgImageView belowSubview:self.playAgainButton];
+    [self.view insertSubview:bgImageView belowSubview:self.playNose];
     [self flareHeatingHorizontal:self action:@selector(gunClick) forControlEvents:UIControlEventTouchDown];
     [self  resignAboveDrought:[UIImage imageNamed:@"004_gun-iphone4"] contenEdgeInsets:UIEdgeInsetsMake(20, 20, 20, 20)];
     self.glassView = [[StackFavourablePerseveranceView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 300 - self.redButton.frame.size.height, ScreenWidth, 300)];

@@ -25,8 +25,8 @@ typedef NS_ENUM(NSInteger, WNXADType) {
 @property (nonatomic, strong) BattleUponSplendour          *stage;
 @property (nonatomic, strong) UIView            *cplendour;
 @property (nonatomic, strong) UIImageView       *tipeGraceView;
-@property (nonatomic, strong) UIButton          *playAgainButton;
-@property (nonatomic, strong) UIButton          *pauseButton;
+@property (nonatomic, strong) UIButton          *playNose;
+@property (nonatomic, strong) UIButton          *yoBoNose;
 @property (nonatomic, strong) OclockVisibleBookmarkView      *stateView;
 - (void)weaveTransparentlyFunSeaside;
 - (void)equipBrilliantLamb;

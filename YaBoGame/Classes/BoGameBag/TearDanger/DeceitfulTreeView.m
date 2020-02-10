@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, WNXDirectionType) {
 }
 - (void)neatlyAfraidBrightness {
     _count++;
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundBusPassName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundBusPassName];
     _redBoyNum = 0;
     _yellowGirlNum = 0;
     _blueBoyNum = 0;

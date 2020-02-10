@@ -81,7 +81,7 @@
 }
 #pragma mark - Action
 - (void)buttonClick:(UIButton *)sender {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundFeatherClickName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundFeatherClickName];
     [self.numView appearAwfullyWindyObesity:(int)sender.tag];
     if (![self.plateView bentReef:(int)sender.tag]) {
         [(AnticipateDictionaryCulturalView *)self.cplendour stopCalculateTime];

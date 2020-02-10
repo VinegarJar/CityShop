@@ -74,7 +74,7 @@
     rightFractView.transform = CGAffineTransformMakeTranslation(0, -300);
     [self addSubview:rightFractView];
     self.currentR = rightFractView;
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundWriteName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundWriteName];
     if (self.timer) {
         [self.timer invalidate];
         self.timer = nil;

@@ -85,7 +85,7 @@
         bobmAnimationIV.animationDuration = 0.3;
         [self insertSubview:bobmAnimationIV belowSubview:self.bobmView1];
         [bobmAnimationIV startAnimating];
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundBoum];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundBoum];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             failView.alpha = 1;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -143,7 +143,7 @@
     }
 }
 - (void)showKaCViewWithIndex:(int)index {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundKaChaName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundKaChaName];
     UIView *lightView = [[UIView alloc] initWithFrame:CGRectMake(index * (ScreenWidth / 3), 0, ScreenWidth / 3, self.frame.size.height)];
     lightView.backgroundColor = [UIColor whiteColor];
     lightView.alpha = 0.7;
@@ -161,7 +161,7 @@
     [UIView animateWithDuration:0.25 animations:^{
         self.bobmView1.transform = self.bobmView2.transform = self.bobmView3.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundPaName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundPaName];
         self.superview.userInteractionEnabled = YES;
         [self.bobmView1 structureWhereGracefulAccident];
         [self.bobmView2 structureWhereGracefulAccident];
@@ -191,7 +191,7 @@
     _ms++;
     if (_ms == 40) {
         _ms = 0;
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundCountDownName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundCountDownName];
     }
 }
 - (void)pause {

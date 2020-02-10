@@ -30,7 +30,7 @@
     _isShowedFail = NO;
 }
 - (void)trickHealthySite {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundReloadName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundReloadName];
     _count++;
     _isSucess = NO;
     _isShowedFail = NO;
@@ -61,7 +61,7 @@
     }
 }
 - (void)specializePerLightEngineering {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundGunName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundGunName];
     _glassCount--;
     if (_glassCount == 0) {
         _isSucess = YES;

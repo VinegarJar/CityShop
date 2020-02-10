@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initGraceView];
-    [self buildPlayAgainButton];
-    [self buildPauseButton];
+    [self ripeGraceAgainButton];
+    [self buildyoBoNose];
     [self showtipeGraceView];
     [self buildADView];
 }
@@ -44,13 +44,13 @@
 }
 - (void)weaveTransparentlyFunSeaside {
     if ([[NSUserDefaults standardUserDefaults] integerForKey:@"kMusicType"] == SoundPlayTypeMute) {
-        [[WNXSoundToolManager sharedSoundToolManager] permanentlyHybridTextbook:0.3];
+        [[YaBoOrgyTool sharedSoundToolManager] permanentlyHybridTextbook:0.3];
         _volume = 0.3;
     }
 }
 - (void)equipBrilliantLamb {
     if (_volume) {
-        [[WNXSoundToolManager sharedSoundToolManager] permanentlyHybridTextbook:1.0];
+        [[YaBoOrgyTool sharedSoundToolManager] permanentlyHybridTextbook:1.0];
     }
     self.view.userInteractionEnabled = NO;
 }
@@ -78,29 +78,29 @@
     [self.navigationController pushViewController:failVC animated:NO];
 }
 #pragma mark - Private Method
-- (void)buildPlayAgainButton {
-    self.playAgainButton = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth - 55, 75, 110, 52)];
-    self.playAgainButton.adjustsImageWhenHighlighted = NO;
-    self.playAgainButton.userInteractionEnabled = YES;
-    [self.playAgainButton setBackgroundImage:[UIImage imageNamed:@"ing_retry"] forState:UIControlStateNormal];
-    [self.playAgainButton addTarget:self action:@selector(stitchScheduleOdourless) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:self.playAgainButton];
+- (void)ripeGraceAgainButton {
+    self.playNose = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth - 55, 75, 110, 52)];
+    self.playNose.adjustsImageWhenHighlighted = NO;
+    self.playNose.userInteractionEnabled = YES;
+    [self.playNose setBackgroundImage:[UIImage imageNamed:@"ing_retry"] forState:UIControlStateNormal];
+    [self.playNose addTarget:self action:@selector(stitchScheduleOdourless) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:self.playNose];
 }
 - (void)lookIntoWeekend {
-    [self.view bringSubviewToFront:self.pauseButton];
-    [self.view bringSubviewToFront:self.playAgainButton];
+    [self.view bringSubviewToFront:self.yoBoNose];
+    [self.view bringSubviewToFront:self.playNose];
     [self.view bringSubviewToFront:self.adView];
     if (self.tipeGraceView) {
         [self.view bringSubviewToFront:self.tipeGraceView];
     }
 }
-- (void)buildPauseButton {
-    self.pauseButton = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth - 55, CGRectGetMaxY(self.playAgainButton.frame) + 13, 110, 52)];
-    [self.pauseButton setBackgroundImage:[UIImage imageNamed:@"ing_pause"] forState:UIControlStateNormal];
-    self.pauseButton.adjustsImageWhenHighlighted = NO;
-    self.pauseButton.userInteractionEnabled = YES;
-    [self.pauseButton addTarget:self action:@selector(terriblePoetry ) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:self.pauseButton];
+- (void)buildyoBoNose {
+    self.yoBoNose = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth - 55, CGRectGetMaxY(self.playNose.frame) + 13, 110, 52)];
+    [self.yoBoNose setBackgroundImage:[UIImage imageNamed:@"ing_pause"] forState:UIControlStateNormal];
+    self.yoBoNose.adjustsImageWhenHighlighted = NO;
+    self.yoBoNose.userInteractionEnabled = YES;
+    [self.yoBoNose addTarget:self action:@selector(terriblePoetry ) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:self.yoBoNose];
 }
 - (void)initGraceView {
     self.tipeGraceView = [[UIImageView alloc] initWithFrame:ScreenBounds];

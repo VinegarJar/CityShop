@@ -34,7 +34,7 @@
 
 /* import Class */
 #import "UIView+YBSImage.h"
-#import "WNXSoundToolManager.h"
+#import "YaBoOrgyTool.h"
 #import "FrownInsideBreastController.h"
 #import "HushByPaceView.h"
 #import "BattleUponSplendour.h"

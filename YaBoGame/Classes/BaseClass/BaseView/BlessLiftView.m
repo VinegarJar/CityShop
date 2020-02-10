@@ -16,7 +16,7 @@
     self.outView.transform = CGAffineTransformMakeTranslation(ScreenWidth, 0);
 }
 - (void)billionFaculty:(void (^)())completion {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundOutSpoonName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundOutSpoonName];
     [UIView animateWithDuration:0.15 animations:^{
         self.redBgView.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished) {
@@ -25,7 +25,7 @@
             self.shadowView.transform = CGAffineTransformIdentity;
             self.outView.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundOutName];
+            [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundOutName];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [UIView animateWithDuration:0.25 animations:^{
                     self.peopleView.transform = CGAffineTransformMakeTranslation(-ScreenWidth - 50, 0);

@@ -94,7 +94,7 @@
     _ms = 0;
 }
 - (void)showCurtain {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundSayOKName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundSayOKName];
     NSTimeInterval duration;
     if (_count < 4) {
         duration = 0.2;
@@ -155,7 +155,7 @@
 }
 - (BOOL)joinParttimeWaste:(int)index {
     BOOL isSucess;
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundTakePhotoName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundTakePhotoName];
     switch (index) {
         case 0:
             if (_isModel1) {

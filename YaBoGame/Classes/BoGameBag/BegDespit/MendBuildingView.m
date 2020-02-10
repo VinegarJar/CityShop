@@ -142,9 +142,9 @@
         self.oldIV.frame = CGRectMake(self.oldIV.frame.origin.x - kSpeed, self.oldIV.frame.origin.y, self.oldIV.frame.size.width, self.oldIV.frame.size.height);
     }
     if (_toRight && ((self.manIV.frame.origin.x >= ScreenWidth / 2 && self.manIV.frame.origin.x < ScreenWidth / 2 + kSpeed) || (self.childIV.frame.origin.x >= ScreenWidth / 2 && self.childIV.frame.origin.x < ScreenWidth / 2 + kSpeed) || (self.childIV.frame.origin.x >= ScreenWidth / 2 && self.childIV.frame.origin.x < ScreenWidth / 2 + kSpeed))) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundAppearSoundName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundAppearSoundName];
     } else if (!_toRight && ((self.manIV.frame.origin.x <= ScreenWidth / 2 && self.manIV.frame.origin.x > ScreenWidth / 2 - kSpeed) || (self.childIV.frame.origin.x <= ScreenWidth / 2 && self.childIV.frame.origin.x > ScreenWidth / 2 - kSpeed) || (self.oldIV.frame.origin.x <= ScreenWidth / 2 && self.oldIV.frame.origin.x > ScreenWidth / 2 - kSpeed))) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundAppearSoundName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundAppearSoundName];
     }
 }
 - (void)setRandomPeople {
@@ -270,7 +270,7 @@
         self.timer = nil;
     }
     __weak typeof(self) weakSelf = self;
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundMoanName(arc4random_uniform(3) + 2)];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundMoanName(arc4random_uniform(3) + 2)];
     [self hookPhysicist:YES AnimationFinish:^{
         if (_count == 19) {
              self.nextCountWithSucess(YES);

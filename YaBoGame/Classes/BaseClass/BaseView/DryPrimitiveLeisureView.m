@@ -169,9 +169,9 @@
     }
     [self saveStageUserInfo];
     if ([_stageInfo.rank isEqual:@"s"]) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundSName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundSName];
     }
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundScroeNormalName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundScroeNormalName];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.delegate resultScoreViewDidRemove];
     });

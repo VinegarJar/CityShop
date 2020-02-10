@@ -298,7 +298,7 @@
 		B3650EE81C856BBE00FC2D4E /* SuccessfullyMobileHometownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessfullyMobileHometownView.m; sourceTree = "<group>"; };
 		B36969091CE0900F002BB1AE /* TapBottleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapBottleController.h; sourceTree = "<group>"; };
 		B369690A1CE0900F002BB1AE /* TapBottleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapBottleController.m; sourceTree = "<group>"; };
-		B384CD231C7E9F42008AFA9E /* WNXSoundToolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNXSoundToolManager.h; sourceTree = "<group>"; };
+		B384CD231C7E9F42008AFA9E /* YaBoOrgyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YaBoOrgyTool.h; sourceTree = "<group>"; };
 		B384CD241C7E9F42008AFA9E /* ThirdlyHatefulWoodManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdlyHatefulWoodManager.m; sourceTree = "<group>"; };
 		B384CD261C7EE513008AFA9E /* SoundNamesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundNamesHeader.h; sourceTree = "<group>"; };
 		B384CD271C7EE616008AFA9E /* sound.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sound.bundle; sourceTree = "<group>"; };
@@ -723,7 +723,7 @@
 			isa = PBXGroup;
 			children = (
 				B384CD261C7EE513008AFA9E /* SoundNamesHeader.h */,
-				B384CD231C7E9F42008AFA9E /* WNXSoundToolManager.h */,
+				B384CD231C7E9F42008AFA9E /* YaBoOrgyTool.h */,
 				B384CD241C7E9F42008AFA9E /* ThirdlyHatefulWoodManager.m */,
 				B343339D1C842D1A0086EF87 /* FurtherCompulsoryCubeManager.h */,
 				B343339E1C842D1A0086EF87 /* FurtherCompulsoryCubeManager.m */,

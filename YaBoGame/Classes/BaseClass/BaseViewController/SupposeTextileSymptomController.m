@@ -10,7 +10,7 @@
 }
 - (void)buildBackgroundImageView {
     self.backgroundIV = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    [self.view insertSubview:self.backgroundIV belowSubview:self.playAgainButton];
+    [self.view insertSubview:self.backgroundIV belowSubview:self.playNose];
 }
 - (void)buildButtons {
     self.leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, ScreenHeight - 96, ScreenWidth * 0.5, 96)];

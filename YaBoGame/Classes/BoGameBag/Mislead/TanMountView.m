@@ -95,7 +95,7 @@ typedef NS_ENUM(NSInteger, RigthType) {
     _rotationIndex = self.leftType * 10;
     _rotationIndex2 = self.rightType * 10;
     self.isAnimation = YES;
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundRollingName2];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundRollingName2];
     self.timer1 = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateTime)];
     [self.timer1 addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -106,7 +106,7 @@ typedef NS_ENUM(NSInteger, RigthType) {
 - (void)setAnimFinishCount:(int)animFinishCount {
     _animFinishCount = animFinishCount;
     if (_animFinishCount == 2) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundJackpotStop];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundJackpotStop];
         self.AnimationFinishBlock(_isFrist);
         self.isAnimation = NO;
         _isFrist = NO;

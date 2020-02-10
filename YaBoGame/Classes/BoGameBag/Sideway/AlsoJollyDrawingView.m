@@ -63,7 +63,7 @@
     [UIView animateWithDuration:0.2 animations:^{
         self.goodsIV.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundCatchFishName];
+        [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundCatchFishName];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             self.goodsIV.hidden = YES;
             if (finish) {

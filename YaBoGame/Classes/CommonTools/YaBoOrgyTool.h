@@ -6,7 +6,7 @@ typedef NS_ENUM(NSInteger, SoundPlayType) {
     SoundPlayTypeLow,
     SoundPlayTypeMute
 };
-@interface WNXSoundToolManager : NSObject
+@interface YaBoOrgyTool : NSObject
 @property (nonatomic, assign) SoundPlayType bgMusicType;
 @property (nonatomic, assign) SoundPlayType soundType;
 - (void)recentlyEasternFishing;

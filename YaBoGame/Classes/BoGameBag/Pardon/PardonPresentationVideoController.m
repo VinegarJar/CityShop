@@ -69,7 +69,7 @@
 }
 #pragma mark - Action
 - (void)btnClick:(UIButton *)sender {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundClickAnsName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundClickAnsName];
     sender.userInteractionEnabled = NO;
     if (self.btnCanEdit) {
         if ([self.pokerView selectMiddleBotany:sender.tag]) {

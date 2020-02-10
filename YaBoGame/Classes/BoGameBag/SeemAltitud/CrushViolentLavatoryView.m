@@ -85,7 +85,7 @@
     [self runWithIsLeft:NO];
 }
 - (void)runWithIsLeft:(BOOL)isLeft {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundGoUpstairs];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundGoUpstairs];
     _runCount++;
     _isSucceed = NO;
     if (_runCount > _randomIndex) {
@@ -143,7 +143,7 @@
         [UIView animateWithDuration:0.2 animations:^{
             self.peopleIV.transform = CGAffineTransformMakeTranslation(25, 0);
         } completion:^(BOOL finished) {
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundStage04Name];
+            [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundStage04Name];
             self.peopleIV.image = [UIImage imageNamed:@"05_success02-iphone4"];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 self.showResult();
@@ -158,7 +158,7 @@
     }
 }
 - (void)failAnimation {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundFailToJumpName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundFailToJumpName];
     CGAffineTransform failTransform = CGAffineTransformRotate(self.peopleIV.transform, M_PI_4);
     failTransform = CGAffineTransformTranslate(failTransform, 100, -80);
     [UIView animateWithDuration:0.2 animations:^{
@@ -167,7 +167,7 @@
         [UIView animateWithDuration:0.2 animations:^{
             self.peopleIV.frame = CGRectMake(self.peopleIV.frame.origin.x, self.peopleIV.frame.origin.y + 300, 100, 154);
         } completion:^(BOOL finished) {
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundWaterName];
+            [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundWaterName];
             [UIView animateWithDuration:0.2 animations:^{
                 self.failIV.transform = CGAffineTransformIdentity;
             } completion:^(BOOL finished) {

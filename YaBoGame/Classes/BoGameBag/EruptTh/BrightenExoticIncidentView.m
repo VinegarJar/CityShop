@@ -43,7 +43,7 @@
 - (void)muteHall:(void (^)())finish {
     self.boneView.frame = CGRectMake(self.boneView.frame.origin.x, self.boneView.frame.origin.y - 500, self.boneView.frame.size.width, self.boneView.frame.size.height);
     self.boneView.hidden = NO;
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundDogbarkOnceName];
+    [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundDogbarkOnceName];
     [UIView animateWithDuration:0.2 animations:^{
         self.boneView.frame = CGRectMake(self.boneView.frame.origin.x, self.boneView.frame.origin.y + 500, self.boneView.frame.size.width, self.boneView.frame.size.height);
     } completion:^(BOOL finished) {
