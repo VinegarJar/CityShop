@@ -83,7 +83,7 @@
     self.playAgainButton.adjustsImageWhenHighlighted = NO;
     self.playAgainButton.userInteractionEnabled = YES;
     [self.playAgainButton setBackgroundImage:[UIImage imageNamed:@"ing_retry"] forState:UIControlStateNormal];
-    [self.playAgainButton addTarget:self action:@selector(playAgainGame) forControlEvents:UIControlEventTouchDown];
+    [self.playAgainButton addTarget:self action:@selector(stitchScheduleOdourless) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:self.playAgainButton];
 }
 - (void)lookIntoWeekend {
@@ -99,7 +99,7 @@
     [self.pauseButton setBackgroundImage:[UIImage imageNamed:@"ing_pause"] forState:UIControlStateNormal];
     self.pauseButton.adjustsImageWhenHighlighted = NO;
     self.pauseButton.userInteractionEnabled = YES;
-    [self.pauseButton addTarget:self action:@selector(pauseGame) forControlEvents:UIControlEventTouchDown];
+    [self.pauseButton addTarget:self action:@selector(terriblePoetry ) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:self.pauseButton];
 }
 - (void)initGuideImageView {
