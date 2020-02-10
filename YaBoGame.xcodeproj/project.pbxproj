@@ -15,7 +15,7 @@
 		039C71A823DDB42D0046CB3F /* BelieveOutputEachView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A423DDB42D0046CB3F /* BelieveOutputEachView.m */; };
 		039C71A923DDB42D0046CB3F /* WearStockingUrban.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A623DDB42D0046CB3F /* WearStockingUrban.m */; };
 		841F0E3123F160D400634F27 /* CustomFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3023F160D400634F27 /* CustomFont.ttf */; };
-		841F0E3523F1786A00634F27 /* bg_music.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3423F1786A00634F27 /* bg_music.mp4 */; };
+		841F0E3523F1786A00634F27 /* Unlock_New.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3423F1786A00634F27 /* Unlock_New.mp4 */; };
 		841F0E7E23F1875700634F27 /* TugNiecePresentationalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3E23F1875700634F27 /* TugNiecePresentationalController.xib */; };
 		841F0E7F23F1875700634F27 /* ChooseTemporaryFamilyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F0E4123F1875700634F27 /* ChooseTemporaryFamilyController.m */; };
 		841F0E8023F1875700634F27 /* ComeAgainstConclusionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F0E4223F1875700634F27 /* ComeAgainstConclusionController.m */; };
@@ -201,7 +201,7 @@
 		4E14825F263C503581E0F14A /* libPods-YaBoGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaBoGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9ED0BD0861BCF083FB449 /* Pods-YaBoGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaBoGame.release.xcconfig"; path = "Target Support Files/Pods-YaBoGame/Pods-YaBoGame.release.xcconfig"; sourceTree = "<group>"; };
 		841F0E3023F160D400634F27 /* CustomFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CustomFont.ttf; sourceTree = "<group>"; };
-		841F0E3423F1786A00634F27 /* bg_music.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_music.mp4; sourceTree = "<group>"; };
+		841F0E3423F1786A00634F27 /* Unlock_New.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Unlock_New.mp4; sourceTree = "<group>"; };
 		841F0E3E23F1875700634F27 /* TugNiecePresentationalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TugNiecePresentationalController.xib; sourceTree = "<group>"; };
 		841F0E3F23F1875700634F27 /* ComeAgainstConclusionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComeAgainstConclusionController.h; sourceTree = "<group>"; };
 		841F0E4023F1875700634F27 /* TugNiecePresentationalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TugNiecePresentationalController.h; sourceTree = "<group>"; };
@@ -782,7 +782,7 @@
 		B32C1E8B1C7C57FE00B2C577 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				841F0E3423F1786A00634F27 /* bg_music.mp4 */,
+				841F0E3423F1786A00634F27 /* Unlock_New.mp4 */,
 				B384CD271C7EE616008AFA9E /* sound.bundle */,
 			);
 			path = Sound;
@@ -1363,7 +1363,7 @@
 				841F0EE623F187AA00634F27 /* RubSignalTechnologicalController.xib in Resources */,
 				B3F5321B1CF2E308005F537D /* ComputeDirectionExcessiveView.xib in Resources */,
 				FA48C6521CBA94BC004B326C /* SwimOfMankindView.xib in Resources */,
-				841F0E3523F1786A00634F27 /* bg_music.mp4 in Resources */,
+				841F0E3523F1786A00634F27 /* Unlock_New.mp4 in Resources */,
 				B3F29D821CE0A96900049FA7 /* BrightenExoticIncidentView.xib in Resources */,
 				B3B0D7391C83DFF20048C380 /* game.plist in Resources */,
 				841F0E3123F160D400634F27 /* CustomFont.ttf in Resources */,
@@ -1670,7 +1670,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 20200128;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YaBoGame/PrefixHeader.pch;
@@ -1689,7 +1689,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 20200128;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YaBoGame/PrefixHeader.pch;
@@ -1733,6 +1733,7 @@
 		B32C1E811C7C4DF600B2C577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				INFOPLIST_FILE = YaBoGameUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.QuizGame.Bag;
@@ -1745,6 +1746,7 @@
 		B32C1E821C7C4DF600B2C577 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				INFOPLIST_FILE = YaBoGameUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.QuizGame.Bag;
