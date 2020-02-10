@@ -19,7 +19,6 @@
 		039C71A923DDB42D0046CB3F /* WearStockingUrban.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A623DDB42D0046CB3F /* WearStockingUrban.m */; };
 		039C71AD23DDBD430046CB3F /* ComeAgainstConclusionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71AB23DDBD430046CB3F /* ComeAgainstConclusionController.m */; };
 		039C71AE23DDBD430046CB3F /* ComeAgainstConclusionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039C71AC23DDBD430046CB3F /* ComeAgainstConclusionController.xib */; };
-		03E675B223E0266B0020DE1D /* Default-Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E675B123E0266B0020DE1D /* Default-Launch.png */; };
 		B1EBE7679DF987494E973CC6 /* libPods-YaBoGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E14825F263C503581E0F14A /* libPods-YaBoGame.a */; };
 		B30060A51CBB8E8D0040BF99 /* CrossDistantPhraseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30060A41CBB8E8D0040BF99 /* CrossDistantPhraseView.m */; };
 		B30060A71CBB8F340040BF99 /* CrossDistantPhraseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30060A61CBB8F340040BF99 /* CrossDistantPhraseView.xib */; };
@@ -208,7 +207,6 @@
 		039C71AA23DDBD430046CB3F /* ComeAgainstConclusionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComeAgainstConclusionController.h; sourceTree = "<group>"; };
 		039C71AB23DDBD430046CB3F /* ComeAgainstConclusionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComeAgainstConclusionController.m; sourceTree = "<group>"; };
 		039C71AC23DDBD430046CB3F /* ComeAgainstConclusionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComeAgainstConclusionController.xib; sourceTree = "<group>"; };
-		03E675B123E0266B0020DE1D /* Default-Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Launch.png"; sourceTree = "<group>"; };
 		08DC16FCDB3182C91FE883AB /* Pods-YaBoGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaBoGame.debug.xcconfig"; path = "Target Support Files/Pods-YaBoGame/Pods-YaBoGame.debug.xcconfig"; sourceTree = "<group>"; };
 		4E14825F263C503581E0F14A /* libPods-YaBoGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaBoGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9ED0BD0861BCF083FB449 /* Pods-YaBoGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaBoGame.release.xcconfig"; path = "Target Support Files/Pods-YaBoGame/Pods-YaBoGame.release.xcconfig"; sourceTree = "<group>"; };
@@ -678,7 +676,6 @@
 		B32C1E871C7C57FE00B2C577 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				03E675B123E0266B0020DE1D /* Default-Launch.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -1389,7 +1386,6 @@
 				B3F29D871CE18EE400049FA7 /* NormallyYoungTigerView.xib in Resources */,
 				B3E6A5EE1CE5750300698078 /* CommonTriangleView.xib in Resources */,
 				FA70F24E1CC66BEA002348C6 /* PlantWeakPensionView.xib in Resources */,
-				03E675B223E0266B0020DE1D /* Default-Launch.png in Resources */,
 				FAC8C1C41CAEC3F200FD8D0E /* OclockVisibleBookmarkView.xib in Resources */,
 				B308860A1C8939D700AE83B2 /* Transformers Movie 变形金刚字体.ttf in Resources */,
 				B39910A41D0169BA00E107DD /* ZealousFortnightView.xib in Resources */,
