@@ -1,0 +1,10 @@
+#import <UIKit/UIKit.h>
+@interface SlimGownView : UIView
+@property (nonatomic, copy) void(^passStageBlock)();
+- (void)oralOutlook:(BOOL)pullOut score:(int)score finish:(void(^)())finish;
+- (void)pause;
+- (void)resume;
+- (void)tactileCivilization;
+@end
+
+

@@ -1,0 +1,46 @@
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/* NSNotificationNames */
+#define LaunchAnimationDidFinish @"LaunchAnimationDidFinish"
+#define kNotificationNameGameViewControllerDelloc @"kNotificationNameGameViewControllerDelloc"
+
+#define kPauseViewControllerClickBackToMainViewController @"kPauseViewControllerClickBackToMainViewController"
+
+/* Font */
+#define kFontSize 70
+
+/* common */
+#define iPhone5 ([[UIScreen mainScreen] bounds].size.height == 568 || [[UIScreen mainScreen] bounds].size.height == 1136)
+#define ScreenHeightDifference ((568 - 480) * 0.5)
+#define ScreenBounds [UIScreen mainScreen].bounds
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+/* OTHER */
+#define kCountStartX(WIDTH) (ScreenWidth - WIDTH) * 0.5
+
+
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+/* import Class */
+#import "UIView+YBSImage.h"
+#import "WNXSoundToolManager.h"
+#import "FrownInsideBreastController.h"
+#import "HushByPaceView.h"
+#import "BattleUponSplendour.h"
+
+/* import Macro */
+
+
+#endif /* PrefixHeader_pch */
+
