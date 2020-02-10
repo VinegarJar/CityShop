@@ -52,7 +52,7 @@
     }
 }
 - (void)startUnLockAnmiation {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundUnlock];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundUnlock];
     CAAnimationGroup *group = [self shakeAndScaleAnimation];
     group.delegate = self;
     [self.layer addAnimation:group forKey:nil];
@@ -63,7 +63,7 @@
     self.rankImageView.hidden = YES;
     self.rankShadowView.hidden = YES;
     [self.coverView removeFromSuperview];
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundNewShow];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundNewShow];
     [UIView animateWithDuration:CGRectGetMaxY(self.frame) / 3000 animations:^{
         self.lockView.transform = CGAffineTransformMakeTranslation(0, ScreenHeight - CGRectGetMaxY(self.frame) + 100);
     } completion:^(BOOL finished) {

@@ -81,7 +81,7 @@
 }
 #pragma mark - Action
 - (void)buttonClick:(UIButton *)sender {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundFeatherClickName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundFeatherClickName];
     [self.numView appearAwfullyWindyObesity:(int)sender.tag];
     if (![self.plateView bentReef:(int)sender.tag]) {
         [(AnticipateDictionaryCulturalView *)self.countScore stopCalculateTime];

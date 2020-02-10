@@ -36,7 +36,7 @@
         [sender setTitle:[NSString stringWithFormat:@"SOUND %@", subTitle] forState:UIControlStateNormal];
         [[WNXSoundToolManager sharedSoundToolManager] setSoundType:[self typeWihtSoundPlayType:[[WNXSoundToolManager sharedSoundToolManager] soundType]]];
     }
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundCliclName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
 }
 - (NSString *)nextButtonTitleWihtSoundPlayType:(SoundPlayType)type {
     if (type == 0) {

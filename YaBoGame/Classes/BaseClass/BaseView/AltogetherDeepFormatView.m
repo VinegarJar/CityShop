@@ -23,7 +23,7 @@
     AltogetherDeepFormatView *readyGoView = [[AltogetherDeepFormatView alloc] initWithFrame:CGRectMake(ScreenWidth, startY, ScreenWidth, 95)];
     [superView addSubview:readyGoView];
     [superView bringSubviewToFront:readyGoView];
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundReadyGoName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundReadyGoName];
     [UIView animateWithDuration:0.3 animations:^{
         readyGoView.frame = CGRectMake(0, startY, ScreenWidth, 95);
     } completion:^(BOOL finished) {

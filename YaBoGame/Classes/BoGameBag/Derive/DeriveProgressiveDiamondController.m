@@ -83,7 +83,7 @@
         badView.image = [UIImage imageNamed:@"00_bad-iphone4"];
         badView.center = CGPointMake(errorView.center.x - 70, errorView.center.y);
         [self.view addSubview:badView];
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundEnenName];
+        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundEnenName];
         [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.1 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             badView.transform = CGAffineTransformMakeRotation(M_2_PI);
         } completion:^(BOOL finished) {

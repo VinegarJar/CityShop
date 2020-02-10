@@ -78,7 +78,7 @@
 }
 #pragma mark - action
 - (void)featherClick:(UIButton *)sender {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundFeatherClickName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundFeatherClickName];
     [self.featherView frighteningConception:(int)sender.tag];
     if ([self.footView stainChurch:(int)sender.tag]) {
         [(RouseUninhabitedLetterView *)self.countScore ceaseUnit];

@@ -64,7 +64,7 @@ typedef void (^FailBlock)();
     }
     self.timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateTime:)];
     [self.timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSOundNoitSoundName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundNoitSoundName];
 }
 - (void)updateTime:(CADisplayLink *)timer {
     _flag++;
@@ -122,7 +122,7 @@ typedef void (^FailBlock)();
         [UIView animateWithDuration:0.3 animations:^{
             leftSnotIV.frame = CGRectMake(leftSnotIV.frame.origin.x, leftSnotIV.frame.origin.y + 23, leftSnotIV.frame.size.width, leftSnotIV.frame.size.height);
         } completion:^(BOOL finished) {
-             [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundWheezeSoundName];
+             [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundWheezeSoundName];
             [UIView animateWithDuration:0.4 animations:^{
                 leftSnotIV.transform = CGAffineTransformMakeScale(1, 0.02);
             } completion:^(BOOL finished) {
@@ -143,7 +143,7 @@ typedef void (^FailBlock)();
         [UIView animateWithDuration:0.3 animations:^{
             rightIV.frame = CGRectMake(rightIV.frame.origin.x, rightIV.frame.origin.y + 23, rightIV.frame.size.width, rightIV.frame.size.height);
         } completion:^(BOOL finished) {
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundWheezeSoundName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundWheezeSoundName];
             [UIView animateWithDuration:0.4 animations:^{
                 rightIV.transform = CGAffineTransformMakeScale(1, 0.02);
             } completion:^(BOOL finished) {
@@ -157,11 +157,11 @@ typedef void (^FailBlock)();
     }
 }
 - (void)rotaryEndeacour {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundLaunchClickName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundClick];
     _transform = CGAffineTransformRotate(_transform, -M_PI_4 / 20);
 }
 - (void)disapproveDespiteBristle {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundLaunchClickName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundClick];
     _transform = CGAffineTransformRotate(_transform, M_PI_4 / 20);
 }
 - (void)pause {

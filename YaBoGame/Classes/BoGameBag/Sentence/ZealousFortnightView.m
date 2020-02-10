@@ -124,7 +124,7 @@
     [UIView animateWithDuration:0.1 animations:^{
         slipView.transform = CGAffineTransformMakeRotation(M_PI_4 / 3);
     } completion:^(BOOL finished) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundSlapName];
+        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundSlapName];
         UIImageView *bomIV = [[UIImageView alloc] initWithFrame:CGRectMake((ScreenWidth / 3 - 160) * 0.5, ScreenHeight + self.cockroachIV.transform.ty  - ScreenWidth / 3 - 100, 160, 170)];
         bomIV.image = [UIImage imageNamed:@"stage27_pa0102-iphone4"];
         [self insertSubview:bomIV aboveSubview:topIV];

@@ -66,11 +66,11 @@
             }
             NSString *soundName;
             if (fartNum == 0) {
-                soundName = kSoundFart01Nmae;
+                soundName = YaSoundFart01Nmae;
             } else if (fartNum == 1) {
-                soundName = kSoundFart02Name;
+                soundName = YaSoundFart02Name;
             } else {
-                soundName = kSoundFart03Name;
+                soundName = YaSoundFart03Name;
             }
             [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:soundName];
             if (_isReomve) {
@@ -126,11 +126,11 @@
         result = index == fartIndex;
         NSString *soundName;
         if (index == 0) {
-            soundName = kSoundFart01Nmae;
+            soundName = YaSoundFart01Nmae;
         } else if (index == 1) {
-            soundName = kSoundFart02Name;
+            soundName = YaSoundFart02Name;
         } else {
-            soundName = kSoundFart03Name;
+            soundName = YaSoundFart03Name;
         }
         [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:soundName];
         if (result) {

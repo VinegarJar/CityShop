@@ -59,7 +59,7 @@
 }
 - (void)stageViewDidSelected:(UITapGestureRecognizer *)tap {
     if (self.didSelectedStageView) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundSelectedStage];
+        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundSelectedStage];
         self.didSelectedStageView(((TakeawayPileView *)tap.view).stage);
     }
 }

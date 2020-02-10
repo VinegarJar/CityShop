@@ -53,7 +53,7 @@
     [self lookIntoWeekend];
 }
 - (void)pullClick {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundEggHitName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundEggHitName];
     _count++;
     self.pullIV.hidden = YES;
     __weak typeof(self) weakSelf = self;

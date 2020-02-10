@@ -51,7 +51,7 @@
     UIImageView *screamIV = [[UIImageView alloc] initWithFrame:CGRectMake(-20, -50, ScreenWidth + 40, ScreenHeight + 100)];
     screamIV.image = [UIImage imageNamed:@"19_beforegame-iphone4"];
     [self.view addSubview:screamIV];
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundScreamName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundScreamName];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [screamIV removeFromSuperview];
         [self startPlayGame];

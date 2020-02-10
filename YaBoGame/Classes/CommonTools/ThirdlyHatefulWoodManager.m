@@ -1,7 +1,7 @@
 #import "WNXSoundToolManager.h"
 #import <AVFoundation/AVFoundation.h>
 #define kMusicType @"kMusicType"
-#define kSoundType @"kSoundType"
+#define YaSoundType @"YaSoundType"
 @interface WNXSoundToolManager()
 {
     BOOL _loadData;
@@ -25,14 +25,14 @@ static WNXSoundToolManager *instance = nil;
         [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];
         _loadData = YES;
         self.bgMusicType = [[NSUserDefaults standardUserDefaults] integerForKey:kMusicType];
-        self.soundType = [[NSUserDefaults standardUserDefaults] integerForKey:kSoundType];
+        self.soundType = [[NSUserDefaults standardUserDefaults] integerForKey:YaSoundType];
         [self loadSounds];
     }
     return self;
 }
 - (AVAudioPlayer *)bgPlayer {
     if (!_bgPlayer) {
-        NSURL *bgMusicURL = [[NSBundle mainBundle] URLForResource:kBgMusicURLName withExtension:nil];
+        NSURL *bgMusicURL = [[NSBundle mainBundle] URLForResource:YaSoundBGMusic withExtension:nil];
         _bgPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:bgMusicURL error:nil];
         [_bgPlayer prepareToPlay];
         _bgPlayer.numberOfLoops = -1;
@@ -58,7 +58,7 @@ static WNXSoundToolManager *instance = nil;
 }
 - (void)setSoundType:(SoundPlayType)soundType {
     _soundType = soundType;
-    [[NSUserDefaults standardUserDefaults] setInteger:soundType forKey:kSoundType];
+    [[NSUserDefaults standardUserDefaults] setInteger:soundType forKey:YaSoundType];
     [[NSUserDefaults standardUserDefaults] synchronize];
     switch (soundType) {
         case SoundPlayTypeHight:
@@ -143,7 +143,7 @@ void audioVolumeChange(void *inUserData, AudioSessionPropertyID inPropertyID,
 - (void)loadSounds {
     if (self.soundIDs) return;
     self.soundIDs = [NSMutableDictionary dictionary];
-    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:kSoundURLName withExtension:nil];
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:YaSoundMusic withExtension:nil];
     NSBundle *soundBundle = [NSBundle bundleWithURL:bundleURL];
     NSArray *boundsURLs = [soundBundle URLsForResourcesWithExtension:@"mp4" subdirectory:nil];
     for (NSURL *soundURL in boundsURLs) {

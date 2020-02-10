@@ -30,7 +30,7 @@
     self.eggView.blueButton = self.blueButton;
     __weak typeof(self) weakSelf = self;
     self.eggView.failBlock = ^(NSInteger index) {
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundEggHitName];
+        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundEggHitName];
         weakSelf.view.userInteractionEnabled = NO;
         UIImageView *badIV = [[UIImageView alloc] initWithFrame:CGRectMake((ScreenWidth / 3 - 80) * 0.5 + ScreenWidth / 3 * index, ScreenHeight - 250, 80, 44)];
         badIV.image = [UIImage imageNamed:@"00_bad-iphone4"];

@@ -43,7 +43,7 @@
     if (shakeDuration < 10) {
         shakeDuration = 10;
     }
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundRollDiceName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundRollDiceName];
     int maxIndex = arc4random_uniform(3);
     if (_count <= 4) {
         [self setDiceNumberRandom1];

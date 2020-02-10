@@ -141,7 +141,7 @@
         [self.motionManager stopAccelerometerUpdates];
         [self.timer invalidate];
         self.timer = nil;
-        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundDogbarkTwoName];
+        [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundDogbarkTwoName];
         __weak typeof(self) weakSelf = self;
         [self.dogView stepOfWaterproofDignity:angle > 0.8 finish:^{
             [weakSelf transformMatureLifeboat:weakSelf.scroe unit:@"秒" stage:weakSelf.stage isAddScore:YES];

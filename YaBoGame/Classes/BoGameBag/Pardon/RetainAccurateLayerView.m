@@ -100,7 +100,7 @@
         _same2 = NO;
         _same1 = NO;
     }
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundDealName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundDealName];
     [UIView animateWithDuration:0.3 animations:^{
         leftPokerView.transform = CGAffineTransformMakeRotation(M_PI_4 / pro);
         middlePokerView.transform = CGAffineTransformMakeRotation(M_PI_4 / middlePro);

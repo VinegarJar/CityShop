@@ -42,16 +42,16 @@
     self.hidden = NO;
     switch (type) {
         case WNXResultStateTypeOK:
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundOKName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundOKName];
             break;
         case WNXResultStateTypeGood:
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundGoodName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundGoodName];
             break;
         case WNXResultStateTypeGreat:
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundGreatName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundGreatName];
             break;
         case WNXResultStateTypePerfect:
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundPerfectName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundPerfectName];
         case WNXResultStateTypeBad:
         {
             NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp4", arc4random_uniform(3) + 2];
@@ -73,16 +73,16 @@
     self.hiddenFinsih = stageViewHiddenFinishBlock;
     switch (type) {
         case WNXResultStateTypeOK:
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundOKName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundOKName];
             break;
         case WNXResultStateTypeGood:
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundGoodName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundGoodName];
             break;
         case WNXResultStateTypeGreat:
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundGreatName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundGreatName];
             break;
         case WNXResultStateTypePerfect:
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundPerfectName];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundPerfectName];
             break;
         case WNXResultStateTypeBad:
         {

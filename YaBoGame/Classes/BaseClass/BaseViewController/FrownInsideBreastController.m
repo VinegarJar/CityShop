@@ -14,7 +14,7 @@
     [super viewDidLoad];
 }
 - (void)backButtonClick {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundCliclName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
     [self.navigationController popViewControllerAnimated:NO];
 }
 - (void)dealloc {

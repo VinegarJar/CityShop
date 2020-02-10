@@ -24,7 +24,7 @@
     [NSTimer scheduledTimerWithTimeInterval:4 target:self selector:@selector(rightWithTag:) userInfo:nil repeats:YES];
 }
 - (IBAction)buttonClick:(UIButton *)sender {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundCliclName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
     switch (sender.tag) {
         case 10:
             [self left];

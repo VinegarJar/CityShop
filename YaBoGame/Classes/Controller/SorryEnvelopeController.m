@@ -67,7 +67,7 @@
             group.duration = 0.3;
             group.animations = @[scale, translation];
             [titleLabel.layer addAnimation:group forKey:nil];
-            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundPrepaerTitle(i+1)];
+            [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundPrepaerTitle(i+1)];
         });
     }
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)( (1.5) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -89,7 +89,7 @@
     }];
 }
 - (IBAction)playGameClick {
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundCliclName];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
     ShouldRipeGraceController *gameVC = [WashOntoGreenManager viewControllerWithStage:self.stage];
     [self.navigationController pushViewController:gameVC animated:NO];
 }
