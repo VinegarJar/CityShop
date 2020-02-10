@@ -1,3 +1,0 @@
-target 'YaBoGame' do
-  pod 'AFNetworking'
-end
