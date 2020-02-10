@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B32C1E4C1C7C4DF600B2C577"
-               BuildableName = "YB&#x4e9e;&#x535a;&#x9ad4;&#x80b2;-&#x6e38;&#x620f;.app"
+               BuildableName = "&#x4e9e;&#x535a;&#x9ad4;&#x80b2;&#x6377;&#x62a5;-&#x5a31;&#x4e50;.app"
                BlueprintName = "YaBoGame"
                ReferencedContainer = "container:YaBoGame.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B32C1E4C1C7C4DF600B2C577"
-            BuildableName = "YB&#x4e9e;&#x535a;&#x9ad4;&#x80b2;-&#x6e38;&#x620f;.app"
+            BuildableName = "&#x4e9e;&#x535a;&#x9ad4;&#x80b2;&#x6377;&#x62a5;-&#x5a31;&#x4e50;.app"
             BlueprintName = "YaBoGame"
             ReferencedContainer = "container:YaBoGame.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B32C1E4C1C7C4DF600B2C577"
-            BuildableName = "YB&#x4e9e;&#x535a;&#x9ad4;&#x80b2;-&#x6e38;&#x620f;.app"
+            BuildableName = "&#x4e9e;&#x535a;&#x9ad4;&#x80b2;&#x6377;&#x62a5;-&#x5a31;&#x4e50;.app"
             BlueprintName = "YaBoGame"
             ReferencedContainer = "container:YaBoGame.xcodeproj">
          </BuildableReference>

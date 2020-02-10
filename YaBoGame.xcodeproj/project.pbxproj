@@ -75,7 +75,6 @@
 		B384CD281C7EE616008AFA9E /* sound.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B384CD271C7EE616008AFA9E /* sound.bundle */; };
 		B384CD2A1C7EE9C4008AFA9E /* bg_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B384CD291C7EE9C4008AFA9E /* bg_music.mp3 */; };
 		B384CD341C7F0E49008AFA9E /* YBSFullBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD331C7F0E49008AFA9E /* YBSFullBackgroundView.m */; };
-		B384CD371C7F133A008AFA9E /* home.plist in Resources */ = {isa = PBXBuildFile; fileRef = B384CD361C7F133A008AFA9E /* home.plist */; };
 		B384CD3E1C7FF8D7008AFA9E /* YBSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD3D1C7FF8D7008AFA9E /* YBSSettingViewController.m */; };
 		B384CD421C7FF97C008AFA9E /* YBSBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD401C7FF97C008AFA9E /* YBSBackViewController.m */; };
 		B384CD461C804BA8008AFA9E /* YBSSelectStageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD451C804BA8008AFA9E /* YBSSelectStageViewController.m */; };
@@ -309,7 +308,6 @@
 		B384CD291C7EE9C4008AFA9E /* bg_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_music.mp3; sourceTree = "<group>"; };
 		B384CD321C7F0E49008AFA9E /* YBSFullBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSFullBackgroundView.h; sourceTree = "<group>"; };
 		B384CD331C7F0E49008AFA9E /* YBSFullBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSFullBackgroundView.m; sourceTree = "<group>"; };
-		B384CD361C7F133A008AFA9E /* home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = home.plist; sourceTree = "<group>"; };
 		B384CD3C1C7FF8D7008AFA9E /* YBSSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSSettingViewController.h; sourceTree = "<group>"; };
 		B384CD3D1C7FF8D7008AFA9E /* YBSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSSettingViewController.m; sourceTree = "<group>"; };
 		B384CD3F1C7FF97B008AFA9E /* YBSBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSBackViewController.h; sourceTree = "<group>"; };
@@ -766,7 +764,6 @@
 			isa = PBXGroup;
 			children = (
 				B3B0D7381C83DFF20048C380 /* stages.plist */,
-				B384CD361C7F133A008AFA9E /* home.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -1396,7 +1393,6 @@
 				FAC8C1C41CAEC3F200FD8D0E /* YBSStateView.xib in Resources */,
 				B308860A1C8939D700AE83B2 /* Transformers Movie 变形金刚字体.ttf in Resources */,
 				B39910A41D0169BA00E107DD /* YBSCockroachView.xib in Resources */,
-				B384CD371C7F133A008AFA9E /* home.plist in Resources */,
 				B31F64031CA1653200997243 /* YBSFailView.xib in Resources */,
 				B3F5321B1CF2E308005F537D /* YBSDiceView.xib in Resources */,
 				FA48C6521CBA94BC004B326C /* YBSStage07ErrorView.xib in Resources */,

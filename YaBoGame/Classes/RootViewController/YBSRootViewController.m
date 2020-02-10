@@ -1,7 +1,6 @@
 #import "YBSRootViewController.h"
 #import "YBSYBSportsRequest.h"
 @interface YBSRootViewController ()
-
 @end
 @implementation YBSRootViewController
 - (void)viewDidLoad {
@@ -28,9 +27,7 @@
                    }
         }
     }];
-     
 }
-
 - (IBAction)home:(UIButton *)sender {
      [self performSegueWithIdentifier:@"Rare" sender:nil];
 }
@@ -42,5 +39,4 @@
 }
 -(void)loadDatespl{
 }
-
 @end
