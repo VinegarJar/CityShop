@@ -15,8 +15,8 @@
     [self setButtonsTitle];
 }
 - (void)setButtonsTitle {
-    [self.bgMusicButton setTitle:[NSString stringWithFormat:@"MUSIC %@", [self buttonTitleWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] bgMusicType]]] forState:UIControlStateNormal];
-    [self.soundButton setTitle:[NSString stringWithFormat:@"SOUND %@", [self buttonTitleWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] soundType]]] forState:UIControlStateNormal];
+    [self.bgMusicButton setTitle:[NSString stringWithFormat:@"MUSIC %@", [self buttonTitleWihtYaBoOrgyPlay:[[YaBoOrgyTool sharedSoundToolManager] OutType]]] forState:UIControlStateNormal];
+    [self.soundButton setTitle:[NSString stringWithFormat:@"SOUND %@", [self buttonTitleWihtYaBoOrgyPlay:[[YaBoOrgyTool sharedSoundToolManager] soundType]]] forState:UIControlStateNormal];
 }
 - (void)startSetTopMargin {
     if (iPhone5) {
@@ -28,17 +28,17 @@
 }
 - (IBAction)buttonClick:(UIButton *)sender {
     if (sender.tag == 10) {
-        NSString *subTitle = [self nextButtonTitleWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] bgMusicType]];
+        NSString *subTitle = [self nextButtonTitleWihtYaBoOrgyPlay:[[YaBoOrgyTool sharedSoundToolManager] OutType]];
         [sender setTitle:[NSString stringWithFormat:@"MUSIC %@", subTitle] forState:UIControlStateNormal];
-        [[YaBoOrgyTool sharedSoundToolManager] setBgMusicType:[self typeWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] bgMusicType]]];
+        [[YaBoOrgyTool sharedSoundToolManager] setOutType:[self typeWihtYaBoOrgyPlay:[[YaBoOrgyTool sharedSoundToolManager] OutType]]];
     } else if (sender.tag == 11) {
-        NSString *subTitle = [self nextButtonTitleWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] soundType]];
+        NSString *subTitle = [self nextButtonTitleWihtYaBoOrgyPlay:[[YaBoOrgyTool sharedSoundToolManager] soundType]];
         [sender setTitle:[NSString stringWithFormat:@"SOUND %@", subTitle] forState:UIControlStateNormal];
-        [[YaBoOrgyTool sharedSoundToolManager] setSoundType:[self typeWihtSoundPlayType:[[YaBoOrgyTool sharedSoundToolManager] soundType]]];
+        [[YaBoOrgyTool sharedSoundToolManager] setSoundType:[self typeWihtYaBoOrgyPlay:[[YaBoOrgyTool sharedSoundToolManager] soundType]]];
     }
     [[YaBoOrgyTool sharedSoundToolManager] patWorthyLiberty:YaSoundCliclName];
 }
-- (NSString *)nextButtonTitleWihtSoundPlayType:(SoundPlayType)type {
+- (NSString *)nextButtonTitleWihtYaBoOrgyPlay:(YaBoOrgyPlay)type {
     if (type == 0) {
         return @"[MED]";
     } else if (type == 1) {
@@ -49,7 +49,7 @@
         return @"[HIGH]";
     }
 }
-- (NSString *)buttonTitleWihtSoundPlayType:(SoundPlayType)type {
+- (NSString *)buttonTitleWihtYaBoOrgyPlay:(YaBoOrgyPlay)type {
     if (type == 0) {
         return @"[HIGH]";
     } else if (type == 1) {
@@ -60,15 +60,15 @@
         return @"[OFF]";
     }
 }
-- (SoundPlayType)typeWihtSoundPlayType:(SoundPlayType)type {
-    if (type == SoundPlayTypeHight) {
-        return SoundPlayTypeMiddle;
-    } else if (type == SoundPlayTypeMiddle) {
-        return SoundPlayTypeLow;
-    } else if (type == SoundPlayTypeLow) {
-        return SoundPlayTypeMute;
+- (YaBoOrgyPlay)typeWihtYaBoOrgyPlay:(YaBoOrgyPlay)type {
+    if (type == YaBoOrgyManent) {
+        return YaBoOrgySummer;
+    } else if (type == YaBoOrgySummer) {
+        return  YaBoOrgyMateHand;
+    } else if (type ==  YaBoOrgyMateHand) {
+        return  YaBoOrgyLiberty;
     } else {
-        return SoundPlayTypeHight;
+        return YaBoOrgyManent;
     }
 }
 @end

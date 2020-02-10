@@ -43,7 +43,7 @@
     self.view.userInteractionEnabled = YES;
 }
 - (void)weaveTransparentlyFunSeaside {
-    if ([[NSUserDefaults standardUserDefaults] integerForKey:@"kMusicType"] == SoundPlayTypeMute) {
+    if ([[NSUserDefaults standardUserDefaults] integerForKey:@"kMusicType"] ==  YaBoOrgyLiberty) {
         [[YaBoOrgyTool sharedSoundToolManager] permanentlyHybridTextbook:0.3];
         _volume = 0.3;
     }

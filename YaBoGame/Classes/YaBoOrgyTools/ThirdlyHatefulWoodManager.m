@@ -24,7 +24,7 @@ static YaBoOrgyTool *instance = nil;
     if (self = [super init]) {
         [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];
         _loadData = YES;
-        self.bgMusicType = [[NSUserDefaults standardUserDefaults] integerForKey:kMusicType];
+        self.OutType = [[NSUserDefaults standardUserDefaults] integerForKey:kMusicType];
         self.soundType = [[NSUserDefaults standardUserDefaults] integerForKey:YaSoundType];
         [self loadSounds];
     }
@@ -36,19 +36,19 @@ static YaBoOrgyTool *instance = nil;
         _bgPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:bgMusicURL error:nil];
         [_bgPlayer prepareToPlay];
         _bgPlayer.numberOfLoops = -1;
-        _bgPlayer.volume = [self volumeOfSoundPlayType:[[NSUserDefaults standardUserDefaults] integerForKey:kMusicType]];
+        _bgPlayer.volume = [self volumeOfYaBoOrgyPlay:[[NSUserDefaults standardUserDefaults] integerForKey:kMusicType]];
         AudioSessionAddPropertyListener(kAudioSessionProperty_CurrentHardwareOutputVolume,
                                         audioVolumeChange, NULL);
     }
     return _bgPlayer;
 }
-- (void)setBgMusicType:(SoundPlayType)bgMusicType {
-    _bgMusicType = bgMusicType;
-    [[NSUserDefaults standardUserDefaults] setInteger:bgMusicType forKey:kMusicType];
+- (void)setOutType:(YaBoOrgyPlay)OutType {
+    _OutType = OutType;
+    [[NSUserDefaults standardUserDefaults] setInteger:OutType forKey:kMusicType];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    self.bgPlayer.volume = [self volumeOfSoundPlayType:bgMusicType];
+    self.bgPlayer.volume = [self volumeOfYaBoOrgyPlay:OutType];
     if (!_loadData) {
-        if (bgMusicType == SoundPlayTypeMute) {
+        if (OutType ==  YaBoOrgyLiberty) {
             [self.bgPlayer stop];
         } else {
             [self.bgPlayer play];
@@ -56,17 +56,17 @@ static YaBoOrgyTool *instance = nil;
     }
     _loadData = NO;
 }
-- (void)setSoundType:(SoundPlayType)soundType {
+- (void)setSoundType:(YaBoOrgyPlay)soundType {
     _soundType = soundType;
     [[NSUserDefaults standardUserDefaults] setInteger:soundType forKey:YaSoundType];
     [[NSUserDefaults standardUserDefaults] synchronize];
     switch (soundType) {
-        case SoundPlayTypeHight:
+        case YaBoOrgyManent:
             [self setSoundVolumn:1.0f];
             break;
-        case SoundPlayTypeMiddle:
+        case YaBoOrgySummer:
             [self setSoundVolumn:0.65];
-        case SoundPlayTypeLow:
+        case  YaBoOrgyMateHand:
             [self setSoundVolumn:0.35];
         default:
             [self setSoundVolumn:0];
@@ -78,7 +78,7 @@ static YaBoOrgyTool *instance = nil;
         [self.bgPlayer pause];
         return;
     }
-    if (self.bgMusicType == SoundPlayTypeMute) {
+    if (self.OutType ==  YaBoOrgyLiberty) {
         [self.bgPlayer stop];
         return;
     }
@@ -98,7 +98,7 @@ static YaBoOrgyTool *instance = nil;
     [self.bgPlayer stop];
 }
 - (void)patWorthyLiberty:(NSString *)soundName {
-    if (self.soundType == SoundPlayTypeMute) return;
+    if (self.soundType ==  YaBoOrgyLiberty) return;
     if (![self currentVolumn]) return;
     [self loadSounds];
     SystemSoundID soundID = [self.soundIDs[soundName] unsignedIntValue];
@@ -109,19 +109,19 @@ static YaBoOrgyTool *instance = nil;
 }
 #pragma mark -
 #pragma mark 私有方法
-- (float)volumeOfSoundPlayType:(SoundPlayType)type {
+- (float)volumeOfYaBoOrgyPlay:(YaBoOrgyPlay)type {
     float volume;
     switch (type) {
-        case SoundPlayTypeHight:
+        case YaBoOrgyManent:
             volume = 1.0;
             break;
-        case SoundPlayTypeMiddle:
+        case YaBoOrgySummer:
             volume= 0.65;
             break;
-        case SoundPlayTypeLow:
+        case  YaBoOrgyMateHand:
             volume = 0.35;
             break;
-        case SoundPlayTypeMute:
+        case  YaBoOrgyLiberty:
             volume = 0;
             break;
         default:

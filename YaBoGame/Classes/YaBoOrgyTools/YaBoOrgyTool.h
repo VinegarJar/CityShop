@@ -1,14 +1,14 @@
 #import <Foundation/Foundation.h>
-#import "SoundNamesHeader.h"
-typedef NS_ENUM(NSInteger, SoundPlayType) {
-    SoundPlayTypeHight = 0,
-    SoundPlayTypeMiddle,
-    SoundPlayTypeLow,
-    SoundPlayTypeMute
+#import "YaBoSoundr.h"
+typedef NS_ENUM(NSInteger, YaBoOrgyPlay) {
+    YaBoOrgyManent = 0,
+    YaBoOrgySummer,
+     YaBoOrgyMateHand,
+     YaBoOrgyLiberty
 };
 @interface YaBoOrgyTool : NSObject
-@property (nonatomic, assign) SoundPlayType bgMusicType;
-@property (nonatomic, assign) SoundPlayType soundType;
+@property (nonatomic, assign) YaBoOrgyPlay OutType;
+@property (nonatomic, assign) YaBoOrgyPlay soundType;
 - (void)recentlyEasternFishing;
 - (void)dependOutsideSummer;
 - (void)lookApproximateHand:(BOOL)playAgain;
