@@ -241,10 +241,10 @@
 		B32C1E5A1C7C4DF600B2C577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32C1E611C7C4DF600B2C577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B32C1E661C7C4DF600B2C577 /* MeasureOverIncident.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MeasureOverIncident.xctest; path = HardestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32C1E661C7C4DF600B2C577 /* YaBoGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaBoGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32C1E6A1C7C4DF600B2C577 /* MeasureOverIncident.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureOverIncident.m; sourceTree = "<group>"; };
 		B32C1E6C1C7C4DF600B2C577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B32C1E711C7C4DF600B2C577 /* StainFullPill.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = StainFullPill.xctest; path = HardestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32C1E711C7C4DF600B2C577 /* YaBoGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaBoGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32C1E751C7C4DF600B2C577 /* StainFullPill.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StainFullPill.m; sourceTree = "<group>"; };
 		B32C1E771C7C4DF600B2C577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B331F6161CE997FD008DE83A /* UsedChanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsedChanceController.h; sourceTree = "<group>"; };
@@ -598,8 +598,8 @@
 			isa = PBXGroup;
 			children = (
 				B32C1E4D1C7C4DF600B2C577 /* 亞博-口袋猜谜.app */,
-				B32C1E661C7C4DF600B2C577 /* MeasureOverIncident.xctest */,
-				B32C1E711C7C4DF600B2C577 /* StainFullPill.xctest */,
+				B32C1E661C7C4DF600B2C577 /* YaBoGameTests.xctest */,
+				B32C1E711C7C4DF600B2C577 /* YaBoGameUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1275,9 +1275,9 @@
 			productReference = B32C1E4D1C7C4DF600B2C577 /* 亞博-口袋猜谜.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B32C1E651C7C4DF600B2C577 /* HardestTests */ = {
+		B32C1E651C7C4DF600B2C577 /* YaBoGameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B32C1E7D1C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "HardestTests" */;
+			buildConfigurationList = B32C1E7D1C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "YaBoGameTests" */;
 			buildPhases = (
 				B32C1E621C7C4DF600B2C577 /* Sources */,
 				B32C1E631C7C4DF600B2C577 /* Frameworks */,
@@ -1288,14 +1288,14 @@
 			dependencies = (
 				B32C1E681C7C4DF600B2C577 /* PBXTargetDependency */,
 			);
-			name = HardestTests;
+			name = YaBoGameTests;
 			productName = HardestTests;
-			productReference = B32C1E661C7C4DF600B2C577 /* MeasureOverIncident.xctest */;
+			productReference = B32C1E661C7C4DF600B2C577 /* YaBoGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B32C1E701C7C4DF600B2C577 /* HardestUITests */ = {
+		B32C1E701C7C4DF600B2C577 /* YaBoGameUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B32C1E801C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "HardestUITests" */;
+			buildConfigurationList = B32C1E801C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "YaBoGameUITests" */;
 			buildPhases = (
 				B32C1E6D1C7C4DF600B2C577 /* Sources */,
 				B32C1E6E1C7C4DF600B2C577 /* Frameworks */,
@@ -1306,9 +1306,9 @@
 			dependencies = (
 				B32C1E731C7C4DF600B2C577 /* PBXTargetDependency */,
 			);
-			name = HardestUITests;
+			name = YaBoGameUITests;
 			productName = HardestUITests;
-			productReference = B32C1E711C7C4DF600B2C577 /* StainFullPill.xctest */;
+			productReference = B32C1E711C7C4DF600B2C577 /* YaBoGameUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -1352,8 +1352,8 @@
 			projectRoot = "";
 			targets = (
 				B32C1E4C1C7C4DF600B2C577 /* YaBoGame */,
-				B32C1E651C7C4DF600B2C577 /* HardestTests */,
-				B32C1E701C7C4DF600B2C577 /* HardestUITests */,
+				B32C1E651C7C4DF600B2C577 /* YaBoGameTests */,
+				B32C1E701C7C4DF600B2C577 /* YaBoGameUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1800,7 +1800,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B32C1E7D1C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "HardestTests" */ = {
+		B32C1E7D1C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "YaBoGameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B32C1E7E1C7C4DF600B2C577 /* Debug */,
@@ -1809,7 +1809,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B32C1E801C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "HardestUITests" */ = {
+		B32C1E801C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "YaBoGameUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B32C1E811C7C4DF600B2C577 /* Debug */,
