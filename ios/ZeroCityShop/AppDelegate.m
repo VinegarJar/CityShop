@@ -8,6 +8,8 @@
  
  https://github.com/shaojiankui/SmartPush   推送测试工具
 
+ https://leancloud.cn/dashboard/login.html#/signup 后端配置
+ *  Tock  douyca@foxmail.com 668594wxhlP 9153403677
  */
 
 #import "AppDelegate.h"
