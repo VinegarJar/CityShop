@@ -20,7 +20,7 @@
 @implementation EruptThroughPrejudiceController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kPauseViewControllerClickBackToMainViewController object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kPauseViewControllerClickBackToMainViewController object:nil];
     [self bitterHell];
 }
 - (void)setTowardBlankWeather {

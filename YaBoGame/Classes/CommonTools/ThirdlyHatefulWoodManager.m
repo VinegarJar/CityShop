@@ -145,7 +145,7 @@ void audioVolumeChange(void *inUserData, AudioSessionPropertyID inPropertyID,
     self.soundIDs = [NSMutableDictionary dictionary];
     NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:kSoundURLName withExtension:nil];
     NSBundle *soundBundle = [NSBundle bundleWithURL:bundleURL];
-    NSArray *boundsURLs = [soundBundle URLsForResourcesWithExtension:@"mp3" subdirectory:nil];
+    NSArray *boundsURLs = [soundBundle URLsForResourcesWithExtension:@"mp4" subdirectory:nil];
     for (NSURL *soundURL in boundsURLs) {
         [self loadSoundWithURL:soundURL];
     }

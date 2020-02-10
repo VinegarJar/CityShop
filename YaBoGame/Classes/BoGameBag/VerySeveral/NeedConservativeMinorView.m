@@ -21,7 +21,7 @@
         self.handIV.image = [UIImage imageNamed:@"01_holdhand-iphone4"];
         [self addSubview:self.handIV];
         _transform = CGAffineTransformMakeScale(1, 1);
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
     }
     return self;
 }

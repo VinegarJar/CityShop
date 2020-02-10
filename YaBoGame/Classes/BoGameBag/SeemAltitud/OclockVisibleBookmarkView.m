@@ -54,7 +54,7 @@
             [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:kSoundPerfectName];
         case WNXResultStateTypeBad:
         {
-            NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp3", arc4random_uniform(3) + 2];
+            NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp4", arc4random_uniform(3) + 2];
             [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:badName];
         }
             break;
@@ -86,7 +86,7 @@
             break;
         case WNXResultStateTypeBad:
         {
-            NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp3", arc4random_uniform(3) + 2];
+            NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp4", arc4random_uniform(3) + 2];
             [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:badName];
         }
             break;
@@ -107,7 +107,7 @@
     self.stateImageView.layer.anchorPoint = CGPointMake(1, 0.5);
     self.stateImageView.frame = CGRectMake(self.stateImageView.frame.origin.x + self.stateImageView.frame.size.width * 0.5, self.stateImageView.frame.origin.y, self.stateImageView.frame.size.width, self.stateImageView.frame.size.height);
     self.showFinish = finish;
-    NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp3", arc4random_uniform(3) + 2];
+    NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp4", arc4random_uniform(3) + 2];
     [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:badName];
     self.stateImageView.image = [UIImage imageNamed:@"00_bad-iphone4"];
     self.circleImageView.image = [UIImage imageNamed:@"00_cross-iphone4"];

@@ -56,7 +56,7 @@
         self.resultView3 = [PlantWeakPensionView viewFromNib];
         self.resultView3.frame = CGRectMake(ScreenWidth / 3 * 2, resultY, resultViewWidth, resultViewHeight);
         [self addSubview:self.resultView3];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
     }
     return self;
 }

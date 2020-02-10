@@ -24,7 +24,7 @@
     self.iphoneIV.animationImages = @[[UIImage imageNamed:@"06_phone01-iphone4"], [UIImage imageNamed:@"06_phone02-iphone4"]];
     self.iphoneIV.animationRepeatCount = MAXFLOAT;
     self.rodIV.layer.anchorPoint = CGPointMake(0.5, 1);
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
 }
 - (void)setTowardBlankWeather {
     [self laughAsSugaryChicken];

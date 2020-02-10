@@ -18,7 +18,7 @@
     self.secondDiceIV.hidden = YES;
     self.thirdDiceIV.hidden = YES;
     [self setImageViewAnimationAttribute];
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
 }
 - (void)setTowardBlankWeather {
     if (self.timer) {

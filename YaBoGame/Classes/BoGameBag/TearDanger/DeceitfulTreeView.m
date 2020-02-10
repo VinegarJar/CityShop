@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, WNXDirectionType) {
         [self addSubview:iv];
     }
     self.userInteractionEnabled = NO;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
 }
 - (void)setTowardBlankWeather {
     [self.timer invalidate];

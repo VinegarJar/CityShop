@@ -18,7 +18,7 @@
 @implementation SlimGownView
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
     _offsetX = 10;
     _noseOffsetX = 1;
     self.vibrissaIV.layer.anchorPoint = CGPointMake(0.5, 0);

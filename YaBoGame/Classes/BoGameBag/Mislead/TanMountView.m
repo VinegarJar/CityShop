@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger, RigthType) {
         _lastClickIndex = -1;
         _isFrist = YES;
         self.isAnimation = NO;
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
     }
     return self;
 }

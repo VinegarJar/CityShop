@@ -109,7 +109,7 @@
     badIV.center = CGPointMake(badIV.center.x, xIV.center.y);
     badIV.image = [UIImage imageNamed:@"00_bad-iphone4"];
     [self.view addSubview:badIV];
-    NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp3", arc4random_uniform(3) + 2];
+    NSString *badName = [NSString stringWithFormat:@"instantFail0%d.mp4", arc4random_uniform(3) + 2];
     [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:badName];
     [self starvePurpleInterested];
     [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.2 initialSpringVelocity:3 options:UIViewAnimationOptionCurveEaseInOut animations:^{

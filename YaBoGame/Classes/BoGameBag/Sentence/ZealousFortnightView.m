@@ -16,7 +16,7 @@
     self.cockroachIV.animationImages = @[[UIImage imageNamed:@"stage27_run01-iphone4"], [UIImage imageNamed:@"stage27_run02-iphone4"]];
     self.cockroachIV.animationDuration = 0.2;
     self.cockroachIV.animationRepeatCount = 100000;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
 }
 - (void)setTowardBlankWeather {
     [self.shakeTime invalidate];

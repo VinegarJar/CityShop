@@ -54,7 +54,7 @@
         };
         self.cock3.frame = CGRectMake(ScreenWidth / 3 * 2, 0, ScreenWidth / 3, ScreenWidth);
         [self addSubview:self.cock3];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
         self.cock1.showHitFinish = ^{
             if (_currentIndex == 2) {
                 if (weakSelf.finish) {

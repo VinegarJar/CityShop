@@ -102,7 +102,7 @@
 #pragma mark WNXResultScoreViewDelegate
 - (void)resultScoreViewChangeWithRank:(NSString *)rank {
     self.scroeImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"score_%@", rank]];
-    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:[NSString stringWithFormat:@"scoreGrade_%@.mp3", rank]];
+    [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:[NSString stringWithFormat:@"scoreGrade_%@.mp4", rank]];
 }
 - (void)resultScoreViewDidRemove {
     [self showBottomView];

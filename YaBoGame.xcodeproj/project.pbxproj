@@ -20,6 +20,7 @@
 		039C71AD23DDBD430046CB3F /* ComeAgainstConclusionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71AB23DDBD430046CB3F /* ComeAgainstConclusionController.m */; };
 		039C71AE23DDBD430046CB3F /* ComeAgainstConclusionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039C71AC23DDBD430046CB3F /* ComeAgainstConclusionController.xib */; };
 		841F0E3123F160D400634F27 /* CustomFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3023F160D400634F27 /* CustomFont.ttf */; };
+		841F0E3523F1786A00634F27 /* bg_music.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3423F1786A00634F27 /* bg_music.mp4 */; };
 		B1EBE7679DF987494E973CC6 /* libPods-YaBoGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E14825F263C503581E0F14A /* libPods-YaBoGame.a */; };
 		B30060A51CBB8E8D0040BF99 /* CrossDistantPhraseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30060A41CBB8E8D0040BF99 /* CrossDistantPhraseView.m */; };
 		B30060A71CBB8F340040BF99 /* CrossDistantPhraseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30060A61CBB8F340040BF99 /* CrossDistantPhraseView.xib */; };
@@ -71,7 +72,6 @@
 		B369690B1CE0900F002BB1AE /* TapBottleController.m in Sources */ = {isa = PBXBuildFile; fileRef = B369690A1CE0900F002BB1AE /* TapBottleController.m */; };
 		B384CD251C7E9F42008AFA9E /* ThirdlyHatefulWoodManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD241C7E9F42008AFA9E /* ThirdlyHatefulWoodManager.m */; };
 		B384CD281C7EE616008AFA9E /* sound.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B384CD271C7EE616008AFA9E /* sound.bundle */; };
-		B384CD2A1C7EE9C4008AFA9E /* bg_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B384CD291C7EE9C4008AFA9E /* bg_music.mp3 */; };
 		B384CD341C7F0E49008AFA9E /* HushByPaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD331C7F0E49008AFA9E /* HushByPaceView.m */; };
 		B384CD3E1C7FF8D7008AFA9E /* ExtendDateOrganicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD3D1C7FF8D7008AFA9E /* ExtendDateOrganicController.m */; };
 		B384CD421C7FF97C008AFA9E /* FrownInsideBreastController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD401C7FF97C008AFA9E /* FrownInsideBreastController.m */; };
@@ -210,6 +210,7 @@
 		4E14825F263C503581E0F14A /* libPods-YaBoGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaBoGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9ED0BD0861BCF083FB449 /* Pods-YaBoGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaBoGame.release.xcconfig"; path = "Target Support Files/Pods-YaBoGame/Pods-YaBoGame.release.xcconfig"; sourceTree = "<group>"; };
 		841F0E3023F160D400634F27 /* CustomFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CustomFont.ttf; sourceTree = "<group>"; };
+		841F0E3423F1786A00634F27 /* bg_music.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_music.mp4; sourceTree = "<group>"; };
 		B30060A31CBB8E8D0040BF99 /* CrossDistantPhraseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossDistantPhraseView.h; sourceTree = "<group>"; };
 		B30060A41CBB8E8D0040BF99 /* CrossDistantPhraseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossDistantPhraseView.m; sourceTree = "<group>"; };
 		B30060A61CBB8F340040BF99 /* CrossDistantPhraseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossDistantPhraseView.xib; sourceTree = "<group>"; };
@@ -301,7 +302,6 @@
 		B384CD241C7E9F42008AFA9E /* ThirdlyHatefulWoodManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdlyHatefulWoodManager.m; sourceTree = "<group>"; };
 		B384CD261C7EE513008AFA9E /* SoundNamesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundNamesHeader.h; sourceTree = "<group>"; };
 		B384CD271C7EE616008AFA9E /* sound.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sound.bundle; sourceTree = "<group>"; };
-		B384CD291C7EE9C4008AFA9E /* bg_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_music.mp3; sourceTree = "<group>"; };
 		B384CD321C7F0E49008AFA9E /* HushByPaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HushByPaceView.h; sourceTree = "<group>"; };
 		B384CD331C7F0E49008AFA9E /* HushByPaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HushByPaceView.m; sourceTree = "<group>"; };
 		B384CD3C1C7FF8D7008AFA9E /* ExtendDateOrganicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendDateOrganicController.h; sourceTree = "<group>"; };
@@ -672,7 +672,7 @@
 		B32C1E8B1C7C57FE00B2C577 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				B384CD291C7EE9C4008AFA9E /* bg_music.mp3 */,
+				841F0E3423F1786A00634F27 /* bg_music.mp4 */,
 				B384CD271C7EE616008AFA9E /* sound.bundle */,
 			);
 			path = Sound;
@@ -1370,7 +1370,6 @@
 				B331F6281CE9C8DD008DE83A /* WinChillView.xib in Resources */,
 				B3D148051C9FFFA300ABCBE4 /* NearbyVaseView.xib in Resources */,
 				039C719A23DDA1B10046CB3F /* LaunchScreen.storyboard in Resources */,
-				B384CD2A1C7EE9C4008AFA9E /* bg_music.mp3 in Resources */,
 				B3F29D871CE18EE400049FA7 /* NormallyYoungTigerView.xib in Resources */,
 				B3E6A5EE1CE5750300698078 /* CommonTriangleView.xib in Resources */,
 				FA70F24E1CC66BEA002348C6 /* PlantWeakPensionView.xib in Resources */,
@@ -1379,6 +1378,7 @@
 				B31F64031CA1653200997243 /* BlessLiftView.xib in Resources */,
 				B3F5321B1CF2E308005F537D /* ComputeDirectionExcessiveView.xib in Resources */,
 				FA48C6521CBA94BC004B326C /* SwimOfMankindView.xib in Resources */,
+				841F0E3523F1786A00634F27 /* bg_music.mp4 in Resources */,
 				B3F29D821CE0A96900049FA7 /* BrightenExoticIncidentView.xib in Resources */,
 				B3B0D7391C83DFF20048C380 /* game.plist in Resources */,
 				841F0E3123F160D400634F27 /* CustomFont.ttf in Resources */,

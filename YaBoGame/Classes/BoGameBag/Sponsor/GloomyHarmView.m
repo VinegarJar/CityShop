@@ -34,7 +34,7 @@ typedef void (^FailBlock)();
         _transform = CGAffineTransformMakeRotation(0);
         int random = arc4random_uniform(2);
         self.angel = random == 0 ? M_PI_4 / _speed :  -M_PI_4 / _speed;
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
         _random = arc4random_uniform(2) + 3;
         self.leftSnotIV = [[UIImageView alloc] initWithFrame:CGRectMake(88 + CGRectGetMinX(self.headerIV.frame), 132 - 25 + 8 + self.headerIV.frame.origin.y, 8, 40)];
         self.leftSnotIV.image = [UIImage imageNamed:@"23_snivel-iphone4"];

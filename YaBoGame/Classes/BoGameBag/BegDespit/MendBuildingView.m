@@ -41,7 +41,7 @@
         self.manIV.hidden = YES;
         self.childIV.hidden = YES;
         self.oldIV.hidden = YES;
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
     }
     return self;
 }

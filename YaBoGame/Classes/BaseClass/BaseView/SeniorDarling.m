@@ -21,7 +21,7 @@ typedef void(^Completion)(void);
         } else {
             self.font = [UIFont systemFontOfSize:size];
         }
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTowardBlankWeather) name:kNotificationNameGameViewControllerDelloc object:nil];
     }
     return self;
 }
