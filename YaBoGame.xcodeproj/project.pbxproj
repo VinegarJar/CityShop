@@ -239,7 +239,7 @@
 		B31F63FF1CA1652000997243 /* YBSFailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSFailView.h; sourceTree = "<group>"; };
 		B31F64001CA1652000997243 /* YBSFailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSFailView.m; sourceTree = "<group>"; };
 		B31F64021CA1653200997243 /* YBSFailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSFailView.xib; sourceTree = "<group>"; };
-		B32C1E4D1C7C4DF600B2C577 /* YB亞博體育-游戏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YB亞博體育-游戏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32C1E4D1C7C4DF600B2C577 /* 亞博體育捷报-娱乐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博體育捷报-娱乐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32C1E511C7C4DF600B2C577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B32C1E5A1C7C4DF600B2C577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -591,7 +591,7 @@
 			children = (
 				B32C1E4F1C7C4DF600B2C577 /* YaBoGame */,
 				B32C1E691C7C4DF600B2C577 /* YaBoGametTests */,
-				B32C1E741C7C4DF600B2C577 /* HardestUITests */,
+				B32C1E741C7C4DF600B2C577 /* YaBoGametUITests */,
 				B32C1E4E1C7C4DF600B2C577 /* Products */,
 				B65E2657C96CCEBB705C2111 /* Pods */,
 				3523297F5F10E58E2ADCCD65 /* Frameworks */,
@@ -601,7 +601,7 @@
 		B32C1E4E1C7C4DF600B2C577 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B32C1E4D1C7C4DF600B2C577 /* YB亞博體育-游戏.app */,
+				B32C1E4D1C7C4DF600B2C577 /* 亞博體育捷报-娱乐.app */,
 				B32C1E661C7C4DF600B2C577 /* HardestTests.xctest */,
 				B32C1E711C7C4DF600B2C577 /* HardestUITests.xctest */,
 			);
@@ -643,13 +643,13 @@
 			path = YaBoGametTests;
 			sourceTree = "<group>";
 		};
-		B32C1E741C7C4DF600B2C577 /* HardestUITests */ = {
+		B32C1E741C7C4DF600B2C577 /* YaBoGametUITests */ = {
 			isa = PBXGroup;
 			children = (
 				B32C1E751C7C4DF600B2C577 /* HardestUITests.m */,
 				B32C1E771C7C4DF600B2C577 /* Info.plist */,
 			);
-			path = HardestUITests;
+			path = YaBoGametUITests;
 			sourceTree = "<group>";
 		};
 		B32C1E851C7C57A300B2C577 /* Classes */ = {
@@ -1278,7 +1278,7 @@
 			);
 			name = YaBoGame;
 			productName = YaBoGame;
-			productReference = B32C1E4D1C7C4DF600B2C577 /* YB亞博體育-游戏.app */;
+			productReference = B32C1E4D1C7C4DF600B2C577 /* 亞博體育捷报-娱乐.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B32C1E651C7C4DF600B2C577 /* HardestTests */ = {
@@ -1716,7 +1716,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.YaBoGame;
-				PRODUCT_NAME = "YB亞博體育-游戏";
+				PRODUCT_NAME = "亞博體育捷报-娱乐";
 			};
 			name = Debug;
 		};
@@ -1735,7 +1735,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.YaBoGame;
-				PRODUCT_NAME = "YB亞博體育-游戏";
+				PRODUCT_NAME = "亞博體育捷报-娱乐";
 			};
 			name = Release;
 		};
