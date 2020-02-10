@@ -525,41 +525,41 @@
 		B308860B1C895ABC00AE83B2 /* Stage */ = {
 			isa = PBXGroup;
 			children = (
-				B308860C1C895ABC00AE83B2 /* Stage01 */,
-				B3D147FB1C9FF94700ABCBE4 /* Stage02 */,
-				FA9F11671CA81B61002D2064 /* Stage03 */,
-				B3FBDC641CAD1421009840C5 /* Stage04 */,
-				B3FBDC651CAD1421009840C5 /* Stage05 */,
-				B3FBDC661CAD1421009840C5 /* Stage06 */,
-				B3FBDC671CAD1421009840C5 /* Stage07 */,
-				B3FBDC681CAD1421009840C5 /* Stage08 */,
-				B3FBDC691CAD1421009840C5 /* Stage09 */,
-				B3FBDC6A1CAD1421009840C5 /* Stage10 */,
-				B3FBDC6B1CAD1421009840C5 /* Stage11 */,
-				B3FBDC6C1CAD1421009840C5 /* Stage12 */,
-				B3FBDC6D1CAD1421009840C5 /* Stage13 */,
-				B3FBDC6E1CAD1421009840C5 /* Stage14 */,
-				B3FBDC6F1CAD1421009840C5 /* Stage15 */,
-				B3FBDC701CAD1421009840C5 /* Stage16 */,
-				B3FBDC711CAD1421009840C5 /* Stage17 */,
-				B3FBDC721CAD1421009840C5 /* Stage18 */,
-				B3FBDC731CAD1421009840C5 /* Stage19 */,
-				B3FBDC741CAD1421009840C5 /* Stage20 */,
-				B3FBDC751CAD1421009840C5 /* Stage21 */,
-				B3FBDC761CAD1421009840C5 /* Stage22 */,
-				B3FBDC771CAD1421009840C5 /* Stage23 */,
-				B3FBDC781CAD1421009840C5 /* Stage24 */,
+				B308860C1C895ABC00AE83B2 /* CentralModel */,
+				B3D147FB1C9FF94700ABCBE4 /* QuitInterval */,
+				FA9F11671CA81B61002D2064 /* Sponsor */,
+				B3FBDC641CAD1421009840C5 /* SeemAltitud */,
+				B3FBDC651CAD1421009840C5 /* Regard */,
+				B3FBDC661CAD1421009840C5 /* Gently */,
+				B3FBDC671CAD1421009840C5 /* AppealN */,
+				B3FBDC681CAD1421009840C5 /* Welcome */,
+				B3FBDC691CAD1421009840C5 /* FlushOnt */,
+				B3FBDC6A1CAD1421009840C5 /* Mislead */,
+				B3FBDC6B1CAD1421009840C5 /* Derive */,
+				B3FBDC6C1CAD1421009840C5 /* VerySeveral */,
+				B3FBDC6D1CAD1421009840C5 /* BegDespit */,
+				B3FBDC6E1CAD1421009840C5 /* EruptTh */,
+				B3FBDC6F1CAD1421009840C5 /* WinDuring */,
+				B3FBDC701CAD1421009840C5 /* PloughSlender */,
+				B3FBDC711CAD1421009840C5 /* UsedChance */,
+				B3FBDC721CAD1421009840C5 /* Pardon */,
+				B3FBDC731CAD1421009840C5 /* Sideway */,
+				B3FBDC741CAD1421009840C5 /* PoundAl */,
+				B3FBDC751CAD1421009840C5 /* SendMicr */,
+				B3FBDC761CAD1421009840C5 /* Interpret */,
+				B3FBDC771CAD1421009840C5 /* TearDanger */,
+				B3FBDC781CAD1421009840C5 /* Sentence */,
 			);
 			path = Stage;
 			sourceTree = "<group>";
 		};
-		B308860C1C895ABC00AE83B2 /* Stage01 */ = {
+		B308860C1C895ABC00AE83B2 /* CentralModel */ = {
 			isa = PBXGroup;
 			children = (
 				B30886101C895B2000AE83B2 /* Controller */,
 				B30886131C895B2000AE83B2 /* View */,
 			);
-			path = Stage01;
+			path = CentralModel;
 			sourceTree = "<group>";
 		};
 		B30886101C895B2000AE83B2 /* Controller */ = {
@@ -877,13 +877,13 @@
 			path = BaseViewController;
 			sourceTree = "<group>";
 		};
-		B3D147FB1C9FF94700ABCBE4 /* Stage02 */ = {
+		B3D147FB1C9FF94700ABCBE4 /* QuitInterval */ = {
 			isa = PBXGroup;
 			children = (
 				B3D147FC1C9FF98F00ABCBE4 /* Controller */,
 				B3D147FD1C9FF98F00ABCBE4 /* View */,
 			);
-			path = Stage02;
+			path = QuitInterval;
 			sourceTree = "<group>";
 		};
 		B3D147FC1C9FF98F00ABCBE4 /* Controller */ = {
@@ -923,7 +923,7 @@
 			path = ../RootViewController;
 			sourceTree = "<group>";
 		};
-		B3FBDC641CAD1421009840C5 /* Stage04 */ = {
+		B3FBDC641CAD1421009840C5 /* SeemAltitud */ = {
 			isa = PBXGroup;
 			children = (
 				B3FBDC791CAD158C009840C5 /* SeemAltitudeController.h */,
@@ -934,10 +934,10 @@
 				FAC8C1C11CAEC38E00FD8D0E /* OclockVisibleBookmarkView.m */,
 				FAC8C1C31CAEC3F200FD8D0E /* OclockVisibleBookmarkView.xib */,
 			);
-			path = Stage04;
+			path = SeemAltitud;
 			sourceTree = "<group>";
 		};
-		B3FBDC651CAD1421009840C5 /* Stage05 */ = {
+		B3FBDC651CAD1421009840C5 /* Regard */ = {
 			isa = PBXGroup;
 			children = (
 				B35C8CA41D082363009162C0 /* RegardSecretSeatController.h */,
@@ -948,10 +948,10 @@
 				FABAC8901CB131EE0061D257 /* KnowCommitteeView.m */,
 				FABAC8921CB140C70061D257 /* KnowCommitteeView.xib */,
 			);
-			path = Stage05;
+			path = Regard;
 			sourceTree = "<group>";
 		};
-		B3FBDC661CAD1421009840C5 /* Stage06 */ = {
+		B3FBDC661CAD1421009840C5 /* Gently */ = {
 			isa = PBXGroup;
 			children = (
 				B30A2E6A1CB3CF5E00A3DA68 /* GentlySlimElbowController.h */,
@@ -960,10 +960,10 @@
 				FA63211C1CB697C0006F8714 /* BlackenLoveView.m */,
 				FA63211E1CB697F4006F8714 /* BlackenLoveView.xib */,
 			);
-			path = Stage06;
+			path = Gently;
 			sourceTree = "<group>";
 		};
-		B3FBDC671CAD1421009840C5 /* Stage07 */ = {
+		B3FBDC671CAD1421009840C5 /* AppealN */ = {
 			isa = PBXGroup;
 			children = (
 				B30496B11CB7C12500EB8AC4 /* AppealNecessaryTideController.h */,
@@ -977,10 +977,10 @@
 				FA48C64F1CBA94A9004B326C /* SwimOfMankindView.m */,
 				FA48C6511CBA94BC004B326C /* SwimOfMankindView.xib */,
 			);
-			path = Stage07;
+			path = AppealN;
 			sourceTree = "<group>";
 		};
-		B3FBDC681CAD1421009840C5 /* Stage08 */ = {
+		B3FBDC681CAD1421009840C5 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
 				B35971C81CBB7B7A0070C010 /* WelcomeBusinessBrownController.h */,
@@ -989,10 +989,10 @@
 				B30060A41CBB8E8D0040BF99 /* CrossDistantPhraseView.m */,
 				B30060A61CBB8F340040BF99 /* CrossDistantPhraseView.xib */,
 			);
-			path = Stage08;
+			path = Welcome;
 			sourceTree = "<group>";
 		};
-		B3FBDC691CAD1421009840C5 /* Stage09 */ = {
+		B3FBDC691CAD1421009840C5 /* FlushOnt */ = {
 			isa = PBXGroup;
 			children = (
 				B34D8B321CBD1ABC0076A97D /* FlushOntoSwanController.h */,
@@ -1006,10 +1006,10 @@
 				FA70F24B1CC66BDC002348C6 /* PlantWeakPensionView.m */,
 				FA70F24D1CC66BEA002348C6 /* PlantWeakPensionView.xib */,
 			);
-			path = Stage09;
+			path = FlushOnt;
 			sourceTree = "<group>";
 		};
-		B3FBDC6A1CAD1421009840C5 /* Stage10 */ = {
+		B3FBDC6A1CAD1421009840C5 /* Mislead */ = {
 			isa = PBXGroup;
 			children = (
 				FAF936DA1CCB473F0026E06F /* MisleadScoreController.h */,
@@ -1019,10 +1019,10 @@
 				FAF936ED1CCB55B30026E06F /* LameBattleView.h */,
 				FAF936EE1CCB55B30026E06F /* LameBattleView.m */,
 			);
-			path = Stage10;
+			path = Mislead;
 			sourceTree = "<group>";
 		};
-		B3FBDC6B1CAD1421009840C5 /* Stage11 */ = {
+		B3FBDC6B1CAD1421009840C5 /* Derive */ = {
 			isa = PBXGroup;
 			children = (
 				B3A787581CD0B07F005FC3EA /* DeriveProgressiveDiamondController.h */,
@@ -1034,10 +1034,10 @@
 				B35E97F11CD1FC6B003AF56E /* EvenLogicalAttackView.h */,
 				B35E97F21CD1FC6B003AF56E /* EvenLogicalAttackView.m */,
 			);
-			path = Stage11;
+			path = Derive;
 			sourceTree = "<group>";
 		};
-		B3FBDC6C1CAD1421009840C5 /* Stage12 */ = {
+		B3FBDC6C1CAD1421009840C5 /* VerySeveral */ = {
 			isa = PBXGroup;
 			children = (
 				FA6D6CBB1CD7859C00C6AA47 /* VerySeveralIntelligenceController.h */,
@@ -1051,10 +1051,10 @@
 				FAA0FA1B1CD8E712000D80E8 /* CopyConnectionAdditionalView.h */,
 				FAA0FA1C1CD8E712000D80E8 /* CopyConnectionAdditionalView.m */,
 			);
-			path = Stage12;
+			path = VerySeveral;
 			sourceTree = "<group>";
 		};
-		B3FBDC6D1CAD1421009840C5 /* Stage13 */ = {
+		B3FBDC6D1CAD1421009840C5 /* BegDespit */ = {
 			isa = PBXGroup;
 			children = (
 				B3AAAC1D1CD9D4A200D93D3D /* BegDespiteCharityController.h */,
@@ -1064,10 +1064,10 @@
 				B3AAAC201CD9E58700D93D3D /* LastMedicalSuspensionView.h */,
 				B3AAAC211CD9E58700D93D3D /* LastMedicalSuspensionView.m */,
 			);
-			path = Stage13;
+			path = BegDespit;
 			sourceTree = "<group>";
 		};
-		B3FBDC6E1CAD1421009840C5 /* Stage14 */ = {
+		B3FBDC6E1CAD1421009840C5 /* EruptTh */ = {
 			isa = PBXGroup;
 			children = (
 				B3F29D7B1CE09BEB00049FA7 /* EruptThroughPrejudiceController.h */,
@@ -1079,10 +1079,10 @@
 				B3F29D7F1CE0A95D00049FA7 /* BrightenExoticIncidentView.m */,
 				B3F29D811CE0A96900049FA7 /* BrightenExoticIncidentView.xib */,
 			);
-			path = Stage14;
+			path = EruptTh;
 			sourceTree = "<group>";
 		};
-		B3FBDC6F1CAD1421009840C5 /* Stage15 */ = {
+		B3FBDC6F1CAD1421009840C5 /* WinDuring */ = {
 			isa = PBXGroup;
 			children = (
 				B3E6A5E21CE4796700698078 /* WinDuringProgrammerController.h */,
@@ -1093,10 +1093,10 @@
 				B3E6A5EB1CE574E200698078 /* CommonTriangleView.m */,
 				B3E6A5ED1CE5750300698078 /* CommonTriangleView.xib */,
 			);
-			path = Stage15;
+			path = WinDuring;
 			sourceTree = "<group>";
 		};
-		B3FBDC701CAD1421009840C5 /* Stage16 */ = {
+		B3FBDC701CAD1421009840C5 /* PloughSlender */ = {
 			isa = PBXGroup;
 			children = (
 				FAD0DAD11CE858EC002E0E09 /* PloughSlenderMistakeController.h */,
@@ -1105,10 +1105,10 @@
 				FAD0DAD51CE8AAAA002E0E09 /* PolluteStomachFurtherView.m */,
 				FAD0DAD71CE8AC1A002E0E09 /* PolluteStomachFurtherView.xib */,
 			);
-			path = Stage16;
+			path = PloughSlender;
 			sourceTree = "<group>";
 		};
-		B3FBDC711CAD1421009840C5 /* Stage17 */ = {
+		B3FBDC711CAD1421009840C5 /* UsedChance */ = {
 			isa = PBXGroup;
 			children = (
 				B331F6161CE997FD008DE83A /* UsedChanceController.h */,
@@ -1120,10 +1120,10 @@
 				B331F6251CE9C8CF008DE83A /* WinChillView.m */,
 				B331F6271CE9C8DD008DE83A /* WinChillView.xib */,
 			);
-			path = Stage17;
+			path = UsedChance;
 			sourceTree = "<group>";
 		};
-		B3FBDC721CAD1421009840C5 /* Stage18 */ = {
+		B3FBDC721CAD1421009840C5 /* Pardon */ = {
 			isa = PBXGroup;
 			children = (
 				B331F6291CEB2D1F008DE83A /* PardonPresentationVideoController.h */,
@@ -1135,10 +1135,10 @@
 				B331F62D1CEB3619008DE83A /* BubblePerChampionshipView.m */,
 				B331F62F1CEB362F008DE83A /* BubblePerChampionshipView.xib */,
 			);
-			path = Stage18;
+			path = Pardon;
 			sourceTree = "<group>";
 		};
-		B3FBDC731CAD1421009840C5 /* Stage19 */ = {
+		B3FBDC731CAD1421009840C5 /* Sideway */ = {
 			isa = PBXGroup;
 			children = (
 				B3A621361CEDA42900643415 /* SidewaysPatientPardonController.h */,
@@ -1149,10 +1149,10 @@
 				B3A621401CEDACE500643415 /* GatherUnwaryPolititionView.m */,
 				B3A621421CEDAD2E00643415 /* GatherUnwaryPolititionView.xib */,
 			);
-			path = Stage19;
+			path = Sideway;
 			sourceTree = "<group>";
 		};
-		B3FBDC741CAD1421009840C5 /* Stage20 */ = {
+		B3FBDC741CAD1421009840C5 /* PoundAl */ = {
 			isa = PBXGroup;
 			children = (
 				B3F532111CF2D340005F537D /* PoundAlcoholExcitedController.h */,
@@ -1163,10 +1163,10 @@
 				B3F532181CF2DF26005F537D /* ComputeDirectionExcessiveView.m */,
 				B3F5321A1CF2E308005F537D /* ComputeDirectionExcessiveView.xib */,
 			);
-			path = Stage20;
+			path = PoundAl;
 			sourceTree = "<group>";
 		};
-		B3FBDC751CAD1421009840C5 /* Stage21 */ = {
+		B3FBDC751CAD1421009840C5 /* SendMicr */ = {
 			isa = PBXGroup;
 			children = (
 				B3F532611CF44B6E005F537D /* SendMicroscopeController.h */,
@@ -1176,10 +1176,10 @@
 				B3F532641CF45DA7005F537D /* ImpressBoyhoodDeafView.h */,
 				B3F532651CF45DA7005F537D /* ImpressBoyhoodDeafView.m */,
 			);
-			path = Stage21;
+			path = SendMicr;
 			sourceTree = "<group>";
 		};
-		B3FBDC761CAD1421009840C5 /* Stage22 */ = {
+		B3FBDC761CAD1421009840C5 /* Interpret */ = {
 			isa = PBXGroup;
 			children = (
 				B3F5326C1CF58D46005F537D /* InterpretProductiveRosebudController.h */,
@@ -1187,10 +1187,10 @@
 				B3F532721CF5AF0A005F537D /* TugOddView.h */,
 				B3F532731CF5AF0A005F537D /* TugOddView.m */,
 			);
-			path = Stage22;
+			path = Interpret;
 			sourceTree = "<group>";
 		};
-		B3FBDC771CAD1421009840C5 /* Stage23 */ = {
+		B3FBDC771CAD1421009840C5 /* TearDanger */ = {
 			isa = PBXGroup;
 			children = (
 				B3F532751CF81D46005F537D /* TearDangerousSpectacleController.h */,
@@ -1201,10 +1201,10 @@
 				B3F5327C1CF83A8F005F537D /* DeceitfulTreeView.m */,
 				B3F5327E1CF83A9F005F537D /* DeceitfulTreeView.xib */,
 			);
-			path = Stage23;
+			path = TearDanger;
 			sourceTree = "<group>";
 		};
-		B3FBDC781CAD1421009840C5 /* Stage24 */ = {
+		B3FBDC781CAD1421009840C5 /* Sentence */ = {
 			isa = PBXGroup;
 			children = (
 				B39910861D003F6500E107DD /* SentenceApparatusVoluntaryController.h */,
@@ -1215,7 +1215,7 @@
 				B39910A11D0168CE00E107DD /* ZealousFortnightView.m */,
 				B39910A31D0169BA00E107DD /* ZealousFortnightView.xib */,
 			);
-			path = Stage24;
+			path = Sentence;
 			sourceTree = "<group>";
 		};
 		B65E2657C96CCEBB705C2111 /* Pods */ = {
@@ -1227,13 +1227,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		FA9F11671CA81B61002D2064 /* Stage03 */ = {
+		FA9F11671CA81B61002D2064 /* Sponsor */ = {
 			isa = PBXGroup;
 			children = (
 				FA9F116C1CA81F50002D2064 /* View */,
 				FA9F116B1CA81F45002D2064 /* Controller */,
 			);
-			path = Stage03;
+			path = Sponsor;
 			sourceTree = "<group>";
 		};
 		FA9F116B1CA81F45002D2064 /* Controller */ = {
