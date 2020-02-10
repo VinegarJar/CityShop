@@ -15,7 +15,7 @@ typedef void(^Completion)(void);
         _time = time;
         _newTime = time;
         self.text = [NSString stringWithFormat:@"%.1f", time];
-        UIFont *font = [UIFont fontWithName:@"TransformersMovie" size:size];
+        UIFont *font = [UIFont fontWithName:@"CustomFont" size:size];
         if (font) {
             self.font = font;
         } else {

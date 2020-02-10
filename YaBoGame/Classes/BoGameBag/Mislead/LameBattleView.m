@@ -28,7 +28,7 @@
     label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.text = @"0";
-    label.font = [UIFont fontWithName:@"TransformersMovie" size:kFontSize];
+    label.font = [UIFont fontWithName:@"CustomFont" size:kFontSize];
     [self addSubview:label];
 }
 - (void)appearAwfullyWindyObesity:(int)index {

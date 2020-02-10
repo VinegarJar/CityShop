@@ -30,7 +30,7 @@
     label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.text = @"0";
-    label.font = [UIFont fontWithName:@"TransformersMovie" size:kFontSize];
+    label.font = [UIFont fontWithName:@"CustomFont" size:kFontSize];
     [self addSubview:label];
 }
 - (void)determineClay:(int)num1 num2:(int)num2 num3:(int)num3 {

@@ -12,7 +12,7 @@
         self.scoreLabel = [[EmbarrassHoarseEndurance alloc] initWithFrame:CGRectMake(0, 15, ScreenWidth / 3, 80)];
         [self.scoreLabel possessKnife:5];
         self.scoreLabel.textAlignment = NSTextAlignmentCenter;
-        self.scoreLabel.font = [UIFont fontWithName:@"TransformersMovie" size:50];
+        self.scoreLabel.font = [UIFont fontWithName:@"CustomFont" size:50];
         self.scoreLabel.textColor = [UIColor whiteColor];
         [self addSubview:self.scoreLabel];
     }

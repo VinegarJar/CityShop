@@ -33,8 +33,7 @@
 	<string>是否允许app使用语音播报和识别功能?</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Transformers Movie 变形金刚字体.ttf</string>
-		<string>arial.ttf</string>
+		<string>CustomFont.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

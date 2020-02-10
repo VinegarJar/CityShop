@@ -14,10 +14,10 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self.countLabel possessKnife:3];
-    self.countLabel.font = [UIFont fontWithName:@"TransformersMovie" size:120];
+    self.countLabel.font = [UIFont fontWithName:@"CustomFont" size:120];
     self.countLabel.textColor = [UIColor colorWithR:204 g:88 b:30];
     [self.unilLabel possessKnife:3];
-    self.unilLabel.font = [UIFont fontWithName:@"TransformersMovie" size:30];
+    self.unilLabel.font = [UIFont fontWithName:@"CustomFont" size:30];
     self.unilLabel.textColor = [UIColor whiteColor];
 }
 - (void)hailMeantimeFellowMurder {

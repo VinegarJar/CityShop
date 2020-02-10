@@ -28,7 +28,7 @@
     stageView.stage = newStage;
 }
 - (void)loadStageInfo {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"stages.plist" ofType:nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"game.plist" ofType:nil];
     NSArray *stageArr = [NSArray arrayWithContentsOfFile:path];
     CGFloat stageViewW = 120;
     CGFloat stageViewH = 100;

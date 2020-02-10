@@ -1,11 +1,11 @@
-#import "TrimOriginMagnetic.h"
+#import "AppMetodRouter.h"
 #import "AppDelegate.h"
 #import "PurelyGracefulCalculateController.h"
 #import "TugNiecePresentationalController.h"
 #import "ComeAgainstConclusionController.h"
 #import "WearStockingUrban.h"
 
-@implementation TrimOriginMagnetic
+@implementation AppMetodRouter
 
 +(void)jumpBaserConterl{
      __weak typeof(self) weakSelf = self;

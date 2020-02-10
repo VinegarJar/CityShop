@@ -20,8 +20,8 @@
     self.layer.anchorPoint = CGPointMake(0, 1);
     self.transform = CGAffineTransformMakeRotation(-M_PI_2);
     [self.backgroundImageView cleanSawtooth];
-    UIFont *font1 = [UIFont fontWithName:@"TransformersMovie" size:90];
-    UIFont *font2 = [UIFont fontWithName:@"TransformersMovie" size:40];
+    UIFont *font1 = [UIFont fontWithName:@"CustomFont" size:90];
+    UIFont *font2 = [UIFont fontWithName:@"CustomFont" size:40];
     if (font1 && font2) {
         self.countLabel.font = font1;
         self.unitLabel.font = font2;

@@ -78,11 +78,11 @@
     [[CADisplayLink displayLinkWithTarget:self selector:@selector(upData:)] addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     self.unitLabel.text = unit;
     if ([NSString stringWithFormat:stage.format, scroe].length == 3) {
-        self.scroeLabel.font = [UIFont fontWithName:@"TransformersMovie" size:95];
+        self.scroeLabel.font = [UIFont fontWithName:@"CustomFont" size:95];
     } else if ([NSString stringWithFormat:stage.format, scroe].length == 4) {
-        self.scroeLabel.font = [UIFont fontWithName:@"TransformersMovie" size:80];
+        self.scroeLabel.font = [UIFont fontWithName:@"CustomFont" size:80];
     } else if ([NSString stringWithFormat:stage.format, scroe].length >= 5) {
-        self.scroeLabel.font = [UIFont fontWithName:@"TransformersMovie" size:75];
+        self.scroeLabel.font = [UIFont fontWithName:@"CustomFont" size:75];
     }
     if (isAddScroe) {
         self.scroeLabel.text = @"0";

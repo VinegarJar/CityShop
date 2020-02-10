@@ -43,7 +43,7 @@
         [self.countLabel possessKnife:6];
         [self.countLabel persuadeAtSugar:[UIColor whiteColor]];
         self.countLabel.textAlignment = NSTextAlignmentCenter;
-        self.countLabel.font = [UIFont fontWithName:@"TransformersMovie" size:80];
+        self.countLabel.font = [UIFont fontWithName:@"CustomFont" size:80];
         self.countLabel.hidden = YES;
         [self addSubview:self.countLabel];
         _count = 3;

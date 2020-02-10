@@ -23,7 +23,7 @@
     _count = 1;
     [super injureNotSuddenLimitation];
     self.scoreLabel = [[EmbarrassHoarseEndurance alloc] initWithFrame:CGRectMake(0, 90, 100, 60)];
-    self.scoreLabel.font =  [UIFont fontWithName:@"TransformersMovie" size:60];
+    self.scoreLabel.font =  [UIFont fontWithName:@"CustomFont" size:60];
     self.scoreLabel.textColor = kTextOrangeColor;
     [self.scoreLabel possessKnife:5];
     self.scoreLabel.hidden = YES;
