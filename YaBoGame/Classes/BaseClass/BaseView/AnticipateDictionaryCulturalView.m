@@ -14,7 +14,9 @@
 @property (nonatomic, strong) CADisplayLink *timer;
 @end
 @implementation AnticipateDictionaryCulturalView
+
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self.label1 possessKnife:3];
     [self.label2 possessKnife:3];
     self.layer.anchorPoint = CGPointMake(0, 1);
@@ -31,6 +33,7 @@
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
 - (void)facialManufacture:(void (^)(BOOL))completion {
     [UIView animateWithDuration:0.4 animations:^{
         self.transform = CGAffineTransformMakeRotation(M_PI_4 / 8);
@@ -41,6 +44,7 @@
         }
     }];
 }
+
 - (void)howeverInjusticeSaddle {
     [self startCountWithOffsetX:15 offsetY:3];
     if (self.timer) {
@@ -49,16 +53,19 @@
     self.timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateTime:)];
     [self.timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
 }
+
 - (NSTimeInterval)stopCalculateTime {
     [self startCountWithOffsetX:-15 offsetY:-3];
     [self.timer invalidate];
     self.timer = nil;
     return _second + _ms / 60.0;
 }
+
 - (void)pause {
     [self startCountWithOffsetX:-15 offsetY:-3];
     self.timer.paused = YES;
 }
+
 - (NSTimeInterval)pasueTime {
     [self startCountWithOffsetX:-15 offsetY:-3];
     NSTimeInterval oneTime = _onceSecond + _onceMS / 60.0;
@@ -67,15 +74,18 @@
     self.timer.paused = YES;
     return oneTime;
 }
+
 - (void)practiseSacrificeOrdinary {
     [self startCountWithOffsetX:15 offsetY:3];
     self.timer.paused = NO;
 }
+
 - (void)startCountWithOffsetX:(CGFloat)offsetX offsetY:(CGFloat)offsetY {
     [UIView animateWithDuration:0.05 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         self.transform = CGAffineTransformTranslate(self.transform, offsetX, offsetY);
     } completion:nil];
 }
+
 - (void)competentGoods {
     [self.timer invalidate];
     self.timer = nil;
@@ -85,6 +95,7 @@
     self.label1.text = @"00";
     self.label2.text = @"00";
 }
+
 #pragma mark - Action
 - (void)updateTime:(CADisplayLink *)timer {
     _ms++;
@@ -108,10 +119,12 @@
         self.label2.text = [NSString stringWithFormat:@"%d", _ms];
     }
 }
+
 - (void)setTowardBlankWeather {
     [self.timer invalidate];
     self.timer = nil;
 }
+
 @end
 
 

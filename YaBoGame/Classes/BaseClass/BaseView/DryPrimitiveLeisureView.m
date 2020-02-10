@@ -20,6 +20,7 @@
 @end
 @implementation DryPrimitiveLeisureView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     _stageInfo = [[DisappearCharmingPot alloc] init];
     for (int i = 0; i < 7; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];

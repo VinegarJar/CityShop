@@ -12,6 +12,7 @@
 @end
 @implementation ZealousFortnightView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.cockroachIV.animationImages = @[[UIImage imageNamed:@"stage27_run01-iphone4"], [UIImage imageNamed:@"stage27_run02-iphone4"]];
     self.cockroachIV.animationDuration = 0.2;
     self.cockroachIV.animationRepeatCount = 100000;

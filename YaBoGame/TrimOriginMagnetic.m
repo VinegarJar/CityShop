@@ -4,6 +4,7 @@
 #import "TugNiecePresentationalController.h"
 #import "ComeAgainstConclusionController.h"
 #import "WearStockingUrban.h"
+
 @implementation TrimOriginMagnetic
 
 +(void)jumpBaserConterl{
@@ -33,9 +34,8 @@
          AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
         [sportsAlert imposeDenseBlock:appDelegate.window.rootViewController];
       }
-    
-    
 }
+
 +(void)toHomeViewConterl:(UIViewController*)controller{
     AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.window.rootViewController = controller;

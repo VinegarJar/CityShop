@@ -10,6 +10,7 @@
 @end
 @implementation BrightenExoticIncidentView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.boneView.clipsToBounds = NO;
     self.boneView.layer.anchorPoint = CGPointMake(0.5, .8);
     self.boneView.hidden = YES;

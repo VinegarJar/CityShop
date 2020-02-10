@@ -34,6 +34,7 @@
 @end
 @implementation CommonTriangleView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.leftWoodIV.animationImages = @[[UIImage imageNamed:@"18_Rwood_down-iphone4"]];
     self.leftWoodIV.animationDuration = 0.2;
     self.leftWoodIV.animationRepeatCount = 1;

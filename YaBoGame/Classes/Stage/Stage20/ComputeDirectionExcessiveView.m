@@ -14,6 +14,7 @@
 @end
 @implementation ComputeDirectionExcessiveView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.secondDiceIV.hidden = YES;
     self.thirdDiceIV.hidden = YES;
     [self setImageViewAnimationAttribute];

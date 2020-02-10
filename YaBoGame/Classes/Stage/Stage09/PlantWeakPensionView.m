@@ -6,6 +6,7 @@
 @end
 @implementation PlantWeakPensionView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self.timeLabel possessKnife:3];
     self.timeLabel.font = [UIFont fontWithName:@"TransformersMovie" size:25];
     self.timeLabel.textColor = [UIColor whiteColor];

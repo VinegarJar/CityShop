@@ -10,6 +10,7 @@
 @end
 @implementation RouseUninhabitedLetterView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.clipsToBounds = NO;
     [self.countLabel possessKnife:3];
     [self.ptsLabel possessKnife:3];

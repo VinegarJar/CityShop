@@ -8,6 +8,7 @@
 @end
 @implementation BubblePerChampionshipView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.bottomLabel.transform = CGAffineTransformMakeRotation(M_PI);
 }
 - (void)joinPerhapsInstantProfit:(WNXPokerType)type number:(int)number {

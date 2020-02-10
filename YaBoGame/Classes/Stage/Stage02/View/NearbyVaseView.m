@@ -13,6 +13,7 @@
 @end
 @implementation NearbyVaseView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.clipsToBounds = NO;
     [self.countLabel possessKnife:3];
     [self.unitLabel possessKnife:3];

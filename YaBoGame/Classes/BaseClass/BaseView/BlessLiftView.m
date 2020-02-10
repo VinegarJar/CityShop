@@ -6,7 +6,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *outView;
 @end
 @implementation BlessLiftView
+
 - (void)awakeFromNib {
+    [super awakeFromNib];
+
     self.redBgView.transform = CGAffineTransformMakeTranslation(ScreenWidth, 0);
     self.shadowView.transform = CGAffineTransformMakeTranslation(ScreenWidth, 0);
     self.peopleView.transform = CGAffineTransformMakeTranslation(ScreenWidth, 0);

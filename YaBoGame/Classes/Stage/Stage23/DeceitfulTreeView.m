@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, WNXDirectionType) {
 @end
 @implementation DeceitfulTreeView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.numArr = [NSMutableArray array];
     self.windowArr = [NSMutableArray array];
     NSArray *frameArr = [NSArray arrayWithObjects:

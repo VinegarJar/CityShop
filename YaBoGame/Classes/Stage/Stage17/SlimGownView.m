@@ -17,6 +17,7 @@
 @end
 @implementation SlimGownView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
     _offsetX = 10;
     _noseOffsetX = 1;

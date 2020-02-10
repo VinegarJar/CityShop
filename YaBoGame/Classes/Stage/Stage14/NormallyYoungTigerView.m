@@ -11,6 +11,7 @@
 @end
 @implementation NormallyYoungTigerView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.lineIV.layer.borderWidth = 1.5;
     self.lineIV.layer.borderColor = [UIColor whiteColor].CGColor;
     self.backgroundColor = [UIColor clearColor];

@@ -7,6 +7,7 @@
 @end
 @implementation KnowCommitteeView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.clipsToBounds = NO;
 }
 - (void)suggestConsequentlyStressfulAeroplane:(int)num {

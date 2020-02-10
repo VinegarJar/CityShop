@@ -15,6 +15,7 @@
 @end
 @implementation GatherUnwaryPolititionView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.pullIV.hidden = YES;
     self.iphoneIV.hidden = YES;
     self.blackView.hidden = YES;

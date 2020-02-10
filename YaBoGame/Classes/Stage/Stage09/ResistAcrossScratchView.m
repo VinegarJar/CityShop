@@ -9,6 +9,7 @@
 @end
 @implementation ResistAcrossScratchView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeTimer) name:kNotificationNameGameViewControllerDelloc object:nil];
 }
 - (void)setTowardBlankWeather {

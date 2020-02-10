@@ -12,6 +12,7 @@
 @end
 @implementation BlackenLoveView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self.countLabel possessKnife:3];
     self.countLabel.font = [UIFont fontWithName:@"TransformersMovie" size:120];
     self.countLabel.textColor = [UIColor colorWithR:204 g:88 b:30];

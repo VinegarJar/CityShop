@@ -21,6 +21,7 @@
     return stageView;
 }
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.clipsToBounds = NO;
     self.userInteractionEnabled = NO;
     self.numButton.userInteractionEnabled = NO;

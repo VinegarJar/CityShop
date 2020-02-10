@@ -7,6 +7,7 @@
 @end
 @implementation OclockVisibleBookmarkView
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.hidden = YES;
 }
 - (void)setType:(WNXResultStateType)type {
