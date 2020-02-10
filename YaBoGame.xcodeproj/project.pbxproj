@@ -590,7 +590,7 @@
 			isa = PBXGroup;
 			children = (
 				B32C1E4F1C7C4DF600B2C577 /* YaBoGame */,
-				B32C1E691C7C4DF600B2C577 /* HardestTests */,
+				B32C1E691C7C4DF600B2C577 /* YaBoGametTests */,
 				B32C1E741C7C4DF600B2C577 /* HardestUITests */,
 				B32C1E4E1C7C4DF600B2C577 /* Products */,
 				B65E2657C96CCEBB705C2111 /* Pods */,
@@ -634,13 +634,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B32C1E691C7C4DF600B2C577 /* HardestTests */ = {
+		B32C1E691C7C4DF600B2C577 /* YaBoGametTests */ = {
 			isa = PBXGroup;
 			children = (
 				B32C1E6A1C7C4DF600B2C577 /* HardestTests.m */,
 				B32C1E6C1C7C4DF600B2C577 /* Info.plist */,
 			);
-			path = HardestTests;
+			path = YaBoGametTests;
 			sourceTree = "<group>";
 		};
 		B32C1E741C7C4DF600B2C577 /* HardestUITests */ = {
