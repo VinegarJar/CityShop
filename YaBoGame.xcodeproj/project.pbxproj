@@ -14,8 +14,6 @@
 		039C71A723DDB42D0046CB3F /* BelieveOutputEachView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039C71A323DDB42C0046CB3F /* BelieveOutputEachView.xib */; };
 		039C71A823DDB42D0046CB3F /* BelieveOutputEachView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A423DDB42D0046CB3F /* BelieveOutputEachView.m */; };
 		039C71A923DDB42D0046CB3F /* WearStockingUrban.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A623DDB42D0046CB3F /* WearStockingUrban.m */; };
-		841F0E3123F160D400634F27 /* CustomFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3023F160D400634F27 /* CustomFont.ttf */; };
-		841F0E3523F1786A00634F27 /* Unlock_New.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3423F1786A00634F27 /* Unlock_New.mp4 */; };
 		841F0E7E23F1875700634F27 /* TugNiecePresentationalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841F0E3E23F1875700634F27 /* TugNiecePresentationalController.xib */; };
 		841F0E7F23F1875700634F27 /* ChooseTemporaryFamilyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F0E4123F1875700634F27 /* ChooseTemporaryFamilyController.m */; };
 		841F0E8023F1875700634F27 /* ComeAgainstConclusionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F0E4223F1875700634F27 /* ComeAgainstConclusionController.m */; };
@@ -51,6 +49,10 @@
 		841F0EF523F187AA00634F27 /* UIApplication+YBSLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F0ED723F187AA00634F27 /* UIApplication+YBSLoad.m */; };
 		841F0EF623F187AA00634F27 /* UIColor+YBSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F0ED823F187AA00634F27 /* UIColor+YBSColor.m */; };
 		841F0EF723F187AA00634F27 /* UIView+YBSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F0ED923F187AA00634F27 /* UIView+YBSImage.m */; };
+		841F0EFC23F19D4300634F27 /* CustomFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841F0EF823F19D4300634F27 /* CustomFont.ttf */; };
+		841F0EFD23F19D4300634F27 /* Unlock_New.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 841F0EF923F19D4300634F27 /* Unlock_New.mp4 */; };
+		841F0EFE23F19D4300634F27 /* YaBo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841F0EFA23F19D4300634F27 /* YaBo.plist */; };
+		841F0EFF23F19D4300634F27 /* sound.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 841F0EFB23F19D4300634F27 /* sound.bundle */; };
 		B1EBE7679DF987494E973CC6 /* libPods-YaBoGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E14825F263C503581E0F14A /* libPods-YaBoGame.a */; };
 		B30060A51CBB8E8D0040BF99 /* CrossDistantPhraseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30060A41CBB8E8D0040BF99 /* CrossDistantPhraseView.m */; };
 		B30060A71CBB8F340040BF99 /* CrossDistantPhraseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30060A61CBB8F340040BF99 /* CrossDistantPhraseView.xib */; };
@@ -88,7 +90,6 @@
 		B3650EE21C856AC600FC2D4E /* TakeawayPileView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3650EDF1C856AC600FC2D4E /* TakeawayPileView.m */; };
 		B3650EE31C856AC600FC2D4E /* TakeawayPileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3650EE01C856AC600FC2D4E /* TakeawayPileView.xib */; };
 		B3650EE91C856BBE00FC2D4E /* SuccessfullyMobileHometownView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3650EE81C856BBE00FC2D4E /* SuccessfullyMobileHometownView.m */; };
-		B384CD281C7EE616008AFA9E /* sound.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B384CD271C7EE616008AFA9E /* sound.bundle */; };
 		B384CD3E1C7FF8D7008AFA9E /* ExtendDateOrganicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD3D1C7FF8D7008AFA9E /* ExtendDateOrganicController.m */; };
 		B384CD461C804BA8008AFA9E /* DominateJointMereController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CD451C804BA8008AFA9E /* DominateJointMereController.m */; };
 		B39910881D003F6500E107DD /* SentenceApparatusVoluntaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39910871D003F6500E107DD /* SentenceApparatusVoluntaryController.m */; };
@@ -109,7 +110,6 @@
 		B3AAAC1F1CD9D4A200D93D3D /* BegDespiteCharityController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AAAC1E1CD9D4A200D93D3D /* BegDespiteCharityController.m */; };
 		B3AAAC221CD9E58700D93D3D /* LastMedicalSuspensionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AAAC211CD9E58700D93D3D /* LastMedicalSuspensionView.m */; };
 		B3B0D7371C83DD6A0048C380 /* BattleUponSplendour.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B0D7361C83DD6A0048C380 /* BattleUponSplendour.m */; };
-		B3B0D7391C83DFF20048C380 /* game.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B0D7381C83DFF20048C380 /* game.plist */; };
 		B3B7D3F41D0D5F4C00721033 /* EverRemarkableSaddleController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7D3F31D0D5F4C00721033 /* EverRemarkableSaddleController.m */; };
 		B3C8D6231CAD2FCE001D00D4 /* CrushViolentLavatoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8D6221CAD2FCE001D00D4 /* CrushViolentLavatoryView.m */; };
 		B3CB25141CD87C8E003B801A /* NeedConservativeMinorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CB25131CD87C8E003B801A /* NeedConservativeMinorView.m */; };
@@ -200,8 +200,6 @@
 		08DC16FCDB3182C91FE883AB /* Pods-YaBoGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaBoGame.debug.xcconfig"; path = "Target Support Files/Pods-YaBoGame/Pods-YaBoGame.debug.xcconfig"; sourceTree = "<group>"; };
 		4E14825F263C503581E0F14A /* libPods-YaBoGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaBoGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9ED0BD0861BCF083FB449 /* Pods-YaBoGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaBoGame.release.xcconfig"; path = "Target Support Files/Pods-YaBoGame/Pods-YaBoGame.release.xcconfig"; sourceTree = "<group>"; };
-		841F0E3023F160D400634F27 /* CustomFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CustomFont.ttf; sourceTree = "<group>"; };
-		841F0E3423F1786A00634F27 /* Unlock_New.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Unlock_New.mp4; sourceTree = "<group>"; };
 		841F0E3E23F1875700634F27 /* TugNiecePresentationalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TugNiecePresentationalController.xib; sourceTree = "<group>"; };
 		841F0E3F23F1875700634F27 /* ComeAgainstConclusionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComeAgainstConclusionController.h; sourceTree = "<group>"; };
 		841F0E4023F1875700634F27 /* TugNiecePresentationalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TugNiecePresentationalController.h; sourceTree = "<group>"; };
@@ -265,6 +263,10 @@
 		841F0ED723F187AA00634F27 /* UIApplication+YBSLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YBSLoad.m"; sourceTree = "<group>"; };
 		841F0ED823F187AA00634F27 /* UIColor+YBSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YBSColor.m"; sourceTree = "<group>"; };
 		841F0ED923F187AA00634F27 /* UIView+YBSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YBSImage.m"; sourceTree = "<group>"; };
+		841F0EF823F19D4300634F27 /* CustomFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CustomFont.ttf; sourceTree = "<group>"; };
+		841F0EF923F19D4300634F27 /* Unlock_New.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Unlock_New.mp4; sourceTree = "<group>"; };
+		841F0EFA23F19D4300634F27 /* YaBo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YaBo.plist; sourceTree = "<group>"; };
+		841F0EFB23F19D4300634F27 /* sound.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sound.bundle; sourceTree = "<group>"; };
 		B30060A31CBB8E8D0040BF99 /* CrossDistantPhraseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossDistantPhraseView.h; sourceTree = "<group>"; };
 		B30060A41CBB8E8D0040BF99 /* CrossDistantPhraseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossDistantPhraseView.m; sourceTree = "<group>"; };
 		B30060A61CBB8F340040BF99 /* CrossDistantPhraseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossDistantPhraseView.xib; sourceTree = "<group>"; };
@@ -331,7 +333,6 @@
 		B3650EE01C856AC600FC2D4E /* TakeawayPileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakeawayPileView.xib; sourceTree = "<group>"; };
 		B3650EE71C856BBE00FC2D4E /* SuccessfullyMobileHometownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessfullyMobileHometownView.h; sourceTree = "<group>"; };
 		B3650EE81C856BBE00FC2D4E /* SuccessfullyMobileHometownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessfullyMobileHometownView.m; sourceTree = "<group>"; };
-		B384CD271C7EE616008AFA9E /* sound.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sound.bundle; sourceTree = "<group>"; };
 		B384CD3C1C7FF8D7008AFA9E /* ExtendDateOrganicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendDateOrganicController.h; sourceTree = "<group>"; };
 		B384CD3D1C7FF8D7008AFA9E /* ExtendDateOrganicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendDateOrganicController.m; sourceTree = "<group>"; };
 		B384CD441C804BA8008AFA9E /* DominateJointMereController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DominateJointMereController.h; sourceTree = "<group>"; };
@@ -370,7 +371,6 @@
 		B3AAAC211CD9E58700D93D3D /* LastMedicalSuspensionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastMedicalSuspensionView.m; sourceTree = "<group>"; };
 		B3B0D7351C83DD6A0048C380 /* BattleUponSplendour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleUponSplendour.h; sourceTree = "<group>"; };
 		B3B0D7361C83DD6A0048C380 /* BattleUponSplendour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleUponSplendour.m; sourceTree = "<group>"; };
-		B3B0D7381C83DFF20048C380 /* game.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = game.plist; sourceTree = "<group>"; };
 		B3B7D3F21D0D5F4C00721033 /* EverRemarkableSaddleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EverRemarkableSaddleController.h; sourceTree = "<group>"; };
 		B3B7D3F31D0D5F4C00721033 /* EverRemarkableSaddleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EverRemarkableSaddleController.m; sourceTree = "<group>"; };
 		B3C8D6211CAD2FCE001D00D4 /* CrushViolentLavatoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrushViolentLavatoryView.h; sourceTree = "<group>"; };
@@ -618,14 +618,6 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		B30886061C89379E00AE83B2 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				841F0E3023F160D400634F27 /* CustomFont.ttf */,
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
 		B308860B1C895ABC00AE83B2 /* BoGameBag */ = {
 			isa = PBXGroup;
 			children = (
@@ -772,20 +764,12 @@
 		B32C1E861C7C57FE00B2C577 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B30886061C89379E00AE83B2 /* Font */,
-				B384CD351C7F12E4008AFA9E /* Plist */,
-				B32C1E8B1C7C57FE00B2C577 /* Sound */,
+				841F0EF923F19D4300634F27 /* Unlock_New.mp4 */,
+				841F0EFA23F19D4300634F27 /* YaBo.plist */,
+				841F0EF823F19D4300634F27 /* CustomFont.ttf */,
+				841F0EFB23F19D4300634F27 /* sound.bundle */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		B32C1E8B1C7C57FE00B2C577 /* Sound */ = {
-			isa = PBXGroup;
-			children = (
-				841F0E3423F1786A00634F27 /* Unlock_New.mp4 */,
-				B384CD271C7EE616008AFA9E /* sound.bundle */,
-			);
-			path = Sound;
 			sourceTree = "<group>";
 		};
 		B34333A91C8534B90086EF87 /* SorryEnvelope */ = {
@@ -827,14 +811,6 @@
 				B3650EE01C856AC600FC2D4E /* TakeawayPileView.xib */,
 			);
 			path = PurifyCommonView;
-			sourceTree = "<group>";
-		};
-		B384CD351C7F12E4008AFA9E /* Plist */ = {
-			isa = PBXGroup;
-			children = (
-				B3B0D7381C83DFF20048C380 /* game.plist */,
-			);
-			path = Plist;
 			sourceTree = "<group>";
 		};
 		B384CD381C7FF892008AFA9E /* Controller */ = {
@@ -1338,6 +1314,7 @@
 				FA63211F1CB697F4006F8714 /* BlackenLoveView.xib in Resources */,
 				FAD0DAD81CE8AC1A002E0E09 /* PolluteStomachFurtherView.xib in Resources */,
 				B3A621431CEDAD2E00643415 /* GatherUnwaryPolititionView.xib in Resources */,
+				841F0EFF23F19D4300634F27 /* sound.bundle in Resources */,
 				B34D8B3C1CBD1E8E0076A97D /* ResistAcrossScratchView.xib in Resources */,
 				B3650EE31C856AC600FC2D4E /* TakeawayPileView.xib in Resources */,
 				B3F5327F1CF83A9F005F537D /* DeceitfulTreeView.xib in Resources */,
@@ -1359,20 +1336,19 @@
 				841F0EEB23F187AA00634F27 /* ThroughoutValuableCommunistController.xib in Resources */,
 				FAC8C1C41CAEC3F200FD8D0E /* OclockVisibleBookmarkView.xib in Resources */,
 				B39910A41D0169BA00E107DD /* ZealousFortnightView.xib in Resources */,
+				841F0EFC23F19D4300634F27 /* CustomFont.ttf in Resources */,
 				841F0EDB23F187AA00634F27 /* BlessLiftView.xib in Resources */,
 				841F0EE623F187AA00634F27 /* RubSignalTechnologicalController.xib in Resources */,
 				B3F5321B1CF2E308005F537D /* ComputeDirectionExcessiveView.xib in Resources */,
 				FA48C6521CBA94BC004B326C /* SwimOfMankindView.xib in Resources */,
-				841F0E3523F1786A00634F27 /* Unlock_New.mp4 in Resources */,
 				B3F29D821CE0A96900049FA7 /* BrightenExoticIncidentView.xib in Resources */,
-				B3B0D7391C83DFF20048C380 /* game.plist in Resources */,
-				841F0E3123F160D400634F27 /* CustomFont.ttf in Resources */,
 				B32C1E5B1C7C4DF600B2C577 /* Main.storyboard in Resources */,
 				039C71A723DDB42D0046CB3F /* BelieveOutputEachView.xib in Resources */,
+				841F0EFD23F19D4300634F27 /* Unlock_New.mp4 in Resources */,
 				841F0EED23F187AA00634F27 /* CreepAboutCoffinController.xib in Resources */,
 				FABAC8931CB140C70061D257 /* KnowCommitteeView.xib in Resources */,
 				B30060A71CBB8F340040BF99 /* CrossDistantPhraseView.xib in Resources */,
-				B384CD281C7EE616008AFA9E /* sound.bundle in Resources */,
+				841F0EFE23F19D4300634F27 /* YaBo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
