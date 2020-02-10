@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-@interface RetainAccurateLayerView : UIView
+@interface LinmiMetodVC : UIView
 @property (nonatomic, copy) void (^startCountTime)();
 @property (nonatomic, copy) void (^showNextPoker)();
 @property (nonatomic, copy) void (^selectSamePokerSucess)(BOOL isPass);

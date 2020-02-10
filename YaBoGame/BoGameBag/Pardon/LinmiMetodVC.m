@@ -1,14 +1,14 @@
-#import "RetainAccurateLayerView.h"
+#import "LinmiMetodVC.h"
 #import "BubblePerChampionshipView.h"
 #define kPokerViewWidth 90
 #define kPokerViewHeight 125
 #define kLeftPokerViewFrame CGRectMake((ScreenWidth / 3 - kPokerViewWidth) * 0.5, 260, kPokerViewWidth, kPokerViewHeight)
 #define kMiddlePokerViewFrame CGRectMake((ScreenWidth / 3 - kPokerViewWidth) * 0.5 + ScreenWidth / 3, 260, kPokerViewWidth, kPokerViewHeight)
 #define kRightPokerViewFrame CGRectMake((ScreenWidth / 3 - kPokerViewWidth) * 0.5 + ScreenWidth / 3 * 2, 260, kPokerViewWidth, kPokerViewHeight)
-@interface RetainAccurateLayerView ()
+@interface LinmiMetodVC ()
 @property (nonatomic, strong) NSMutableArray *pokerArr;
 @end
-@implementation RetainAccurateLayerView
+@implementation LinmiMetodVC
 {
     BOOL _same1;
     BOOL _same2;

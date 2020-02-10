@@ -1,8 +1,8 @@
 #import "PardonPresentationVideoController.h"
-#import "RetainAccurateLayerView.h"
+#import "LinmiMetodVC.h"
 #import "NearbyVaseView.h"
 @interface PardonPresentationVideoController ()
-@property (nonatomic, strong) RetainAccurateLayerView *pokerView;
+@property (nonatomic, strong) LinmiMetodVC *pokerView;
 @property (nonatomic, assign) BOOL btnCanEdit;
 @property (nonatomic, assign) int allScore;
 @end
@@ -19,7 +19,7 @@
     [self lookIntoWeekend];
 }
 - (void)buildPokerView {
-    self.pokerView = [RetainAccurateLayerView viewFromNib];
+    self.pokerView = [LinmiMetodVC viewFromNib];
     [self.view insertSubview:self.pokerView belowSubview:self.redButton];
     __weak typeof(self) weakSelf = self;
     self.pokerView.startCountTime = ^{

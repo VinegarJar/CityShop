@@ -53,6 +53,8 @@
 		841F0EFD23F19D4300634F27 /* Unlock_New.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 841F0EF923F19D4300634F27 /* Unlock_New.mp4 */; };
 		841F0EFE23F19D4300634F27 /* YaBo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841F0EFA23F19D4300634F27 /* YaBo.plist */; };
 		841F0EFF23F19D4300634F27 /* sound.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 841F0EFB23F19D4300634F27 /* sound.bundle */; };
+		841F0F0323F1A9C400634F27 /* LinmiMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F0F0023F1A9C400634F27 /* LinmiMetodVC.m */; };
+		841F0F0423F1A9C400634F27 /* LinmiMetodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841F0F0123F1A9C400634F27 /* LinmiMetodVC.xib */; };
 		B1EBE7679DF987494E973CC6 /* libPods-YaBoGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E14825F263C503581E0F14A /* libPods-YaBoGame.a */; };
 		B30060A51CBB8E8D0040BF99 /* CrossDistantPhraseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30060A41CBB8E8D0040BF99 /* CrossDistantPhraseView.m */; };
 		B30060A71CBB8F340040BF99 /* CrossDistantPhraseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30060A61CBB8F340040BF99 /* CrossDistantPhraseView.xib */; };
@@ -74,8 +76,6 @@
 		B331F62B1CEB2D1F008DE83A /* PardonPresentationVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B331F62A1CEB2D1F008DE83A /* PardonPresentationVideoController.m */; };
 		B331F62E1CEB3619008DE83A /* BubblePerChampionshipView.m in Sources */ = {isa = PBXBuildFile; fileRef = B331F62D1CEB3619008DE83A /* BubblePerChampionshipView.m */; };
 		B331F6301CEB362F008DE83A /* BubblePerChampionshipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B331F62F1CEB362F008DE83A /* BubblePerChampionshipView.xib */; };
-		B331F6331CEC0506008DE83A /* RetainAccurateLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B331F6321CEC0506008DE83A /* RetainAccurateLayerView.m */; };
-		B331F6351CEC052D008DE83A /* RetainAccurateLayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B331F6341CEC052D008DE83A /* RetainAccurateLayerView.xib */; };
 		B343339C1C8424560086EF87 /* DisappearCharmingPot.m in Sources */ = {isa = PBXBuildFile; fileRef = B343339B1C8424560086EF87 /* DisappearCharmingPot.m */; };
 		B34333AC1C8535340086EF87 /* SorryEnvelopeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34333AB1C8535340086EF87 /* SorryEnvelopeController.m */; };
 		B34D8B341CBD1ABC0076A97D /* FlushOntoSwanController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34D8B331CBD1ABC0076A97D /* FlushOntoSwanController.m */; };
@@ -267,6 +267,9 @@
 		841F0EF923F19D4300634F27 /* Unlock_New.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Unlock_New.mp4; sourceTree = "<group>"; };
 		841F0EFA23F19D4300634F27 /* YaBo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YaBo.plist; sourceTree = "<group>"; };
 		841F0EFB23F19D4300634F27 /* sound.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sound.bundle; sourceTree = "<group>"; };
+		841F0F0023F1A9C400634F27 /* LinmiMetodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinmiMetodVC.m; sourceTree = "<group>"; };
+		841F0F0123F1A9C400634F27 /* LinmiMetodVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinmiMetodVC.xib; sourceTree = "<group>"; };
+		841F0F0223F1A9C400634F27 /* LinmiMetodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinmiMetodVC.h; sourceTree = "<group>"; };
 		B30060A31CBB8E8D0040BF99 /* CrossDistantPhraseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossDistantPhraseView.h; sourceTree = "<group>"; };
 		B30060A41CBB8E8D0040BF99 /* CrossDistantPhraseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossDistantPhraseView.m; sourceTree = "<group>"; };
 		B30060A61CBB8F340040BF99 /* CrossDistantPhraseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossDistantPhraseView.xib; sourceTree = "<group>"; };
@@ -304,9 +307,6 @@
 		B331F62C1CEB3619008DE83A /* BubblePerChampionshipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubblePerChampionshipView.h; sourceTree = "<group>"; };
 		B331F62D1CEB3619008DE83A /* BubblePerChampionshipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubblePerChampionshipView.m; sourceTree = "<group>"; };
 		B331F62F1CEB362F008DE83A /* BubblePerChampionshipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BubblePerChampionshipView.xib; sourceTree = "<group>"; };
-		B331F6311CEC0506008DE83A /* RetainAccurateLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainAccurateLayerView.h; sourceTree = "<group>"; };
-		B331F6321CEC0506008DE83A /* RetainAccurateLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainAccurateLayerView.m; sourceTree = "<group>"; };
-		B331F6341CEC052D008DE83A /* RetainAccurateLayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RetainAccurateLayerView.xib; sourceTree = "<group>"; };
 		B343339A1C8424560086EF87 /* DisappearCharmingPot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisappearCharmingPot.h; sourceTree = "<group>"; };
 		B343339B1C8424560086EF87 /* DisappearCharmingPot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisappearCharmingPot.m; sourceTree = "<group>"; };
 		B34333AA1C8535340086EF87 /* SorryEnvelopeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SorryEnvelopeController.h; sourceTree = "<group>"; };
@@ -1074,11 +1074,11 @@
 		B3FBDC721CAD1421009840C5 /* Pardon */ = {
 			isa = PBXGroup;
 			children = (
+				841F0F0223F1A9C400634F27 /* LinmiMetodVC.h */,
+				841F0F0023F1A9C400634F27 /* LinmiMetodVC.m */,
+				841F0F0123F1A9C400634F27 /* LinmiMetodVC.xib */,
 				B331F6291CEB2D1F008DE83A /* PardonPresentationVideoController.h */,
 				B331F62A1CEB2D1F008DE83A /* PardonPresentationVideoController.m */,
-				B331F6311CEC0506008DE83A /* RetainAccurateLayerView.h */,
-				B331F6321CEC0506008DE83A /* RetainAccurateLayerView.m */,
-				B331F6341CEC052D008DE83A /* RetainAccurateLayerView.xib */,
 				B331F62C1CEB3619008DE83A /* BubblePerChampionshipView.h */,
 				B331F62D1CEB3619008DE83A /* BubblePerChampionshipView.m */,
 				B331F62F1CEB362F008DE83A /* BubblePerChampionshipView.xib */,
@@ -1320,7 +1320,6 @@
 				B3F5327F1CF83A9F005F537D /* DeceitfulTreeView.xib in Resources */,
 				B39AE1931CB91536007F7554 /* HostProofView.xib in Resources */,
 				B331F6301CEB362F008DE83A /* BubblePerChampionshipView.xib in Resources */,
-				B331F6351CEC052D008DE83A /* RetainAccurateLayerView.xib in Resources */,
 				841F0EE223F187AA00634F27 /* RouseUninhabitedLetterView.xib in Resources */,
 				841F0EE423F187AA00634F27 /* AnticipateDictionaryCulturalView.xib in Resources */,
 				B32C1E5D1C7C4DF600B2C577 /* Assets.xcassets in Resources */,
@@ -1348,6 +1347,7 @@
 				841F0EED23F187AA00634F27 /* CreepAboutCoffinController.xib in Resources */,
 				FABAC8931CB140C70061D257 /* KnowCommitteeView.xib in Resources */,
 				B30060A71CBB8F340040BF99 /* CrossDistantPhraseView.xib in Resources */,
+				841F0F0423F1A9C400634F27 /* LinmiMetodVC.xib in Resources */,
 				841F0EFE23F19D4300634F27 /* YaBo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1410,7 +1410,6 @@
 				841F0EDF23F187AA00634F27 /* AltogetherDeepFormatView.m in Sources */,
 				B30060A51CBB8E8D0040BF99 /* CrossDistantPhraseView.m in Sources */,
 				B39AE18C1CB905C4007F7554 /* StackFavourablePerseveranceView.m in Sources */,
-				B331F6331CEC0506008DE83A /* RetainAccurateLayerView.m in Sources */,
 				B384CD461C804BA8008AFA9E /* DominateJointMereController.m in Sources */,
 				B3A7875A1CD0B07F005FC3EA /* DeriveProgressiveDiamondController.m in Sources */,
 				841F0EE723F187AA00634F27 /* CreepAboutCoffinController.m in Sources */,
@@ -1449,6 +1448,7 @@
 				B3A6213E1CEDAC9400643415 /* AlsoJollyDrawingView.m in Sources */,
 				B3F532771CF81D46005F537D /* TearDangerousSpectacleController.m in Sources */,
 				B3CB25141CD87C8E003B801A /* NeedConservativeMinorView.m in Sources */,
+				841F0F0323F1A9C400634F27 /* LinmiMetodVC.m in Sources */,
 				FA9F116A1CA81B7A002D2064 /* SponsorExpertIllController.m in Sources */,
 				FAF936E41CCB51E50026E06F /* TanMountView.m in Sources */,
 				FAF936EF1CCB55B30026E06F /* LameBattleView.m in Sources */,
