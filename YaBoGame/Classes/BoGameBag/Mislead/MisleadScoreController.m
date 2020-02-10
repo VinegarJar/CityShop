@@ -32,14 +32,14 @@
     self.plateView.AnimationFinishBlock = ^(BOOL isFrist) {
         [weakSelf repentLover:YES];
         if (isFrist) {
-            [(AnticipateDictionaryCulturalView *)weakSelf.countScore howeverInjusticeSaddle];
+            [(AnticipateDictionaryCulturalView *)weakSelf.cplendour howeverInjusticeSaddle];
         } else {
-            [(AnticipateDictionaryCulturalView *)weakSelf.countScore practiseSacrificeOrdinary];
+            [(AnticipateDictionaryCulturalView *)weakSelf.cplendour practiseSacrificeOrdinary];
         }
     };
     self.plateView.StopCountTimeBlock = ^{
         [weakSelf repentLover:NO];
-        weakSelf.oneTime = [(AnticipateDictionaryCulturalView *)weakSelf.countScore pasueTime];
+        weakSelf.oneTime = [(AnticipateDictionaryCulturalView *)weakSelf.cplendour pasueTime];
     };
     self.plateView.PassStageBlock = ^{
         WNXResultStateType resultType;
@@ -52,7 +52,7 @@
         }
         
         [weakSelf.stateView swingLikeInk:resultType stageViewHiddenFinishBlock:^{
-            [weakSelf transformMatureLifeboat:[(AnticipateDictionaryCulturalView *)weakSelf.countScore stopCalculateTime] unit:@"秒’" stage:weakSelf.stage isAddScore:YES];
+            [weakSelf transformMatureLifeboat:[(AnticipateDictionaryCulturalView *)weakSelf.cplendour stopCalculateTime] unit:@"秒’" stage:weakSelf.stage isAddScore:YES];
         }];
     };
     self.plateView.NextBlock = ^{
@@ -70,7 +70,7 @@
         }];
     };
     self.plateView.FailBlock = ^{
-        [(AnticipateDictionaryCulturalView *)weakSelf.countScore stopCalculateTime];
+        [(AnticipateDictionaryCulturalView *)weakSelf.cplendour stopCalculateTime];
         [weakSelf refineFortunateEnvelope];
     };
 }
@@ -84,7 +84,7 @@
     [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundFeatherClickName];
     [self.numView appearAwfullyWindyObesity:(int)sender.tag];
     if (![self.plateView bentReef:(int)sender.tag]) {
-        [(AnticipateDictionaryCulturalView *)self.countScore stopCalculateTime];
+        [(AnticipateDictionaryCulturalView *)self.cplendour stopCalculateTime];
         [self refineFortunateEnvelope];
     }
 }
@@ -97,18 +97,18 @@
 }
 - (void)terriblePoetry {
     [self.plateView pause];
-    [(AnticipateDictionaryCulturalView *)self.countScore pause];
+    [(AnticipateDictionaryCulturalView *)self.cplendour pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
     [self.plateView resume];
     if (!self.plateView.isAnimation) {
-        [(AnticipateDictionaryCulturalView *)self.countScore practiseSacrificeOrdinary];
+        [(AnticipateDictionaryCulturalView *)self.cplendour practiseSacrificeOrdinary];
     }
 }
 - (void)stitchScheduleOdourless {
-    [(AnticipateDictionaryCulturalView *)self.countScore competentGoods];
+    [(AnticipateDictionaryCulturalView *)self.cplendour competentGoods];
     [self.plateView exclaimDespiteSuitableDeal];
     [self.numView exclaimDespiteSuitableDeal];
     [self.plateView removeFromSuperview];

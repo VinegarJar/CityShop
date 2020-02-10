@@ -38,7 +38,7 @@
     [self.view insertSubview:self.numView belowSubview:self.leftButton];
     __weak typeof(self) weakSelf = self;
     self.numView.showNumberAnimationFinish = ^{
-        [(NearbyVaseView *)weakSelf.countScore howeverInjusticeSaddle];
+        [(NearbyVaseView *)weakSelf.cplendour howeverInjusticeSaddle];
         [weakSelf deepenJuryIdeal:YES];
     };
     [self lookIntoWeekend];
@@ -50,7 +50,7 @@
     if (sender.tag == self.maxTag) {
         __weak typeof(self) weakSelf = self;
         __block int onceTime;
-        [(NearbyVaseView *)self.countScore accountOnLevelTragedy:^(int second, int ms) {
+        [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:^(int second, int ms) {
             onceTime = second * 1000 + ms / 60.0 * 1000;
             weakSelf.allScore += onceTime;
         }];
@@ -69,14 +69,14 @@
                 [weakSelf transformMatureLifeboat:weakSelf.allScore / 13 unit:@"ms" stage:weakSelf.stage isAddScore:YES];
             } else {
                 weakSelf.count++;
-                [(NearbyVaseView *)weakSelf.countScore exclaimDespiteSuitableDeal];
+                [(NearbyVaseView *)weakSelf.cplendour exclaimDespiteSuitableDeal];
                 weakSelf.maxTag = [weakSelf.numView dischargeCarefullySaltyCliff];
             }
         }];
     } else {
         self.view.userInteractionEnabled = NO;
         [self refineFortunateEnvelope];
-        [(NearbyVaseView *)self.countScore accountOnLevelTragedy:nil];
+        [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:nil];
     }
 }
 #pragma mark - Super Method
@@ -89,17 +89,17 @@
     self.maxTag = [self.numView dischargeCarefullySaltyCliff];
 }
 - (void)terriblePoetry {
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
     [self.numView pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
     [self.numView resume];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
 }
 - (void)stitchScheduleOdourless {
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [self.stateView skiFromReply];
     self.stateView = nil;
     [self injureNotSuddenLimitation];

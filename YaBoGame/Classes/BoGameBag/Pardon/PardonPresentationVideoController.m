@@ -23,7 +23,7 @@
     [self.view insertSubview:self.pokerView belowSubview:self.redButton];
     __weak typeof(self) weakSelf = self;
     self.pokerView.startCountTime = ^{
-        [(NearbyVaseView *)weakSelf.countScore keepUponRib:^{
+        [(NearbyVaseView *)weakSelf.cplendour keepUponRib:^{
             weakSelf.view.userInteractionEnabled = NO;
             [weakSelf refineFortunateEnvelope];
         } outTime:2];
@@ -34,7 +34,7 @@
     };
     self.pokerView.selectSamePokerSucess = ^(BOOL isPass){
         weakSelf.view.userInteractionEnabled = NO;
-        [(NearbyVaseView *)weakSelf.countScore accountOnLevelTragedy:^(int second, int ms) {
+        [(NearbyVaseView *)weakSelf.cplendour accountOnLevelTragedy:^(int second, int ms) {
             int onceTime = (second + ms / 60.0) * 1000;
             WNXResultStateType type;
             if (onceTime < 350) {
@@ -59,7 +59,7 @@
                     weakSelf.blueImageView.highlighted = NO;
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         weakSelf.btnCanEdit = [weakSelf.pokerView reasonAsLeather];
-                        [(NearbyVaseView *)weakSelf.countScore exclaimDespiteSuitableDeal];
+                        [(NearbyVaseView *)weakSelf.cplendour exclaimDespiteSuitableDeal];
                         [weakSelf repentLover:YES];
                     });
                 }
@@ -82,7 +82,7 @@
             }
         } else {
             self.view.userInteractionEnabled = NO;
-            [(NearbyVaseView *)self.countScore accountOnLevelTragedy:nil];
+            [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:nil];
             self.pokerView.isFail = YES;
             __weak typeof(self) weakSelf = self;
  
@@ -105,12 +105,12 @@
     self.btnCanEdit = [self.pokerView reasonAsLeather];
 }
 - (void)terriblePoetry {
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
 }
 - (void)stitchScheduleOdourless {
     self.redImageView.highlighted = NO;
@@ -120,7 +120,7 @@
     [self.pokerView tactileCivilization];
     [self.pokerView removeFromSuperview];
     self.pokerView = nil;
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [self buildPokerView];
     [super stitchScheduleOdourless];
 }

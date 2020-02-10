@@ -40,14 +40,14 @@
     self.iceView.failBlock = ^{
         if (!weakSelf.isFail) {
             [weakSelf.view setUserInteractionEnabled:NO];
-            [(AnticipateDictionaryCulturalView *)weakSelf.countScore stopCalculateTime];
+            [(AnticipateDictionaryCulturalView *)weakSelf.cplendour stopCalculateTime];
             [weakSelf refineFortunateEnvelope];
         }
         weakSelf.isFail = YES;
     };
     self.iceView.passBlock = ^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [weakSelf transformMatureLifeboat:[(AnticipateDictionaryCulturalView *)weakSelf.countScore stopCalculateTime] unit:@"ç§’" stage:weakSelf.stage isAddScore:YES];
+            [weakSelf transformMatureLifeboat:[(AnticipateDictionaryCulturalView *)weakSelf.cplendour stopCalculateTime] unit:@"ç§’" stage:weakSelf.stage isAddScore:YES];
         });
     };
     self.iceView.successBlock = ^(int iceCount){
@@ -58,32 +58,32 @@
 - (void)faxHoneymoon {
     [super faxHoneymoon];
     [self.view bringSubviewToFront:self.iceView];
-    [(AnticipateDictionaryCulturalView *)self.countScore howeverInjusticeSaddle];
+    [(AnticipateDictionaryCulturalView *)self.cplendour howeverInjusticeSaddle];
 }
 - (void)throwConductorImaginative {
     [super throwConductorImaginative];
-    if (self.guideImageView) {
-        [self.view bringSubviewToFront:self.guideImageView];
+    if (self.tipeGraceView) {
+        [self.view bringSubviewToFront:self.tipeGraceView];
     }
 }
 - (void)terriblePoetry {
-    [(AnticipateDictionaryCulturalView *)self.countScore pause];
+    [(AnticipateDictionaryCulturalView *)self.cplendour pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(AnticipateDictionaryCulturalView *)self.countScore practiseSacrificeOrdinary];
+    [(AnticipateDictionaryCulturalView *)self.cplendour practiseSacrificeOrdinary];
 }
 - (void)stitchScheduleOdourless {
     self.isFail = NO;
-    [(AnticipateDictionaryCulturalView *)self.countScore competentGoods];
+    [(AnticipateDictionaryCulturalView *)self.cplendour competentGoods];
     [self.iceView directTowardBadminton];
     [super stitchScheduleOdourless];
 }
 #pragma mark - Private Method
 - (void)showResultStateWithCount:(int)count {
     [self.view setUserInteractionEnabled:NO];
-    NSTimeInterval time = [(AnticipateDictionaryCulturalView *)self.countScore pasueTime] / count;
+    NSTimeInterval time = [(AnticipateDictionaryCulturalView *)self.cplendour pasueTime] / count;
     WNXResultStateType stageType;
     if (time < 0.05) {
         stageType = WNXResultStateTypePerfect;
@@ -98,7 +98,7 @@
     if (!self.iceView.isPass) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.iceView directTowardBadminton];
-            [(AnticipateDictionaryCulturalView *)self.countScore practiseSacrificeOrdinary];
+            [(AnticipateDictionaryCulturalView *)self.cplendour practiseSacrificeOrdinary];
             [self.view setUserInteractionEnabled:YES];
         });
     }

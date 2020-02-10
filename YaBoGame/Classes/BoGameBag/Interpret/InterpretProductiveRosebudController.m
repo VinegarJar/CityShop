@@ -70,7 +70,7 @@ typedef NS_ENUM(NSInteger, WNXStatusResultType) {
     };
     self.peopleView.sucess = ^{
         [weakSelf repentLover:NO];
-        [(NearbyVaseView *)weakSelf.countScore accountOnLevelTragedy:^(int second, int ms) {
+        [(NearbyVaseView *)weakSelf.cplendour accountOnLevelTragedy:^(int second, int ms) {
             int onceTime = (second * 1000 + ms / 60.0 * 1000) / weakSelf.peopleView.count;
             WNXStatusResultType type;
             if (onceTime < 300) {
@@ -87,7 +87,7 @@ typedef NS_ENUM(NSInteger, WNXStatusResultType) {
                 } else {
                     weakSelf.resultLabel.hidden = YES;
                     weakSelf.resultImageView.hidden = YES;
-                    [(NearbyVaseView *)weakSelf.countScore exclaimDespiteSuitableDeal];
+                    [(NearbyVaseView *)weakSelf.cplendour exclaimDespiteSuitableDeal];
                     _isCountTime = NO;
                     weakSelf.bottomStatusView.hidden = NO;
                     weakSelf.bottomStatusView.image = [UIImage imageNamed:@"24_watch-iphone4"];
@@ -140,11 +140,11 @@ typedef NS_ENUM(NSInteger, WNXStatusResultType) {
 - (void)btnClick:(UIButton *)sender {
     if (!_isCountTime) {
         _isCountTime = YES;
-        [(NearbyVaseView *)self.countScore howeverInjusticeSaddle];
+        [(NearbyVaseView *)self.cplendour howeverInjusticeSaddle];
     }
     if (![self.peopleView besidesSpritualInsurance:(int)sender.tag]) {
         self.view.userInteractionEnabled = NO;
-        [(NearbyVaseView *)self.countScore accountOnLevelTragedy:nil];
+        [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:nil];
         [self showBadView];
     }
 }
@@ -162,16 +162,16 @@ typedef NS_ENUM(NSInteger, WNXStatusResultType) {
     });
 }
 - (void)terriblePoetry {
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
 }
 - (void)stitchScheduleOdourless {
     self.bottomStatusView.hidden = YES;
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     self.resultLabel.hidden = YES;
     self.resultImageView.hidden = YES;
     self.playAgain = YES;

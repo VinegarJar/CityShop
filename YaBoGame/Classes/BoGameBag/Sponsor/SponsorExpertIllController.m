@@ -40,11 +40,11 @@
 - (void)weaveTransparentlyFunSeaside {
     [super weaveTransparentlyFunSeaside];
     __weak __typeof(self) weakSelf = self;
-    [((AnticipateDictionaryCulturalView *)self.countScore) howeverInjusticeSaddle];
+    [((AnticipateDictionaryCulturalView *)self.cplendour) howeverInjusticeSaddle];
     [self.headerView shineAgainstHonestMetal:^{
         [weakSelf equipBrilliantLamb];
     } stopCalculateTime:^{
-        weakSelf.scroe = [((AnticipateDictionaryCulturalView *)weakSelf.countScore) stopCalculateTime];
+        weakSelf.scroe = [((AnticipateDictionaryCulturalView *)weakSelf.cplendour) stopCalculateTime];
     }];
 }
 - (void)equipBrilliantLamb {
@@ -54,16 +54,16 @@
 - (void)terriblePoetry {
     [super terriblePoetry];
     [self.headerView pause];
-    [((AnticipateDictionaryCulturalView *)self.countScore) pause];
+    [((AnticipateDictionaryCulturalView *)self.cplendour) pause];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
     [self.headerView practiseSacrificeOrdinary];
-    [((AnticipateDictionaryCulturalView *)self.countScore) practiseSacrificeOrdinary];
+    [((AnticipateDictionaryCulturalView *)self.cplendour) practiseSacrificeOrdinary];
 }
 - (void)stitchScheduleOdourless {
     [self.headerView exchangeMercifulCabbage];
-    [((AnticipateDictionaryCulturalView *)self.countScore) competentGoods];
+    [((AnticipateDictionaryCulturalView *)self.cplendour) competentGoods];
     [super stitchScheduleOdourless];
 }
 #pragma mark - Method

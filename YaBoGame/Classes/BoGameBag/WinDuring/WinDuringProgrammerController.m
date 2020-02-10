@@ -28,7 +28,7 @@
     };
     self.jumpView.passStage = ^{
         weakSelf.view.userInteractionEnabled = NO;
-        NSTimeInterval scroe = [(AnticipateDictionaryCulturalView *)weakSelf.countScore stopCalculateTime];
+        NSTimeInterval scroe = [(AnticipateDictionaryCulturalView *)weakSelf.cplendour stopCalculateTime];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [weakSelf transformMatureLifeboat:scroe unit:@"s" stage:weakSelf.stage isAddScore:YES];
         });
@@ -37,18 +37,18 @@
 #pragma mark - Super Method
 - (void)faxHoneymoon {
     [super faxHoneymoon];
-    [(AnticipateDictionaryCulturalView *)self.countScore howeverInjusticeSaddle];
+    [(AnticipateDictionaryCulturalView *)self.cplendour howeverInjusticeSaddle];
 }
 - (void)terriblePoetry {
-    [(AnticipateDictionaryCulturalView *)self.countScore pause];
+    [(AnticipateDictionaryCulturalView *)self.cplendour pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(AnticipateDictionaryCulturalView *)self.countScore practiseSacrificeOrdinary];
+    [(AnticipateDictionaryCulturalView *)self.cplendour practiseSacrificeOrdinary];
 }
 - (void)stitchScheduleOdourless {
-    [(AnticipateDictionaryCulturalView *)self.countScore competentGoods];
+    [(AnticipateDictionaryCulturalView *)self.cplendour competentGoods];
     [self.jumpView removeFromSuperview];
     self.jumpView = nil;
     [self buildJumpView];

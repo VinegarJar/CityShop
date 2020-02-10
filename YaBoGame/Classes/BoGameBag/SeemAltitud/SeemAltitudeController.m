@@ -51,7 +51,7 @@
     [self.view insertSubview:self.imageView belowSubview:self.playAgainButton];
     self.imageView.bgIV = self.backgroundIV;
     self.imageView.stopTime = ^(int count) {
-        [((NearbyVaseView *)weakSelf.countScore) accountOnLevelTragedy:^(int second, int ms) {
+        [((NearbyVaseView *)weakSelf.cplendour) accountOnLevelTragedy:^(int second, int ms) {
             [weakSelf calculateStateWithCount:count second:second msec:ms];
         }];
     };
@@ -65,35 +65,35 @@
     self.imageView.btnToFront = ^() {
         [weakSelf.view bringSubviewToFront:weakSelf.leftButton];
         [weakSelf.view bringSubviewToFront:weakSelf.rightButton];
-        if (weakSelf.guideImageView) {
-            [weakSelf.view bringSubviewToFront:weakSelf.guideImageView];
+        if (weakSelf.tipeGraceView) {
+            [weakSelf.view bringSubviewToFront:weakSelf.tipeGraceView];
         }
     };
     self.imageView.stopAnimationDidFinish = ^() {
         [weakSelf.imageView trickHealthySite];
         [weakSelf deepenJuryIdeal:YES];
-        [((NearbyVaseView *)weakSelf.countScore) exclaimDespiteSuitableDeal];
-        [((NearbyVaseView *)weakSelf.countScore) keepUponRib:nil outTime:0];
+        [((NearbyVaseView *)weakSelf.cplendour) exclaimDespiteSuitableDeal];
+        [((NearbyVaseView *)weakSelf.cplendour) keepUponRib:nil outTime:0];
     };
     self.imageView.failBlock = ^() {
         [weakSelf deepenJuryIdeal:NO];
         [weakSelf refineFortunateEnvelope];
     };
-    [(NearbyVaseView *)self.countScore setNotHasTimeOut:YES];
+    [(NearbyVaseView *)self.cplendour setNotHasTimeOut:YES];
     [self.imageView trickHealthySite];
     [self deepenJuryIdeal:NO];
 }
 - (void)terriblePoetry {
     [super terriblePoetry];
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
 }
 - (void)stitchScheduleOdourless {
     [super stitchScheduleOdourless];
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [self.imageView woolenSqueak];
     [self deepenJuryIdeal:NO];
 }
@@ -101,7 +101,7 @@
 - (void)faxHoneymoon {
     [super faxHoneymoon];
     [self deepenJuryIdeal:YES];
-    [(NearbyVaseView *)self.countScore keepUponRib:nil outTime:0];
+    [(NearbyVaseView *)self.cplendour keepUponRib:nil outTime:0];
 }
 #pragma mark
 - (void)showStageResult {

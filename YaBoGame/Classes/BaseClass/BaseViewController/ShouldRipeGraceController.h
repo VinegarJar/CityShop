@@ -23,8 +23,8 @@ typedef NS_ENUM(NSInteger, WNXADType) {
 @property (nonatomic, assign) WNXGameGuideType  guideType;
 @property (nonatomic, assign) WNXScoreboardType scoreboardType;
 @property (nonatomic, strong) BattleUponSplendour          *stage;
-@property (nonatomic, strong) UIView            *countScore;
-@property (nonatomic, strong) UIImageView       *guideImageView;
+@property (nonatomic, strong) UIView            *cplendour;
+@property (nonatomic, strong) UIImageView       *tipeGraceView;
 @property (nonatomic, strong) UIButton          *playAgainButton;
 @property (nonatomic, strong) UIButton          *pauseButton;
 @property (nonatomic, strong) OclockVisibleBookmarkView      *stateView;

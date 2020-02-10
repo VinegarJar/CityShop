@@ -32,7 +32,7 @@
     self.rightButton.imageEdgeInsets = UIEdgeInsetsMake(5, 40, 5, 40);
     self.rightButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
     self.rightButton.enabled = NO;
-    [self.view bringSubviewToFront:self.guideImageView];
+    [self.view bringSubviewToFront:self.tipeGraceView];
     [self.leftButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
     [self.rightButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
     self.peopleView = [PolluteStomachFurtherView viewFromNib];
@@ -48,7 +48,7 @@
 - (void)btnClick:(UIButton *)sender {
     sender.enabled = NO;
     _count++;
-    [(RouseUninhabitedLetterView *)self.countScore ceaseUnit];
+    [(RouseUninhabitedLetterView *)self.cplendour ceaseUnit];
     if (sender.tag == 1) {
         self.rightButton.enabled = YES;
     } else {
@@ -78,7 +78,7 @@
     [self.view setUserInteractionEnabled:NO];
     [self.peopleView tactileCivilization];
     [self.timeLabel damageUtility];
-    [(RouseUninhabitedLetterView *)self.countScore damageUtility];
+    [(RouseUninhabitedLetterView *)self.cplendour damageUtility];
     _frist = YES;
     self.leftButton.enabled = YES;;
     self.rightButton.enabled = NO;

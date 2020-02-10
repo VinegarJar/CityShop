@@ -51,25 +51,25 @@
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [weakSelf pushAccelerometer];
                 [weakSelf peelComparativeSoil];
-                [(AnticipateDictionaryCulturalView *)weakSelf.countScore howeverInjusticeSaddle];
+                [(AnticipateDictionaryCulturalView *)weakSelf.cplendour howeverInjusticeSaddle];
             });
         }];
     });
 }
 - (void)terriblePoetry {
     self.timer.paused = YES;
-    [(AnticipateDictionaryCulturalView *)self.countScore pause];
+    [(AnticipateDictionaryCulturalView *)self.cplendour pause];
     [self.motionManager stopAccelerometerUpdates];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(AnticipateDictionaryCulturalView *)self.countScore practiseSacrificeOrdinary];
+    [(AnticipateDictionaryCulturalView *)self.cplendour practiseSacrificeOrdinary];
     [self pushAccelerometer];
     self.timer.paused = NO;
 }
 - (void)stitchScheduleOdourless {
-    [(AnticipateDictionaryCulturalView *)self.countScore competentGoods];
+    [(AnticipateDictionaryCulturalView *)self.cplendour competentGoods];
     [self.timer invalidate];
     self.timer = nil;
     _index = 0;
@@ -137,7 +137,7 @@
     [self.lineView chargeBeyondStonyInput:angle];
     if (angle > 0.8 || angle < -0.8) {
         self.view.userInteractionEnabled = NO;
-        self.scroe = [(AnticipateDictionaryCulturalView *)self.countScore stopCalculateTime];
+        self.scroe = [(AnticipateDictionaryCulturalView *)self.cplendour stopCalculateTime];
         [self.motionManager stopAccelerometerUpdates];
         [self.timer invalidate];
         self.timer = nil;

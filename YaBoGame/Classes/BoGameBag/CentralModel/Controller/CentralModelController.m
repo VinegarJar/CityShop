@@ -18,7 +18,7 @@
 #pragma mark - Build UI
 - (void)bitterHell {
     self.buttonImageNames = @[@"01-btfeather", @"01-btfeather", @"01-btfeather"];
-    [self.view bringSubviewToFront:self.guideImageView];
+    [self.view bringSubviewToFront:self.tipeGraceView];
     [self flareHeatingHorizontal:self action:@selector(featherClick:) forControlEvents:UIControlEventTouchDown];
     [self initTimeLabel];
     [self initFootView];
@@ -53,14 +53,14 @@
     self.view.userInteractionEnabled = NO;
     [self.footView transparentlyCriticalBureau];
     [self.featherView removeFromSuperview];
-    [self transformMatureLifeboat:[((RouseUninhabitedLetterView *)self.countScore).countLabel.text intValue] unit:@"PTS" stage:self.stage isAddScore:YES];
+    [self transformMatureLifeboat:[((RouseUninhabitedLetterView *)self.cplendour).countLabel.text intValue] unit:@"PTS" stage:self.stage isAddScore:YES];
 }
 - (void)stitchScheduleOdourless {
     [super stitchScheduleOdourless];
     [self.footView damageUtility];
     [self.timeLabel damageUtility];
     [self repentLover:NO];
-    [((RouseUninhabitedLetterView *)self.countScore) damageUtility];
+    [((RouseUninhabitedLetterView *)self.cplendour) damageUtility];
 }
 - (void)weaveTransparentlyFunSeaside {
     [super weaveTransparentlyFunSeaside];
@@ -81,7 +81,7 @@
     [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundFeatherClickName];
     [self.featherView frighteningConception:(int)sender.tag];
     if ([self.footView stainChurch:(int)sender.tag]) {
-        [(RouseUninhabitedLetterView *)self.countScore ceaseUnit];
+        [(RouseUninhabitedLetterView *)self.cplendour ceaseUnit];
     } else {
         [self showMissImageViewAtIndex:(int)sender.tag];
     }

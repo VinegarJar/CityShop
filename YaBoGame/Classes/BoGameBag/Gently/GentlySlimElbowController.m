@@ -25,8 +25,8 @@
     self.peopleView = [BlackenLoveView viewFromNib];
     self.peopleView.frame = CGRectMake(0, ScreenHeight - self.leftButton.frame.size.height - self.peopleView.frame.size.height, self.peopleView.frame.size.width, self.peopleView.frame.size.height);
     [self.view insertSubview:self.peopleView belowSubview:self.leftButton];
-    if (self.guideImageView) {
-        [self.view bringSubviewToFront:self.guideImageView];
+    if (self.tipeGraceView) {
+        [self.view bringSubviewToFront:self.tipeGraceView];
     }
     __weak typeof(self) weakSelf = self;
     self.peopleView.failBlock = ^{
@@ -41,7 +41,7 @@
     [self showScreamImageView];
 }
 - (void)stitchScheduleOdourless {
-    [(AnticipateDictionaryCulturalView *)self.countScore competentGoods];
+    [(AnticipateDictionaryCulturalView *)self.cplendour competentGoods];
     [self.peopleView exclaimDespiteSuitableDeal];
     _notFrist = NO;
     [super stitchScheduleOdourless];
@@ -60,7 +60,7 @@
     });
 }
 - (void)fail {
-    [(AnticipateDictionaryCulturalView *)self.countScore stopCalculateTime];
+    [(AnticipateDictionaryCulturalView *)self.cplendour stopCalculateTime];
     [self.view setUserInteractionEnabled:NO];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self refineFortunateEnvelope];
@@ -73,26 +73,26 @@
 }
 - (void)terriblePoetry {
     [super terriblePoetry];
-    [(AnticipateDictionaryCulturalView *)self.countScore pause];
+    [(AnticipateDictionaryCulturalView *)self.cplendour pause];
 }
 - (void)throwConductorImaginative {
     [super throwConductorImaginative];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(AnticipateDictionaryCulturalView *)self.countScore practiseSacrificeOrdinary];
+    [(AnticipateDictionaryCulturalView *)self.cplendour practiseSacrificeOrdinary];
 }
 #pragma mark - Action
 - (void)leftButtonClick {
     [self.peopleView hailMeantimeFellowMurder];
     if (!_notFrist) {
-        [(AnticipateDictionaryCulturalView *)self.countScore howeverInjusticeSaddle];
+        [(AnticipateDictionaryCulturalView *)self.cplendour howeverInjusticeSaddle];
         _notFrist = YES;
     }
 }
 - (void)doneButtonClick {
     self.view.userInteractionEnabled = NO;
-    NSTimeInterval time = [(AnticipateDictionaryCulturalView *)self.countScore stopCalculateTime];
+    NSTimeInterval time = [(AnticipateDictionaryCulturalView *)self.cplendour stopCalculateTime];
     if ([self.peopleView somewhatWeeklyKnife]) {
         [super injureNotSuddenLimitation];
         WNXResultStateType stageType;

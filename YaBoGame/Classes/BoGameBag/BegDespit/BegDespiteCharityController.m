@@ -29,12 +29,12 @@
     __weak typeof(self) weakSelf = self;
     self.guessView.startCountTime = ^{
         [weakSelf repentLover:YES];
-        [(NearbyVaseView *)weakSelf.countScore keepUponRib:^{
+        [(NearbyVaseView *)weakSelf.cplendour keepUponRib:^{
             [weakSelf.guessView cloudyPair];
         } outTime:3];
     };
     self.guessView.nextCountWithError = ^{
-        [(NearbyVaseView *)weakSelf.countScore exclaimDespiteSuitableDeal];
+        [(NearbyVaseView *)weakSelf.cplendour exclaimDespiteSuitableDeal];
         [weakSelf.bottom exclaimDespiteSuitableDeal];
         weakSelf.allTime += 3.0;
         [weakSelf.guessView absoluteRaid];
@@ -42,7 +42,7 @@
     self.guessView.nextCountWithSucess = ^(BOOL isPass){
         [weakSelf.guessView spectacularCliff:nil];
         [weakSelf repentLover:NO];
-        [(NearbyVaseView *)weakSelf.countScore accountOnLevelTragedy:^(int second, int ms) {
+        [(NearbyVaseView *)weakSelf.cplendour accountOnLevelTragedy:^(int second, int ms) {
             NSTimeInterval onceTime = (second + ms / 60.0);
             if (onceTime < 0.8) {
                 weakSelf.type = WNXResultStateTypePerfect;
@@ -59,7 +59,7 @@
                 if (isPass) {
                     [weakSelf transformMatureLifeboat:(int)(weakSelf.allTime / 18 * 1000) unit:@"MS" stage:weakSelf.stage isAddScore:YES];
                 } else {
-                    [(NearbyVaseView *)weakSelf.countScore exclaimDespiteSuitableDeal];
+                    [(NearbyVaseView *)weakSelf.cplendour exclaimDespiteSuitableDeal];
                     [weakSelf.bottom exclaimDespiteSuitableDeal];
                     [weakSelf.guessView absoluteRaid];
                 }
@@ -76,17 +76,17 @@
     [self.guessView absoluteRaid];
 }
 - (void)terriblePoetry {
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
     [self.guessView pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
     [self.guessView resume];
 }
 - (void)stitchScheduleOdourless {
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [self.bottom exclaimDespiteSuitableDeal];
     [self.guessView exclaimDespiteSuitableDeal];
     [super stitchScheduleOdourless];
@@ -101,7 +101,7 @@
     } else {
         [self.bottom consistOnYearlyBlowhole:sender.tag type:WNXStage13BottomTypeNone];
         self.view.userInteractionEnabled = NO;
-        [(NearbyVaseView *)self.countScore accountOnLevelTragedy:nil];
+        [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:nil];
         [self.guessView hookPhysicist:YES AnimationFinish:^{
             [weakSelf refineFortunateEnvelope];
         }];

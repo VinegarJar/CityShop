@@ -17,10 +17,10 @@
 @implementation ShouldRipeGraceController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initGuideImageView];
+    [self initGraceView];
     [self buildPlayAgainButton];
     [self buildPauseButton];
-    [self showGuideImageView];
+    [self showtipeGraceView];
     [self buildADView];
 }
 - (void)dealloc {
@@ -30,7 +30,7 @@
 #pragma mark - Pubilc Method
 - (void)stitchScheduleOdourless {
     self.view.userInteractionEnabled = NO;
-    [self guideImageViewClick];
+    [self tipeGraceViewClick];
 }
 - (void)terriblePoetry {
     [self.navigationController popViewControllerAnimated:YES];
@@ -90,8 +90,8 @@
     [self.view bringSubviewToFront:self.pauseButton];
     [self.view bringSubviewToFront:self.playAgainButton];
     [self.view bringSubviewToFront:self.adView];
-    if (self.guideImageView) {
-        [self.view bringSubviewToFront:self.guideImageView];
+    if (self.tipeGraceView) {
+        [self.view bringSubviewToFront:self.tipeGraceView];
     }
 }
 - (void)buildPauseButton {
@@ -102,13 +102,13 @@
     [self.pauseButton addTarget:self action:@selector(terriblePoetry ) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:self.pauseButton];
 }
-- (void)initGuideImageView {
-    self.guideImageView = [[UIImageView alloc] initWithFrame:ScreenBounds];
-    [self.view addSubview:self.guideImageView];
+- (void)initGraceView {
+    self.tipeGraceView = [[UIImageView alloc] initWithFrame:ScreenBounds];
+    [self.view addSubview:self.tipeGraceView];
 }
-- (void)showGuideImageView {
+- (void)showtipeGraceView {
     if ((self.stage.userInfo && self.stage.userInfo.rank && ![self.stage.userInfo isEqual:@"f"]) || self.guideType == WNXGameGuideTypeNone) {
-        [self guideImageViewClick];
+        [self tipeGraceViewClick];
         return;
     }
     NSArray *animationImages;
@@ -127,28 +127,28 @@
     } else {
         duration = 0.8;
     }
-    self.guideImageView.animationDuration = duration;
-    self.guideImageView.animationImages = animationImages;
-    self.guideImageView.animationRepeatCount = -1;
-    [self.guideImageView startAnimating];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(guideImageViewClick)];
-    self.guideImageView.userInteractionEnabled = YES;
-    [self.guideImageView addGestureRecognizer:tap];
+    self.tipeGraceView.animationDuration = duration;
+    self.tipeGraceView.animationImages = animationImages;
+    self.tipeGraceView.animationRepeatCount = -1;
+    [self.tipeGraceView startAnimating];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tipeGraceViewClick)];
+    self.tipeGraceView.userInteractionEnabled = YES;
+    [self.tipeGraceView addGestureRecognizer:tap];
 }
-- (void)guideImageViewClick {
-    [self.guideImageView removeFromSuperview];
-    self.countScore.hidden = NO;
+- (void)tipeGraceViewClick {
+    [self.tipeGraceView removeFromSuperview];
+    self.cplendour.hidden = NO;
     __weak __typeof(self) weakSelf = self;
     if (self.scoreboardType == WNXScoreboardTypeCountPTS) {
-        [(RouseUninhabitedLetterView *)self.countScore facialManufacture:^(BOOL finished) {
+        [(RouseUninhabitedLetterView *)self.cplendour facialManufacture:^(BOOL finished) {
             [weakSelf throwConductorImaginative];
         }];
     } else if (self.scoreboardType == WNXScoreboardTypeTimeMS) {
-        [((NearbyVaseView *)self.countScore)facialManufacture:^(BOOL finished) {
+        [((NearbyVaseView *)self.cplendour)facialManufacture:^(BOOL finished) {
             [weakSelf throwConductorImaginative];
         }];
     } else if (self.scoreboardType == WNXScoreboardTypeSecondAndMS) {
-        [((AnticipateDictionaryCulturalView *)self.countScore)facialManufacture:^(BOOL finished) {
+        [((AnticipateDictionaryCulturalView *)self.cplendour)facialManufacture:^(BOOL finished) {
             [weakSelf throwConductorImaginative];
         }];
     } else if (self.scoreboardType == WNXScoreboardTypeNone) {
@@ -172,20 +172,20 @@
     if (scoreboardType == WNXScoreboardTypeNone) {
         return;
     } else if (scoreboardType == WNXScoreboardTypeCountPTS) {
-        self.countScore = [RouseUninhabitedLetterView viewFromNib];
-        self.countScore.frame = CGRectMake(-40, -140, self.countScore.frame.size.width, self.countScore.frame.size.height);
+        self.cplendour = [RouseUninhabitedLetterView viewFromNib];
+        self.cplendour.frame = CGRectMake(-40, -140, self.cplendour.frame.size.width, self.cplendour.frame.size.height);
     } else if (scoreboardType == WNXScoreboardTypeTimeMS) {
-        self.countScore = [NearbyVaseView viewFromNib];
-        self.countScore.frame = CGRectMake(-60, -140, self.countScore.frame.size.width, self.countScore.frame.size.height);
+        self.cplendour = [NearbyVaseView viewFromNib];
+        self.cplendour.frame = CGRectMake(-60, -140, self.cplendour.frame.size.width, self.cplendour.frame.size.height);
     } else if (scoreboardType == WNXScoreboardTypeSecondAndMS) {
-        self.countScore = [AnticipateDictionaryCulturalView viewFromNib];
-        self.countScore.frame = CGRectMake(-40, -55, self.countScore.frame.size.width, self.countScore.frame.size.height);
+        self.cplendour = [AnticipateDictionaryCulturalView viewFromNib];
+        self.cplendour.frame = CGRectMake(-40, -55, self.cplendour.frame.size.width, self.cplendour.frame.size.height);
     }
-    self.countScore.hidden = YES;
-    if (self.guideImageView) {
-        [self.view insertSubview:self.countScore belowSubview:self.guideImageView];
+    self.cplendour.hidden = YES;
+    if (self.tipeGraceView) {
+        [self.view insertSubview:self.cplendour belowSubview:self.tipeGraceView];
     } else {
-        [self.view addSubview:self.countScore];
+        [self.view addSubview:self.cplendour];
     }
 }
 - (void)throwConductorImaginative {

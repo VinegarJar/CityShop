@@ -24,8 +24,8 @@
     [self  resignAboveDrought:[UIImage imageNamed:@"004_gun-iphone4"] contenEdgeInsets:UIEdgeInsetsMake(20, 20, 20, 20)];
     self.glassView = [[StackFavourablePerseveranceView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 300 - self.redButton.frame.size.height, ScreenWidth, 300)];
     [self.view addSubview:self.glassView];
-    if (self.guideImageView) {
-        [self.view bringSubviewToFront:self.guideImageView];
+    if (self.tipeGraceView) {
+        [self.view bringSubviewToFront:self.tipeGraceView];
     }
     self.glassView.failBlock = ^{
         [weakSelf repentLover:NO];
@@ -36,7 +36,7 @@
         [weakSelf showStageViewWihtCount:glassCount isPass:isPass];
     };
     self.glassView.stopTimeBlock = ^{
-        weakSelf.oneTime = [(AnticipateDictionaryCulturalView *)weakSelf.countScore pasueTime];
+        weakSelf.oneTime = [(AnticipateDictionaryCulturalView *)weakSelf.cplendour pasueTime];
     };
     [self lookIntoWeekend];
 }
@@ -46,14 +46,14 @@
 }
 - (void)terriblePoetry {
     [super terriblePoetry];
-    [(AnticipateDictionaryCulturalView *)self.countScore pause];
+    [(AnticipateDictionaryCulturalView *)self.cplendour pause];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(AnticipateDictionaryCulturalView *)self.countScore practiseSacrificeOrdinary];
+    [(AnticipateDictionaryCulturalView *)self.cplendour practiseSacrificeOrdinary];
 }
 - (void)stitchScheduleOdourless {
-    [(AnticipateDictionaryCulturalView *)self.countScore competentGoods];
+    [(AnticipateDictionaryCulturalView *)self.cplendour competentGoods];
     [self.glassView competentGoods];
     _isStartTime = NO;
     [super stitchScheduleOdourless];
@@ -63,13 +63,13 @@
     [self.glassView specializePerLightEngineering];
     if (!_isStartTime) {
         _isStartTime = YES;
-        [(AnticipateDictionaryCulturalView *)self.countScore howeverInjusticeSaddle];
+        [(AnticipateDictionaryCulturalView *)self.cplendour howeverInjusticeSaddle];
     }
 }
 - (void)showStageViewWihtCount:(int)count isPass:(BOOL)isPass {
     __weak typeof(self) weakSelf = self;
     if (isPass) {
-        _time = [(AnticipateDictionaryCulturalView *)weakSelf.countScore stopCalculateTime];
+        _time = [(AnticipateDictionaryCulturalView *)weakSelf.cplendour stopCalculateTime];
     }
     NSTimeInterval oneGlassTime = _oneTime / count;
     if (self.stateView) {
@@ -93,7 +93,7 @@
         } else {
             [weakSelf.glassView trickHealthySite];
             [weakSelf repentLover:YES];
-            [(AnticipateDictionaryCulturalView *)weakSelf.countScore practiseSacrificeOrdinary];
+            [(AnticipateDictionaryCulturalView *)weakSelf.cplendour practiseSacrificeOrdinary];
         }
     }];
 }

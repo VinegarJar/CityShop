@@ -39,8 +39,8 @@
         weakSelf.peopleView.hidden = NO;
         [weakSelf repentLover:YES];
         //keepUponRib
-        [(NearbyVaseView *)weakSelf.countScore keepUponRib:^{
-            [(NearbyVaseView *)weakSelf.countScore accountOnLevelTragedy:nil];
+        [(NearbyVaseView *)weakSelf.cplendour keepUponRib:^{
+            [(NearbyVaseView *)weakSelf.cplendour accountOnLevelTragedy:nil];
             weakSelf.view.userInteractionEnabled = NO;
             [weakSelf buildTimeOutView];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -49,7 +49,7 @@
         } outTime:3];
     };
     self.busView.stopCountTime = ^{
-        [(NearbyVaseView *)weakSelf.countScore accountOnLevelTragedy:^(int second, int ms) {
+        [(NearbyVaseView *)weakSelf.cplendour accountOnLevelTragedy:^(int second, int ms) {
             weakSelf.onceTime = second * 1000 + ms / 60.0 * 1000;
         }];
     };
@@ -73,7 +73,7 @@
                 [weakSelf.numView setHidden:YES];
                 [weakSelf.numView exclaimDespiteSuitableDeal];
                 [weakSelf.peopleView setHidden:YES];
-                [(NearbyVaseView *)weakSelf.countScore exclaimDespiteSuitableDeal];
+                [(NearbyVaseView *)weakSelf.cplendour exclaimDespiteSuitableDeal];
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                     if (!weakSelf.playAgain) {
                         [weakSelf.busView neatlyAfraidBrightness];
@@ -146,22 +146,22 @@
     [self.peopleView surpriseWidelyThereforeBrochure:sender.tag];
     [self.numView appearAwfullyWindyObesity:(int)sender.tag];
     if (![self.busView consistFromKindHousehold:sender.tag]) {
-        [(NearbyVaseView *)self.countScore accountOnLevelTragedy:nil];
+        [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:nil];
         [self showBadView];
     }
 }
 - (void)terriblePoetry {
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
     [self.busView pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
     [self.busView resume];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
 }
 - (void)stitchScheduleOdourless {
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [self.peopleView setHidden:YES];
     [self.numView exclaimDespiteSuitableDeal];
     self.numView.hidden = YES;

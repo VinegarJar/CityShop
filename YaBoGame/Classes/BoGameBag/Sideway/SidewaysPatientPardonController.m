@@ -24,7 +24,7 @@
 - (void)bitterHell {
     UIImageView *bgIV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - ScreenWidth / 3)];
     bgIV.image = [UIImage imageNamed:@"06_bg-iphone4"];
-    [self.view insertSubview:bgIV belowSubview:self.countScore];
+    [self.view insertSubview:bgIV belowSubview:self.cplendour];
     [self commentIntoFuel];
     [super injureNotSuddenLimitation];
     [self buildFishView];
@@ -41,7 +41,7 @@
 - (void)fishBite:(UIButton *)sender {
     if (!_hasFish || sender.tag != self.currentFishIndex) {
         [self.timer1 invalidate];
-        [(NearbyVaseView *)self.countScore accountOnLevelTragedy:nil];
+        [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:nil];
         [self.fishView setTowardBlankWeather];
         [self refineFortunateEnvelope];
         return;
@@ -66,7 +66,7 @@
     [self.fishView skiFromReply];
     [self.fishView removeFromSuperview];
     self.fishView = nil;
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [self.timer1 invalidate];
     self.timer1 = nil;
     self.count = 0;
@@ -77,13 +77,13 @@
     [super stitchScheduleOdourless];
 }
 - (void)terriblePoetry {
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
     [self.fishView pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
     [self.fishView resume];
 }
 #pragma mark - Private Method
@@ -93,7 +93,7 @@
     }
     _hasFish = NO;
     self.count++;
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [self repentLover:YES];
     self.hasFishTime = arc4random_uniform(2) * 60 + arc4random_uniform(60) + 10;
     if (self.timer1) {
@@ -110,14 +110,14 @@
         [self.timer1 invalidate];
         [self.fishView underlineInfinitePermit:self.currentFishIndex];
         _hasFish = YES;
-        [(NearbyVaseView *)self.countScore howeverInjusticeSaddle];
+        [(NearbyVaseView *)self.cplendour howeverInjusticeSaddle];
     }
 }
 - (void)stopMotionAndShowSucess {
     __weak typeof(self) weakSelf = self;
     [self.motionManager stopAccelerometerUpdates];
     __block WNXResultStateType type;
-    [(NearbyVaseView *)weakSelf.countScore accountOnLevelTragedy:^(int second, int ms) {
+    [(NearbyVaseView *)weakSelf.cplendour accountOnLevelTragedy:^(int second, int ms) {
         int onceCount = second * 1000 + ms / 60.0 * 1000;
         if (onceCount < 400) {
             type = WNXResultStateTypePerfect;

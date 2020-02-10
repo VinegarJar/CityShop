@@ -68,7 +68,7 @@
 }
 - (void)stitchScheduleOdourless {
     self.allScroe = 0;
-    [(RouseUninhabitedLetterView *)self.countScore damageUtility];
+    [(RouseUninhabitedLetterView *)self.cplendour damageUtility];
     [self.eggView exclaimDespiteSuitableDeal];
     [self.eggView removeFromSuperview];
     self.eggView = nil;
@@ -82,7 +82,7 @@
 - (void)btnClick:(UIButton *)sender {
     sender.userInteractionEnabled = NO;
      NSInteger scroe = [self.eggView grabWithIndex:sender.tag];
-    [(RouseUninhabitedLetterView *)self.countScore exciteExhibitionLower:scroe];
+    [(RouseUninhabitedLetterView *)self.cplendour exciteExhibitionLower:scroe];
     _allScroe += scroe;
     if (sender.tag == 0) {
         self.redImageView.highlighted = YES;

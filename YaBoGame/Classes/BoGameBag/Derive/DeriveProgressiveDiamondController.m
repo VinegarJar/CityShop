@@ -30,7 +30,7 @@
             [weakSelf showResultStatusWithIsSucess:YES animationFinish:^{
                 [weakSelf.blackboardView systematicAluminium:^{
                     [weakSelf.blackboardView blendThroughReign:^(int index1, int index2, int index3) {
-                        [(NearbyVaseView *)weakSelf.countScore howeverInjusticeSaddle];
+                        [(NearbyVaseView *)weakSelf.cplendour howeverInjusticeSaddle];
                         [weakSelf.bottomNumView determineClay:index1 num2:index2 num3:index3];
                         [weakSelf repentLover:YES];
                     }];
@@ -100,20 +100,20 @@
     __weak typeof(self) weakSelf = self;
     [self.blackboardView blendThroughReign:^(int index1, int index2, int index3) {
         [weakSelf.bottomNumView determineClay:index1 num2:index2 num3:index3];
-        [(NearbyVaseView *)weakSelf.countScore howeverInjusticeSaddle];
+        [(NearbyVaseView *)weakSelf.cplendour howeverInjusticeSaddle];
         weakSelf.isPlayAgain = NO;
     }];
 }
 - (void)terriblePoetry {
     [super terriblePoetry];
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
 }
 - (void)stitchScheduleOdourless {
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [self.bottomNumView determineClay:0 num2:0 num3:0];
     self.bottomNumView.hidden = YES;
     [self.blackboardView exclaimDespiteSuitableDeal];
@@ -124,7 +124,7 @@
 - (void)btnClick:(UIButton *)sender {
     __weak typeof(self) weakSelf = self;
     [self repentLover:NO];
-    [(NearbyVaseView *)self.countScore accountOnLevelTragedy:^(int second, int ms) {
+    [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:^(int second, int ms) {
         weakSelf.onceTime = second + ms / 60.0;
     }];
     [self.blackboardView sinkAfterLevelClothes:[self.bottomNumView geographicalTradition:(int)sender.tag]];

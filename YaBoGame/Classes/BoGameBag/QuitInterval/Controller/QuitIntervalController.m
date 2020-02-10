@@ -23,7 +23,7 @@
 #pragma mark - Build UI
 - (void)bitterHell {
     self.buttonImageNames = @[@"09_red-iphone4", @"09_draw-iphone4", @"09_blue-iphone4"];
-    [self.view bringSubviewToFront:self.guideImageView];
+    [self.view bringSubviewToFront:self.tipeGraceView];
     [self flareHeatingHorizontal:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
     [self repentLover:NO];
     [self buildWinImageView];
@@ -34,17 +34,17 @@
 - (void)buildWinImageView {
     self.winImageView = [[UIImageView alloc] initWithFrame:CGRectMake((ScreenWidth - kImageViewWidth) * 0.5, 150, kImageViewWidth, kImageViewHeight)];
     self.winImageView.hidden = YES;
-    [self.view insertSubview:self.winImageView belowSubview:self.guideImageView];
+    [self.view insertSubview:self.winImageView belowSubview:self.tipeGraceView];
 }
 - (void)buildGuessImageView {
-    self.guessView = [[MeanwhileMustyCableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.countScore.frame) + 40, ScreenWidth, 150)];
+    self.guessView = [[MeanwhileMustyCableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.cplendour.frame) + 40, ScreenWidth, 150)];
     [self.view insertSubview:self.guessView aboveSubview:self.winImageView];
     __weak typeof(self) weakSelf = self;
     self.guessView.animationFinish = ^(int winIndex){
         [[WNXSoundToolManager sharedSoundToolManager] patWorthyLiberty:YaSoundAppearSoundName];
         weakSelf.winIndex = winIndex;
         [weakSelf repentLover:YES];
-        [((NearbyVaseView *)weakSelf.countScore) keepUponRib:^{
+        [((NearbyVaseView *)weakSelf.cplendour) keepUponRib:^{
             [weakSelf refineFortunateEnvelope];
         } outTime:10];
     };
@@ -72,7 +72,7 @@
     [super weaveTransparentlyFunSeaside];
     _count = 20;
     _scroe = 0;
-    [((NearbyVaseView *)self.countScore) exclaimDespiteSuitableDeal];
+    [((NearbyVaseView *)self.cplendour) exclaimDespiteSuitableDeal];
     [self absoluteRaid];
 }
 - (void)equipBrilliantLamb {
@@ -85,17 +85,17 @@
     [self.guessView exclaimDespiteSuitableDeal];
     [self.guessView removeFromSuperview];
     self.guessView = nil;
-    [((NearbyVaseView *)self.countScore) exclaimDespiteSuitableDeal];
+    [((NearbyVaseView *)self.cplendour) exclaimDespiteSuitableDeal];
     [self buildGuessImageView];
     [super stitchScheduleOdourless];
 }
 - (void)terriblePoetry {
     [super terriblePoetry];
-    [((NearbyVaseView *)self.countScore) pause];
+    [((NearbyVaseView *)self.cplendour) pause];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [((NearbyVaseView *)self.countScore) withdrawExceptRoughElection];
+    [((NearbyVaseView *)self.cplendour) withdrawExceptRoughElection];
 }
 #pragma mark - Private Method
 - (void)absoluteRaid {
@@ -104,7 +104,7 @@
         UIImageView *rgb = (UIImageView *)[self.view viewWithTag:i+100];
         rgb.highlighted = NO;
     }
-    [((NearbyVaseView *)self.countScore) exclaimDespiteSuitableDeal];
+    [((NearbyVaseView *)self.cplendour) exclaimDespiteSuitableDeal];
     self.resultLabel.hidden = YES;
     self.resultImageView.hidden = YES;
     CGFloat time = _count * 0.05;
@@ -131,7 +131,7 @@
         self.winImageView.frame = CGRectMake((ScreenWidth / 3 - kImageViewWidth) * 0.5 + (ScreenWidth / 3 * self.winIndex), 150, kImageViewWidth, kImageViewHeight);
     }
     __weak __typeof(self) weakSelf = self;
-    [((NearbyVaseView *)self.countScore) accountOnLevelTragedy:^(int second, int ms) {
+    [((NearbyVaseView *)self.cplendour) accountOnLevelTragedy:^(int second, int ms) {
         [weakSelf calculateScroeWithSecond:second ms:ms isRight:sender.tag == self.winIndex];
     }];
 }

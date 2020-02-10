@@ -24,7 +24,7 @@
 }
 - (void)cameraClick:(UIButton *)sender {
     if ([self.photoView joinParttimeWaste:(int)sender.tag]) {
-        [((RouseUninhabitedLetterView *)self.countScore) ceaseUnit];
+        [((RouseUninhabitedLetterView *)self.cplendour) ceaseUnit];
     } else {
         [self.photoView glitterPerCollectiveChange];
         [self repentLover:NO];
@@ -47,7 +47,7 @@
                 [weakSelf.photoView crossFinallySuperSuggestion];
             });
         } else {
-            [weakSelf transformMatureLifeboat:[((RouseUninhabitedLetterView *)weakSelf.countScore).countLabel.text intValue] unit:@"PTS" stage:weakSelf.stage isAddScore:YES];
+            [weakSelf transformMatureLifeboat:[((RouseUninhabitedLetterView *)weakSelf.cplendour).countLabel.text intValue] unit:@"PTS" stage:weakSelf.stage isAddScore:YES];
         }
     };
 }
@@ -59,7 +59,7 @@
 }
 - (void)stitchScheduleOdourless {
     [self.photoView drawMissingResignation];
-    [(RouseUninhabitedLetterView *)self.countScore damageUtility];
+    [(RouseUninhabitedLetterView *)self.cplendour damageUtility];
     [super stitchScheduleOdourless];
 }
 - (void)terriblePoetry {

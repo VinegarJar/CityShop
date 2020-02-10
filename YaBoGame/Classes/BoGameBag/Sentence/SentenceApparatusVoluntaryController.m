@@ -26,16 +26,16 @@
     self.cockroachView.startCountTime = ^(BOOL isFrist) {
         weakSelf.playAgain = NO;
         if (isFrist) {
-            [(NearbyVaseView *)weakSelf.countScore howeverInjusticeSaddle];
+            [(NearbyVaseView *)weakSelf.cplendour howeverInjusticeSaddle];
         } else {
-            [(NearbyVaseView *)weakSelf.countScore withdrawExceptRoughElection];
+            [(NearbyVaseView *)weakSelf.cplendour withdrawExceptRoughElection];
         }
     };
     self.cockroachView.finish = ^{
         weakSelf.count++;
         WNXResultStateType type;
         __block int onecTime;
-        [(NearbyVaseView *)weakSelf.countScore accountOnLevelTragedy:^(int second, int ms) {
+        [(NearbyVaseView *)weakSelf.cplendour accountOnLevelTragedy:^(int second, int ms) {
             onecTime = second * 1000 + ms / 60.0 * 1000;
             weakSelf.allScore += onecTime;
         }];
@@ -59,7 +59,7 @@
         }];
     };
     self.cockroachView.fail = ^{
-        [(NearbyVaseView *)weakSelf.countScore pause];
+        [(NearbyVaseView *)weakSelf.cplendour pause];
         [weakSelf refineFortunateEnvelope];
     };
 }
@@ -70,7 +70,7 @@
     [self.cockroachView broodPassiveWait];
 }
 - (void)removeCockroachViewData {
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     self.redImageView.highlighted = NO;
     self.yellowImageView.highlighted = NO;
     self.blueImageView.highlighted = NO;
@@ -87,7 +87,7 @@
 #pragma mark - Action
 - (void)btnClick:(UIButton *)sender {
     sender.userInteractionEnabled = NO;
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
     if ([self.cockroachView juniorMass:sender.tag]) {
         if (sender.tag == 0) {
             self.redImageView.highlighted = YES;

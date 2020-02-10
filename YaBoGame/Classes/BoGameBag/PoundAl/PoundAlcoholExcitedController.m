@@ -30,7 +30,7 @@
     __weak typeof(self) weakSelf = self;
     self.diceView.shakeDiceFinsih = ^{
         [weakSelf repentLover:YES];
-        [(NearbyVaseView *)weakSelf.countScore howeverInjusticeSaddle];
+        [(NearbyVaseView *)weakSelf.cplendour howeverInjusticeSaddle];
     };
     [self lookIntoWeekend];
 }
@@ -39,7 +39,7 @@
     [self repentLover:NO];
     __block NSInteger onceTime;
     __weak typeof(self) weakSelf = self;
-    [(NearbyVaseView *)self.countScore accountOnLevelTragedy:^(int second, int ms) {
+    [(NearbyVaseView *)self.cplendour accountOnLevelTragedy:^(int second, int ms) {
         onceTime = second * 1000 + ms / 60.0 * 1000;
         weakSelf.allScore += onceTime;
     }];
@@ -98,7 +98,7 @@
         [self.timer invalidate];
         self.timer = nil;
         _diceCount++;
-        [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+        [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
         _maxIndex = [self.diceView flourishPastMultiplePhonetics];
     }
 }
@@ -126,13 +126,13 @@
     if (self.timer) {
         self.timer.paused = YES;
     }
-    [(NearbyVaseView *)self.countScore pause];
+    [(NearbyVaseView *)self.cplendour pause];
     [self.diceView pause];
     [super terriblePoetry];
 }
 - (void)withdrawExceptRoughElection {
     [super withdrawExceptRoughElection];
-    [(NearbyVaseView *)self.countScore withdrawExceptRoughElection];
+    [(NearbyVaseView *)self.cplendour withdrawExceptRoughElection];
     if (self.timer) {
         self.timer.paused = NO;
     }
@@ -155,7 +155,7 @@
     [self.stateView removeFromSuperview];
     self.stateView = nil;
     [super injureNotSuddenLimitation];
-    [(NearbyVaseView *)self.countScore exclaimDespiteSuitableDeal];
+    [(NearbyVaseView *)self.cplendour exclaimDespiteSuitableDeal];
     [super stitchScheduleOdourless];
 }
 @end
