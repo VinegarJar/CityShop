@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,6 +44,7 @@
 		3CE99221241B295C0068FE69 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE99209241B295C0068FE69 /* 1.png */; };
 		4E576E83B7B8A833A14807BA /* libPods-PEHIVUR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC1A8286BEC513E9A81A1E4 /* libPods-PEHIVUR.a */; };
 		84751BE6241CE2F800EEF4AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84751BE5241CE2F800EEF4AE /* GoogleService-Info.plist */; };
+		84751BEB241CFB1900EEF4AE /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 84751BEA241CFB1900EEF4AE /* launch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		73476A327A6C4FCFA2E88789 /* Pods-PEHIVUR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PEHIVUR.release.xcconfig"; path = "Target Support Files/Pods-PEHIVUR/Pods-PEHIVUR.release.xcconfig"; sourceTree = "<group>"; };
 		84751BE5241CE2F800EEF4AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84751BE9241CE33800EEF4AE /* AppToolsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppToolsHeader.h; sourceTree = "<group>"; };
+		84751BEA241CFB1900EEF4AE /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				3C298F8F241A5C2600E399D3 /* main.m */,
 				3C298F86241A5C2600E399D3 /* PEHIVUR.xcdatamodeld */,
 				84751BE5241CE2F800EEF4AE /* GoogleService-Info.plist */,
+				84751BEA241CFB1900EEF4AE /* launch.png */,
 			);
 			path = PEHIVUR;
 			sourceTree = "<group>";
@@ -263,7 +266,6 @@
 				2E0796F81F256EF92BF9E2F8 /* Pods-PEHIVUR.debug.xcconfig */,
 				73476A327A6C4FCFA2E88789 /* Pods-PEHIVUR.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -357,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84751BEB241CFB1900EEF4AE /* launch.png in Resources */,
 				3CE99214241B295C0068FE69 /* 21.png in Resources */,
 				3CE99212241B295C0068FE69 /* 11.png in Resources */,
 				3CE9920F241B295C0068FE69 /* 16.png in Resources */,

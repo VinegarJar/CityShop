@@ -12,6 +12,7 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import <Firebase.h>
 #import "AppToolsHeader.h"
+
 @interface AppDelegate ()
 
 @end
@@ -27,14 +28,23 @@
     
     //5e6cb51c21b47e00697f9408
      
-    [self getRulesSuceessful];
+    [self setAppTintColor];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[PEHIVURShe alloc]init];
+    UINavigationController *rootViewController = [[UINavigationController alloc]initWithRootViewController:[PEHIVURShe new]];
+    self.window.rootViewController = rootViewController;
     
     return YES;
+}
+
+
+-(void)setAppTintColor{
+       [[UITabBar appearance] setTintColor:UIColorFromRGB(MianColor)];
+       [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(MianColor)];
+       [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+       [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor whiteColor], NSForegroundColorAttributeName,[UIFont fontWithName:@"PingFang-SC-Medium" size: 20], NSFontAttributeName, nil]];
 }
 
 
