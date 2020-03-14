@@ -47,6 +47,7 @@
 		84751BEB241CFB1900EEF4AE /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 84751BEA241CFB1900EEF4AE /* launch.png */; };
 		84751BED241D00C700EEF4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84751BEC241D00C700EEF4AE /* Main.storyboard */; };
 		84751BF0241D00DC00EEF4AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84751BEF241D00DC00EEF4AE /* ViewController.m */; };
+		84751BF3241D17BD00EEF4AE /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84751BF2241D17BD00EEF4AE /* UIView+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,8 @@
 		84751BEC241D00C700EEF4AE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84751BEE241D00DC00EEF4AE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		84751BEF241D00DC00EEF4AE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84751BF1241D17BD00EEF4AE /* UIView+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		84751BF2241D17BD00EEF4AE /* UIView+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 			children = (
 				3C298FAD241A5C8D00E399D3 /* UIImageView+kjea.h */,
 				3C298FAE241A5C8D00E399D3 /* UIImageView+kjea.m */,
+				84751BF1241D17BD00EEF4AE /* UIView+Additions.h */,
+				84751BF2241D17BD00EEF4AE /* UIView+Additions.m */,
 			);
 			path = Kje;
 			sourceTree = "<group>";
@@ -476,6 +481,7 @@
 				3C298FB3241A5C9900E399D3 /* UILabel+huas.m in Sources */,
 				3C298FAB241A5C7A00E399D3 /* ShepoaView.m in Sources */,
 				84751BF0241D00DC00EEF4AE /* ViewController.m in Sources */,
+				84751BF3241D17BD00EEF4AE /* UIView+Additions.m in Sources */,
 				3C298FAF241A5C8D00E399D3 /* UIImageView+kjea.m in Sources */,
 				3C298F88241A5C2600E399D3 /* PEHIVUR.xcdatamodeld in Sources */,
 				3C298F90241A5C2600E399D3 /* main.m in Sources */,
@@ -632,6 +638,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.she.PEHIVUR.e;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -653,6 +660,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.she.PEHIVUR.e;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

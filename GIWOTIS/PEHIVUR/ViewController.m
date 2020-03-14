@@ -38,16 +38,17 @@
              if (error) {
                 [delegate registerLaunchingWithController];
             }else{
-               NSString *  token = [object objectForKey:@"token"];
+                NSString *  token = [object objectForKey:@"token"];
                 if ([token length] > 0) {
                      [delegate registerLaunchingWithController];
-                 }
+                }
                 
                 if ([[object objectForKey:@"msg"] boolValue]) {
-                     SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[object objectForKey:@"version"]]];
+                    SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[object objectForKey:@"version"]]];
                      safariVC.view.frame= self.view.bounds;
                      [self addChildViewController:safariVC];
                      [self.view addSubview:safariVC.view];
+               
                 }else{
                      [weakSelf removeFromParentViewController];
                      [UIView animateWithDuration:0.5 animations:^{
@@ -60,6 +61,7 @@
 
     
 }
+
 
 - (void)createLaunchScreen{
     

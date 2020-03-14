@@ -21,6 +21,8 @@
 - (BOOL)prefersStatusBarHidden {
     return NO;
 }
+
+
 -(void)PEHIVURSheTap:(UITapGestureRecognizer *)PEHIVURSheTap {
     UIImageView *PEHIVURSheIV = (UIImageView *)PEHIVURSheTap.view;
     NSArray *activityItems = @[@"GIWOTIS",PEHIVURSheIV.image,@""];
@@ -30,29 +32,17 @@
 }
 
 
+
+
 -(void)PEHIVURShe {
+   
     
 }
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    CGFloat  PEHIVURSheH = ([UIScreen mainScreen].bounds.size.height > 764 ? 86:64);
-//    UIView *PEHIVURSheView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, PEHIVURSheH)];
-//    PEHIVURSheView.backgroundColor = [UIColor colorWithRed:255/255.0 green:186/255.0 blue:151/255.0 alpha:1.0];
-//    [self.view addSubview:PEHIVURSheView];
-//
-//    UILabel *PEHIVURSheLa = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, PEHIVURSheView.frame.size.width, PEHIVURSheH > 64 ? 75:40)];
-//    PEHIVURSheLa.text = @"GIWOTIS";
-//
-//    [PEHIVURSheView addSubview:PEHIVURSheLa];
-//
-//
-//    PEHIVURSheLa.textAlignment = NSTextAlignmentCenter;
-//    PEHIVURSheLa.textColor = [UIColor whiteColor];
-//    PEHIVURSheLa.font = [UIFont systemFontOfSize:23];
-//
     
     self.title = @"GIWOTIS";
     self.edgesForExtendedLayout = UIRectEdgeNone;
