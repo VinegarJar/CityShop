@@ -8,10 +8,9 @@
 
 #import "AppDelegate.h"
 #import "PEHIVURShe.h"
-
-#import <AVOSCloud/AVOSCloud.h>
 #import <Firebase.h>
 #import "AppToolsHeader.h"
+
 
 @interface AppDelegate ()
 
@@ -25,18 +24,15 @@
     
     [AVOSCloud setApplicationId:APP_ID clientKey:APP_KEY serverURLString:API_URL];
     [FIRApp configure];
-    
-    //5e6cb51c21b47e00697f9408
-     
     [self setAppTintColor];
-    
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window makeKeyAndVisible];
-    
+    return YES;
+}
+
+
+-(void)registerLaunchingWithController{
+
     UINavigationController *rootViewController = [[UINavigationController alloc]initWithRootViewController:[PEHIVURShe new]];
     self.window.rootViewController = rootViewController;
-    
-    return YES;
 }
 
 
@@ -48,22 +44,6 @@
 }
 
 
-- (void)getRulesSuceessful{
-
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-         __weak typeof(self) weakSelf = self;
-        // 查询数据
-        AVQuery *query = [AVQuery queryWithClassName:@"Giwotis"];
-
-        [query getObjectInBackgroundWithId:@"5e6cb51c21b47e00697f9408" block:^(AVObject * _Nullable object, NSError * _Nullable error) {
-
-            NSLog(@"查询数据=%@",object);
-    
-        }];
-    });
-
-    
-}
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
