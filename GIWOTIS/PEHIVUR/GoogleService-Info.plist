@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1091067275950-9236unpc8s1ti21l8vcid527p17no3kl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1091067275950-9236unpc8s1ti21l8vcid527p17no3kl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuvUS-ifg4_RdtGHmhrCxt_XoUMukkZW0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1091067275950</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.she.PEHIVUR.e</string>
+	<key>PROJECT_ID</key>
+	<string>com-ecpei-service</string>
+	<key>STORAGE_BUCKET</key>
+	<string>com-ecpei-service.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1091067275950:ios:1819963e2fa81ed88d1b3f</string>
+	<key>DATABASE_URL</key>
+	<string>https://com-ecpei-service.firebaseio.com</string>
+</dict>
+</plist>
