@@ -3,5 +3,5 @@ target 'PEHIVUR' do
   pod 'AVOSCloud'
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Analytics'
-  
+  pod 'AFNetworking'
 end

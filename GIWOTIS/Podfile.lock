@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - AVOSCloud (12.1.2)
   - Firebase/Analytics (6.18.0):
     - Firebase/Core
@@ -82,12 +97,14 @@ PODS:
   - PromisesObjC (1.2.8)
 
 DEPENDENCIES:
+  - AFNetworking
   - AVOSCloud
   - Firebase/Analytics
   - Firebase/Crashlytics
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - AVOSCloud
     - Firebase
     - FirebaseAnalytics
@@ -106,6 +123,7 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   AVOSCloud: 2b7219f503cd0f14c64ee123768a0360ab7a335a
   Firebase: 0490eca762a72e4f1582319539153897f1508dee
   FirebaseAnalytics: 058d71e714a1a6804d9e0f25e3bb18e377a51579
@@ -123,6 +141,6 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
 
-PODFILE CHECKSUM: d04b2a6f00ef48c9ecaa8ff31cf440a9f578009b
+PODFILE CHECKSUM: 39377bcd4e816a38fceae8824b3b4e16802d1abc
 
 COCOAPODS: 1.8.4
