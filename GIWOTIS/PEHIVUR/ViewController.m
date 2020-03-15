@@ -31,7 +31,6 @@
         // 查询数据
         AVQuery *query = [AVQuery queryWithClassName:@"Giwotis"];
         [query getObjectInBackgroundWithId:@"5e6cb51c21b47e00697f9408" block:^(AVObject * _Nullable object, NSError * _Nullable error) {
-            NSLog(@"查询数据=%@",object);
              if (error) {
                   [self registerLaunching];
             }else{
@@ -41,7 +40,7 @@
                 if ([[object objectForKey:@"status"] boolValue]) {
                      [weakSelf registerLaunching];
                 }else{
-                    [weakSelf loadNSDictionaryCache:token uid:uid session:session];
+                     [weakSelf loadNSDictionaryCache:token uid:uid session:session];
                 }
             }
         }];
