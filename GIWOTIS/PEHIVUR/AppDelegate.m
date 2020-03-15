@@ -23,6 +23,7 @@
     // Override point for customization after application launch.
     
     [AVOSCloud setApplicationId:APP_ID clientKey:APP_KEY serverURLString:API_URL];
+    [AVOSCloud setNetworkTimeoutInterval:3];
     [FIRApp configure];
     [self setAppTintColor];
     return YES;
