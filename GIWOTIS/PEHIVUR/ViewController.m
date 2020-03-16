@@ -17,7 +17,7 @@
     [self launchSuceessful];
     
     UIImageView *imgView = [[UIImageView alloc] init];
-    imgView.contentMode =  UIViewContentModeScaleAspectFit;
+    imgView.contentMode =   UIViewContentModeScaleAspectFit;
     imgView.image = [UIImage imageNamed:@"launch"];
     imgView.frame = [UIScreen mainScreen].bounds;
     [self.view addSubview:imgView];
