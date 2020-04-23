@@ -10,14 +10,13 @@
 
  https://leancloud.cn/dashboard/login.html#/signup 后端配置
  *  Tock  douyca@foxmail.com 668594wxhlP 9153403677
+ *  Xcode11.beta版 报错 https://blog.csdn.net/kuangdacaikuang/article/details/94579312
  */
 
 #import "AppDelegate.h"
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <React/RCTDevLoadingView.h>
-
-
 #import "SplashScreen.h"
 
 
@@ -28,7 +27,7 @@
   RCTRootView *rootView;
 #ifdef DEBUG
   
-  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://172.16.132.156:8081/index.ios.bundle?platform=ios&dev=true"]
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.254.108:8081/index.ios.bundle?platform=ios&dev=true"]
                                             moduleProvider:nil launchOptions:launchOptions];
   [bridge moduleForClass:[RCTDevLoadingView class]];
   rootView = [[RCTRootView alloc] initWithBridge:bridge
