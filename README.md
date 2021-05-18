@@ -1,6 +1,11 @@
 # ZeroCityShop
 IOS打包命令
-react-native bundle --entry-file index..ios.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
+react-native bundle --entry-file index.ios.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false
+
+Android打包RN
+react-native bundle --entry-file index.android.js --bundle-output ./android/app/src/main/assets/index.android.jsbundle --platform android --assets-dest ./android/app/src/main/res/ --dev false
+
+
 
 https://blog.csdn.net/hefeng6500/article/details/79869647
 
