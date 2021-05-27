@@ -143,4 +143,3 @@ export default class Optimized extends Component {
 }
 
 
-

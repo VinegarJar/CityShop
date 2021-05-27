@@ -17,7 +17,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <React/RCTDevLoadingView.h>
-#import "SplashScreen.h"
+//#import "SplashScreen.h"
 
 
 @implementation AppDelegate
@@ -27,7 +27,7 @@
   RCTRootView *rootView;
 #ifdef DEBUG
   
-  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.124.2:8081/index.ios.bundle?platform=ios&dev=true"]
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.16.73:8081/index.ios.bundle?platform=ios&dev=true"]
                                             moduleProvider:nil launchOptions:launchOptions];
   [bridge moduleForClass:[RCTDevLoadingView class]];
   rootView = [[RCTRootView alloc] initWithBridge:bridge
@@ -48,7 +48,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  [SplashScreen show];
+ // [SplashScreen show];
   return YES;
 }
 
