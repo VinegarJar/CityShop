@@ -29,8 +29,7 @@ export default class App extends Component {
     }
 }
 
-
-
+//tets
 const styles = StyleSheet.create({
     container: {
         flex: 1,
