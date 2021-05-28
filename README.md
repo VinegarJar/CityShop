@@ -6,9 +6,31 @@ Android打包RN
 react-native bundle --entry-file index.android.js --bundle-output ./android/app/src/main/assets/index.android.jsbundle --platform android --assets-dest ./android/app/src/main/res/ --dev false
 
 
+npm依赖包的更新
+1、更新前检查 - npm outdated
+2、安装更新插件 - npm install -g npm-check-updates
+3、检查可更新列表 - ncu
+ncu是npm-check-updates的缩写用法，也可以直接使用npm-check-updates
+4、根据提示信息，执行命令，直接更新到package.json - ncu -u
+5、根据提示，安装依赖即可完成更新 - npm install 
+https://www.cnblogs.com/frank-link/p/11796739.html 
+
+
+react-native 版本升级
+1.查看reactnative版本
+react-native -v
+2.自动升级
+更新到最新版本
+react-native-git-upgrade 
+或者
+react-native-git-upgrade 0.60.0(指定版本号)
+
+ 1. Clear watchman watches: watchman watch-del-all
+ 2. Delete node_modules and run yarn install
+ 3. Reset Metro's cache: yarn start --reset-cache
+ 4. Remove the cache: rm -rf /tmp/metro-*
 
 https://blog.csdn.net/hefeng6500/article/details/79869647
-
 React-Native开源电商项目
 一款使用react-native写的垮平台代码,rn新手上路多多指教
 
