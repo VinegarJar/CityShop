@@ -3982,13 +3982,6 @@
   dependencies:
     "loose-envify" "^1.0.0"
 
-"invariant@2.2.0":
-  "integrity" "sha1-yNfoRzZqScwYtiLwWKaJ1IHolfI="
-  "resolved" "http://registry.npm.taobao.org/invariant/download/invariant-2.2.0.tgz"
-  "version" "2.2.0"
-  dependencies:
-    "loose-envify" "^1.0.0"
-
 "invert-kv@^1.0.0":
   "integrity" "sha1-EEqOSqym09jNFXqO+L+rLXo//bY="
   "resolved" "http://registry.npm.taobao.org/invert-kv/download/invert-kv-1.0.0.tgz"
@@ -4905,11 +4898,6 @@
     "extsprintf" "1.3.0"
     "json-schema" "0.2.3"
     "verror" "1.10.0"
-
-"keymirror@0.1.1":
-  "integrity" "sha1-kYiJ6hP40KQufFVyUO7nE63JXDU="
-  "resolved" "http://registry.npm.taobao.org/keymirror/download/keymirror-0.1.1.tgz"
-  "version" "0.1.1"
 
 "kind-of@^1.1.0":
   "integrity" "sha1-FAo9LUGjbS78+pN3tiwk+ElaXEQ="
@@ -6867,14 +6855,6 @@
     "lodash" "^4.0.0"
     "prop-types" "^15.6.2"
     "yargs" "^13.2.2"
-
-"react-native-webview-bridge@^0.33.0":
-  "integrity" "sha1-f5t/uQO07RP07cq1LmVOm//qT9Q="
-  "resolved" "http://registry.npm.taobao.org/react-native-webview-bridge/download/react-native-webview-bridge-0.33.0.tgz"
-  "version" "0.33.0"
-  dependencies:
-    "invariant" "2.2.0"
-    "keymirror" "0.1.1"
 
 "react-native@^0.60.0", "react-native@0.60.0":
   "integrity" "sha1-9TArbv55fF9fvf66ui/xdPxDOJA="
