@@ -34,6 +34,13 @@ https://blog.csdn.net/hefeng6500/article/details/79869647
 React-Native开源电商项目
 一款使用react-native写的垮平台代码,rn新手上路多多指教
 
+
+
+卸载指定库文件
+react-native unlink xxx
+
+
+
 3.2.1 业务代码按需加载
 
 LazyRequire按需加载方案

@@ -1394,8 +1394,13 @@
 
 "ansi-regex@^4.1.0":
   "integrity" "sha1-i5+PCM8ay4Q3Vqg5yox+MWjFGZc="
-  "resolved" "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-4.1.0.tgz"
+  "resolved" "https://registry.nlark.com/ansi-regex/download/ansi-regex-4.1.0.tgz"
   "version" "4.1.0"
+
+"ansi-regex@^5.0.0":
+  "integrity" "sha1-OIU59VF5vzkznIGvMKZU1p+Hy3U="
+  "resolved" "https://registry.nlark.com/ansi-regex/download/ansi-regex-5.0.0.tgz"
+  "version" "5.0.0"
 
 "ansi-regex@~3.0.0":
   "integrity" "sha1-7QMXwyIGT3lGbAKWa922Bas32Zg="
@@ -1420,6 +1425,13 @@
   "version" "3.2.1"
   dependencies:
     "color-convert" "^1.9.0"
+
+"ansi-styles@^4.0.0":
+  "integrity" "sha1-7dgDYornHATIWuegkG7a00tkiTc="
+  "resolved" "https://registry.nlark.com/ansi-styles/download/ansi-styles-4.3.0.tgz?cache=0&sync_timestamp=1618995588464&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fansi-styles%2Fdownload%2Fansi-styles-4.3.0.tgz"
+  "version" "4.3.0"
+  dependencies:
+    "color-convert" "^2.0.1"
 
 "ansi-wrap@^0.1.0", "ansi-wrap@0.1.0":
   "integrity" "sha1-qCJQ3bABXponyoLoLqYDu/pF768="
@@ -1927,11 +1939,6 @@
   "resolved" "http://registry.npm.taobao.org/balanced-match/download/balanced-match-1.0.0.tgz"
   "version" "1.0.0"
 
-"base-64@0.1.0":
-  "integrity" "sha1-eAqZyE59YAJgNhURxId2E78k9rs="
-  "resolved" "http://registry.npm.taobao.org/base-64/download/base-64-0.1.0.tgz"
-  "version" "0.1.0"
-
 "base@^0.11.1":
   "integrity" "sha1-e95c7RRbbVUakNuH+DxVi060io8="
   "resolved" "https://registry.npm.taobao.org/base/download/base-0.11.2.tgz"
@@ -2384,14 +2391,14 @@
     "strip-ansi" "^4.0.0"
     "wrap-ansi" "^2.0.0"
 
-"cliui@^5.0.0":
-  "integrity" "sha1-3u/P2y6AB4SqNPRvoI4GhRx7u8U="
-  "resolved" "http://registry.npm.taobao.org/cliui/download/cliui-5.0.0.tgz"
-  "version" "5.0.0"
+"cliui@^7.0.2":
+  "integrity" "sha1-oCZe5lVHb8gHrqnfPfjfd4OAi08="
+  "resolved" "https://registry.npm.taobao.org/cliui/download/cliui-7.0.4.tgz"
+  "version" "7.0.4"
   dependencies:
-    "string-width" "^3.1.0"
-    "strip-ansi" "^5.2.0"
-    "wrap-ansi" "^5.1.0"
+    "string-width" "^4.2.0"
+    "strip-ansi" "^6.0.0"
+    "wrap-ansi" "^7.0.0"
 
 "clone-deep@^4.0.1":
   "integrity" "sha1-wZ/Zvbv4WUK0/ZechNz31fB8I4c="
@@ -2440,10 +2447,17 @@
   dependencies:
     "color-name" "^1.1.1"
 
-"color-name@^1.1.1":
-  "integrity" "sha1-p9BVi9icQveV3UIyj3QIMcpTvCU="
-  "resolved" "http://registry.npm.taobao.org/color-name/download/color-name-1.1.3.tgz"
-  "version" "1.1.3"
+"color-convert@^2.0.1":
+  "integrity" "sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM="
+  "resolved" "https://registry.npm.taobao.org/color-convert/download/color-convert-2.0.1.tgz"
+  "version" "2.0.1"
+  dependencies:
+    "color-name" "~1.1.4"
+
+"color-name@^1.1.1", "color-name@~1.1.4":
+  "integrity" "sha1-wqCah6y95pVD3m9j+jmVyCbFNqI="
+  "resolved" "https://registry.npm.taobao.org/color-name/download/color-name-1.1.4.tgz"
+  "version" "1.1.4"
 
 "color-support@^1.1.3":
   "integrity" "sha1-k4NDeaHMmgxh+C9S8NBDIiUb1aI="
@@ -2943,10 +2957,10 @@
   "resolved" "https://registry.nlark.com/electron-to-chromium/download/electron-to-chromium-1.3.741.tgz?cache=0&sync_timestamp=1622168455952&other_urls=https%3A%2F%2Fregistry.nlark.com%2Felectron-to-chromium%2Fdownload%2Felectron-to-chromium-1.3.741.tgz"
   "version" "1.3.741"
 
-"emoji-regex@^7.0.1":
-  "integrity" "sha1-kzoEBShgyF6DwSJHnEdIqOTHIVY="
-  "resolved" "http://registry.npm.taobao.org/emoji-regex/download/emoji-regex-7.0.3.tgz"
-  "version" "7.0.3"
+"emoji-regex@^8.0.0":
+  "integrity" "sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc="
+  "resolved" "https://registry.npm.taobao.org/emoji-regex/download/emoji-regex-8.0.0.tgz?cache=0&sync_timestamp=1614682707048&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Femoji-regex%2Fdownload%2Femoji-regex-8.0.0.tgz"
+  "version" "8.0.0"
 
 "encodeurl@~1.0.2":
   "integrity" "sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k="
@@ -3574,9 +3588,9 @@
   "resolved" "http://registry.npm.taobao.org/get-caller-file/download/get-caller-file-1.0.2.tgz"
   "version" "1.0.2"
 
-"get-caller-file@^2.0.1":
+"get-caller-file@^2.0.5":
   "integrity" "sha1-T5RBKoLbMvNuOwuXQfipf+sDH34="
-  "resolved" "http://registry.npm.taobao.org/get-caller-file/download/get-caller-file-2.0.5.tgz"
+  "resolved" "https://registry.npm.taobao.org/get-caller-file/download/get-caller-file-2.0.5.tgz"
   "version" "2.0.5"
 
 "get-intrinsic@^1.0.2":
@@ -3636,18 +3650,6 @@
     "inflight" "^1.0.4"
     "inherits" "2"
     "minimatch" "^3.0.4"
-    "once" "^1.3.0"
-    "path-is-absolute" "^1.0.0"
-
-"glob@7.0.6":
-  "integrity" "sha1-IRuvr0nlJbjNkyYNFKsTYVKz9Xo="
-  "resolved" "http://registry.npm.taobao.org/glob/download/glob-7.0.6.tgz"
-  "version" "7.0.6"
-  dependencies:
-    "fs.realpath" "^1.0.0"
-    "inflight" "^1.0.4"
-    "inherits" "2"
-    "minimatch" "^3.0.2"
     "once" "^1.3.0"
     "path-is-absolute" "^1.0.0"
 
@@ -4148,6 +4150,11 @@
   "integrity" "sha1-o7MKXE8ZkYMWeqq5O+764937ZU8="
   "resolved" "http://registry.npm.taobao.org/is-fullwidth-code-point/download/is-fullwidth-code-point-2.0.0.tgz"
   "version" "2.0.0"
+
+"is-fullwidth-code-point@^3.0.0":
+  "integrity" "sha1-8Rb4Bk/pCz94RKOJl8C3UFEmnx0="
+  "resolved" "https://registry.npm.taobao.org/is-fullwidth-code-point/download/is-fullwidth-code-point-3.0.0.tgz?cache=0&sync_timestamp=1618552489864&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-fullwidth-code-point%2Fdownload%2Fis-fullwidth-code-point-3.0.0.tgz"
+  "version" "3.0.0"
 
 "is-glob@^2.0.0", "is-glob@^2.0.1":
   "integrity" "sha1-0Jb5JqPe1WAPP9/ZEZjLCIjC2GM="
@@ -5106,6 +5113,11 @@
   "resolved" "http://registry.npm.taobao.org/lodash._getnative/download/lodash._getnative-3.9.1.tgz"
   "version" "3.9.1"
 
+"lodash._reinterpolate@^3.0.0":
+  "integrity" "sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0="
+  "resolved" "https://registry.npm.taobao.org/lodash._reinterpolate/download/lodash._reinterpolate-3.0.0.tgz"
+  "version" "3.0.0"
+
 "lodash._root@~3.0.0":
   "version" "3.0.1"
 
@@ -5119,6 +5131,31 @@
   "resolved" "https://registry.npm.taobao.org/lodash.debounce/download/lodash.debounce-4.0.8.tgz"
   "version" "4.0.8"
 
+"lodash.frompairs@^4.0.1":
+  "integrity" "sha1-vE5SB/onV8E25XNhTpZkUGsrG9I="
+  "resolved" "https://registry.npm.taobao.org/lodash.frompairs/download/lodash.frompairs-4.0.1.tgz"
+  "version" "4.0.1"
+
+"lodash.isequal@^4.5.0":
+  "integrity" "sha1-QVxEePK8wwEgwizhDtMib30+GOA="
+  "resolved" "https://registry.npm.taobao.org/lodash.isequal/download/lodash.isequal-4.5.0.tgz"
+  "version" "4.5.0"
+
+"lodash.isstring@^4.0.1":
+  "integrity" "sha1-1SfftUVuynzJu5XV2ur4i6VKVFE="
+  "resolved" "https://registry.npm.taobao.org/lodash.isstring/download/lodash.isstring-4.0.1.tgz"
+  "version" "4.0.1"
+
+"lodash.omit@^4.5.0":
+  "integrity" "sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA="
+  "resolved" "https://registry.npm.taobao.org/lodash.omit/download/lodash.omit-4.5.0.tgz"
+  "version" "4.5.0"
+
+"lodash.pick@^4.4.0":
+  "integrity" "sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM="
+  "resolved" "https://registry.npm.taobao.org/lodash.pick/download/lodash.pick-4.4.0.tgz"
+  "version" "4.4.0"
+
 "lodash.restparam@*":
   "integrity" "sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU="
   "resolved" "https://registry.npm.taobao.org/lodash.restparam/download/lodash.restparam-3.6.1.tgz"
@@ -5128,6 +5165,21 @@
   "integrity" "sha1-7dFMgk4sycHgsKG0K7UhBRakJDg="
   "resolved" "http://registry.npm.taobao.org/lodash.sortby/download/lodash.sortby-4.7.0.tgz"
   "version" "4.7.0"
+
+"lodash.template@^4.5.0":
+  "integrity" "sha1-+XYZXPPzR9DV9SSDVp/oAxzM6Ks="
+  "resolved" "https://registry.npm.taobao.org/lodash.template/download/lodash.template-4.5.0.tgz"
+  "version" "4.5.0"
+  dependencies:
+    "lodash._reinterpolate" "^3.0.0"
+    "lodash.templatesettings" "^4.0.0"
+
+"lodash.templatesettings@^4.0.0":
+  "integrity" "sha1-5IExDwSdPPbUfpEq0JMTsVTw+zM="
+  "resolved" "https://registry.npm.taobao.org/lodash.templatesettings/download/lodash.templatesettings-4.2.0.tgz"
+  "version" "4.2.0"
+  dependencies:
+    "lodash._reinterpolate" "^3.0.0"
 
 "lodash.throttle@^4.1.1":
   "integrity" "sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ="
@@ -5152,7 +5204,7 @@
 "lodash@^3.10.1":
   "version" "3.10.1"
 
-"lodash@^4.0.0", "lodash@^4.13.1", "lodash@^4.14.0", "lodash@^4.17.4", "lodash@^4.2.0", "lodash@^4.3.0", "lodash@^4.6.1", "lodash@4.17.4":
+"lodash@^4.13.1", "lodash@^4.14.0", "lodash@^4.17.4", "lodash@^4.2.0", "lodash@^4.3.0", "lodash@^4.6.1", "lodash@4.17.4":
   "integrity" "sha1-eCA6TRwyiuHYbcpkYONptX9AVa4="
   "resolved" "http://registry.npm.taobao.org/lodash/download/lodash-4.17.4.tgz"
   "version" "4.17.4"
@@ -6304,15 +6356,6 @@
     "lcid" "^2.0.0"
     "mem" "^4.0.0"
 
-"os-locale@^3.1.0":
-  "integrity" "sha1-qAKm7hfyTBBIOrmTVxnO9O0Wvxo="
-  "resolved" "https://registry.npm.taobao.org/os-locale/download/os-locale-3.1.0.tgz?cache=0&sync_timestamp=1560274285880&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fos-locale%2Fdownload%2Fos-locale-3.1.0.tgz"
-  "version" "3.1.0"
-  dependencies:
-    "execa" "^1.0.0"
-    "lcid" "^2.0.0"
-    "mem" "^4.0.0"
-
 "os-tmpdir@^1.0.0", "os-tmpdir@^1.0.1", "os-tmpdir@~1.0.2":
   "integrity" "sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ="
   "resolved" "http://registry.npm.taobao.org/os-tmpdir/download/os-tmpdir-1.0.2.tgz"
@@ -6847,14 +6890,19 @@
   dependencies:
     "prop-types" "^15.5.10"
 
-"react-native-vector-icons@^6.5.0":
-  "integrity" "sha1-v5JfYqR/7S8ComOS7tOFBYt/E34="
-  "resolved" "https://registry.npm.taobao.org/react-native-vector-icons/download/react-native-vector-icons-6.5.0.tgz"
-  "version" "6.5.0"
+"react-native-vector-icons@^8.1.0":
+  "integrity" "sha1-6O4rF7xNn2Ntocb2f+7o4qhQw9g="
+  "resolved" "https://registry.npm.taobao.org/react-native-vector-icons/download/react-native-vector-icons-8.1.0.tgz?cache=0&sync_timestamp=1614096731115&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-native-vector-icons%2Fdownload%2Freact-native-vector-icons-8.1.0.tgz"
+  "version" "8.1.0"
   dependencies:
-    "lodash" "^4.0.0"
-    "prop-types" "^15.6.2"
-    "yargs" "^13.2.2"
+    "lodash.frompairs" "^4.0.1"
+    "lodash.isequal" "^4.5.0"
+    "lodash.isstring" "^4.0.1"
+    "lodash.omit" "^4.5.0"
+    "lodash.pick" "^4.4.0"
+    "lodash.template" "^4.5.0"
+    "prop-types" "^15.7.2"
+    "yargs" "^16.1.1"
 
 "react-native@^0.60.0", "react-native@0.60.0":
   "integrity" "sha1-9TArbv55fF9fvf66ui/xdPxDOJA="
@@ -7283,11 +7331,6 @@
   "resolved" "http://registry.npm.taobao.org/require-main-filename/download/require-main-filename-1.0.1.tgz"
   "version" "1.0.1"
 
-"require-main-filename@^2.0.0":
-  "integrity" "sha1-0LMp7MfMD2Fkn2IhW+aa9UqomJs="
-  "resolved" "http://registry.npm.taobao.org/require-main-filename/download/require-main-filename-2.0.0.tgz"
-  "version" "2.0.0"
-
 "resolve-from@^3.0.0":
   "integrity" "sha1-six699nWiBvItuZTM17rywoYh0g="
   "resolved" "https://registry.npm.taobao.org/resolve-from/download/resolve-from-3.0.0.tgz"
@@ -7366,14 +7409,6 @@
   "integrity" "sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI="
   "resolved" "https://registry.npm.taobao.org/rimraf/download/rimraf-2.2.8.tgz"
   "version" "2.2.8"
-
-"rn-fetch-blob@^0.10.15":
-  "integrity" "sha1-NSaGDBxX4L9MCb2+QJyRkmSv/7o="
-  "resolved" "http://registry.npm.taobao.org/rn-fetch-blob/download/rn-fetch-blob-0.10.15.tgz"
-  "version" "0.10.15"
-  dependencies:
-    "base-64" "0.1.0"
-    "glob" "7.0.6"
 
 "rsvp@^4.8.4":
   "integrity" "sha1-yPFVMR0Wf2jyHhaN9x7FsIMRNzQ="
@@ -7944,14 +7979,14 @@
     "is-fullwidth-code-point" "^2.0.0"
     "strip-ansi" "^4.0.0"
 
-"string-width@^3.0.0", "string-width@^3.1.0":
-  "integrity" "sha1-InZ74htirxCBV0MG9prFG2IgOWE="
-  "resolved" "http://registry.npm.taobao.org/string-width/download/string-width-3.1.0.tgz"
-  "version" "3.1.0"
+"string-width@^4.1.0", "string-width@^4.2.0":
+  "integrity" "sha1-2v1PlVmnWFz7pSnGoKT3NIjr1MU="
+  "resolved" "https://registry.nlark.com/string-width/download/string-width-4.2.2.tgz"
+  "version" "4.2.2"
   dependencies:
-    "emoji-regex" "^7.0.1"
-    "is-fullwidth-code-point" "^2.0.0"
-    "strip-ansi" "^5.1.0"
+    "emoji-regex" "^8.0.0"
+    "is-fullwidth-code-point" "^3.0.0"
+    "strip-ansi" "^6.0.0"
 
 "stringstream@~0.0.5":
   "integrity" "sha1-TkhM1N5aC7vuGORjB3EKioFiGHg="
@@ -7972,12 +8007,26 @@
   dependencies:
     "ansi-regex" "^3.0.0"
 
-"strip-ansi@^5.0.0", "strip-ansi@^5.1.0", "strip-ansi@^5.2.0":
+"strip-ansi@^5.0.0":
   "integrity" "sha1-jJpTb+tq/JYr36WxBKUJHBrZwK4="
-  "resolved" "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-5.2.0.tgz?cache=0&other_urls=http%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-ansi%2Fdownload%2Fstrip-ansi-5.2.0.tgz"
+  "resolved" "https://registry.npm.taobao.org/strip-ansi/download/strip-ansi-5.2.0.tgz?cache=0&sync_timestamp=1618553320591&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-ansi%2Fdownload%2Fstrip-ansi-5.2.0.tgz"
   "version" "5.2.0"
   dependencies:
     "ansi-regex" "^4.1.0"
+
+"strip-ansi@^5.2.0":
+  "integrity" "sha1-jJpTb+tq/JYr36WxBKUJHBrZwK4="
+  "resolved" "https://registry.npm.taobao.org/strip-ansi/download/strip-ansi-5.2.0.tgz?cache=0&sync_timestamp=1618553320591&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-ansi%2Fdownload%2Fstrip-ansi-5.2.0.tgz"
+  "version" "5.2.0"
+  dependencies:
+    "ansi-regex" "^4.1.0"
+
+"strip-ansi@^6.0.0":
+  "integrity" "sha1-CxVx3XZpzNTz4G4U7x7tJiJa5TI="
+  "resolved" "https://registry.npm.taobao.org/strip-ansi/download/strip-ansi-6.0.0.tgz?cache=0&sync_timestamp=1618553320591&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-ansi%2Fdownload%2Fstrip-ansi-6.0.0.tgz"
+  "version" "6.0.0"
+  dependencies:
+    "ansi-regex" "^5.0.0"
 
 "strip-bom@^2.0.0":
   "integrity" "sha1-YhmoVhZSBJHzV4i9vxRHqZx+aw4="
@@ -8546,14 +8595,14 @@
     "string-width" "^1.0.1"
     "strip-ansi" "^3.0.1"
 
-"wrap-ansi@^5.1.0":
-  "integrity" "sha1-H9H2cjXVttD+54EFYAG/tpTAOwk="
-  "resolved" "https://registry.npm.taobao.org/wrap-ansi/download/wrap-ansi-5.1.0.tgz"
-  "version" "5.1.0"
+"wrap-ansi@^7.0.0":
+  "integrity" "sha1-Z+FFz/UQpqaYS98RUpEdadLrnkM="
+  "resolved" "https://registry.npm.taobao.org/wrap-ansi/download/wrap-ansi-7.0.0.tgz?cache=0&sync_timestamp=1618558850700&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fwrap-ansi%2Fdownload%2Fwrap-ansi-7.0.0.tgz"
+  "version" "7.0.0"
   dependencies:
-    "ansi-styles" "^3.2.0"
-    "string-width" "^3.0.0"
-    "strip-ansi" "^5.0.0"
+    "ansi-styles" "^4.0.0"
+    "string-width" "^4.1.0"
+    "strip-ansi" "^6.0.0"
 
 "wrappy@~1.0.2", "wrappy@1":
   "integrity" "sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8="
@@ -8658,9 +8707,12 @@
   "version" "3.2.1"
 
 "y18n@^4.0.0":
-  "integrity" "sha1-le+U+F7MgdAHwmThkKEg8KPIVms="
-  "resolved" "http://registry.npm.taobao.org/y18n/download/y18n-4.0.0.tgz"
   "version" "4.0.0"
+
+"y18n@^5.0.5":
+  "integrity" "sha1-f0k00PfKjFb5UxSTndzS3ZHOHVU="
+  "resolved" "https://registry.npm.taobao.org/y18n/download/y18n-5.0.8.tgz"
+  "version" "5.0.8"
 
 "yallist@^2.1.2":
   "integrity" "sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI="
@@ -8678,13 +8730,10 @@
     "camelcase" "^5.0.0"
     "decamelize" "^1.2.0"
 
-"yargs-parser@^13.1.0":
-  "integrity" "sha1-0mBYUyqgbTZf4JH2ofwGsvfl7KA="
-  "resolved" "https://registry.npm.taobao.org/yargs-parser/download/yargs-parser-13.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyargs-parser%2Fdownload%2Fyargs-parser-13.1.1.tgz"
-  "version" "13.1.1"
-  dependencies:
-    "camelcase" "^5.0.0"
-    "decamelize" "^1.2.0"
+"yargs-parser@^20.2.2":
+  "integrity" "sha1-Yd+FwRPt+1p6TjbriqYO9CPLyQo="
+  "resolved" "https://registry.npm.taobao.org/yargs-parser/download/yargs-parser-20.2.7.tgz?cache=0&sync_timestamp=1615404893185&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyargs-parser%2Fdownload%2Fyargs-parser-20.2.7.tgz"
+  "version" "20.2.7"
 
 "yargs-parser@^7.0.0":
   "integrity" "sha1-jQrELxbqVd69MyyvTEA4s+P139k="
@@ -8736,22 +8785,18 @@
     "y18n" "^3.2.1 || ^4.0.0"
     "yargs-parser" "^11.1.1"
 
-"yargs@^13.2.2":
-  "integrity" "sha1-C1YreUAW65ZRuYvTes82SqXW3IM="
-  "resolved" "https://registry.npm.taobao.org/yargs/download/yargs-13.2.4.tgz"
-  "version" "13.2.4"
+"yargs@^16.1.1":
+  "integrity" "sha1-HIK/D2tqZur85+8w43b0mhJHf2Y="
+  "resolved" "https://registry.nlark.com/yargs/download/yargs-16.2.0.tgz?cache=0&sync_timestamp=1620086666203&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fyargs%2Fdownload%2Fyargs-16.2.0.tgz"
+  "version" "16.2.0"
   dependencies:
-    "cliui" "^5.0.0"
-    "find-up" "^3.0.0"
-    "get-caller-file" "^2.0.1"
-    "os-locale" "^3.1.0"
+    "cliui" "^7.0.2"
+    "escalade" "^3.1.1"
+    "get-caller-file" "^2.0.5"
     "require-directory" "^2.1.1"
-    "require-main-filename" "^2.0.0"
-    "set-blocking" "^2.0.0"
-    "string-width" "^3.0.0"
-    "which-module" "^2.0.0"
-    "y18n" "^4.0.0"
-    "yargs-parser" "^13.1.0"
+    "string-width" "^4.2.0"
+    "y18n" "^5.0.5"
+    "yargs-parser" "^20.2.2"
 
 "yargs@^8.0.2":
   "version" "8.0.2"
