@@ -16,11 +16,10 @@ import {
     TouchableOpacity,
     Dimensions,
     ScrollView,
-    ImageBackground
+    ImageBackground,
 } from 'react-native';
 
 import { connect } from "react-redux";
-import { Container } from 'native-base';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { CachedImage } from "react-native-img-cache";
 import PropTypes from 'prop-types';
@@ -146,7 +145,7 @@ class ZeroHome extends Component {
     render() {
         const { goods_list = [] } = this.props.post.data || {};
         return (
-            <Container style={styles.container}>
+            <View style={styles.container}>
                 <FlatList
                     removeClippedSubviews={false}
                     style={styles.flatListStyle}
@@ -167,7 +166,7 @@ class ZeroHome extends Component {
                     onEndReachedThreshold={0.1}
                     data={goods_list}>
                 </FlatList>
-            </Container>
+            </View>
         );
     }
 
