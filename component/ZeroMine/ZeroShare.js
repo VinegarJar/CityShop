@@ -11,68 +11,65 @@ import {
     Text,
     View,
     Image,
-    ListView,
+    FlatList,
     Dimensions,
     TouchableOpacity,
 } from 'react-native';
 
-const {width} = Dimensions.get('window');
 export default class ZeroShare extends Component {
 
     //声明变量
     constructor(props) {
         super(props);
-        var ds = new ListView.DataSource({
-            rowHasChanged: (r1, r2) => r1 !== r2
-        });
         this.state = {
             //定义数据源
-            dataSource: ds.cloneWithRows(this.getDataList()),
+            dataSource: [
+                { title: '签到中心', image: require('../../src/Mine/shar.png'),indexPath:0},
+                { title: '邀请好友', image: require('../../src/Mine/shar.png'),indexPath:1},
+                { title: '帮助中心', image: require('../../src/Mine/shar.png'),indexPath:2},
+                { title: '意见反馈', image: require('../../src/Mine/shar.png'),indexPath:3}
+            ],
         }
 
     }
+
+
     render() {
+        const {dataSource} = this.state||{};
         return (
-            <ListView
-                automaticallyAdjustContentInsets={true}
-                dataSource={this.state.dataSource}
-                renderRow={this.renderRow}
-                removeClippedSubviews={false}
-            />
+            <FlatList
+            removeClippedSubviews={false}
+            renderItem={this.renderItem}
+            keyExtractor={(item, index) => index.toString()}
+            ItemSeparatorComponent={this.separator}
+            onScroll={this.scrollViewDidScroll}
+            onEndReachedThreshold={0.1}
+            data={dataSource}>
+        </FlatList>
         );
     }
 
-    renderRow(rowData, sectionID, rowID, highlightRow) {
+    separator = () => {
+        return <View style={{ height: 1, backgroundColor: '#F5F5F9' }} />;
+    }
+    renderItem = (items) => {
+        const {item} = items||{};
         return (
             <TouchableOpacity activeOpacity={0.5}
-                              onPress={()=>didSelectedIndexPath(rowData.title)}
+                              onPress={()=>didSelectedIndexPath(item.title)}
             >
                 <View style={styles.cellViewStyle}>
-                    <Text style={styles.titleStyle}>{rowData
+                    <Text style={styles.titleStyle}>{item
                         .title}</Text>
-                    <Image source={rowData.image}
+                    <Image source={item.image}
                            style={styles.imageStyle}
                            resizeMode={'stretch'}
                     />
                 </View>
             </TouchableOpacity>
         )
-
     }
-
-    getDataList() {
-        return(
-            [
-                { title: '签到中心', image: require('../../src/Mine/shar.png'),indexPath:0},
-                { title: '邀请好友', image: require('../../src/Mine/shar.png'),indexPath:1},
-                { title: '帮助中心', image: require('../../src/Mine/shar.png'),indexPath:2},
-                { title: '意见反馈', image: require('../../src/Mine/shar.png'),indexPath:3}
-            ]
-        );
-    }
-
-
-
+   
 }
 
 //调用点击事件

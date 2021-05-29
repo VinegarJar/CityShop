@@ -12,25 +12,25 @@ import {
     View,
     StatusBar,
     Dimensions,
-    ListView,
+    FlatList,
     Image,
     Platform
 } from 'react-native';
-
+import { scaleSize } from '../../tool/index'
 //第一种引用iOS关键代码
 var { NativeModules } = require('react-native');
 // var  RNBridgeModule = NativeModules.RNBridgeModule;
 
 
-import  ZeroNavigationItem from '../../ZeroNavigationItem'
+import ZeroNavigationItem from '../../ZeroNavigationItem'
 import ZeroSpaceView from '../ZeroTool/ZeroSpaceView';
 import ZeroOrder from './ZeroOrder';
 import ZeroHistory from './ZeroHistory';
 import ZeroMineAccount from './ZeroMineAccount';
 import ZeroShare from './ZeroShare';
-const {width,height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
-import {apiUrl} from '../../tool/url';
+import { apiUrl } from '../../tool/url';
 
 export default class ZeroMine extends Component {
 
@@ -42,7 +42,7 @@ export default class ZeroMine extends Component {
                 <ZeroNavigationItem
                     icon={require('../../src/Mine/icon_navigationItem_set_white.png')}
                     onPress={() => {
-                       alert('xxxx');
+                        alert('xxxx');
                     }}
                 />
                 <ZeroNavigationItem
@@ -56,54 +56,60 @@ export default class ZeroMine extends Component {
     })
 
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
-            dataSource:new ListView.DataSource({
-                rowHasChanged:(r1,r2) => r1!==r2
-            }),
+        this.state = {
+            goods_list: [],
+
         }
     }
 
 
     render() {
+        const { goods_list } = this.state || {};
         return (
-            <View style={{flex:1}}>    
-            <ListView
-                dataSource={this.state.dataSource}
-                renderRow={this.renderRow}
-                renderHeader={() => this.renderHeader()}
-                contentContainerStyle={styles.listViewStyle}//设置cell的样式
-                ref={(listView) => { _listView = listView }}
-                onScroll={() =>this.scrollViewDidScroll() }
-                removeClippedSubviews={false}
-            />
+            <View style={{ flex: 1 }}>
+                <FlatList
+                    removeClippedSubviews={false}
+                    style={styles.flatListStyle}
+                    contentContainerStyle={styles.listViewStyle}
+                    renderItem={this.renderItem}
+                    keyExtractor={(item, index) => index.toString()}
+                    ItemSeparatorComponent={this.separator}
+                    ListHeaderComponent={this.renderHeader}
+                    onScroll={this.scrollViewDidScroll}
+                    onEndReachedThreshold={0.1}
+                    data={goods_list}>
+                </FlatList>
             </View>
         );
     }
+    separator = () => {
+        return <View style={{ height: scaleSize(15), backgroundColor: '#F5F5F9' }} />;
+    }
 
-    scrollViewDidScroll(){
+    scrollViewDidScroll() {
 
 
     }
 
 
     onTouchableOpacity(index) {
-   
+
     }
 
     renderHeader() {
         return (
 
             <View >
-                <ZeroMineAccount  onTouchableOpacity={(index) => this.onTouchableOpacity(index)}/>
-                <ZeroSpaceView/>
-                <ZeroShare/>
-                <ZeroSpaceView/>
-                <ZeroOrder/>
-                <ZeroSpaceView/>
-                <ZeroHistory/>
-                <ZeroSpaceView/>
+                <ZeroMineAccount onTouchableOpacity={(index) => this.onTouchableOpacity(index)} />
+                <ZeroSpaceView />
+                <ZeroShare />
+                <ZeroSpaceView />
+                <ZeroOrder />
+                <ZeroSpaceView />
+                <ZeroHistory />
+                <ZeroSpaceView />
                 <View style={styles.commendStyle}>
                     <Text style={styles.textStyle} >为你推荐</Text>
                 </View>
@@ -114,64 +120,67 @@ export default class ZeroMine extends Component {
         )
     }
 
-    renderRow(rowData,sectionID,rowID,highlightRow){
-        return(
+    renderItem = (items) => {
+        const { item } = items || {};
+        console.log("info===========>", item)
+        // return (
+        //     <Text style={styles.textStyle} >为你推荐</Text>
+
+        // )
+        return (
             <View style={styles.bgStyle}>
                 <Image style={styles.imageStyle}
-                       source={{uri:rowData.pic}}
+                    source={{ uri: item.pic }}
                 />
                 <Text style={styles.describe}
-                      numberOfLines={2}
-                >
-                    {rowData.name}
+                      numberOfLines={2}>
+                    {item.name}
                 </Text>
-                <Text style={styles.price}
-                >
-                    ¥:{rowData.price}
+                <Text style={styles.price}>
+                    ¥:{item.price}
                 </Text>
             </View>
         );
-
     }
-
+    
 
     //发送网络请求
-    componentDidMount(){
+    componentDidMount() {
         this.requestNetwork();
     }
 
-    requestNetwork(){
+    requestNetwork() {
         fetch(apiUrl.homeHotCommendGoods_URL)
-            .then((response)=>response.json())
-            .then((responseJson)=>{
-                    let items = [];
-                    let {lists} = responseJson.data;
-                    lists.map(
-                        (info)=>{
+            .then((response) => response.json())
+            .then((responseJson) => {
+                let items = [];
+                let { lists } = responseJson.data;
+                lists.map(
+                    (info) => {
 
-                            console.log("info===========>",info)
 
-                            let productList = info.productList||[];
-                            productList.map(
-                                (object)=>{
-                                    // console.log(object);
-                                    items.push(object);
-                                }
-                            )
-                        }
-                    )
 
-                    //刷新界面数据
-                    this.setState({
-                        dataSource:this.state.dataSource.cloneWithRows(items)
-                    })
-                }
+                        let productList = info.productList || [];
+                        productList.map(
+                            (object) => {
+                                // console.log(object);
+                                items.push(object);
+                            }
+                        )
+                    }
+                )
+
+                //刷新界面数据
+                this.setState({
+                    goods_list: items
+                })
+            }
 
             ).catch(
-            (error)=>{
-                console.log('错误信息'+error);
-            }
-        )
+                (error) => {
+                    console.log('错误信息' + error);
+                }
+            )
     }
 
 
@@ -180,61 +189,64 @@ export default class ZeroMine extends Component {
 }
 
 //345 × 345
-let zoomWidth = (width-30)/2;
-let imgHeight = 345*0.5;
-let imgWidth = 345*0.5;
+let zoomWidth = (width - 30) / 2;
+let imgHeight = 345 * 0.5;
+let imgWidth = 345 * 0.5;
 const styles = StyleSheet.create({
 
-    textStyle:{
-        fontSize:17,
+    textStyle: {
+        fontSize: 17,
     },
-    commendStyle:{
-        height:30,
-        width:width, //cell的宽度
+    commendStyle: {
+        height: 30,
+        width: width, //cell的宽度
         //左右剧中
         justifyContent: 'center',
         alignItems: 'center',
         //横向显示
-        flexDirection:"row",
+        flexDirection: "row",
     },
+    flatListStyle: {
+        backgroundColor: "#F5F5F9"
 
-    listViewStyle:{
-        flexDirection:'row', //设置横向布局
-        flexWrap:'wrap'    //设置换行显示
     },
-    bgStyle:{
-        backgroundColor:'white',
-        width:zoomWidth, //cell的宽度
-        height:250,
-        marginLeft:10,
-        marginTop:10,
-        borderRadius:5,
+    listViewStyle: {
+        flexDirection: 'row', //设置横向布局
+        flexWrap: 'wrap'    //设置换行显示
+    },
+    bgStyle: {
+        backgroundColor: 'white',
+        width: zoomWidth, //cell的宽度
+        height: 250,
+        marginLeft: 10,
+        marginTop: 10,
+        borderRadius: 5,
         borderWidth: 1,
         borderColor: 'transparent',
     },
-    imageStyle:{
-        width:imgWidth,
-        height:imgHeight,
+    imageStyle: {
+        width: imgWidth,
+        height: imgHeight,
         // marginBottom:0,
-        marginTop:0,
+        marginTop: 0,
     },
-    describe:{
-        fontSize:15,
+    describe: {
+        fontSize: 15,
         // marginBottom:0
-        marginTop:0,
-        marginRight:5,
-        marginLeft:5,
+        marginTop: 0,
+        marginRight: 5,
+        marginLeft: 5,
     },
-    price:{
-        fontSize:14,
-        marginTop:10,
-        marginRight:5,
-        marginLeft:5,
-        color:'#EB5148',
+    price: {
+        fontSize: 14,
+        marginTop: 10,
+        marginRight: 5,
+        marginLeft: 5,
+        color: '#EB5148',
         // fontWeight:('normal'),
-        fontWeight:('bold','900'),
+        fontWeight: ('bold', '900'),
         // 字符间距
-        letterSpacing:0
+        letterSpacing: 0
     },
 });
 
