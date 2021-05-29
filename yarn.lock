@@ -2368,7 +2368,7 @@
 
 "cliui@^3.2.0":
   "integrity" "sha1-EgYBU3qRbSmUD5NNo7SNWFo5IT0="
-  "resolved" "http://registry.npm.taobao.org/cliui/download/cliui-3.2.0.tgz"
+  "resolved" "https://registry.npm.taobao.org/cliui/download/cliui-3.2.0.tgz"
   "version" "3.2.0"
   dependencies:
     "string-width" "^1.0.1"
@@ -5048,7 +5048,7 @@
 
 "load-json-file@^2.0.0":
   "integrity" "sha1-eUfkIUmvgNaWy/eXvKq8/h/inKg="
-  "resolved" "https://registry.npm.taobao.org/load-json-file/download/load-json-file-2.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fload-json-file%2Fdownload%2Fload-json-file-2.0.0.tgz"
+  "resolved" "https://registry.npm.taobao.org/load-json-file/download/load-json-file-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "graceful-fs" "^4.1.2"
@@ -6522,7 +6522,7 @@
 
 "path-type@^2.0.0":
   "integrity" "sha1-8BLMuEFbcJb8LaoQVMPXI4lZTHM="
-  "resolved" "http://registry.npm.taobao.org/path-type/download/path-type-2.0.0.tgz"
+  "resolved" "https://registry.npm.taobao.org/path-type/download/path-type-2.0.0.tgz?cache=0&sync_timestamp=1611752015315&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpath-type%2Fdownload%2Fpath-type-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "pify" "^2.0.0"
@@ -7022,7 +7022,7 @@
 
 "read-pkg-up@^2.0.0":
   "integrity" "sha1-a3KoBImE4MQeeVEP1en6mbO1Sb4="
-  "resolved" "https://registry.npm.taobao.org/read-pkg-up/download/read-pkg-up-2.0.0.tgz"
+  "resolved" "https://registry.nlark.com/read-pkg-up/download/read-pkg-up-2.0.0.tgz?cache=0&sync_timestamp=1618846971516&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fread-pkg-up%2Fdownload%2Fread-pkg-up-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "find-up" "^2.0.0"
@@ -7039,7 +7039,7 @@
 
 "read-pkg@^2.0.0":
   "integrity" "sha1-jvHAYjxqbbDcZxPEv6xGMysjaPg="
-  "resolved" "https://registry.npm.taobao.org/read-pkg/download/read-pkg-2.0.0.tgz"
+  "resolved" "https://registry.nlark.com/read-pkg/download/read-pkg-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "load-json-file" "^2.0.0"
@@ -8008,7 +8008,7 @@
 
 "strip-bom@^3.0.0":
   "integrity" "sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM="
-  "resolved" "https://registry.npm.taobao.org/strip-bom/download/strip-bom-3.0.0.tgz"
+  "resolved" "https://registry.nlark.com/strip-bom/download/strip-bom-3.0.0.tgz"
   "version" "3.0.0"
 
 "strip-bom@3.0.0":
@@ -8774,8 +8774,6 @@
     "yargs-parser" "^13.1.0"
 
 "yargs@^8.0.2":
-  "integrity" "sha1-YpmpBVsc78lp/355wdkY3Osiw2A="
-  "resolved" "https://registry.npm.taobao.org/yargs/download/yargs-8.0.2.tgz"
   "version" "8.0.2"
   dependencies:
     "camelcase" "^4.1.0"

@@ -24,34 +24,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
   
-  RCTRootView *rootView;
-#ifdef DEBUG
-  
-  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:[NSURL URLWithString:@"http://192.168.16.52:8081/index.ios.bundle?platform=ios&dev=true"]
-                                            moduleProvider:nil launchOptions:launchOptions];
-  [bridge moduleForClass:[RCTDevLoadingView class]];
-  rootView = [[RCTRootView alloc] initWithBridge:bridge
-                                      moduleName:@"ZeroCityShop"
-                               initialProperties:nil];
-#else
-
-  rootView = [[RCTRootView alloc] initWithBundleURL:[[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"]
-                                         moduleName:@"ZeroCityShop"
-                                  initialProperties:nil
-                                      launchOptions:launchOptions];
-#endif
-  
-  
+  RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
+                                                   moduleName:@"ZeroCityShop"
+                                            initialProperties:nil];
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  //[SplashScreen show];
+  [SplashScreen show];
   return YES;
 }
 
 
+- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+{
+#if DEBUG
+  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+#else
+  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+#endif
+}
 
 @end
