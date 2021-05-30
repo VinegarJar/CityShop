@@ -6,7 +6,6 @@
 
 import React, { Component } from 'react';
 import {
-    AppRegistry,
     StyleSheet,
     Text,
     View,
@@ -14,13 +13,10 @@ import {
     FlatList,
     Image,
     TouchableOpacity,
-    Dimensions,
-    ScrollView,
     ImageBackground,
 } from 'react-native';
 
 import { connect } from "react-redux";
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { CachedImage } from "react-native-img-cache";
 import PropTypes from 'prop-types';
 
