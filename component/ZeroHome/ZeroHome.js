@@ -32,9 +32,6 @@ import source from '../../src'
 import ZeroSalesSection from '../ZeroSales/ZeroSection';
 
 
-import ZeroNavigationItem from '../../ZeroNavigationItem'
-
-
 export class ZeroHotItem extends Component {
 
 
