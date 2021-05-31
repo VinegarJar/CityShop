@@ -39,6 +39,7 @@
 		324BC246C88941A1B2C85D5B /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE73498757694436871A247C /* FontAwesome5_Regular.ttf */; };
 		327121E59FC54E7B9D7C6657 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4CA25B64AC4D31897876D7 /* Octicons.ttf */; };
 		32A140DA7C3847578F7E16AD /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2514E2547E541F78F9988C5 /* FontAwesome5_Solid.ttf */; };
+		46B7E6CC33B541D3A1A76BB1 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02262E6688CD402198F4A620 /* Fontisto.ttf */; };
 		4F02F846F31A4D289D2B8832 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD61318BC124208A4D9E730 /* FontAwesome5_Brands.ttf */; };
 		56D029E8BF2249F7998C33BC /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8F8818F5C54D25A37C4142 /* libRNVectorIcons.a */; };
 		59A96ED92660D0BF003B508E /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 59A96ED72660D0BF003B508E /* main.jsbundle */; };
@@ -309,6 +310,13 @@
 			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
 			remoteInfo = "jsiexecutor-tvOS";
 		};
+		59A972FD2664BD41003B508E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59A972F92664BD41003B508E /* RNFetchBlob.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A15C300E1CD25C330074CB35;
+			remoteInfo = RNFetchBlob;
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -375,6 +383,7 @@
 		00E356EE1AD99517003FC87E /* ZeroCityShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroCityShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ZeroCityShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeroCityShopTests.m; sourceTree = "<group>"; };
+		02262E6688CD402198F4A620 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ZeroCityShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroCityShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -393,6 +402,7 @@
 		59A96ED72660D0BF003B508E /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		59A96ED82660D0BF003B508E /* main.jsbundle.meta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle.meta; sourceTree = "<group>"; };
 		59A96F9C2660F20A003B508E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		59A972F92664BD41003B508E /* RNFetchBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFetchBlob.xcodeproj; path = "../node_modules/rn-fetch-blob/ios/RNFetchBlob.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		5F4CA25B64AC4D31897876D7 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		5FCCF9A8FBC0433DB018E2CE /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
@@ -613,6 +623,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		59A972FA2664BD41003B508E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59A972FE2664BD41003B508E /* libRNFetchBlob.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +652,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				59A972F92664BD41003B508E /* RNFetchBlob.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -705,6 +724,7 @@
 				5F4CA25B64AC4D31897876D7 /* Octicons.ttf */,
 				5FCCF9A8FBC0433DB018E2CE /* SimpleLineIcons.ttf */,
 				DE4DFADF98B7473F81CE5119 /* Zocial.ttf */,
+				02262E6688CD402198F4A620 /* Fontisto.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -930,6 +950,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 59A972FA2664BD41003B508E /* Products */;
+					ProjectRef = 59A972F92664BD41003B508E /* RNFetchBlob.xcodeproj */;
 				},
 				{
 					ProductGroup = B7D9E5AF22BA10A800144122 /* Products */;
@@ -1168,6 +1192,13 @@
 			remoteRef = 59A96F962660F1FE003B508E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		59A972FE2664BD41003B508E /* libRNFetchBlob.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFetchBlob.a;
+			remoteRef = 59A972FD2664BD41003B508E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1273,6 +1304,7 @@
 				C6D1B86167AA4B95944156B1 /* SimpleLineIcons.ttf in Resources */,
 				B7D9E5D522BA12EB00144122 /* Zocial.ttf in Resources */,
 				DB748367CA9D435984045BF7 /* Zocial.ttf in Resources */,
+				46B7E6CC33B541D3A1A76BB1 /* Fontisto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1464,6 +1496,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"\"$(SRCROOT)/../node_modules/rn-fetch-blob/ios/RNFetchBlob\"",
 				);
 				INFOPLIST_FILE = ZeroCityShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1473,6 +1506,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.ZeroCityShop;
 				PRODUCT_NAME = ZeroCityShop;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1492,6 +1526,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"\"$(SRCROOT)/../node_modules/rn-fetch-blob/ios/RNFetchBlob\"",
 				);
 				INFOPLIST_FILE = ZeroCityShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1501,6 +1536,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.ZeroCityShop;
 				PRODUCT_NAME = ZeroCityShop;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
