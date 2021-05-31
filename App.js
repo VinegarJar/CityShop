@@ -21,12 +21,10 @@ export default class App extends Component {
 
     render() {
         return (
-            <Provider store={AppStore}>
-                <View style={{ backgroundColor: 'transparent', flex: 1, }} >
-                    <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#EB5148'} networkActivityIndicatorVisible={true} />
-                    <ZeroTabBar />
-                </View>
-            </Provider>
+            <View style={{ backgroundColor: 'transparent', flex: 1, }} >
+            <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#EB5148'} networkActivityIndicatorVisible={true} />
+            <ZeroTabBar />
+           </View>
 
         );
     }

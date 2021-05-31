@@ -37,7 +37,8 @@ export default class ZeroCategory extends Component  {
             <TouchableOpacity onPress={this.sub}>
                 <Text>-</Text>  
             </TouchableOpacity>
-            <TextInput style={{width:100,height:35,borderWidth:1}} value={store.counter.toString()}/>
+           {/**store.counter.toString()*/}
+            <TextInput style={{width:100,height:35,borderWidth:1}} value={10}/>
             <TouchableOpacity onPress={this.add}>
                 <Text>+</Text>  
             </TouchableOpacity>   
