@@ -4,72 +4,57 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-    AppRegistry,
-    StyleSheet,
-    Text,
-    View,
-    Platform
-} from 'react-native';
+ import React, {Component} from 'react';
+ import {Platform, StyleSheet, Text, View,TouchableOpacity,TextInput} from 'react-native';
+ import {observer, inject} from 'mobx-react';
 
-export default class ZeroCategory extends Component {
+inject('store')
+observer
+export default class ZeroCategory extends Component  {
 
-    static navigationOptions = ({ navigation }) => ({
 
-        // headerTitle:'点我搜索'
-
-        // headerTitle: (
-        //     <Text>
-        //         点我搜索
-        //     </Text>
-        // <TouchableOpacity style={styles.searchBar}>
-        //     <Image source={require('../../img/Home/search_icon.png')} style={styles.searchIcon} />
-        //     <Paragraph>点我搜索</Paragraph>
-        // </TouchableOpacity>
-        // ),
-        // headerRight: (
-        //     <NavigationItem
-        //         icon={require('../../img/Home/icon_navigationItem_message_white.png')}
-        //         onPress={() => {
-        //
-        //         }}
-        //     />
-        // ),
-        // headerLeft: (
-        //     <NavigationItem
-        //         title='上海'
-        //         titleStyle={{ ZeroColor: 'white' }}
-        //         onPress={() => {
-        //
-        //         }}
-        //     />
-        // ),
-    })
-
+    constructor(props){
+        super(props);
+        this.state={
+            value:0
+        }
+    }
+    componentWillMount(){
+        // console.log(this.props.store.counter)
+    }
+    sub=()=>{
+        let {store}=this.props;
+        store.subCount()
+    }
+    add=()=>{
+        let {store}=this.props;
+        store.addCount()
+    }
     render() {
+        let {store}=this.props
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    商品分类页面
-                </Text>
-            </View>
+        <View style={styles.container}>
+            <TouchableOpacity onPress={this.sub}>
+                <Text>-</Text>  
+            </TouchableOpacity>
+            <TextInput style={{width:100,height:35,borderWidth:1}} value={store.counter.toString()}/>
+            <TouchableOpacity onPress={this.add}>
+                <Text>+</Text>  
+            </TouchableOpacity>   
+        </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: '#F5FCFF',
+        flex:1,
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'center'
     },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
+
 });
 
 

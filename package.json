@@ -9,6 +9,8 @@
 	"dependencies": {
 		"babel-preset-react-native": "^5.0.0",
 		"lodash": "^4.17.4",
+		"mobx": "^6.3.2",
+		"mobx-react": "^7.2.0",
 		"npm": "^5.7.1",
 		"query-string": "^5.0.1",
 		"react": "16.8.6",

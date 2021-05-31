@@ -5780,6 +5780,23 @@
   dependencies:
     "minimist" "0.0.8"
 
+"mobx-react-lite@^3.2.0":
+  "integrity" "sha1-Mx1zZaawUzeN/pwIcxW05Bxd9p8="
+  "resolved" "https://registry.npm.taobao.org/mobx-react-lite/download/mobx-react-lite-3.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmobx-react-lite%2Fdownload%2Fmobx-react-lite-3.2.0.tgz"
+  "version" "3.2.0"
+
+"mobx-react@^7.2.0":
+  "integrity" "sha1-JB6SXpY7uDox0mn2X583njfsuus="
+  "resolved" "https://registry.nlark.com/mobx-react/download/mobx-react-7.2.0.tgz"
+  "version" "7.2.0"
+  dependencies:
+    "mobx-react-lite" "^3.2.0"
+
+"mobx@^6.1.0", "mobx@^6.3.2":
+  "integrity" "sha1-ElWQlh9wKlcsE5q2k5K+pBbS5Rs="
+  "resolved" "https://registry.nlark.com/mobx/download/mobx-6.3.2.tgz"
+  "version" "6.3.2"
+
 "morgan@^1.9.0":
   "integrity" "sha1-CRd4q8H8R801CYJGU9rh+qtrF9c="
   "resolved" "https://registry.npm.taobao.org/morgan/download/morgan-1.10.0.tgz"
@@ -7007,7 +7024,7 @@
     "global" "^4.3.0"
     "react-proxy" "^1.1.7"
 
-"react@16.8.6":
+"react@^16.8.0 || ^17", "react@16.8.6":
   "integrity" "sha1-rWw6lhT9Ok6e9REX9U2IjaAfK74="
   "resolved" "https://registry.nlark.com/react/download/react-16.8.6.tgz"
   "version" "16.8.6"
