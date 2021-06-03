@@ -6905,6 +6905,11 @@
   dependencies:
     "crypto-js" "^3.1.9-1"
 
+"react-native-root-siblings@^4.1.1":
+  "integrity" "sha1-t3Qtt2NKh/UH65ml/WmcTxDEarA="
+  "resolved" "https://registry.nlark.com/react-native-root-siblings/download/react-native-root-siblings-4.1.1.tgz"
+  "version" "4.1.1"
+
 "react-native-splash-screen@^3.0.6":
   "integrity" "sha1-wLvyyK5AoxPExwRPVeVpQU/2gzI="
   "resolved" "http://registry.npm.taobao.org/react-native-splash-screen/download/react-native-splash-screen-3.0.6.tgz"

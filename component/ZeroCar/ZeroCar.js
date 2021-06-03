@@ -10,50 +10,34 @@ import {
     StyleSheet,
     Text,
     View,
-    Platform
+    TouchableOpacity
 } from 'react-native';
-
+import { AlertUtil } from '../../tool/AlertUtil';
 export default class ZeroCategory extends Component {
 
-    static navigationOptions = ({ navigation }) => ({
+    remark() {
+        AlertUtil.show('弹框标题',
+            <View><Text>{'可以自行设置话术'}</Text></View>,
+            () => { AlertUtil.hidden()
+                    // 确定的操作
+             },
+            () => {
+                AlertUtil.hidden()
+                //取消的操作
+        })
+    }
 
-        headerTitle:'购物车',
-
-        // headerTitle: (
-        //     <Text>
-        //         点我搜索
-        //     </Text>
-        // <TouchableOpacity style={styles.searchBar}>
-        //     <Image source={require('../../img/Home/search_icon.png')} style={styles.searchIcon} />
-        //     <Paragraph>点我搜索</Paragraph>
-        // </TouchableOpacity>
-        // ),
-        // headerRight: (
-        //     <NavigationItem
-        //         icon={require('../../img/Home/icon_navigationItem_message_white.png')}
-        //         onPress={() => {
-        //
-        //         }}
-        //     />
-        // ),
-        // headerLeft: (
-        //     <NavigationItem
-        //         title='上海'
-        //         titleStyle={{ ZeroColor: 'white' }}
-        //         onPress={() => {
-        //
-        //         }}
-        //     />
-        // ),
-    })
 
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    购物车页面
-                </Text>
-            </View>
+            <TouchableOpacity onPress={this.remark}><Text>点我</Text></TouchableOpacity>
+            // <View style={styles.container}>
+            //     <TouchableOpacity onPress={this.remark}>  
+            //     <Text style={styles.welcome}>
+            //         购物车页面
+            //     </Text>
+            //     </TouchableOpacity>
+            // </View>
         );
     }
 }
